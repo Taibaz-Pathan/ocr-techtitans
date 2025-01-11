@@ -44,6 +44,10 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "IronOcr.MacOs.ARM": {
+              "target": "Package",
+              "version": "[2025.1.2, )"
+            },
             "Tesseract.Net.SDK": {
               "target": "Package",
               "version": "[4.6.411, )"

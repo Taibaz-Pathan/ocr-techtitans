@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OCRProcesor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aa1fe85004fbd3e8d0b2dd6f1575359be0b17ac7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b43a4425e54ba7989738a1af6d6a3ea851636aab")]
 [assembly: System.Reflection.AssemblyProductAttribute("OCRProcesor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OCRProcesor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -8,6 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="IronOcr.MacOs.ARM" Version="2025.1.2" />
       <PackageReference Include="Tesseract.Net.SDK" Version="4.6.411" />
     </ItemGroup>
 
