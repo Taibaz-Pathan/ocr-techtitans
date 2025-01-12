@@ -26,8 +26,7 @@ namespace ImageProcessing
                     string outputFilePath = Path.Combine(outputFolder, fileName + ".png");
                     
                 }
-
-                Console.WriteLine("All images processed successfully.");
+                
             }
             
         }      
