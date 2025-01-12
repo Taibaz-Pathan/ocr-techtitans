@@ -8,24 +8,29 @@ namespace ImageProcessing
 {
     public class AdaptiveThresholdProcessor
     {
-        public void Process(string inputPath, string outputPath)
-        {
-            using (Bitmap originalImage = new Bitmap(inputPath))
+        public void Process()
+        {            
+            {
+                // Load configuration using ConfigLoader
+                ConfigLoader config = new ConfigLoader();
+                string inputFolder = config.InputFolder;
+                string outputFolder = config.ExtractedTextFolder;
+
+                // Ensure output directory exists
+                Directory.CreateDirectory(outputFolder);
+
+                // Process all images in the input folder
+                foreach (string inputFilePath in Directory.GetFiles(inputFolder, "*.jpg"))
                 {
-                    // Convert to grayscale
-                    Bitmap grayImage = ConvertToGrayscale(originalImage);
-
-                    // Apply adaptive threshold
-                    Bitmap thresholdedImage = ApplyAdaptiveThreshold(grayImage);
-
-                    // Save the processed image
-                    thresholdedImage.Save(outputPath, ImageFormat.Png);
-
-                    Console.WriteLine($"Adaptive thresholding applied and saved to {outputPath}");
+                    string fileName = Path.GetFileNameWithoutExtension(inputFilePath);
+                    string outputFilePath = Path.Combine(outputFolder, fileName + ".png");
+                    
                 }
-            
-        }
 
-        
+                Console.WriteLine("All images processed successfully.");
+            }
+            
+        }      
+    
     }
 }
