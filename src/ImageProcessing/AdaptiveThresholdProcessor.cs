@@ -24,12 +24,37 @@ namespace ImageProcessing
                 {
                     string fileName = Path.GetFileNameWithoutExtension(inputFilePath);
                     string outputFilePath = Path.Combine(outputFolder, fileName + ".png");
-                    
+
+                    // Display and process the image
+                    DisplayImage(inputFilePath);
+
                 }
-                
             }
-            
-        }      
-    
+        }
+
+        private void DisplayImage(string imagePath)
+        {
+            using (Bitmap image = new Bitmap(imagePath))
+                {
+                    Console.WriteLine($"Displaying image: {imagePath}");
+                    using (var form = new System.Windows.Forms.Form())
+                    {
+                        form.Text = "Input Image";
+                        form.ClientSize = new Size(image.Width, image.Height);
+
+                        var pictureBox = new System.Windows.Forms.PictureBox
+                        {
+                            Dock = System.Windows.Forms.DockStyle.Fill,
+                            Image = image,
+                            SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+                        };
+
+                        form.Controls.Add(pictureBox);
+                        System.Windows.Forms.Application.Run(form);
+                    }
+                }
+        }
+
+
     }
 }
