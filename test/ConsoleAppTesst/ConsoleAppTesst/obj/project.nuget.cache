@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "2gTP2guKFhc=",
+  "success": true,
+  "projectFilePath": "/Users/taibazpathan/Desktop/Git/test/ConsoleAppTesst/ConsoleAppTesst/ConsoleAppTesst.csproj",
+  "expectedPackageFiles": [
+    "/Users/taibazpathan/Documents/RiderProjects/system.reflection.emit/4.7.0/system.reflection.emit.4.7.0.nupkg.sha512",
+    "/Users/taibazpathan/Documents/RiderProjects/tesseract/5.2.0/tesseract.5.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}
