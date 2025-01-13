@@ -8,7 +8,7 @@ namespace ImageProcessing
 {
     public class AdaptiveThresholdProcessor
     {
-        public void Process()
+        public void ProcessImages()
         {
             {
                 // Load configuration using ConfigLoader
@@ -16,15 +16,18 @@ namespace ImageProcessing
                 string inputFolder = config.InputFolder;
                 string outputFolder = config.ExtractedTextFolder;
 
+                Console.WriteLine(inputFolder);
+
                 // Ensure output directory exists
-                Directory.CreateDirectory(outputFolder);
+                //Directory.CreateDirectory(outputFolder);
 
                 // Process all images in the input folder
                 foreach (string inputFilePath in Directory.GetFiles(inputFolder, "*.jpg"))
                 {
                     string fileName = Path.GetFileNameWithoutExtension(inputFilePath);
-                    string outputFilePath = Path.Combine(outputFolder, fileName + ".png");
+                    //string outputFilePath = Path.Combine(outputFolder, fileName + ".png");
 
+                    Console.WriteLine(fileName);
                     // Display and process the image
                     DisplayImage(inputFilePath);
 
@@ -54,7 +57,29 @@ namespace ImageProcessing
                 }
             }
         }
+        static void Main(string[] args)
+        {
+            try
+            {
+                Console.WriteLine("Starting Adaptive Threshold Processor...");
 
+                // Create an instance of the processor
+                AdaptiveThresholdProcessor processor = new AdaptiveThresholdProcessor();
+
+                // Run the processing task
+                processor.ProcessImages();
+
+                Console.WriteLine("Processing completed. Press any key to exit.");
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                Console.ReadKey();
+            }
+        }
 
     }
 }

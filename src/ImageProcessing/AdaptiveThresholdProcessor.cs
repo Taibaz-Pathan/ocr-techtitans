@@ -54,7 +54,29 @@ namespace ImageProcessing
                     }
                 }
         }
+        static void Main(string[] args)
+        {
+            try
+            {
+                Console.WriteLine("Starting Adaptive Threshold Processor...");
 
+                // Create an instance of the processor
+                AdaptiveThresholdProcessor processor = new AdaptiveThresholdProcessor();
+
+                // Run the processing task
+                processor.ProcessImages();
+
+                Console.WriteLine("Processing completed. Press any key to exit.");
+            }
+            catch (Exception ex)
+            {
+                
+            }
+            finally
+            {
+                Console.ReadKey();
+            }
+        }
 
     }
 }
