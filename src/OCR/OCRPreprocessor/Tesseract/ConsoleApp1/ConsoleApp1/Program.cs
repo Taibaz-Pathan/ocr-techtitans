@@ -10,7 +10,7 @@ namespace OCRProcessor
             try
             {
                 Console.WriteLine("Initializing Tesseract Engine...");
-                var ocrEngine = new TesseractEngine("/Users/khushalsingh/Downloads/ocr-techtitans/src/OCR/OCRProcesor/OCRProcesor/bin/Debug/net9.0/tessdata", "eng", EngineMode.Default);
+                var ocrEngine = new TesseractEngine("/Users/khushalsingh/Downloads/ocr-techtitans/src/OCR/OCRPreprocessor/Tesseract/ConsoleApp1/ConsoleApp1/tessdata", "eng", EngineMode.Default);
 
                 using (ocrEngine)
                 {
