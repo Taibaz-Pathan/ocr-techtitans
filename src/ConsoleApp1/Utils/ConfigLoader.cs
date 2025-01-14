@@ -13,10 +13,11 @@ namespace Utils
 
         public ConfigLoader()
         {
-            
-                // Set up paths
-                InputFolder = Path.Combine(Directory.GetCurrentDirectory(), "Input", "SampleImages");               
-                ExtractedTextFolder = Path.Combine(Directory.GetCurrentDirectory(), "Output", "ExtractedText");
+
+            // Set up paths
+            //InputFolder = Path.Combine(Directory.GetCurrentDirectory(), "Input", "SampleImages");
+            InputFolder = "C:/Users/mithi/OneDrive/Desktop/SoftwareEngg/ocr-techtitans/Input/SampleImages";         
+            ExtractedTextFolder = Path.Combine(Directory.GetCurrentDirectory(), "Output", "ExtractedText");
                 
                 // Ensure directories exist
                 EnsureDirectoriesExist();
