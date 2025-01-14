@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
     <PackageReference Include="Tesseract.Net.SDK" Version="4.6.411" />
   </ItemGroup>
 

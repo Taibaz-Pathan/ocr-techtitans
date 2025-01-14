@@ -2,9 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\ConsoleApp1",
-    "\\src\\ImageProcessing"
+    "\\src\\ConsoleApp1"
   ],
-  "SelectedNode": "\\src\\ConsoleApp1\\Program.cs",
+  "SelectedNode": "\\src\\ConsoleApp1",
   "PreviewInSolutionExplorer": false
 }
