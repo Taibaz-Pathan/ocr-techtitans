@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using Utils;
+using System.Reflection;
 
 namespace Utils
 {
@@ -16,11 +17,22 @@ namespace Utils
 
             // Set up paths
             //InputFolder = Path.Combine(Directory.GetCurrentDirectory(), "Input", "SampleImages");
-            InputFolder = "C:/Users/mithi/OneDrive/Desktop/SoftwareEngg/ocr-techtitans/Input/SampleImages";         
+            //InputFolder = "C:/Users/mithi/OneDrive/Desktop/SoftwareEngg/ocr-techtitans/Input/SampleImages";
+           
+            // Get the current working directory
+            string currentDirectory = Directory.GetCurrentDirectory();
+
+            // Define the relative path to the input folder
+            string relativePath = @"../../../../../Input/SampleImages";
+            
+            // Combine the current directory and the relative path
+            string InputFolderpath = Path.GetFullPath(Path.Combine(currentDirectory, relativePath));
+            InputFolder = Path.GetFullPath(InputFolderpath);
+
             ExtractedTextFolder = Path.Combine(Directory.GetCurrentDirectory(), "Output", "ExtractedText");
                 
-                // Ensure directories exist
-                EnsureDirectoriesExist();
+            // Ensure directories exist
+            EnsureDirectoriesExist();
             
         }
 
