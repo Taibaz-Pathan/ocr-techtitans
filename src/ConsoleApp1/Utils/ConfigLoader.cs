@@ -15,10 +15,6 @@ namespace Utils
         public ConfigLoader()
         {
 
-            // Set up paths
-            //InputFolder = Path.Combine(Directory.GetCurrentDirectory(), "Input", "SampleImages");
-            //InputFolder = "C:/Users/mithi/OneDrive/Desktop/SoftwareEngg/ocr-techtitans/Input/SampleImages";
-           
             // Get the current working directory
             string currentDirectory = Directory.GetCurrentDirectory();
 

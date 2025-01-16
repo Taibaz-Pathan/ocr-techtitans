@@ -30,6 +30,7 @@ namespace ImageProcessing
                     Console.WriteLine(fileName);
                     // Display and process the image
                     DisplayImage(inputFilePath);
+                    ProcessImageConversion(string inputFilePath, string outputFolder);
 
                 }
             }
@@ -57,6 +58,23 @@ namespace ImageProcessing
                 }
             }
         }
+
+        private void ProcessImageConversion(string inputPath, string outputPath)
+        {
+            try
+            {
+                // Load the image
+                using (Bitmap originalImage = new Bitmap(inputPath))
+                {
+                    // Convert to grayscale
+                    Bitmap grayImage = ConvertToGrayscale(originalImage);                   
+            }
+            catch (Exception ex)
+            {
+               
+            }
+        }
+
         static void Main(string[] args)
         {
             try
