@@ -30,7 +30,7 @@ namespace ImageProcessing
                     Console.WriteLine(fileName);
                     // Display and process the image
                     DisplayImage(inputFilePath);
-                    ProcessImageConversion(string inputFilePath, string outputFolder);
+                    ProcessImageConversion(inputFilePath, outputFolder);
 
                 }
             }
@@ -67,12 +67,30 @@ namespace ImageProcessing
                 using (Bitmap originalImage = new Bitmap(inputPath))
                 {
                     // Convert to grayscale
-                    Bitmap grayImage = ConvertToGrayscale(originalImage);                   
+                    Bitmap grayImage = ConvertToGrayscale(originalImage);
+                }
             }
             catch (Exception ex)
             {
                
             }
+        }
+
+        private Bitmap ConvertToGrayscale(Bitmap original)
+        {
+            Bitmap grayscaleImage = new Bitmap(original.Width, original.Height);
+
+            for (int y = 0; y < original.Height; y++)
+            {
+                for (int x = 0; x < original.Width; x++)
+                {
+                    Color originalColor = original.GetPixel(x, y);
+                    int gray = (int)(0.3 * originalColor.R + 0.59 * originalColor.G + 0.11 * originalColor.B);
+                    grayscaleImage.SetPixel(x, y, Color.FromArgb(gray, gray, gray));
+                }
+            }
+
+            return grayscaleImage;
         }
 
         static void Main(string[] args)
