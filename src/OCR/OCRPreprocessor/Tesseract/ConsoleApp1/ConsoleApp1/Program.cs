@@ -15,13 +15,13 @@ namespace OCRProcessor
                 using (ocrEngine)
                 {
                     Console.WriteLine("Loading image...");
-                    if (!System.IO.File.Exists("/Users/khushalsingh/Downloads/test_02.jpg"))
+                    if (!System.IO.File.Exists("/Users/khushalsingh/Downloads/ocr-techtitans/Input/Test_2.jpg"))
                     {
                         Console.WriteLine("Image file not found!");
                         return;
                     }
 
-                    using (var img = Pix.LoadFromFile("/Users/khushalsingh/Downloads/test_02.jpg"))
+                    using (var img = Pix.LoadFromFile("/Users/khushalsingh/Downloads/ocr-techtitans/Input/Test_2.jpg"))
                     {
                         Console.WriteLine("Processing image...");
                         var result = ocrEngine.Process(img);

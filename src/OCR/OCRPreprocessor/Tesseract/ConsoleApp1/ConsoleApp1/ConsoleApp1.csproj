@@ -5,14 +5,19 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <RuntimeIdentifier>osx-arm64</RuntimeIdentifier>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="leptonicaSharp" Version="1.77.0.1" />
-      <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
-      <PackageReference Include="Tesseract" Version="5.2.0" />
-      <PackageReference Include="Tesseract.Net.SDK" Version="4.6.411" />
-      <PackageReference Include="TesseractOCR" Version="5.4.2" />
+        <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
+        <PackageReference Include="Tesseract" Version="5.2.0" />
+        <PackageReference Include="Tesseract.Net.SDK" Version="4.6.411" />
+        <PackageReference Include="TesseractOCR" Version="5.4.2" />
     </ItemGroup>
+
+    <Target Name="link_deps" AfterTargets="AfterBuild">
+        <Exec Command="ln -sf /opt/homebrew/lib/libleptonica.dylib /Users/khushalsingh/Downloads/ocr-techtitans/src/OCR/OCRPreprocessor/Tesseract/ConsoleApp1/ConsoleApp1/bin/Debug/net9.0/osx-arm64/libleptonica.dylib"/>
+        <Exec Command="ln -sf /opt/homebrew/lib/libtesseract.dylib /Users/khushalsingh/Downloads/ocr-techtitans/src/OCR/OCRPreprocessor/Tesseract/ConsoleApp1/ConsoleApp1/bin/Debug/net9.0/osx-arm64/libtesseract.dylib"/>
+    </Target>
 
 </Project>

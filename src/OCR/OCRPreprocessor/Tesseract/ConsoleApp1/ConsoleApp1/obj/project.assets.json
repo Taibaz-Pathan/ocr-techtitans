@@ -2,9 +2,6 @@
   "version": 3,
   "targets": {
     "net9.0": {
-      "leptonicaSharp/1.77.0.1": {
-        "type": "package"
-      },
       "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.2": {
         "type": "package",
         "compile": {
@@ -158,23 +155,148 @@
           "build/TesseractOCR.targets": {}
         }
       }
+    },
+    "net9.0/osx-arm64": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/Microsoft.Extensions.Logging.Abstractions.targets": {}
+        }
+      },
+      "Microsoft.Win32.SystemEvents/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.Drawing.Common/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/System.Drawing.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/unix/lib/net6.0/System.Drawing.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "System.Reflection.Emit/4.7.0": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/_._": {}
+        }
+      },
+      "Tesseract/5.2.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Reflection.Emit": "4.7.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Tesseract.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Tesseract.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/Tesseract.targets": {}
+        }
+      },
+      "Tesseract.Net.SDK/4.6.411": {
+        "type": "package",
+        "dependencies": {
+          "System.Drawing.Common": "5.0.0"
+        },
+        "compile": {
+          "lib/net5.0/Patagames.Ocr.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Patagames.Ocr.dll": {
+            "related": ".deps.json;.xml"
+          }
+        },
+        "build": {
+          "build/Tesseract.Net.SDK.targets": {}
+        }
+      },
+      "TesseractOCR/5.4.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "System.Reflection.Emit": "4.7.0"
+        },
+        "compile": {
+          "lib/net8.0/TesseractOCR.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/TesseractOCR.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/TesseractOCR.targets": {}
+        }
+      }
     }
   },
   "libraries": {
-    "leptonicaSharp/1.77.0.1": {
-      "sha512": "C0VQECP84WEbC853+lr6ti9/C/gWgsPL+isSXb1YcCXXch2zsiIkhUUU4p9ApEA0xNug5ljQPUzffNVOsG/p5w==",
-      "type": "package",
-      "path": "leptonicasharp/1.77.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/x86/LeptonicaSharp.dll",
-        "build/x86/LeptonicaSharp.xml",
-        "build/x86/leptonica-1.77.0.dll",
-        "leptonicasharp.1.77.0.1.nupkg.sha512",
-        "leptonicasharp.nuspec"
-      ]
-    },
     "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.2": {
       "sha512": "3iE7UF7MQkCv1cxzCahz+Y/guQbTqieyxyaWKhrRO91itI9cOKO76OHeQDahqG4MmW5umr3CcCvGmK92lWNlbg==",
       "type": "package",
@@ -521,8 +643,7 @@
       "System.Drawing.Common >= 6.0.0",
       "Tesseract >= 5.2.0",
       "Tesseract.Net.SDK >= 4.6.411",
-      "TesseractOCR >= 5.4.2",
-      "leptonicaSharp >= 1.77.0.1"
+      "TesseractOCR >= 5.4.2"
     ]
   },
   "packageFolders": {
@@ -562,7 +683,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "all"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net9.0": {
@@ -583,10 +705,6 @@
           "TesseractOCR": {
             "target": "Package",
             "version": "[5.4.2, )"
-          },
-          "leptonicaSharp": {
-            "target": "Package",
-            "version": "[1.77.0.1, )"
           }
         },
         "imports": [
@@ -606,6 +724,11 @@
           }
         },
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "osx-arm64": {
+        "#import": []
       }
     }
   }

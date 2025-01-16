@@ -11,14 +11,12 @@
           "System.Drawing.Common": "6.0.0",
           "Tesseract": "5.2.0",
           "Tesseract.Net.SDK": "4.6.411",
-          "TesseractOCR": "5.4.2",
-          "leptonicaSharp": "1.77.0.1"
+          "TesseractOCR": "5.4.2"
         },
         "runtime": {
           "ConsoleApp1.dll": {}
         }
       },
-      "leptonicaSharp/1.77.0.1": {},
       "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.2": {
         "runtime": {
           "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
@@ -121,13 +119,6 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
-    },
-    "leptonicaSharp/1.77.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-C0VQECP84WEbC853+lr6ti9/C/gWgsPL+isSXb1YcCXXch2zsiIkhUUU4p9ApEA0xNug5ljQPUzffNVOsG/p5w==",
-      "path": "leptonicasharp/1.77.0.1",
-      "hashPath": "leptonicasharp.1.77.0.1.nupkg.sha512"
     },
     "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.2": {
       "type": "package",
