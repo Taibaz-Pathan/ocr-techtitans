@@ -18,9 +18,6 @@ namespace ImageProcessing
 
                 Console.WriteLine(inputFolder);
 
-                // Ensure output directory exists
-                //Directory.CreateDirectory(outputFolder);
-
                 // Process all images in the input folder
                 foreach (string inputFilePath in Directory.GetFiles(inputFolder, "*.jpg"))
                 {
@@ -68,6 +65,7 @@ namespace ImageProcessing
                 {
                     // Convert to grayscale
                     Bitmap grayImage = ConvertToGrayscale(originalImage);
+                    //ShowImage(grayImage);
                 }
             }
             catch (Exception ex)
@@ -91,6 +89,22 @@ namespace ImageProcessing
             }
 
             return grayscaleImage;
+        }
+
+        private void ShowImage(Bitmap image)
+        {
+            Form displayForm = new Form();
+            displayForm.Text = "Grayscale Image";
+            displayForm.ClientSize = new Size(image.Width, image.Height);
+
+            PictureBox pictureBox = new PictureBox
+            {
+                Dock = DockStyle.Fill,
+                Image = image
+            };
+
+            displayForm.Controls.Add(pictureBox);
+            displayForm.ShowDialog();
         }
 
         static void Main(string[] args)
