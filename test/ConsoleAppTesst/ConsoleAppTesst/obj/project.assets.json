@@ -119,11 +119,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/taibazpathan/Desktop/Git/test/ConsoleAppTesst/ConsoleAppTesst/ConsoleAppTesst.csproj",
+      "projectUniqueName": "/Users/taibazpathan/Desktop/Git/ocr-techtitans/test/ConsoleAppTesst/ConsoleAppTesst/ConsoleAppTesst.csproj",
       "projectName": "ConsoleAppTesst",
-      "projectPath": "/Users/taibazpathan/Desktop/Git/test/ConsoleAppTesst/ConsoleAppTesst/ConsoleAppTesst.csproj",
+      "projectPath": "/Users/taibazpathan/Desktop/Git/ocr-techtitans/test/ConsoleAppTesst/ConsoleAppTesst/ConsoleAppTesst.csproj",
       "packagesPath": "/Users/taibazpathan/Documents/RiderProjects",
-      "outputPath": "/Users/taibazpathan/Desktop/Git/test/ConsoleAppTesst/ConsoleAppTesst/obj/",
+      "outputPath": "/Users/taibazpathan/Desktop/Git/ocr-techtitans/test/ConsoleAppTesst/ConsoleAppTesst/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/taibazpathan/.nuget/NuGet/NuGet.Config"
@@ -150,7 +150,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "all"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net9.0": {
