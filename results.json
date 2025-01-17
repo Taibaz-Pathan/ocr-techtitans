@@ -1,0 +1,30 @@
+{
+    "batch_id": "batch_001",
+    "results": [
+      {
+        "file_name": "document1.jpg",
+        "pages": [
+          {
+            "page_number": 1,
+            "text": "Recognized text on page 1",
+            "confidence": 95.3
+          }
+        ]
+      },
+      {
+        "file_name": "document2.pdf",
+        "pages": [
+          {
+            "page_number": 1,
+            "text": "First page text",
+            "confidence": 92.7
+          },
+          {
+            "page_number": 2,
+            "text": "Second page text",
+            "confidence": 90.1
+          }
+        ]
+      }
+    ]
+  }
