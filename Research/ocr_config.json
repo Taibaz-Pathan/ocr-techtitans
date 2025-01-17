@@ -1,0 +1,16 @@
+{
+    "language": "eng",
+    "preprocessing": {
+      "grayscale": true,
+      "thresholding": true,
+      "denoise": true
+    },
+    "model": {
+      "path": "models/tesseract.traineddata",
+      "type": "Tesseract"
+    },
+    "output": {
+      "format": "json",
+      "save_path": "output/results.json"
+    }
+  }
