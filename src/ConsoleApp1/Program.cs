@@ -26,33 +26,44 @@ namespace ImageProcessing
 
                     Console.WriteLine(fileName);
                     // Display and process the image
-                    DisplayImage(inputFilePath);
+                    ShowImage(inputFilePath,"Input Image");
                     ProcessImageConversion(inputFilePath, outputFolder);
 
                 }
             }
         }
 
-        private void DisplayImage(string imagePath)
+        private void ShowImage(object imageSource, string title)
         {
-            using (Bitmap image = new Bitmap(imagePath))
+            using (var form = new Form())
             {
-                Console.WriteLine($"Displaying image: {imagePath}");
-                using (var form = new System.Windows.Forms.Form())
+                form.Text = title;
+                Bitmap image;
+
+                if (imageSource is string imagePath)
                 {
-                    form.Text = "Input Image";
-                    form.ClientSize = new Size(image.Width, image.Height);
-
-                    var pictureBox = new System.Windows.Forms.PictureBox
-                    {
-                        Dock = System.Windows.Forms.DockStyle.Fill,
-                        Image = image,
-                        SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-                    };
-
-                    form.Controls.Add(pictureBox);
-                    System.Windows.Forms.Application.Run(form);
+                    image = new Bitmap(imagePath);
                 }
+                else if (imageSource is Bitmap bitmapImage)
+                {
+                    image = bitmapImage;
+                }
+                else
+                {
+                    throw new ArgumentException("Invalid image source.");
+                }
+
+                form.ClientSize = new Size(image.Width, image.Height);
+
+                var pictureBox = new PictureBox
+                {
+                    Dock = DockStyle.Fill,
+                    Image = image,
+                    SizeMode = PictureBoxSizeMode.Zoom
+                };
+
+                form.Controls.Add(pictureBox);
+                Application.Run(form);
             }
         }
 
@@ -65,8 +76,8 @@ namespace ImageProcessing
                 {
                     // Convert to grayscale
                     Bitmap grayImage = ConvertToGrayscale(originalImage);
-                    //ShowImage(grayImage);
-                }
+                    ShowImage(grayImage, "Gray scale image");
+                }   
             }
             catch (Exception ex)
             {
@@ -89,23 +100,7 @@ namespace ImageProcessing
             }
 
             return grayscaleImage;
-        }
-
-        private void ShowImage(Bitmap image)
-        {
-            Form displayForm = new Form();
-            displayForm.Text = "Grayscale Image";
-            displayForm.ClientSize = new Size(image.Width, image.Height);
-
-            PictureBox pictureBox = new PictureBox
-            {
-                Dock = DockStyle.Fill,
-                Image = image
-            };
-
-            displayForm.Controls.Add(pictureBox);
-            displayForm.ShowDialog();
-        }
+        }      
 
         static void Main(string[] args)
         {
