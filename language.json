@@ -1,0 +1,8 @@
+{
+    "supported_languages": [
+      { "code": "eng", "name": "English" },
+      { "code": "hin", "name": "Hindi" },
+      { "code": "spa", "name": "Spanish" },
+      { "code": "fra", "name": "French" }
+    ]
+  }
