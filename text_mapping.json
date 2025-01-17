@@ -1,0 +1,25 @@
+{
+    "document_id": "doc_001",
+    "text_blocks": [
+      {
+        "block_id": "block_001",
+        "text": "Hello World",
+        "position": {
+          "x": 50,
+          "y": 100,
+          "width": 200,
+          "height": 50
+        }
+      },
+      {
+        "block_id": "block_002",
+        "text": "OCR Example",
+        "position": {
+          "x": 300,
+          "y": 150,
+          "width": 250,
+          "height": 60
+        }
+      }
+    ]
+  }
