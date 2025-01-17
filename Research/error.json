@@ -1,0 +1,15 @@
+{
+    "batch_id": "batch_001",
+    "errors": [
+      {
+        "file_name": "document1.jpg",
+        "error": "Low image resolution",
+        "suggested_fix": "Try providing a higher-resolution image."
+      },
+      {
+        "file_name": "document3.pdf",
+        "error": "Unsupported file format",
+        "suggested_fix": "Convert the file to a supported format (e.g., JPEG, PNG, or PDF)."
+      }
+    ]
+  }
