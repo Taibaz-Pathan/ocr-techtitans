@@ -13,7 +13,11 @@ namespace ImageProcessing
             {
                 // Load configuration using ConfigLoader
                 ConfigLoader config = new ConfigLoader();
+
+                // Folder containing input images
                 string inputFolder = config.InputFolder;
+
+                // Folder for storing processed images or results
                 string outputFolder = config.ExtractedTextFolder;
 
                 Console.WriteLine(inputFolder);
@@ -24,36 +28,39 @@ namespace ImageProcessing
                     string fileName = Path.GetFileNameWithoutExtension(inputFilePath);
                     //string outputFilePath = Path.Combine(outputFolder, fileName + ".png");
 
-                    Console.WriteLine(fileName);
-                    // Display and process the image
+                    // Display the image
                     ShowImage(inputFilePath,"Input Image");
+
+                    //Process the image 
                     ProcessImageConversion(inputFilePath, outputFolder);
 
                 }
             }
         }
 
+        // Method to display an image in a Windows Form
         private void ShowImage(object imageSource, string title)
         {
-            using (var form = new Form())
+            using (var form = new Form()) // Create a new form
             {
                 form.Text = title;
                 Bitmap image;
 
+                // Determine the source of the image (file path or Bitmap object)
                 if (imageSource is string imagePath)
                 {
                     image = new Bitmap(imagePath);
                 }
                 else if (imageSource is Bitmap bitmapImage)
                 {
-                    image = bitmapImage;
+                    image = bitmapImage; // Use the Bitmap object directly
                 }
                 else
                 {
-                    throw new ArgumentException("Invalid image source.");
+                    throw new ArgumentException("Invalid image source."); // Handle invalid input
                 }
 
-                form.ClientSize = new Size(image.Width, image.Height);
+                form.ClientSize = new Size(image.Width, image.Height); // Adjust the form size to match the image dimensions
 
                 var pictureBox = new PictureBox
                 {
@@ -67,6 +74,7 @@ namespace ImageProcessing
             }
         }
 
+        // Method to convert an image to grayscale and display it
         private void ProcessImageConversion(string inputPath, string outputPath)
         {
             try
@@ -85,22 +93,64 @@ namespace ImageProcessing
             }
         }
 
+        // Method to convert a color image to grayscale
         private Bitmap ConvertToGrayscale(Bitmap original)
         {
             Bitmap grayscaleImage = new Bitmap(original.Width, original.Height);
 
+            // Loop through each pixel of the image
             for (int y = 0; y < original.Height; y++)
             {
                 for (int x = 0; x < original.Width; x++)
                 {
+                    // Get the color of the current pixel
                     Color originalColor = original.GetPixel(x, y);
+
+                    // Calculate the grayscale value using the luminance formula
                     int gray = (int)(0.3 * originalColor.R + 0.59 * originalColor.G + 0.11 * originalColor.B);
+
+                    // Set the pixel color in the grayscale image
                     grayscaleImage.SetPixel(x, y, Color.FromArgb(gray, gray, gray));
                 }
             }
 
             return grayscaleImage;
-        }      
+        }
+
+        private Bitmap ApplyAdaptiveThreshold(Bitmap grayscaleImage)
+        {
+            Bitmap thresholdedImage = new Bitmap(grayscaleImage.Width, grayscaleImage.Height);
+
+            int blockSize = 11; // Size of the block used for thresholding
+            int threshold = 127; // Initial threshold value
+
+            for (int y = 0; y < grayscaleImage.Height; y++)
+            {
+                for (int x = 0; x < grayscaleImage.Width; x++)
+                {
+                    int sum = 0;
+                    int count = 0;
+
+                    // Calculate the average intensity within the block
+                    for (int by = -blockSize / 2; by <= blockSize / 2; by++)
+                    {
+                        for (int bx = -blockSize / 2; bx <= blockSize / 2; bx++)
+                        {
+                            int nx = x + bx;
+                            int ny = y + by;
+
+                        }
+                    }
+
+                    int averageIntensity = sum / count;
+
+                    
+                }
+            }
+
+            return thresholdedImage;
+        }
+
 
         static void Main(string[] args)
         {
