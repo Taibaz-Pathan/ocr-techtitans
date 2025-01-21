@@ -83,9 +83,13 @@ namespace ImageProcessing
                 using (Bitmap originalImage = new Bitmap(inputPath))
                 {
                     // Convert to grayscale
-                    Bitmap grayImage = ConvertToGrayscale(originalImage);
-                    ShowImage(grayImage, "Gray scale image");
+                    Bitmap grayImage = ConvertToGrayscale(originalImage);                    
+
+                    // Apply adaptive threshold
+                    Bitmap thresholdedImage = ApplyAdaptiveThreshold(grayImage);
+                    ShowImage(grayImage, "Threshold image");
                 }   
+
             }
             catch (Exception ex)
             {
