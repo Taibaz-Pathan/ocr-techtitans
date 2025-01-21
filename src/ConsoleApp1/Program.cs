@@ -139,12 +139,27 @@ namespace ImageProcessing
                             int nx = x + bx;
                             int ny = y + by;
 
+                            if (nx >= 0 && nx < grayscaleImage.Width && ny >= 0 && ny < grayscaleImage.Height)
+                            {
+                                Color pixelColor = grayscaleImage.GetPixel(nx, ny);
+                                sum += pixelColor.R; // Red channel intensity
+                                count++;
+                            }
+
                         }
                     }
 
                     int averageIntensity = sum / count;
+                    // Apply threshold
+                    if (averageIntensity > threshold)
+                    {
+                        thresholdedImage.SetPixel(x, y, Color.White);
+                    }
+                    else
+                    {
+                        thresholdedImage.SetPixel(x, y, Color.Black);
+                    }
 
-                    
                 }
             }
 
