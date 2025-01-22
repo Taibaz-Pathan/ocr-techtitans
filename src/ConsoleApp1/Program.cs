@@ -34,6 +34,9 @@ namespace ImageProcessing
                     //Process the image 
                     ProcessImageConversion(inputFilePath, outputFolder);
 
+                    //Extract text
+                    ExtractTextFromImage(thresholdedImage);
+
                 }
             }
         }
@@ -87,7 +90,7 @@ namespace ImageProcessing
 
                     // Apply adaptive threshold
                     Bitmap thresholdedImage = ApplyAdaptiveThreshold(grayImage);
-                    ShowImage(grayImage, "Threshold image");
+                    ShowImage(thresholdedImage, "Threshold image");
                 }   
 
             }
@@ -168,6 +171,25 @@ namespace ImageProcessing
             }
 
             return thresholdedImage;
+        }
+
+        private void ExtractTextFromImage(Bitmap image)
+        {
+            try
+            {
+                using (var engine = new TesseractEngine(@"./tessdata", "eng", EngineMode.Default))
+                {
+                    using (var page = engine.Process(image))
+                    {
+                        string extractedText = page.GetText();
+                        Console.WriteLine($"Extracted text is"+ extractedText);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                
+            }
         }
 
 
