@@ -25,6 +25,7 @@ namespace Utils
             string InputFolderpath = Path.GetFullPath(Path.Combine(currentDirectory, relativePath));
             InputFolder = Path.GetFullPath(InputFolderpath);
 
+            string OuputFolderpath = Path.GetFullPath(Path.Combine(currentDirectory, relativePath));
             ExtractedTextFolder = Path.Combine(Directory.GetCurrentDirectory(), "Output", "ExtractedText");
                 
             // Ensure directories exist
