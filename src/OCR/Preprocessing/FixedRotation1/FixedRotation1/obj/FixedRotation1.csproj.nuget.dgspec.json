@@ -38,7 +38,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "all"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -48,9 +49,13 @@
               "target": "Package",
               "version": "[2.2.6.1, )"
             },
+            "SixLabors.ImageSharp": {
+              "target": "Package",
+              "version": "[3.1.6, )"
+            },
             "System.Drawing.Common": {
               "target": "Package",
-              "version": "[9.0.1, )"
+              "version": "[6.0.0, )"
             }
           },
           "imports": [

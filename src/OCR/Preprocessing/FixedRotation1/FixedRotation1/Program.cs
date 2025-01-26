@@ -1,6 +1,7 @@
 ﻿using System;
-using System.Drawing; // For Bitmap
-using AForge.Imaging.Filters; // For RotateBilinear filter
+using SixLabors.ImageSharp;  // For ImageSharp
+using SixLabors.ImageSharp.Processing;  // For image processing (rotate)
+using SixLabors.ImageSharp.Formats.Jpeg;  // For saving as JPEG
 
 namespace FixedRotationTest
 {
@@ -11,8 +12,8 @@ namespace FixedRotationTest
             try
             {
                 Console.WriteLine("Loading image...");
-                string imagePath = @"/Users/unmarshalling/Downloads/ocr-techtitans/Input/Test_2.jpg"; // Update path to your image
-                string outputPath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Output"; // Output path for the rotated image
+                string imagePath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Input/Test_2.jpg"; // Update path to your image
+                string outputPath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Output/rotated_image.jpg"; // Output path for the rotated image
 
                 // Ensure the file exists
                 if (!System.IO.File.Exists(imagePath))
@@ -21,17 +22,17 @@ namespace FixedRotationTest
                     return;
                 }
 
-                // Load the image
-                Bitmap originalImage = new Bitmap(imagePath);
+                // Load the image using ImageSharp
+                using (Image image = Image.Load(imagePath))
+                {
+                    // Rotate the image by 90 degrees clockwise
+                    Console.WriteLine("Rotating image by 90 degrees...");
+                    image.Mutate(x => x.Rotate(90));
 
-                // Rotate the image by 90 degrees clockwise
-                Console.WriteLine("Rotating image by 90 degrees...");
-                RotateBilinear rotationFilter = new RotateBilinear(90);
-                Bitmap rotatedImage = rotationFilter.Apply(originalImage);
-
-                // Save the rotated image
-                rotatedImage.Save(outputPath);
-                Console.WriteLine($"Rotated image saved at: {outputPath}");
+                    // Save the rotated image
+                    image.Save(outputPath, new JpegEncoder());
+                    Console.WriteLine($"Rotated image saved at: {outputPath}");
+                }
             }
             catch (Exception ex)
             {
