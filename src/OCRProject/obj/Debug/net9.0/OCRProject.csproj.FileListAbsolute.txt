@@ -4,3 +4,4 @@ C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\obj\D
 C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\obj\Debug\net9.0\OCRProject.AssemblyInfo.cs
 C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\obj\Debug\net9.0\OCRProject.csproj.CoreCompileInputs.cache
 C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\obj\Debug\net9.0\OCRProject.sourcelink.json
+C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\obj\Debug\net9.0\OCRProject.csproj.ResolveComReference.cache

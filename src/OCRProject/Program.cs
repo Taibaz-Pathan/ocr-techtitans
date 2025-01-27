@@ -4,6 +4,7 @@ using System.Drawing.Imaging;
 using System.IO;
 using Utils;
 using Tesseract; // Ensure Tesseract NuGet package is installed
+using System.Windows.Forms;
 
 
 namespace ImageProcessing
