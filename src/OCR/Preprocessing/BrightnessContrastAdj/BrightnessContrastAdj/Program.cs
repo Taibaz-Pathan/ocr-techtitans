@@ -12,8 +12,8 @@ namespace BrightnessContrastAdjustment
             try
             {
                 Console.WriteLine("Loading image...");
-                string imagePath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Input/test_image.jpg"; // Path to the input image
-                string outputPath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Output/brightness_contrast_adjusted_image.jpg"; // Output path
+                string imagePath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Input/BrighnessContrast_Test.jpeg"; // Path to the input image
+                string outputPath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Output/BrighnessContrastAdj_Test.jpeg"; // Output path
 
                 // Ensure the file exists
                 if (!System.IO.File.Exists(imagePath))
