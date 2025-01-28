@@ -12,8 +12,8 @@ namespace FixedRotationTest
             try
             {
                 Console.WriteLine("Loading image...");
-                string imagePath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Input/Test_2.jpg"; // Update path to your image
-                string outputPath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Output/rotated_image.jpg"; // Output path for the rotated image
+                string imagePath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Input/test_rotation_90_degree.jpg"; // path to the image
+                string outputPath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Output/test_rotated_image.jpg"; // Output path for the rotated image
 
                 // Ensure the file exists
                 if (!System.IO.File.Exists(imagePath))
