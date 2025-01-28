@@ -5,6 +5,7 @@ using System.IO;
 using Utils;
 using Tesseract; // Ensure Tesseract NuGet package is installed
 using System.Windows.Forms;
+using ImageProcessing;
 
 
 namespace ImageProcessing
@@ -26,7 +27,7 @@ namespace ImageProcessing
                 Console.WriteLine(inputFolder);
 
                 // Process all images in the input folder
-                foreach (string inputFilePath in Directory.GetFiles(inputFolder, "*.jpg"))
+                foreach (string inputFilePath in Directory.GetFiles(inputFolder, "*.png"))
                 {
                     string fileName = Path.GetFileNameWithoutExtension(inputFilePath);
                     //string outputFilePath = Path.Combine(outputFolder, fileName + ".png");
@@ -93,8 +94,10 @@ namespace ImageProcessing
 
                     // Apply adaptive threshold
                     Bitmap thresholdedImage = ApplyAdaptiveThreshold(grayImage);
-                    ShowImage(thresholdedImage, "Threshold image");
-                    ExtractTextFromImage(thresholdedImage);
+
+                    //Bitmap thresholdedImage = ApplyAdaptiveThreshold(originalImage);
+                    //ShowImage(thresholdedImage, "Threshold image");
+                    ExtractTextFromImage(grayImage);
 
                 }
 
@@ -135,7 +138,7 @@ namespace ImageProcessing
             Bitmap thresholdedImage = new Bitmap(grayscaleImage.Width, grayscaleImage.Height);
 
             int blockSize = 11; // Size of the block used for thresholding
-            int threshold = 127; // Initial threshold value
+            int threshold = 230; // Initial threshold value
 
             for (int y = 0; y < grayscaleImage.Height; y++)
             {
