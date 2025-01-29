@@ -6,26 +6,29 @@ using System.Threading.Tasks;
 
 namespace OCRProject.ImageProcessing
 {
-    public void BitConvertToGrayscale(Bitmap original)
+    public class ConvertToGrayscale 
     {
-        Bitmap grayscaleImage = new Bitmap(original.Width, original.Height);
-
-        // Loop through each pixel of the image
-        for (int y = 0; y < original.Height; y++)
+        public static Bitmap Apply(Bitmap original) 
         {
-            for (int x = 0; x < original.Width; x++)
+            Bitmap grayscaleImage = new Bitmap(original.Width, original.Height);
+
+            // Loop through each pixel of the image
+            for (int y = 0; y < original.Height; y++)
             {
-                // Get the color of the current pixel
-                Color originalColor = original.GetPixel(x, y);
+                for (int x = 0; x < original.Width; x++)
+                {
+                    // Get the color of the current pixel
+                    Color originalColor = original.GetPixel(x, y);
 
-                // Calculate the grayscale value using the luminance formula
-                int gray = (int)(0.3 * originalColor.R + 0.59 * originalColor.G + 0.11 * originalColor.B);
+                    // Calculate the grayscale value using the luminance formula
+                    int gray = (int)(0.3 * originalColor.R + 0.59 * originalColor.G + 0.11 * originalColor.B);
 
-                // Set the pixel color in the grayscale image
-                grayscaleImage.SetPixel(x, y, Color.FromArgb(gray, gray, gray));
+                    // Set the pixel color in the grayscale image
+                    grayscaleImage.SetPixel(x, y, Color.FromArgb(gray, gray, gray));
+                }
             }
-        }
 
-       // return grayscaleImage;
+            return grayscaleImage; //Return the processed grayscale image
+        }
     }
 }
