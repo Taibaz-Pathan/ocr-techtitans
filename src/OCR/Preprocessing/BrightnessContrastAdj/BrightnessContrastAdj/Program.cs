@@ -25,6 +25,10 @@ namespace BrightnessContrastAdjustment
                 // Load the image
                 using (Image image = Image.Load(imagePath))
                 {
+                    // Convert to grayscale
+                    Console.WriteLine("Converting to grayscale...");
+                    image.Mutate(x => x.Grayscale());
+
                     // Adjust brightness and contrast
                     Console.WriteLine("Adjusting brightness and contrast...");
                     image.Mutate(x => x.Brightness(1.2f).Contrast(1.5f)); // Brightness (1.2 = +20%), Contrast (1.5 = +50%)
