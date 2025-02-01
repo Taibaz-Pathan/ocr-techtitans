@@ -22,6 +22,13 @@ namespace BrightnessContrastAdjustment
                     return;
                 }
 
+                // Get brightness and contrast values from the user
+                Console.Write("Enter brightness adjustment (1.0 = no change, 1.2 = +20%): ");
+                float brightness = float.Parse(Console.ReadLine());
+
+                Console.Write("Enter contrast adjustment (1.0 = no change, 1.5 = +50%): ");
+                float contrast = float.Parse(Console.ReadLine());
+
                 // Load the image
                 using (Image image = Image.Load(imagePath))
                 {
@@ -29,9 +36,9 @@ namespace BrightnessContrastAdjustment
                     Console.WriteLine("Converting to grayscale...");
                     image.Mutate(x => x.Grayscale());
 
-                    // Adjust brightness and contrast
+                    // Adjust brightness and contrast based on user input
                     Console.WriteLine("Adjusting brightness and contrast...");
-                    image.Mutate(x => x.Brightness(1.2f).Contrast(1.5f)); // Brightness (1.2 = +20%), Contrast (1.5 = +50%)
+                    image.Mutate(x => x.Brightness(brightness).Contrast(contrast));
 
                     // Save the adjusted image
                     image.Save(outputPath, new JpegEncoder());
