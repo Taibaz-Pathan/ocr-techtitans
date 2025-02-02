@@ -1,16 +1,25 @@
 {
-    "language": "eng",
-    "preprocessing": {
+  "language": ["eng", "deu"],
+  "preprocessing": {
       "grayscale": true,
       "thresholding": true,
-      "denoise": true
-    },
-    "model": {
+      "threshold_value": 128,
+      "denoise": true,
+      "denoise_strength": 2,
+      "contrast_enhancement": true,
+      "edge_detection": false
+  },
+  "model": {
       "path": "models/tesseract.traineddata",
-      "type": "Tesseract"
-    },
-    "output": {
-      "format": "json",
-      "save_path": "output/results.json"
-    }
+      "type": "Tesseract",
+      "alternative_model": {
+          "path": "models/paddleocr",
+          "type": "PaddleOCR"
+      }
+  },
+  "output": {
+      "format": ["json", "txt", "csv"],
+      "save_path": "output/results",
+      "backup": true
   }
+}
