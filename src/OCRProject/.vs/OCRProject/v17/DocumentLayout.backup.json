@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C9651FEE-8827-4D69-B524-BD40B4BC51BD}|OCRProject.csproj|c:\\users\\mithi\\onedrive\\desktop\\softwareengg\\ocr-techtitans\\src\\ocrproject\\utils\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9651FEE-8827-4D69-B524-BD40B4BC51BD}|OCRProject.csproj|solutionrelative:utils\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C9651FEE-8827-4D69-B524-BD40B4BC51BD}|OCRProject.csproj|c:\\users\\mithi\\onedrive\\desktop\\softwareengg\\ocr-techtitans\\src\\ocrproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9651FEE-8827-4D69-B524-BD40B4BC51BD}|OCRProject.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -31,6 +35,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Logger.cs",
+              "DocumentMoniker": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\Utils\\Logger.cs",
+              "RelativeDocumentMoniker": "Utils\\Logger.cs",
+              "ToolTip": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\Utils\\Logger.cs",
+              "RelativeToolTip": "Utils\\Logger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-03T18:07:25.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -43,7 +60,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ConvertToGrayscale.cs",
               "DocumentMoniker": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\ImageProcessing\\ConvertToGrayscale.cs",
               "RelativeDocumentMoniker": "ImageProcessing\\ConvertToGrayscale.cs",
@@ -51,12 +68,11 @@
               "RelativeToolTip": "ImageProcessing\\ConvertToGrayscale.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T18:38:53.274Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-28T18:38:53.274Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "AdaptiveThreshold.cs",
               "DocumentMoniker": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\ImageProcessing\\AdaptiveThreshold.cs",
               "RelativeDocumentMoniker": "ImageProcessing\\AdaptiveThreshold.cs",
@@ -64,12 +80,11 @@
               "RelativeToolTip": "ImageProcessing\\AdaptiveThreshold.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAAAB0AAABwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T18:28:54.808Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-28T18:28:54.808Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ConfigLoader.cs",
               "DocumentMoniker": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\Utils\\ConfigLoader.cs",
               "RelativeDocumentMoniker": "Utils\\ConfigLoader.cs",
@@ -77,8 +92,7 @@
               "RelativeToolTip": "Utils\\ConfigLoader.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAAACUAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T16:20:25.153Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-24T16:20:25.153Z"
             }
           ]
         }
