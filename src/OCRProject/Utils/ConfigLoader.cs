@@ -7,14 +7,11 @@ namespace Utils
 {
     public class ConfigLoader
     {
-
         public string InputFolder { get; private set; }
         public string ExtractedTextFolder { get; private set; }
 
-
         public ConfigLoader()
         {
-
             // Get the current working directory
             string currentDirectory = Directory.GetCurrentDirectory();
 
@@ -32,7 +29,6 @@ namespace Utils
             EnsureDirectoriesExist();
 
         }
-
         private void EnsureDirectoriesExist()
         {
             var directories = new List<string>
@@ -40,7 +36,6 @@ namespace Utils
                 InputFolder,
                 ExtractedTextFolder
             };
-
 
         }
     }

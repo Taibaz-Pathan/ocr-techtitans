@@ -36,11 +36,7 @@ namespace ImageProcessing
                     ShowImage(inputFilePath, "Input Image");
 
                     //Process the image 
-                    ProcessImageConversion(inputFilePath);
-
-                    //Extract text
-
-
+                    ProcessImageConversion(inputFilePath);  
                 }
             }
         }
@@ -98,15 +94,12 @@ namespace ImageProcessing
                     //Bitmap thresholdedImage = ApplyAdaptiveThreshold(originalImage);
                     //ShowImage(thresholdedImage, "Threshold image");
                     ExtractTextFromImage(grayImage);
-
                 }
-
             }
             catch (Exception ex)
             {
-
+                Console.WriteLine($"Error in Process: {ex.Message}");
             }
-
         }
 
         // Method to convert a color image to grayscale
@@ -212,8 +205,6 @@ namespace ImageProcessing
                 Console.WriteLine($"Error in ExtractTextFromImage: {ex.Message}");
             }
         }
-
-
         static void Main(string[] args)
         {
             try
@@ -230,7 +221,7 @@ namespace ImageProcessing
             }
             catch (Exception ex)
             {
-
+                Console.WriteLine($"Error in Process: {ex.Message}");
             }
             finally
             {
