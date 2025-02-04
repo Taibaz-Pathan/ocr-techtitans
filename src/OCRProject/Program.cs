@@ -5,229 +5,123 @@ using System.IO;
 using Utils;
 using Tesseract; // Ensure Tesseract NuGet package is installed
 using System.Windows.Forms;
-using ImageProcessing;
+using OCRProject.ImageProcessing;
 
 
-namespace ImageProcessing
+class Program
 {
-    public class AdaptiveThresholdProcessor
+    static void Main(string[] args)
     {
-        public void ProcessImages()
+        try
         {
+            Console.WriteLine("Starting Image Processing...");
+
+            // Load configuration
+            ConfigLoader config = new ConfigLoader();
+            string inputFolder = config.InputFolder;
+            string outputFolder = config.ExtractedTextFolder;
+
+            // Ensure output folder exists
+            Directory.CreateDirectory(outputFolder);
+
+            // Process all images in the input folder
+            foreach (string inputFilePath in Directory.GetFiles(inputFolder, "*.png"))
             {
-                // Load configuration using ConfigLoader
-                ConfigLoader config = new ConfigLoader();
+                string fileName = Path.GetFileNameWithoutExtension(inputFilePath);
+                string outputGrayscalePath = Path.Combine(outputFolder, fileName + "_grayscale.png");
+                string outputThresholdPath = Path.Combine(outputFolder, fileName + "_threshold.png");
 
-                // Folder containing input images
-                string inputFolder = config.InputFolder;
-
-                // Folder for storing processed images or results
-                string outputFolder = config.ExtractedTextFolder;
-
-                Console.WriteLine(inputFolder);
-
-                // Process all images in the input folder
-                foreach (string inputFilePath in Directory.GetFiles(inputFolder, "*.png"))
-                {
-                    string fileName = Path.GetFileNameWithoutExtension(inputFilePath);
-                    //string outputFilePath = Path.Combine(outputFolder, fileName + ".png");
-
-                    // Display the image
-                    ShowImage(inputFilePath, "Input Image");
-
-                    //Process the image 
-                    ProcessImageConversion(inputFilePath);  
-                }
-            }
-        }
-
-        // Method to display an image in a Windows Form
-        private void ShowImage(object imageSource, string title)
-        {
-            using (var form = new Form()) // Create a new form
-            {
-                form.Text = title;
-                Bitmap image;
-
-                // Determine the source of the image (file path or Bitmap object)
-                if (imageSource is string imagePath)
-                {
-                    image = new Bitmap(imagePath);
-                }
-                else if (imageSource is Bitmap bitmapImage)
-                {
-                    image = bitmapImage; // Use the Bitmap object directly
-                }
-                else
-                {
-                    throw new ArgumentException("Invalid image source."); // Handle invalid input
-                }
-
-                form.ClientSize = new Size(image.Width, image.Height); // Adjust the form size to match the image dimensions
-
-                var pictureBox = new PictureBox
-                {
-                    Dock = DockStyle.Fill,
-                    Image = image,
-                    SizeMode = PictureBoxSizeMode.Zoom
-                };
-
-                form.Controls.Add(pictureBox);
-                Application.Run(form);
-            }
-        }
-
-        // Method to convert an image to grayscale and display it
-        private void ProcessImageConversion(string inputPath)
-        {
-            try
-            {
                 // Load the image
-                using (Bitmap originalImage = new Bitmap(inputPath))
+                using (Bitmap inputImage = new Bitmap(inputFilePath))
                 {
+                    ShowImage(inputImage, "Original Image");
+
                     // Convert to grayscale
-                    Bitmap grayImage = ConvertToGrayscale(originalImage);
+                    ConvertToGrayscale grayscaleConverter = new ConvertToGrayscale();
+                    Bitmap grayImage = grayscaleConverter.Apply(inputImage);
+                    ShowImage(grayImage, "Grayscale Image");
+                    grayImage.Save(outputGrayscalePath, System.Drawing.Imaging.ImageFormat.Png);
+                    Console.WriteLine($"Grayscale image saved: {outputGrayscalePath}");
 
-                    // Apply adaptive threshold
-                    Bitmap thresholdedImage = ApplyAdaptiveThreshold(grayImage);
+                    // Apply adaptive thresholding
+                    AdaptiveThreshold adaptiveThreshold = new AdaptiveThreshold();
+                    Bitmap adaptiveThresholdImage = adaptiveThreshold.ApplyThreshold(inputImage);
+                    ShowImage(adaptiveThresholdImage, "Adaptive Threshold Image");
+                    //adaptiveThresholdImage.Save(outputThresholdPath, System.Drawing.Imaging.ImageFormat.Png);
+                    Console.WriteLine($"Adaptive threshold image saved: {outputThresholdPath}");
 
-                    //Bitmap thresholdedImage = ApplyAdaptiveThreshold(originalImage);
-                    //ShowImage(thresholdedImage, "Threshold image");
-                    ExtractTextFromImage(grayImage);
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error in Process: {ex.Message}");
-            }
-        }
+                    // Apply global thresholding (Example: threshold = 128)
+                    GlobalThresholding globalThresholding = new GlobalThresholding(128);
+                    Bitmap globalThresholdImage = globalThresholding.ApplyThreshold(inputImage);
+                    //string outputGlobalThresholdPath = Path.Combine(outputFolder, fileName + "_global_threshold.png");
+                    ShowImage(globalThresholdImage, "Global Threshold Image");
+                    //globalThresholdImage.Save(outputGlobalThresholdPath, System.Drawing.Imaging.ImageFormat.Png);
+                    //Console.WriteLine($"Global threshold image saved: {outputGlobalThresholdPath}");
 
-        // Method to convert a color image to grayscale
-        private Bitmap ConvertToGrayscale(Bitmap original)
-        {
-            Bitmap grayscaleImage = new Bitmap(original.Width, original.Height);
-
-            // Loop through each pixel of the image
-            for (int y = 0; y < original.Height; y++)
-            {
-                for (int x = 0; x < original.Width; x++)
-                {
-                    // Get the color of the current pixel
-                    Color originalColor = original.GetPixel(x, y);
-
-                    // Calculate the grayscale value using the luminance formula
-                    int gray = (int)(0.3 * originalColor.R + 0.59 * originalColor.G + 0.11 * originalColor.B);
-
-                    // Set the pixel color in the grayscale image
-                    grayscaleImage.SetPixel(x, y, Color.FromArgb(gray, gray, gray));
+                    // Extract text using OCR (Tesseract)
+                    ExtractTextFromImage(globalThresholdImage);
                 }
             }
 
-            return grayscaleImage;
+            Console.WriteLine("Processing completed. Press any key to exit.");
         }
-
-        private Bitmap ApplyAdaptiveThreshold(Bitmap grayscaleImage)
+        catch (Exception ex)
         {
-            Bitmap thresholdedImage = new Bitmap(grayscaleImage.Width, grayscaleImage.Height);
+            Console.WriteLine($"Error in Process: {ex.Message}");
+        }
+        finally
+        {
+            Console.ReadKey();
+        }
+    }
 
-            int blockSize = 11; // Size of the block used for thresholding
-            int threshold = 230; // Initial threshold value
+    // Method to display an image in a Windows Form
+    private static void ShowImage(Bitmap image, string title)
+    {
+        using (var form = new Form())
+        {
+            form.Text = title;
+            form.ClientSize = new Size(image.Width, image.Height);
 
-            for (int y = 0; y < grayscaleImage.Height; y++)
+            var pictureBox = new PictureBox
             {
-                for (int x = 0; x < grayscaleImage.Width; x++)
-                {
-                    int sum = 0;
-                    int count = 0;
+                Dock = DockStyle.Fill,
+                Image = image,
+                SizeMode = PictureBoxSizeMode.Zoom
+            };
 
-                    // Calculate the average intensity within the block
-                    for (int by = -blockSize / 2; by <= blockSize / 2; by++)
+            form.Controls.Add(pictureBox);
+            Application.Run(form);
+        }
+    }
+
+    private static void ExtractTextFromImage(Bitmap image)
+    {
+        try
+        {
+            using (var stream = new MemoryStream())
+            {
+                // Save Bitmap as a TIFF in memory
+                image.Save(stream, System.Drawing.Imaging.ImageFormat.Tiff);
+                stream.Position = 0;
+
+                // Load the Pix from the memory stream
+                using (var pixImage = Pix.LoadTiffFromMemory(stream.ToArray()))
+                {
+                    using (var engine = new TesseractEngine(@"./tessdata", "eng", EngineMode.Default))
                     {
-                        for (int bx = -blockSize / 2; bx <= blockSize / 2; bx++)
+                        using (var page = engine.Process(pixImage))
                         {
-                            int nx = x + bx;
-                            int ny = y + by;
-
-                            if (nx >= 0 && nx < grayscaleImage.Width && ny >= 0 && ny < grayscaleImage.Height)
-                            {
-                                Color pixelColor = grayscaleImage.GetPixel(nx, ny);
-                                sum += pixelColor.R; // Red channel intensity
-                                count++;
-                            }
-
-                        }
-                    }
-
-                    int averageIntensity = sum / count;
-                    // Apply threshold
-                    if (averageIntensity > threshold)
-                    {
-                        thresholdedImage.SetPixel(x, y, Color.White);
-                    }
-                    else
-                    {
-                        thresholdedImage.SetPixel(x, y, Color.Black);
-                    }
-
-                }
-            }
-
-            return thresholdedImage;
-        }
-
-        private void ExtractTextFromImage(Bitmap image)
-        {
-            try
-            {
-                // Convert Bitmap to Pix via TIFF conversion
-                using (var stream = new MemoryStream())
-                {
-                    // Save Bitmap as a TIFF in memory
-                    image.Save(stream, System.Drawing.Imaging.ImageFormat.Tiff); // Fully qualified to avoid ambiguity
-                    stream.Position = 0;
-
-                    // Load the Pix from the memory stream
-                    using (var pixImage = Pix.LoadTiffFromMemory(stream.ToArray()))
-                    {
-                        using (var engine = new TesseractEngine(@"./tessdata", "eng", EngineMode.Default))
-                        {
-                            using (var page = engine.Process(pixImage))
-                            {
-                                string extractedText = page.GetText();
-                                Console.WriteLine($"Extracted text is: {extractedText}");
-                            }
+                            string extractedText = page.GetText();
+                            Console.WriteLine($"Extracted text: {extractedText}");
                         }
                     }
                 }
             }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error in ExtractTextFromImage: {ex.Message}");
-            }
         }
-        static void Main(string[] args)
+        catch (Exception ex)
         {
-            try
-            {
-                Console.WriteLine("Starting Adaptive Threshold Processor...");
-
-                // Create an instance of the processor
-                AdaptiveThresholdProcessor processor = new AdaptiveThresholdProcessor();
-
-                // Run the processing task
-                processor.ProcessImages();
-
-                Console.WriteLine("Processing completed. Press any key to exit.");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error in Process: {ex.Message}");
-            }
-            finally
-            {
-                Console.ReadKey();
-            }
+            Console.WriteLine($"Error in ExtractTextFromImage: {ex.Message}");
         }
-
     }
 }

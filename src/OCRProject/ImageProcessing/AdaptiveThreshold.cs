@@ -4,24 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Drawing.Imaging;
+using System.Drawing;
 
 namespace OCRProject.ImageProcessing
 {
     public class AdaptiveThreshold
     {
-        public static void ApplyThreshold(string inputPath, string outputPath, int thresholdValue)
+        private int thresholdValue;
 
+        public Bitmap ApplyThreshold(Bitmap original)
         {
-            using (var image = (Bitmap)Image.FromFile(inputPath))
-
+            //using (var image = (Bitmap)Image.FromFile(inputPath))
+            Bitmap image = new Bitmap(original.Width, original.Height);
             {
                 var thresholdedImage = new Bitmap(image.Width, image.Height);
-
                 for (int x = 0; x < image.Width; x++)
-
                 {
                     for (int y = 0; y < image.Height; y++)
-
                     {
                         var pixel = image.GetPixel(x, y);
 
@@ -31,12 +30,9 @@ namespace OCRProject.ImageProcessing
                     }
 
                 }
-
-                thresholdedImage.Save(outputPath, ImageFormat.Png);
-
+                //thresholdedImage.Save(outputPath, ImageFormat.Png);
+                return thresholdedImage;
             }
-
         }
-
     }
 }

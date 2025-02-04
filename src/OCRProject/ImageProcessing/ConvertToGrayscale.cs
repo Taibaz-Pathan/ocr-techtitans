@@ -8,7 +8,7 @@ namespace OCRProject.ImageProcessing
 {
     public class ConvertToGrayscale 
     {
-        public static Bitmap Apply(Bitmap original) 
+        public Bitmap Apply(Bitmap original) 
         {
             Bitmap grayscaleImage = new Bitmap(original.Width, original.Height);
 
