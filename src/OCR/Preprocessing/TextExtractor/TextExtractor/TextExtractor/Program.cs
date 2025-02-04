@@ -12,9 +12,12 @@ namespace OCRModule
             try
             {
                 string imagePath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Input/sample.jpg";
-                string extractedText = OCRProcessor.ExtractTextFromImage(imagePath);
+                string outputTextPath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Output/extracted_text.txt";
+
+                string extractedText = OCRProcessor.ExtractTextFromImage(imagePath, outputTextPath);
 
                 Console.WriteLine("\nExtracted Text:\n" + extractedText);
+                Console.WriteLine($"\nExtracted text has been saved at: {outputTextPath}");
             }
             catch (Exception ex)
             {
@@ -27,9 +30,9 @@ namespace OCRModule
     static class OCRProcessor
     {
         /// <summary>
-        /// Extracts text from an image using Tesseract OCR.
+        /// Extracts text from an image using Tesseract OCR and saves it to a file.
         /// </summary>
-        public static string ExtractTextFromImage(string imagePath)
+        public static string ExtractTextFromImage(string imagePath, string outputTextPath)
         {
             if (!File.Exists(imagePath))
             {
@@ -46,7 +49,7 @@ namespace OCRModule
             Cv2.ImWrite(tempImagePath, image);
 
             // Path to Tesseract data folder (Update if necessary)
-            string tessDataPath = @"/usr/local/share/tessdata"; // Change for Windows (C:\Program Files\Tesseract-OCR\tessdata)
+            string tessDataPath = @"/usr/local/share/tessdata"; // Update for Windows if needed
 
             try
             {
@@ -56,7 +59,12 @@ namespace OCRModule
                     {
                         using (var page = engine.Process(img))
                         {
-                            return page.GetText().Trim();
+                            string extractedText = page.GetText().Trim();
+
+                            // Save the extracted text to the output file
+                            File.WriteAllText(outputTextPath, extractedText);
+
+                            return extractedText;
                         }
                     }
                 }
