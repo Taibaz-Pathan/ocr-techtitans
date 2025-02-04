@@ -1,7 +1,9 @@
 ﻿using System;
-using SixLabors.ImageSharp;  // For ImageSharp
-using SixLabors.ImageSharp.Processing;  // For image processing (rotate)
-using SixLabors.ImageSharp.Formats.Jpeg;  // For saving as JPEG
+using System.IO;
+using OpenCvSharp;  // For OpenCV (Auto Alignment)
+using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.Processing;
+using SixLabors.ImageSharp.Formats.Jpeg;
 
 namespace FixedRotationTest
 {
@@ -12,26 +14,35 @@ namespace FixedRotationTest
             try
             {
                 Console.WriteLine("Loading image...");
-                string imagePath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Input/test_rotation_90_degree.jpg"; // path to the image
-                string outputPath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Output/test_rotated_image.jpg"; // Output path for the rotated image
+                string imagePath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Input/test_rotation_90_degree.jpg";
+                string fixedRotationPath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Output/test_fixed_rotated.jpg";
+                string autoAlignPath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Output/test_auto_aligned.jpg";
 
-                // Ensure the file exists
-                if (!System.IO.File.Exists(imagePath))
+                if (!File.Exists(imagePath))
                 {
                     Console.WriteLine("Image file not found!");
                     return;
                 }
 
-                // Load the image using ImageSharp
-                using (Image image = Image.Load(imagePath))
-                {
-                    // Rotate the image by 90 degrees clockwise
-                    Console.WriteLine("Rotating image by 90 degrees...");
-                    image.Mutate(x => x.Rotate(90));
+                Console.WriteLine("\nChoose Rotation Mode:");
+                Console.WriteLine("1. Fixed 90-degree Rotation");
+                Console.WriteLine("2. Auto Alignment (Correct Skew)");
+                Console.Write("Enter option (1/2): ");
+                string choice = Console.ReadLine();
 
-                    // Save the rotated image
-                    image.Save(outputPath, new JpegEncoder());
-                    Console.WriteLine($"Rotated image saved at: {outputPath}");
+                if (choice == "1")
+                {
+                    PreprocessingManager.RotateImageFixed(imagePath, fixedRotationPath, 90);
+                    Console.WriteLine($"Rotated image saved at: {fixedRotationPath}");
+                }
+                else if (choice == "2")
+                {
+                    PreprocessingManager.AutoAlignImage(imagePath, autoAlignPath);
+                    Console.WriteLine($"Auto-aligned image saved at: {autoAlignPath}");
+                }
+                else
+                {
+                    Console.WriteLine("Invalid option. Please enter 1 or 2.");
                 }
             }
             catch (Exception ex)
@@ -39,6 +50,41 @@ namespace FixedRotationTest
                 Console.WriteLine("An error occurred:");
                 Console.WriteLine(ex.ToString());
             }
+        }
+    }
+
+    static class PreprocessingManager
+    {
+        /// <summary>
+        /// Rotates an image by a fixed angle (e.g., 90 degrees).
+        /// </summary>
+        public static void RotateImageFixed(string inputPath, string outputPath, float angle)
+        {
+            using (Image image = Image.Load(inputPath))
+            {
+                image.Mutate(x => x.Rotate(angle));
+                image.Save(outputPath, new JpegEncoder());
+            }
+        }
+
+        /// <summary>
+        /// Auto-aligns an image by detecting skew and correcting it.
+        /// </summary>
+        public static void AutoAlignImage(string inputPath, string outputPath)
+        {
+            Mat image = Cv2.ImRead(inputPath, ImreadModes.Grayscale);
+            Mat edges = new Mat();
+            Cv2.Canny(image, edges, 50, 150);
+
+            LineSegmentPolar[] lines = Cv2.HoughLines(edges, 1, Math.PI / 180, 200);
+            double detectedAngle = 0;
+            
+            if (lines.Length > 0)
+            {
+                detectedAngle = lines[0].Theta * (180 / Math.PI); // Convert radians to degrees
+            }
+
+            RotateImageFixed(inputPath, outputPath, -detectedAngle);
         }
     }
 }

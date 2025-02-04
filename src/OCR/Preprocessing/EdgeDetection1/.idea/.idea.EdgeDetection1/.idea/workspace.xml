@@ -7,7 +7,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41a55a0c-a009-4b87-aaa6-995853f022d7" name="Changes" comment="" />
+    <list default="true" id="41a55a0c-a009-4b87-aaa6-995853f022d7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../BrightnessContrastAdj/BrightnessContrastAdj/obj/Debug/net9.0/BrightnessContrastAdj.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../BrightnessContrastAdj/BrightnessContrastAdj/obj/Debug/net9.0/BrightnessContrastAdj.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrightnessContrastAdj/BrightnessContrastAdj/obj/Debug/net9.0/BrightnessContrastAdj.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../BrightnessContrastAdj/BrightnessContrastAdj/obj/Debug/net9.0/BrightnessContrastAdj.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BrightnessContrastAdj/BrightnessContrastAdj/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/../BrightnessContrastAdj/BrightnessContrastAdj/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.EdgeDetection1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EdgeDetection1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EdgeDetection1/obj/Debug/net9.0/EdgeDetection1.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EdgeDetection1/obj/Debug/net9.0/EdgeDetection1.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EdgeDetection1/obj/Debug/net9.0/EdgeDetection1.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/EdgeDetection1/obj/Debug/net9.0/EdgeDetection1.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FixedRotation1/FixedRotation1/obj/Debug/net9.0/FixedRotation1.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../FixedRotation1/FixedRotation1/obj/Debug/net9.0/FixedRotation1.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FixedRotation1/FixedRotation1/obj/Debug/net9.0/FixedRotation1.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../FixedRotation1/FixedRotation1/obj/Debug/net9.0/FixedRotation1.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FixedRotation1/FixedRotation1/obj/FixedRotation1.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../FixedRotation1/FixedRotation1/obj/FixedRotation1.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FixedRotation1/FixedRotation1/obj/FixedRotation1.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../FixedRotation1/FixedRotation1/obj/FixedRotation1.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FixedRotation1/FixedRotation1/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../FixedRotation1/FixedRotation1/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FixedRotation1/FixedRotation1/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../FixedRotation1/FixedRotation1/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FixedRotation1/FixedRotation1/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../FixedRotation1/FixedRotation1/obj/rider.project.restore.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,26 +30,26 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2sBElgycVwUVa1DJI6xlh4booKD" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Khushal",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Khushal&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="EdgeDetection1" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -65,6 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1737920720041</updated>
       <workItem from="1737920721112" duration="3067000" />
+      <workItem from="1738624160880" duration="2801000" />
     </task>
     <servers />
   </component>

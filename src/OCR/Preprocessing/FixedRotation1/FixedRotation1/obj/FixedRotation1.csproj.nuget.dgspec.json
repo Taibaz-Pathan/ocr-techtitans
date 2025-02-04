@@ -38,8 +38,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "all"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net9.0": {
@@ -48,6 +47,10 @@
             "AForge.Imaging.NetStandard": {
               "target": "Package",
               "version": "[2.2.6.1, )"
+            },
+            "OpenCvSharp4": {
+              "target": "Package",
+              "version": "[4.10.0.20241108, )"
             },
             "SixLabors.ImageSharp": {
               "target": "Package",
