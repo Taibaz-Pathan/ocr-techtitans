@@ -14,9 +14,9 @@ namespace FixedRotationTest
             try
             {
                 Console.WriteLine("Loading image...");
-                string imagePath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Input/test_rotation_90_degree.jpg";
-                string fixedRotationPath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Output/test_fixed_rotated.jpg";
-                string autoAlignPath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Output/test_auto_aligned.jpg";
+                string imagePath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Input/AlignmentTest.jpeg";
+                string fixedRotationPath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Output/auto_align90.jpg";
+                string autoAlignPath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Output/auto_align.jpg";
 
                 if (!File.Exists(imagePath))
                 {
@@ -28,7 +28,13 @@ namespace FixedRotationTest
                 Console.WriteLine("1. Fixed 90-degree Rotation");
                 Console.WriteLine("2. Auto Alignment (Correct Skew)");
                 Console.Write("Enter option (1/2): ");
-                string choice = Console.ReadLine();
+                string? choice = Console.ReadLine();
+                if (string.IsNullOrEmpty(choice))
+                {
+                    Console.WriteLine("Invalid input. Please enter 1 or 2.");
+                    return;
+                }
+
 
                 if (choice == "1")
                 {
@@ -84,7 +90,8 @@ namespace FixedRotationTest
                 detectedAngle = lines[0].Theta * (180 / Math.PI); // Convert radians to degrees
             }
 
-            RotateImageFixed(inputPath, outputPath, -detectedAngle);
+            RotateImageFixed(inputPath, outputPath, (float)-detectedAngle);
+
         }
     }
 }

@@ -11,6 +11,8 @@
     <ItemGroup>
       <PackageReference Include="AForge.Imaging.NetStandard" Version="2.2.6.1" />
       <PackageReference Include="OpenCvSharp4" Version="4.10.0.20241108" />
+      <PackageReference Include="OpenCvSharp4.runtime.osx.10.15-x64" Version="4.6.0.20230105" />
+      <PackageReference Include="OpenCvSharp4.runtime.osx_arm64" Version="4.8.1-rc" />
       <PackageReference Include="SixLabors.ImageSharp" Version="3.1.6" />
       <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
     </ItemGroup>

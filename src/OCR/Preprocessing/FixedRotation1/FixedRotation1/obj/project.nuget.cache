@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ifJ7tLo3GqY=",
+  "dgSpecHash": "AgJVgR0k7Ow=",
   "success": true,
   "projectFilePath": "/Users/khushalsingh/Downloads/ocr-techtitans/src/OCR/Preprocessing/FixedRotation1/FixedRotation1/FixedRotation1.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,8 @@
     "/Users/khushalsingh/.nuget/packages/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "/Users/khushalsingh/.nuget/packages/microsoft.win32.systemevents/6.0.0/microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "/Users/khushalsingh/.nuget/packages/opencvsharp4/4.10.0.20241108/opencvsharp4.4.10.0.20241108.nupkg.sha512",
+    "/Users/khushalsingh/.nuget/packages/opencvsharp4.runtime.osx.10.15-x64/4.6.0.20230105/opencvsharp4.runtime.osx.10.15-x64.4.6.0.20230105.nupkg.sha512",
+    "/Users/khushalsingh/.nuget/packages/opencvsharp4.runtime.osx_arm64/4.8.1-rc/opencvsharp4.runtime.osx_arm64.4.8.1-rc.nupkg.sha512",
     "/Users/khushalsingh/.nuget/packages/sixlabors.imagesharp/3.1.6/sixlabors.imagesharp.3.1.6.nupkg.sha512",
     "/Users/khushalsingh/.nuget/packages/system.drawing.common/6.0.0/system.drawing.common.6.0.0.nupkg.sha512",
     "/Users/khushalsingh/.nuget/packages/system.drawing.primitives/4.3.0/system.drawing.primitives.4.3.0.nupkg.sha512",
