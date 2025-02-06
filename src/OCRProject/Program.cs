@@ -40,15 +40,17 @@ class Program
                     ConvertToGrayscale grayscaleConverter = new ConvertToGrayscale();
                     Bitmap grayImage = grayscaleConverter.Apply(inputImage);
                     ShowImage(grayImage, "Grayscale Image");
-                    grayImage.Save(outputGrayscalePath, System.Drawing.Imaging.ImageFormat.Png);
-                    Console.WriteLine($"Grayscale image saved: {outputGrayscalePath}");
+                    //grayImage.Save(outputGrayscalePath, System.Drawing.Imaging.ImageFormat.Png);
+                    //Console.WriteLine($"Grayscale image saved: {outputGrayscalePath}");
+                    ExtractTextFromImage(grayImage);
 
                     // Apply adaptive thresholding
                     AdaptiveThreshold adaptiveThreshold = new AdaptiveThreshold();
                     Bitmap adaptiveThresholdImage = adaptiveThreshold.ApplyThreshold(inputImage);
                     ShowImage(adaptiveThresholdImage, "Adaptive Threshold Image");
                     //adaptiveThresholdImage.Save(outputThresholdPath, System.Drawing.Imaging.ImageFormat.Png);
-                    Console.WriteLine($"Adaptive threshold image saved: {outputThresholdPath}");
+                    //Console.WriteLine($"Adaptive threshold image saved: {outputThresholdPath}");
+                    ExtractTextFromImage(adaptiveThresholdImage);
 
                     // Apply global thresholding (Example: threshold = 128)
                     GlobalThresholding globalThresholding = new GlobalThresholding(128);
@@ -57,9 +59,19 @@ class Program
                     ShowImage(globalThresholdImage, "Global Threshold Image");
                     //globalThresholdImage.Save(outputGlobalThresholdPath, System.Drawing.Imaging.ImageFormat.Png);
                     //Console.WriteLine($"Global threshold image saved: {outputGlobalThresholdPath}");
-
                     // Extract text using OCR (Tesseract)
                     ExtractTextFromImage(globalThresholdImage);
+
+                    ShiftImage shiftProcessor = new ShiftImage();
+                    Bitmap shiftedImage = shiftProcessor.Apply(inputImage, 5, 5);
+                    ShowImage(shiftedImage, "Shifted Image");
+                    ExtractTextFromImage(shiftedImage);
+
+                    SaturationAdjustment saturationProcessor = new SaturationAdjustment();
+                    Bitmap adjustedImage = saturationProcessor.Apply(globalThresholdImage, 1.2f); // Adjust saturation factor
+                    ShowImage(adjustedImage, "Saturation Adjusted Image");
+                    ExtractTextFromImage(adjustedImage);
+
                 }
             }
 
