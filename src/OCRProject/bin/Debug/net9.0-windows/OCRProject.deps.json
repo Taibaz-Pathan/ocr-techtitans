@@ -1,0 +1,228 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "OCRProject/1.0.0": {
+        "dependencies": {
+          "System.Drawing.Common": "9.0.0",
+          "System.Reactive.Windows.Forms": "6.0.1",
+          "System.Windows.Forms.DataVisualization": "1.0.0-prerelease.20110.1",
+          "System.Windows.Forms.Pictograms": "1.2.20",
+          "Tesseract": "5.2.0",
+          "Tesseract.Data.English": "4.0.0",
+          "TesseractOCR": "5.4.2"
+        },
+        "runtime": {
+          "OCRProject.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.2": {
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.1024.46610"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.1024.46610"
+          }
+        }
+      },
+      "Microsoft.Win32.SystemEvents/9.0.0": {},
+      "System.Drawing.Common/9.0.0": {
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "9.0.0"
+        }
+      },
+      "System.Drawing.Pictograms/1.2.20": {
+        "runtime": {
+          "lib/net40/System.Drawing.Pictograms.dll": {
+            "assemblyVersion": "1.2.20.0",
+            "fileVersion": "1.2.20.0"
+          }
+        }
+      },
+      "System.Reactive/6.0.1": {
+        "runtime": {
+          "lib/net6.0/System.Reactive.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.1.7420"
+          }
+        }
+      },
+      "System.Reactive.Windows.Forms/6.0.1": {
+        "dependencies": {
+          "System.Reactive": "6.0.1",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "runtime": {
+          "lib/net472/System.Reactive.Windows.Forms.dll": {
+            "assemblyVersion": "3.0.6000.0",
+            "fileVersion": "3.0.6000.0"
+          }
+        }
+      },
+      "System.Reflection.Emit/4.7.0": {},
+      "System.Threading.Tasks.Extensions/4.5.4": {},
+      "System.Windows.Forms.DataVisualization/1.0.0-prerelease.20110.1": {
+        "runtime": {
+          "lib/netcoreapp3.0/System.Windows.Forms.DataVisualization.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.20.11001"
+          }
+        }
+      },
+      "System.Windows.Forms.Pictograms/1.2.20": {
+        "dependencies": {
+          "System.Drawing.Pictograms": "1.2.20"
+        },
+        "runtime": {
+          "lib/net40/System.Windows.Forms.Pictograms.dll": {
+            "assemblyVersion": "1.2.20.0",
+            "fileVersion": "1.2.20.0"
+          }
+        }
+      },
+      "Tesseract/5.2.0": {
+        "dependencies": {
+          "System.Reflection.Emit": "4.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Tesseract.dll": {
+            "assemblyVersion": "5.2.0.0",
+            "fileVersion": "5.2.0.0"
+          }
+        }
+      },
+      "Tesseract.Data.English/4.0.0": {},
+      "TesseractOCR/5.4.2": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "System.Reflection.Emit": "4.7.0"
+        },
+        "runtime": {
+          "lib/net8.0/TesseractOCR.dll": {
+            "assemblyVersion": "5.4.1.0",
+            "fileVersion": "5.4.1.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OCRProject/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3iE7UF7MQkCv1cxzCahz+Y/guQbTqieyxyaWKhrRO91itI9cOKO76OHeQDahqG4MmW5umr3CcCvGmK92lWNlbg==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/8.0.2",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nroMDjS7hNBPtkZqVBbSiQaQjWRDxITI8Y7XnDs97rqG3EbzVTNLZQf7bIeUJcaHOV8bca47s1Uxq94+2oGdxA==",
+      "path": "microsoft.extensions.logging.abstractions/8.0.2",
+      "hashPath": "microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512"
+    },
+    "Microsoft.Win32.SystemEvents/9.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-z8FfGIaoeALdD+KF44A2uP8PZIQQtDGiXsOLuN8nohbKhkyKt7zGaZb+fKiCxTuBqG22Q7myIAioSWaIcOOrOw==",
+      "path": "microsoft.win32.systemevents/9.0.0",
+      "hashPath": "microsoft.win32.systemevents.9.0.0.nupkg.sha512"
+    },
+    "System.Drawing.Common/9.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uoozjI3+dlgKh2onFJcz8aNLh6TRCPlLSh8Dbuljc8CdvqXrxHOVysJlrHvlsOCqceqGBR1wrMPxlnzzhynktw==",
+      "path": "system.drawing.common/9.0.0",
+      "hashPath": "system.drawing.common.9.0.0.nupkg.sha512"
+    },
+    "System.Drawing.Pictograms/1.2.20": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kyQiiGainoGdR8/xeUuG9M3Z80QxjMR5tvQiX6DGc6zYRV5rl2l2zIg56vSeyShNj7l7RDW5PhrlOLaLVJ5UJg==",
+      "path": "system.drawing.pictograms/1.2.20",
+      "hashPath": "system.drawing.pictograms.1.2.20.nupkg.sha512"
+    },
+    "System.Reactive/6.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rHaWtKDwCi9qJ3ObKo8LHPMuuwv33YbmQi7TcUK1C264V3MFnOr5Im7QgCTdLniztP3GJyeiSg5x8NqYJFqRmg==",
+      "path": "system.reactive/6.0.1",
+      "hashPath": "system.reactive.6.0.1.nupkg.sha512"
+    },
+    "System.Reactive.Windows.Forms/6.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3U2N9OqlZilRNy95xGpzRi0Jm2AwsddPHKWvlunHVigldIf1xJZNqJ6MbkO8kih5GLSITiyH3yBArH1nk53Qyg==",
+      "path": "system.reactive.windows.forms/6.0.1",
+      "hashPath": "system.reactive.windows.forms.6.0.1.nupkg.sha512"
+    },
+    "System.Reflection.Emit/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VR4kk8XLKebQ4MZuKuIni/7oh+QGFmZW3qORd1GvBq/8026OpW501SzT/oypwiQl4TvT8ErnReh/NzY9u+C6wQ==",
+      "path": "system.reflection.emit/4.7.0",
+      "hashPath": "system.reflection.emit.4.7.0.nupkg.sha512"
+    },
+    "System.Threading.Tasks.Extensions/4.5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
+      "path": "system.threading.tasks.extensions/4.5.4",
+      "hashPath": "system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+    },
+    "System.Windows.Forms.DataVisualization/1.0.0-prerelease.20110.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1EdLFl/I5QobO4shpqUNslDGWTeRbpt3pLMSkiLQYzdWBDqf44/8TM5hXMtkA8ktHU80aVZYVEuxr8vJqcB1Ig==",
+      "path": "system.windows.forms.datavisualization/1.0.0-prerelease.20110.1",
+      "hashPath": "system.windows.forms.datavisualization.1.0.0-prerelease.20110.1.nupkg.sha512"
+    },
+    "System.Windows.Forms.Pictograms/1.2.20": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XwJbRnjDedblkE4pX0BCumk7gEP/f0BADkq85rtQ9Lb4OCBjtnh49bm9G2fW9rrG1pMNpAAzAQ7KlW8fPDnjAA==",
+      "path": "system.windows.forms.pictograms/1.2.20",
+      "hashPath": "system.windows.forms.pictograms.1.2.20.nupkg.sha512"
+    },
+    "Tesseract/5.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YB7feJlrTWSXtK8+WaCcseGSPK/1r2d2FWeKGyndlrPwYClrzTlCoHD4/oQEUjKafmpkWlhTZZ7pxiRJYZgj6w==",
+      "path": "tesseract/5.2.0",
+      "hashPath": "tesseract.5.2.0.nupkg.sha512"
+    },
+    "Tesseract.Data.English/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-B9jTFpcwPHS5Ky3Bm7jq6zEZM3pnHPttFeVOfd8dEvrr5rh8+nnVpAWe9T4Nf4jQ9QvMAdbTbzLJT0lNnTnP3A==",
+      "path": "tesseract.data.english/4.0.0",
+      "hashPath": "tesseract.data.english.4.0.0.nupkg.sha512"
+    },
+    "TesseractOCR/5.4.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Y4+cw6kfanPpapc+PFyVAY7+xanYovO2BN+hxnTRA8smo5ajzeHJ+QaKoGKa/tBoU9ahKC/yGNJszIQeg3D+lw==",
+      "path": "tesseractocr/5.4.2",
+      "hashPath": "tesseractocr.5.4.2.nupkg.sha512"
+    }
+  }
+}
