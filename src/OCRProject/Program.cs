@@ -6,6 +6,8 @@ using Utils;
 using Tesseract; // Ensure Tesseract NuGet package is installed
 using System.Windows.Forms;
 using OCRProject.ImageProcessing;
+using OCRProject.Utils;
+using System.IO.Pipelines;
 
 
 class Program
@@ -19,17 +21,33 @@ class Program
             // Load configuration
             ConfigLoader config = new ConfigLoader();
             string inputFolder = config.InputFolder;
-            string outputFolder = config.ExtractedTextFolder;
+            string outputFolderImage = config.OutputImageFolder;
+            string outputFolderText = config.ExtractedTextFolder;
 
-            // Ensure output folder exists
-            Directory.CreateDirectory(outputFolder);
+            // Create an instance of CreateFiles
+            CreateFiles fileCreator = new CreateFiles();
+            string fileNameExtracted = "ProcessedFile_" + DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".txt";
+
+            // Call the CreateTextFile method
+            string createdFilePath = fileCreator.CreateTextFile(outputFolderText, fileNameExtracted); 
+
+            if (createdFilePath != null)
+            {
+                Console.WriteLine($"Text file created successfully: {createdFilePath}");
+            }
+            else
+            {
+                Console.WriteLine("Failed to create text file.");
+            }
+
+            FileWriter fileWriter = new FileWriter();
 
             // Process all images in the input folder
             foreach (string inputFilePath in Directory.GetFiles(inputFolder, "*.png"))
             {
                 string fileName = Path.GetFileNameWithoutExtension(inputFilePath);
-                string outputGrayscalePath = Path.Combine(outputFolder, fileName + "_grayscale.png");
-                string outputThresholdPath = Path.Combine(outputFolder, fileName + "_threshold.png");
+                string outputGrayscalePath = Path.Combine(outputFolderImage, fileName + "_grayscale.png");
+                string outputThresholdPath = Path.Combine(outputFolderImage, fileName + "_Adaptivethreshold.png");
 
                 // Load the image
                 using (Bitmap inputImage = new Bitmap(inputFilePath))
@@ -39,38 +57,35 @@ class Program
                     // Convert to grayscale
                     ConvertToGrayscale grayscaleConverter = new ConvertToGrayscale();
                     Bitmap grayImage = grayscaleConverter.Apply(inputImage);
-                    ShowImage(grayImage, "Grayscale Image");
-                    //grayImage.Save(outputGrayscalePath, System.Drawing.Imaging.ImageFormat.Png);
-                    //Console.WriteLine($"Grayscale image saved: {outputGrayscalePath}");
-                    ExtractTextFromImage(grayImage);
+                    //ShowImage(grayImage, "Grayscale Image");
+                    grayImage.Save(Path.Combine(outputFolderImage, fileName + "_grayscale.png"), System.Drawing.Imaging.ImageFormat.Png);
+                    ExtractTextFromImage(grayImage, createdFilePath, fileWriter);
 
                     // Apply adaptive thresholding
                     AdaptiveThreshold adaptiveThreshold = new AdaptiveThreshold();
                     Bitmap adaptiveThresholdImage = adaptiveThreshold.ApplyThreshold(inputImage);
-                    ShowImage(adaptiveThresholdImage, "Adaptive Threshold Image");
-                    //adaptiveThresholdImage.Save(outputThresholdPath, System.Drawing.Imaging.ImageFormat.Png);
-                    //Console.WriteLine($"Adaptive threshold image saved: {outputThresholdPath}");
-                    ExtractTextFromImage(adaptiveThresholdImage);
+                    //ShowImage(adaptiveThresholdImage, "Adaptive Threshold Image");
+                    adaptiveThresholdImage.Save(Path.Combine(outputFolderImage, fileName + "_AdaptiveThreshold.png"), System.Drawing.Imaging.ImageFormat.Png);
+                    ExtractTextFromImage(adaptiveThresholdImage, createdFilePath, fileWriter);
 
                     // Apply global thresholding (Example: threshold = 128)
                     GlobalThresholding globalThresholding = new GlobalThresholding(128);
                     Bitmap globalThresholdImage = globalThresholding.ApplyThreshold(inputImage);
-                    //string outputGlobalThresholdPath = Path.Combine(outputFolder, fileName + "_global_threshold.png");
-                    ShowImage(globalThresholdImage, "Global Threshold Image");
-                    //globalThresholdImage.Save(outputGlobalThresholdPath, System.Drawing.Imaging.ImageFormat.Png);
-                    //Console.WriteLine($"Global threshold image saved: {outputGlobalThresholdPath}");
-                    // Extract text using OCR (Tesseract)
-                    ExtractTextFromImage(globalThresholdImage);
+                    //ShowImage(globalThresholdImage, "Global Threshold Image");
+                    globalThresholdImage.Save(Path.Combine(outputFolderImage, fileName + "globalThreshold.png"), System.Drawing.Imaging.ImageFormat.Png);
+                    ExtractTextFromImage(globalThresholdImage, createdFilePath, fileWriter);
 
                     ShiftImage shiftProcessor = new ShiftImage();
                     Bitmap shiftedImage = shiftProcessor.Apply(inputImage, 5, 5);
-                    ShowImage(shiftedImage, "Shifted Image");
-                    ExtractTextFromImage(shiftedImage);
+                    //ShowImage(shiftedImage, "Shifted Image");
+                    shiftedImage.Save(Path.Combine(outputFolderImage, fileName + "_shiftedImage.png"), System.Drawing.Imaging.ImageFormat.Png);
+                    ExtractTextFromImage(shiftedImage, createdFilePath, fileWriter);
 
                     SaturationAdjustment saturationProcessor = new SaturationAdjustment();
                     Bitmap adjustedImage = saturationProcessor.Apply(globalThresholdImage, 1.2f); // Adjust saturation factor
-                    ShowImage(adjustedImage, "Saturation Adjusted Image");
-                    ExtractTextFromImage(adjustedImage);
+                    //ShowImage(adjustedImage, "Saturation Adjusted Image");
+                    shiftedImage.Save(Path.Combine(outputFolderImage, fileName + "_SaturationAjusted.png"), System.Drawing.Imaging.ImageFormat.Png);
+                    ExtractTextFromImage(adjustedImage, createdFilePath, fileWriter);
 
                 }
             }
@@ -107,7 +122,7 @@ class Program
         }
     }
 
-    private static void ExtractTextFromImage(Bitmap image)
+    private static void ExtractTextFromImage(Bitmap image, string createdFilePath, FileWriter fileWriter)
     {
         try
         {
@@ -126,6 +141,9 @@ class Program
                         {
                             string extractedText = page.GetText();
                             Console.WriteLine($"Extracted text: {extractedText}");
+
+                            // Write extracted text to the generated file
+                            fileWriter.WriteToFile(createdFilePath, extractedText);
                         }
                     }
                 }

@@ -8,6 +8,7 @@ namespace Utils
     public class ConfigLoader
     {
         public string InputFolder { get; private set; }
+        public string OutputImageFolder { get; private set; }
         public string ExtractedTextFolder { get; private set; }
 
         public ConfigLoader()
@@ -15,15 +16,20 @@ namespace Utils
             // Get the current working directory
             string currentDirectory = Directory.GetCurrentDirectory();
 
-            // Define the relative path to the input folder
-            string relativePath = @"../../../../../Input/SampleImages";
+            // Define the relative path to the input and Output folder
+            string relativePath = @"../../../../OCRProject";           
 
-            // Combine the current directory and the relative path
-            string InputFolderpath = Path.GetFullPath(Path.Combine(currentDirectory, relativePath));
+            // Combine the current directory and the relative path for Input
+            string InputFolderpath = Path.GetFullPath(Path.Combine(currentDirectory, relativePath, "Input"));
             InputFolder = Path.GetFullPath(InputFolderpath);
 
-            string OuputFolderpath = Path.GetFullPath(Path.Combine(currentDirectory, relativePath));
-            ExtractedTextFolder = Path.Combine(Directory.GetCurrentDirectory(), "Output", "ExtractedText");
+            // Combine the current directory and the relative path for Processed Image
+            string OuputFolderpath = Path.GetFullPath(Path.Combine(currentDirectory, relativePath, "Output", "ProcessedImage"));
+            OutputImageFolder= Path.GetFullPath(OuputFolderpath);
+
+            //Path to save extracted text
+            string extractedtext = Path.GetFullPath(Path.Combine(currentDirectory, relativePath, "Output", "ExtractedText"));
+            ExtractedTextFolder = Path.GetFullPath(extractedtext);
 
             // Ensure directories exist
             EnsureDirectoriesExist();
@@ -34,6 +40,7 @@ namespace Utils
             var directories = new List<string>
             {
                 InputFolder,
+                OutputImageFolder,
                 ExtractedTextFolder
             };
 
