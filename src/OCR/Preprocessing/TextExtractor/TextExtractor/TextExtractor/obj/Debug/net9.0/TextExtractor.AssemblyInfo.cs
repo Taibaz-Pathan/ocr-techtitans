@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TextExtractor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1433a7c8d03cac157745cf23b0b3d44d2b7a0c51")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a7535da3c77f5da9d329201df058c86d0e1be8e2")]
 [assembly: System.Reflection.AssemblyProductAttribute("TextExtractor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TextExtractor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
