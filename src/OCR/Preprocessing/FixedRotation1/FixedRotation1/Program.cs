@@ -4,6 +4,7 @@ using OpenCvSharp;  // For OpenCV (Auto Alignment)
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.Processing;
 using SixLabors.ImageSharp.Formats.Jpeg;
+using Tesseract; // For OCR
 
 namespace FixedRotationTest
 {
@@ -17,6 +18,7 @@ namespace FixedRotationTest
                 string imagePath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Input/AlignmentTest.jpeg";
                 string fixedRotationPath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Output/auto_align90.jpg";
                 string autoAlignPath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Output/auto_align.jpg";
+                string logFilePath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Output/ocr_log.txt";
 
                 if (!File.Exists(imagePath))
                 {
@@ -35,21 +37,35 @@ namespace FixedRotationTest
                     return;
                 }
 
-
+                string processedImagePath = imagePath;
                 if (choice == "1")
                 {
                     PreprocessingManager.RotateImageFixed(imagePath, fixedRotationPath, 90);
                     Console.WriteLine($"Rotated image saved at: {fixedRotationPath}");
+                    processedImagePath = fixedRotationPath;
                 }
                 else if (choice == "2")
                 {
                     PreprocessingManager.AutoAlignImage(imagePath, autoAlignPath);
                     Console.WriteLine($"Auto-aligned image saved at: {autoAlignPath}");
+                    processedImagePath = autoAlignPath;
                 }
                 else
                 {
                     Console.WriteLine("Invalid option. Please enter 1 or 2.");
+                    return;
                 }
+
+                // Perform OCR on original and processed image
+                string ocrResultOriginal = OCRProcessor.PerformOCR(imagePath);
+                string ocrResultProcessed = OCRProcessor.PerformOCR(processedImagePath);
+
+                // Log OCR results
+                File.WriteAllText(logFilePath, "OCR Results:\n");
+                File.AppendAllText(logFilePath, $"Original Image OCR:\n{ocrResultOriginal}\n\n");
+                File.AppendAllText(logFilePath, $"Processed Image OCR:\n{ocrResultProcessed}\n");
+
+                Console.WriteLine("OCR results logged successfully.");
             }
             catch (Exception ex)
             {
@@ -61,9 +77,6 @@ namespace FixedRotationTest
 
     static class PreprocessingManager
     {
-        /// <summary>
-        /// Rotates an image by a fixed angle (e.g., 90 degrees).
-        /// </summary>
         public static void RotateImageFixed(string inputPath, string outputPath, float angle)
         {
             using (Image image = Image.Load(inputPath))
@@ -73,9 +86,6 @@ namespace FixedRotationTest
             }
         }
 
-        /// <summary>
-        /// Auto-aligns an image by detecting skew and correcting it.
-        /// </summary>
         public static void AutoAlignImage(string inputPath, string outputPath)
         {
             Mat image = Cv2.ImRead(inputPath, ImreadModes.Grayscale);
@@ -91,7 +101,30 @@ namespace FixedRotationTest
             }
 
             RotateImageFixed(inputPath, outputPath, (float)-detectedAngle);
+        }
+    }
 
+    static class OCRProcessor
+    {
+        public static string PerformOCR(string imagePath)
+        {
+            try
+            {
+                using (var engine = new TesseractEngine(@"./tessdata", "eng", EngineMode.Default))
+                {
+                    using (var img = Pix.LoadFromFile(imagePath))
+                    {
+                        using (var page = engine.Process(img))
+                        {
+                            return page.GetText();
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return $"Error performing OCR: {ex.Message}";
+            }
         }
     }
 }
