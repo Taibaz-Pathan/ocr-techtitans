@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FixedRotation1")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a1d93f51c5f1c9dd384d256d4f2b1b1352ca7a9e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2349a491e10a9686add40f945f2b30a4ccc72fde")]
 [assembly: System.Reflection.AssemblyProductAttribute("FixedRotation1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FixedRotation1")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
