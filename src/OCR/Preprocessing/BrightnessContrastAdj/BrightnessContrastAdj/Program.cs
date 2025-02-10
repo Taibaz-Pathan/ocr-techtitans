@@ -14,8 +14,8 @@ namespace BrightnessContrastOCR
             try
             {
                 Console.WriteLine("Loading image...");
-                string imagePath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Input/BrighnessContrast_Test.jpeg";
-                string outputPath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Output/BrightnessContrastAdj_Test2.jpeg";
+                string imagePath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Input/ColourAdjTest.jpg";
+                string outputPath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Output/ColourAdjTest1.jpg";
                 string logFilePath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Logs/OCR_LogColourAdj.txt";
 
                 // Ensure the file exists
@@ -72,7 +72,8 @@ namespace BrightnessContrastOCR
         {
             try
             {
-                using (var engine = new TesseractEngine(@".tessdata", "eng", EngineMode.Default))
+                using (var engine = new TesseractEngine(@"/Users/khushalsingh/Downloads/ocr-techtitans/src/OCR
+/Preprocessing/BrightnessContrastAdj/BrightnessContrastAdj/eng.traineddata", "eng", EngineMode.Default))
                 {
                     using (var img = Pix.LoadFromFile(imagePath))
                     {
