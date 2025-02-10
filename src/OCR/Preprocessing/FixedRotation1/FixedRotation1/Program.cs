@@ -18,7 +18,7 @@ namespace FixedRotationTest
                 string imagePath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Input/AlignmentTest.jpeg";
                 string fixedRotationPath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Output/auto_align90.jpg";
                 string autoAlignPath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Output/auto_align.jpg";
-                string logFilePath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Output/ocr_log.txt";
+                string logFilePath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Output/ocr_log_FixedRotation.txt";
 
                 if (!File.Exists(imagePath))
                 {

@@ -9,3 +9,25 @@ Processed OCR Result:
 OCR Error
 ================================
 
+===== OCR Processing Log =====
+Timestamp: 10/02/2025 11:43:58 PM
+Original Image Path: /Users/khushalsingh/Downloads/ocr-techtitans/Input/BrighnessContrast_Test.jpeg
+Original OCR Result:
+OCR Error
+------------------------------
+Processed Image Path: /Users/khushalsingh/Downloads/ocr-techtitans/Output/BrightnessContrastAdj_Test2.jpeg
+Processed OCR Result:
+OCR Error
+================================
+
+===== OCR Processing Log =====
+Timestamp: 10/02/2025 11:44:14 PM
+Original Image Path: /Users/khushalsingh/Downloads/ocr-techtitans/Input/BrighnessContrast_Test.jpeg
+Original OCR Result:
+OCR Error
+------------------------------
+Processed Image Path: /Users/khushalsingh/Downloads/ocr-techtitans/Output/BrightnessContrastAdj_Test2.jpeg
+Processed OCR Result:
+OCR Error
+================================
+

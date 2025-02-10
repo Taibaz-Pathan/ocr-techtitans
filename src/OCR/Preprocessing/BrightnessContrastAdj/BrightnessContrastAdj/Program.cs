@@ -72,7 +72,7 @@ namespace BrightnessContrastOCR
         {
             try
             {
-                using (var engine = new TesseractEngine(@"/usr/local/share/tessdata", "eng", EngineMode.Default))
+                using (var engine = new TesseractEngine(@"/Users/khushalsingh/Downloads/ocr-techtitans/src/OCR/Preprocessing/BrightnessContrastAdj/tessdata", "eng", EngineMode.Default))
                 {
                     using (var img = Pix.LoadFromFile(imagePath))
                     {

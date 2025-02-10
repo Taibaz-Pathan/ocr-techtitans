@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BrightnessContrastAdj")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a07163bfcaca0a62efa8a25f03d282a9674abe2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a1d93f51c5f1c9dd384d256d4f2b1b1352ca7a9e")]
 [assembly: System.Reflection.AssemblyProductAttribute("BrightnessContrastAdj")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BrightnessContrastAdj")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
