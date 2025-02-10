@@ -9,10 +9,32 @@
       "BrightnessContrastAdj/1.0.0": {
         "dependencies": {
           "SixLabors.ImageSharp": "3.1.6",
-          "System.Drawing.Common": "9.0.1"
+          "System.Drawing.Common": "9.0.1",
+          "Tesseract": "5.2.0",
+          "Tesseract.Net.SDK": "4.6.411",
+          "TesseractOCR": "5.4.2"
         },
         "runtime": {
           "BrightnessContrastAdj.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.2": {
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.1024.46610"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.1024.46610"
+          }
         }
       },
       "Microsoft.Win32.SystemEvents/9.0.1": {
@@ -53,6 +75,41 @@
             "fileVersion": "9.0.124.61006"
           }
         }
+      },
+      "System.Reflection.Emit/4.7.0": {},
+      "Tesseract/5.2.0": {
+        "dependencies": {
+          "System.Reflection.Emit": "4.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Tesseract.dll": {
+            "assemblyVersion": "5.2.0.0",
+            "fileVersion": "5.2.0.0"
+          }
+        }
+      },
+      "Tesseract.Net.SDK/4.6.411": {
+        "dependencies": {
+          "System.Drawing.Common": "9.0.1"
+        },
+        "runtime": {
+          "lib/net5.0/Patagames.Ocr.dll": {
+            "assemblyVersion": "4.6.2.50",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "TesseractOCR/5.4.2": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.2",
+          "System.Reflection.Emit": "4.7.0"
+        },
+        "runtime": {
+          "lib/net8.0/TesseractOCR.dll": {
+            "assemblyVersion": "5.4.1.0",
+            "fileVersion": "5.4.1.0"
+          }
+        }
       }
     }
   },
@@ -61,6 +118,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3iE7UF7MQkCv1cxzCahz+Y/guQbTqieyxyaWKhrRO91itI9cOKO76OHeQDahqG4MmW5umr3CcCvGmK92lWNlbg==",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/8.0.2",
+      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Abstractions/8.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nroMDjS7hNBPtkZqVBbSiQaQjWRDxITI8Y7XnDs97rqG3EbzVTNLZQf7bIeUJcaHOV8bca47s1Uxq94+2oGdxA==",
+      "path": "microsoft.extensions.logging.abstractions/8.0.2",
+      "hashPath": "microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512"
     },
     "Microsoft.Win32.SystemEvents/9.0.1": {
       "type": "package",
@@ -82,6 +153,34 @@
       "sha512": "sha512-TTPkCqSMyMaG8BXlBKYTTJFtLV0SvjjsvgUN598hYgHaX/5B7tdUc2JhQF9vwrYmlzxId+gwFnKYuxQ2XsSz2g==",
       "path": "system.drawing.common/9.0.1",
       "hashPath": "system.drawing.common.9.0.1.nupkg.sha512"
+    },
+    "System.Reflection.Emit/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VR4kk8XLKebQ4MZuKuIni/7oh+QGFmZW3qORd1GvBq/8026OpW501SzT/oypwiQl4TvT8ErnReh/NzY9u+C6wQ==",
+      "path": "system.reflection.emit/4.7.0",
+      "hashPath": "system.reflection.emit.4.7.0.nupkg.sha512"
+    },
+    "Tesseract/5.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YB7feJlrTWSXtK8+WaCcseGSPK/1r2d2FWeKGyndlrPwYClrzTlCoHD4/oQEUjKafmpkWlhTZZ7pxiRJYZgj6w==",
+      "path": "tesseract/5.2.0",
+      "hashPath": "tesseract.5.2.0.nupkg.sha512"
+    },
+    "Tesseract.Net.SDK/4.6.411": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oDZ0uKM/+fCk2dIEe8ZSDj6VHohW/Fq+G5EARB7VpgvawsjHE3cOwEioZ4MZZFS9bQH8IPZr8rYt+FOB9uejAw==",
+      "path": "tesseract.net.sdk/4.6.411",
+      "hashPath": "tesseract.net.sdk.4.6.411.nupkg.sha512"
+    },
+    "TesseractOCR/5.4.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Y4+cw6kfanPpapc+PFyVAY7+xanYovO2BN+hxnTRA8smo5ajzeHJ+QaKoGKa/tBoU9ahKC/yGNJszIQeg3D+lw==",
+      "path": "tesseractocr/5.4.2",
+      "hashPath": "tesseractocr.5.4.2.nupkg.sha512"
     }
   }
 }
