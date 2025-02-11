@@ -20,3 +20,36 @@ Processed OCR Result:
 OCR Error
 ================================
 
+===== OCR Processing Log =====
+Timestamp: 11/02/2025 12:51:13 AM
+Original Image Path: /Users/khushalsingh/Downloads/ocr-techtitans/Input/ColourAdjTest.jpg
+Original OCR Result:
+OCR Error
+------------------------------
+Processed Image Path: /Users/khushalsingh/Downloads/ocr-techtitans/Output/ColourAdjTest1.jpg
+Processed OCR Result:
+OCR Error
+================================
+
+===== OCR Processing Log =====
+Timestamp: 11/02/2025 12:53:12 AM
+Original Image Path: /Users/khushalsingh/Downloads/ocr-techtitans/Input/tilted.jpg
+Original OCR Result:
+OCR Error
+------------------------------
+Processed Image Path: /Users/khushalsingh/Downloads/ocr-techtitans/Output/tilted.jpg
+Processed OCR Result:
+OCR Error
+================================
+
+===== OCR Processing Log =====
+Timestamp: 11/02/2025 12:57:43 AM
+Original Image Path: /Users/khushalsingh/Downloads/ocr-techtitans/Input/tilted.jpg
+Original OCR Result:
+OCR Error
+------------------------------
+Processed Image Path: /Users/khushalsingh/Downloads/ocr-techtitans/Output/tilted.jpg
+Processed OCR Result:
+OCR Error
+================================
+

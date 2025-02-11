@@ -14,11 +14,16 @@ namespace BrightnessContrastOCR
             try
             {
                 Console.WriteLine("Loading image...");
-                string imagePath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Input/ColourAdjTest.jpg";
-                string outputPath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Output/ColourAdjTest1.jpg";
-                string logFilePath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Logs/OCR_LogColourAdj.txt";
+                string imagePath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Input/tilted.jpg";
 
-                // Ensure the file exists
+                // Generate a new output file name based on the current timestamp
+                string timestamp = DateTime.Now.ToString("yyyyMMdd_HHmmss");
+                string outputPath = $"/Users/khushalsingh/Downloads/ocr-techtitans/Output/tilted_{timestamp}.jpg";
+
+                // Generate a new log file name based on the current timestamp
+                string logFilePath = $"/Users/khushalsingh/Downloads/ocr-techtitans/Logs/OCR_Log_{timestamp}.txt";
+
+                // Ensure the image file exists
                 if (!File.Exists(imagePath))
                 {
                     Console.WriteLine("Error: Image file not found!");
@@ -72,8 +77,7 @@ namespace BrightnessContrastOCR
         {
             try
             {
-                using (var engine = new TesseractEngine(@"/Users/khushalsingh/Downloads/ocr-techtitans/src/OCR
-/Preprocessing/BrightnessContrastAdj/BrightnessContrastAdj/eng.traineddata", "eng", EngineMode.Default))
+                using (var engine = new TesseractEngine(@"/Users/khushalsingh/Downloads/ocr-techtitans/src/OCR/Preprocessing/BrightnessContrastAdj/tessdata/eng.traineddata", "eng", EngineMode.Default))
                 {
                     using (var img = Pix.LoadFromFile(imagePath))
                     {
@@ -95,7 +99,7 @@ namespace BrightnessContrastOCR
         {
             try
             {
-                using (StreamWriter writer = new StreamWriter(logFilePath, true))
+                using (StreamWriter writer = new StreamWriter(logFilePath, false)) // 'false' ensures overwriting the file each time
                 {
                     writer.WriteLine("===== OCR Processing Log =====");
                     writer.WriteLine($"Timestamp: {DateTime.Now}");
