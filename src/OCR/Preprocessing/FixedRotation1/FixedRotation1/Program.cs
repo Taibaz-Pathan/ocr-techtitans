@@ -16,9 +16,12 @@ namespace FixedRotationTest
             {
                 Console.WriteLine("Loading image...");
                 string imagePath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Input/AlignmentTest.jpeg";
-                string fixedRotationPath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Output/auto_align90.jpg";
-                string autoAlignPath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Output/auto_align.jpg";
-                string logFilePath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Logs/ocr_log_FixedRotation.txt";
+
+                // Create a unique output path for the processed image and log file using the current timestamp
+                string timestamp = DateTime.Now.ToString("yyyyMMdd_HHmmss");
+                string fixedRotationPath = $"/Users/khushalsingh/Downloads/ocr-techtitans/Output/auto_align90_{timestamp}.jpg";
+                string autoAlignPath = $"/Users/khushalsingh/Downloads/ocr-techtitans/Output/auto_align_{timestamp}.jpg";
+                string logFilePath = $"/Users/khushalsingh/Downloads/ocr-techtitans/Logs/ocr_log_FixedRotation_{timestamp}.txt";
 
                 if (!File.Exists(imagePath))
                 {
