@@ -55,6 +55,14 @@ namespace BrightnessContrastOCR
                     image.Mutate(x => x.Brightness(brightness).Contrast(contrast));
 
                     image.Save(outputPath, new JpegEncoder());
+
+                    // Check if the image is saved successfully
+                    if (!File.Exists(outputPath))
+                    {
+                        Console.WriteLine("Error: Processed image not saved.");
+                        return;
+                    }
+
                     Console.WriteLine($"Processed image saved at: {outputPath}");
                 }
 
@@ -77,13 +85,20 @@ namespace BrightnessContrastOCR
         {
             try
             {
-                using (var engine = new TesseractEngine(@"/Users/khushalsingh/Downloads/ocr-techtitans/src/OCR/Preprocessing/BrightnessContrastAdj/tessdata/eng.traineddata", "eng", EngineMode.Default))
+                using (var engine = new TesseractEngine(@"/Users/khushalsingh/Downloads/ocr-techtitans/src/OCR/Preprocessing/BrightnessContrastAdj/tessdata", "eng", EngineMode.Default))
                 {
                     using (var img = Pix.LoadFromFile(imagePath))
                     {
                         using (var page = engine.Process(img))
                         {
-                            return page.GetText().Trim();
+                            // Check if OCR returned valid text
+                            string text = page.GetText().Trim();
+                            if (string.IsNullOrEmpty(text))
+                            {
+                                Console.WriteLine($"No text detected in {imagePath}.");
+                                return "No text detected.";
+                            }
+                            return text;
                         }
                     }
                 }
@@ -91,6 +106,7 @@ namespace BrightnessContrastOCR
             catch (Exception ex)
             {
                 Console.WriteLine($"OCR failed for {imagePath}: {ex.Message}");
+                Console.WriteLine(ex.StackTrace);  // Print stack trace for debugging
                 return "OCR Error";
             }
         }
