@@ -88,6 +88,13 @@ class Program
                     shiftedImage.Save(Path.Combine(outputFolderImage, fileName + "_SaturationAjusted.png"), System.Drawing.Imaging.ImageFormat.Png);
                     TesseractProcessor.ExtractTextFromImage(adjustedImage, createdFilePath, fileWriter);
 
+                    //deskew processing
+                    Deskew deskewProcessor = new Deskew();
+                    Bitmap deskewImage = deskewProcessor.Apply(inputImage);
+                    ImageDisplayer.ShowImage(deskewImage, "Deskew Image");
+                    deskewImage.Save(Path.Combine(outputFolderImage, fileName + "_DeskewImage.png"), System.Drawing.Imaging.ImageFormat.Png);
+                    TesseractProcessor.ExtractTextFromImage(deskewImage, createdFilePath, fileWriter);
+
                 }
             }
 
