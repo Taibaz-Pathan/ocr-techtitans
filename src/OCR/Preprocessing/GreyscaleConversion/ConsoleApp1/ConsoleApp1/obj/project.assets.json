@@ -171,11 +171,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/khushalsingh/Downloads/ocr-techtitans/src/OCR/Preprocessing/Greyscale Conversion/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj",
+      "projectUniqueName": "/Users/khushalsingh/Downloads/ocr-techtitans/src/OCR/Preprocessing/GreyscaleConversion/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj",
       "projectName": "ConsoleApp1",
-      "projectPath": "/Users/khushalsingh/Downloads/ocr-techtitans/src/OCR/Preprocessing/Greyscale Conversion/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj",
+      "projectPath": "/Users/khushalsingh/Downloads/ocr-techtitans/src/OCR/Preprocessing/GreyscaleConversion/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj",
       "packagesPath": "/Users/khushalsingh/.nuget/packages/",
-      "outputPath": "/Users/khushalsingh/Downloads/ocr-techtitans/src/OCR/Preprocessing/Greyscale Conversion/ConsoleApp1/ConsoleApp1/obj/",
+      "outputPath": "/Users/khushalsingh/Downloads/ocr-techtitans/src/OCR/Preprocessing/GreyscaleConversion/ConsoleApp1/ConsoleApp1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/khushalsingh/.nuget/NuGet/NuGet.Config"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6SH2IDQivR4=",
+  "dgSpecHash": "mXWKuY57jAE=",
   "success": true,
-  "projectFilePath": "/Users/khushalsingh/Downloads/ocr-techtitans/src/OCR/Preprocessing/Greyscale Conversion/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj",
+  "projectFilePath": "/Users/khushalsingh/Downloads/ocr-techtitans/src/OCR/Preprocessing/GreyscaleConversion/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj",
   "expectedPackageFiles": [
     "/Users/khushalsingh/.nuget/packages/microsoft.win32.systemevents/9.0.2/microsoft.win32.systemevents.9.0.2.nupkg.sha512",
     "/Users/khushalsingh/.nuget/packages/sixlabors.imagesharp/3.1.6/sixlabors.imagesharp.3.1.6.nupkg.sha512",
