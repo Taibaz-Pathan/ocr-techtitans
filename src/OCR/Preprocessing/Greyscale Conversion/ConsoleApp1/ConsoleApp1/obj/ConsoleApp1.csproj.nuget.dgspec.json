@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/khushalsingh/Downloads/ocr-techtitans/src/OCR/Preprocessing/FixedRotation1/FixedRotation1/FixedRotation1.csproj": {}
+    "/Users/khushalsingh/Downloads/ocr-techtitans/src/OCR/Preprocessing/Greyscale Conversion/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj": {}
   },
   "projects": {
-    "/Users/khushalsingh/Downloads/ocr-techtitans/src/OCR/Preprocessing/FixedRotation1/FixedRotation1/FixedRotation1.csproj": {
+    "/Users/khushalsingh/Downloads/ocr-techtitans/src/OCR/Preprocessing/Greyscale Conversion/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/khushalsingh/Downloads/ocr-techtitans/src/OCR/Preprocessing/FixedRotation1/FixedRotation1/FixedRotation1.csproj",
-        "projectName": "FixedRotation1",
-        "projectPath": "/Users/khushalsingh/Downloads/ocr-techtitans/src/OCR/Preprocessing/FixedRotation1/FixedRotation1/FixedRotation1.csproj",
+        "projectUniqueName": "/Users/khushalsingh/Downloads/ocr-techtitans/src/OCR/Preprocessing/Greyscale Conversion/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj",
+        "projectName": "ConsoleApp1",
+        "projectPath": "/Users/khushalsingh/Downloads/ocr-techtitans/src/OCR/Preprocessing/Greyscale Conversion/ConsoleApp1/ConsoleApp1/ConsoleApp1.csproj",
         "packagesPath": "/Users/khushalsingh/.nuget/packages/",
-        "outputPath": "/Users/khushalsingh/Downloads/ocr-techtitans/src/OCR/Preprocessing/FixedRotation1/FixedRotation1/obj/",
+        "outputPath": "/Users/khushalsingh/Downloads/ocr-techtitans/src/OCR/Preprocessing/Greyscale Conversion/ConsoleApp1/ConsoleApp1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/khushalsingh/.nuget/NuGet/NuGet.Config"
@@ -44,41 +44,13 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
-            "AForge.Imaging.NetStandard": {
-              "target": "Package",
-              "version": "[2.2.6.1, )"
-            },
-            "OpenCvSharp4": {
-              "target": "Package",
-              "version": "[4.10.0.20241108, )"
-            },
-            "OpenCvSharp4.runtime.osx.10.15-x64": {
-              "target": "Package",
-              "version": "[4.6.0.20230105, )"
-            },
-            "OpenCvSharp4.runtime.osx_arm64": {
-              "target": "Package",
-              "version": "[4.8.1-rc, )"
-            },
             "SixLabors.ImageSharp": {
               "target": "Package",
               "version": "[3.1.6, )"
             },
             "System.Drawing.Common": {
               "target": "Package",
-              "version": "[6.0.0, )"
-            },
-            "Tesseract": {
-              "target": "Package",
-              "version": "[5.2.0, )"
-            },
-            "Tesseract.Net.SDK": {
-              "target": "Package",
-              "version": "[4.6.411, )"
-            },
-            "TesseractOCR": {
-              "target": "Package",
-              "version": "[5.4.2, )"
+              "version": "[9.0.2, )"
             }
           },
           "imports": [
