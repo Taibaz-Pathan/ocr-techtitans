@@ -42,8 +42,7 @@
               "RelativeToolTip": "Utils\\ConfigLoader.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T15:14:24.814Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-13T15:14:24.814Z"
             },
             {
               "$type": "Document",
@@ -53,7 +52,7 @@
               "RelativeDocumentMoniker": "TesseractProcessor\\GPTTextExtractor.cs",
               "ToolTip": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\TesseractProcessor\\GPTTextExtractor.cs",
               "RelativeToolTip": "TesseractProcessor\\GPTTextExtractor.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAADwvwkAAADAAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAwwAkAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T14:41:24.437Z",
               "EditorCaption": ""
@@ -68,8 +67,7 @@
               "RelativeToolTip": "OCRProject.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-12T17:41:05.075Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-12T17:41:05.075Z"
             },
             {
               "$type": "Document",
@@ -81,8 +79,7 @@
               "RelativeToolTip": "ImageProcessing\\Deskew.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAEBVwAkAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T17:39:58.121Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-12T17:39:58.121Z"
             },
             {
               "$type": "Document",
@@ -94,8 +91,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAGQAAAAAAAAAAAAmwG8AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T08:31:18.003Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-04T08:31:18.003Z"
             }
           ]
         }

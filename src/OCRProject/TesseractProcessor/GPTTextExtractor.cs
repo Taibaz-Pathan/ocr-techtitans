@@ -7,7 +7,7 @@ namespace OCRProject.TesseractProcessor
     {
         public string ExtractText(string imagePath)
         {
-            var MyApiKey = "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";
+            var MyApiKey = "";
             var api = new OpenAI_API.APIAuthentication(MyApiKey);
             var openAI = new OpenAI_API.OpenAIAPI(api);
 
