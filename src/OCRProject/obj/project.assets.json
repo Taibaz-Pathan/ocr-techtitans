@@ -653,32 +653,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mithi\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/Users/taibazpathan/Documents/RiderProjects": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\OCRProject.csproj",
+      "projectUniqueName": "/Users/taibazpathan/Desktop/Git/ocr-techtitans/src/OCRProject/OCRProject.csproj",
       "projectName": "OCRProject",
-      "projectPath": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\OCRProject.csproj",
-      "packagesPath": "C:\\Users\\mithi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\obj\\",
+      "projectPath": "/Users/taibazpathan/Desktop/Git/ocr-techtitans/src/OCRProject/OCRProject.csproj",
+      "packagesPath": "/Users/taibazpathan/Documents/RiderProjects",
+      "outputPath": "/Users/taibazpathan/Desktop/Git/ocr-techtitans/src/OCRProject/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\mithi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/taibazpathan/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0-windows"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
+        "/Users/taibazpathan/Documents/RiderProjects": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -696,8 +689,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "all"
-      },
-      "SdkAnalysisLevel": "9.0.100"
+      }
     },
     "frameworks": {
       "net9.0-windows7.0": {
@@ -751,7 +743,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   },
@@ -760,7 +752,7 @@
       "code": "NU1603",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "System.Windows.Forms.Pictograms 1.2.20 depends on System.Drawing.Pictograms (>= 1.2.0) but System.Drawing.Pictograms 1.2.0 was not found. System.Drawing.Pictograms 1.2.20 was resolved instead.",
+      "message": "System.Windows.Forms.Pictograms 1.2.20 depends on System.Drawing.Pictograms (>= 1.2.0) but System.Drawing.Pictograms 1.2.0 was not found. An approximate best match of System.Drawing.Pictograms 1.2.20 was resolved.",
       "libraryId": "System.Drawing.Pictograms",
       "targetGraphs": [
         "net9.0-windows7.0"
@@ -770,7 +762,7 @@
       "code": "NU1603",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "OCRProject depends on System.Windows.Forms.Pictograms (>= 1.2.0) but System.Windows.Forms.Pictograms 1.2.0 was not found. System.Windows.Forms.Pictograms 1.2.20 was resolved instead.",
+      "message": "OCRProject depends on System.Windows.Forms.Pictograms (>= 1.2.0) but System.Windows.Forms.Pictograms 1.2.0 was not found. An approximate best match of System.Windows.Forms.Pictograms 1.2.20 was resolved.",
       "libraryId": "System.Windows.Forms.Pictograms",
       "targetGraphs": [
         "net9.0-windows7.0"
