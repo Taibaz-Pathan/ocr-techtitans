@@ -53,9 +53,6 @@ class Program
                 // Load the image
                 using (Bitmap inputImage = new Bitmap(inputFilePath))
                 {
-                    var gptExtractor = new GPTTextExtractor();
-                    string chatGptText = gptExtractor.ExtractText(inputFilePath);
-
                     ImageDisplayer.ShowImage(inputImage, "Original Image");
 
                     // Convert to grayscale

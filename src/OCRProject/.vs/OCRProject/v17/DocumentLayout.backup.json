@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C9651FEE-8827-4D69-B524-BD40B4BC51BD}|OCRProject.csproj|c:\\users\\mithi\\onedrive\\desktop\\softwareengg\\ocr-techtitans\\src\\ocrproject\\tesseractprocessor\\gpttextextractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9651FEE-8827-4D69-B524-BD40B4BC51BD}|OCRProject.csproj|solutionrelative:tesseractprocessor\\gpttextextractor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C9651FEE-8827-4D69-B524-BD40B4BC51BD}|OCRProject.csproj|c:\\users\\mithi\\onedrive\\desktop\\softwareengg\\ocr-techtitans\\src\\ocrproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9651FEE-8827-4D69-B524-BD40B4BC51BD}|OCRProject.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -30,36 +26,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "ConfigLoader.cs",
               "DocumentMoniker": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\Utils\\ConfigLoader.cs",
               "RelativeDocumentMoniker": "Utils\\ConfigLoader.cs",
               "ToolTip": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\Utils\\ConfigLoader.cs",
               "RelativeToolTip": "Utils\\ConfigLoader.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA3wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T15:14:24.814Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GPTTextExtractor.cs",
-              "DocumentMoniker": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\TesseractProcessor\\GPTTextExtractor.cs",
-              "RelativeDocumentMoniker": "TesseractProcessor\\GPTTextExtractor.cs",
-              "ToolTip": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\TesseractProcessor\\GPTTextExtractor.cs",
-              "RelativeToolTip": "TesseractProcessor\\GPTTextExtractor.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAA/wA0AAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T14:41:24.437Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "OCRProject.csproj",
               "DocumentMoniker": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\OCRProject.csproj",
               "RelativeDocumentMoniker": "OCRProject.csproj",
@@ -71,7 +54,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Deskew.cs",
               "DocumentMoniker": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\ImageProcessing\\Deskew.cs",
               "RelativeDocumentMoniker": "ImageProcessing\\Deskew.cs",
@@ -83,15 +66,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAmwG8AAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAmwDcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T08:31:18.003Z"
+              "WhenOpened": "2025-02-04T08:31:18.003Z",
+              "EditorCaption": ""
             }
           ]
         }
