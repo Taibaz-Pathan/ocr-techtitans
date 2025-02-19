@@ -59,6 +59,18 @@
               "target": "Package",
               "version": "[2.2.5, )"
             },
+            "DocumentFormat.OpenXml": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "EPPlus": {
+              "target": "Package",
+              "version": "[8.0.0-beta, )"
+            },
+            "NPOI": {
+              "target": "Package",
+              "version": "[2.7.2, )"
+            },
             "OpenAI": {
               "target": "Package",
               "version": "[1.11.0, )"
