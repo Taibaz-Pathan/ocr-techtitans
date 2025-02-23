@@ -13,6 +13,8 @@ namespace Utils
 
         public string ComparisionFolder { get; private set; }
 
+        public string LogFolder {  get; private set; }
+
         public ConfigLoader()
         {
             // Get the current working directory
@@ -36,6 +38,10 @@ namespace Utils
             //Path to store comparision Results
             string comparision = Path.GetFullPath(Path.Combine(currentDirectory, relativePath, "Output", "Comparision"));
             ComparisionFolder = Path.GetFullPath(comparision);
+
+            //log details
+            string log = Path.GetFullPath(Path.Combine(currentDirectory, relativePath, "Output", "Logs"));
+            LogFolder = Path.GetFullPath(log);
 
             // Ensure directories exist
             EnsureDirectoriesExist();

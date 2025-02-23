@@ -1,0 +1,32 @@
+[INFO] 23-02-2025 18:58:10: Starting Image Processing...
+[INFO] 23-02-2025 18:58:10: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250223_185810.txt
+[INFO] 23-02-2025 18:58:10: Processing image: ocr_preprocessing_input
+[ERROR] 23-02-2025 18:58:10: Error processing C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Input\opencv_adaptive_thresholding_input.png: The process cannot access the file 'C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Logs\AppLog.txt' because it is being used by another process.
+[INFO] 23-02-2025 18:58:13: Successfully processed ocr_preprocessing_input_grayscale
+[INFO] 23-02-2025 18:58:14: Successfully processed ocr_preprocessing_input_AdaptiveThreshold
+[INFO] 23-02-2025 18:58:14: Successfully processed ocr_preprocessing_input_GlobalThreshold
+[INFO] 23-02-2025 18:58:14: Successfully processed ocr_preprocessing_input_Shifted
+[INFO] 23-02-2025 18:58:14: Successfully processed ocr_preprocessing_input_SaturationAdjusted
+[INFO] 23-02-2025 18:58:15: Successfully processed ocr_preprocessing_input_Deskewed
+[INFO] 23-02-2025 18:58:16: Processing completed.
+[INFO] 23-02-2025 19:00:26: Starting Image Processing...
+[INFO] 23-02-2025 19:00:26: Configuration loaded successfully.
+[INFO] 23-02-2025 19:00:26: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250223_190026.txt
+[INFO] 23-02-2025 19:00:26: Processing 2 images...
+[INFO] 23-02-2025 19:00:28: Processing image: opencv_adaptive_thresholding_input.png
+[INFO] 23-02-2025 19:00:28: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\opencv_adaptive_thresholding_input_grayscale.png
+[INFO] 23-02-2025 19:00:28: Processing image: ocr_preprocessing_input.png
+[INFO] 23-02-2025 19:00:29: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\ocr_preprocessing_input_grayscale.png
+[INFO] 23-02-2025 19:00:29: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\opencv_adaptive_thresholding_input_AdaptiveThreshold.png
+[INFO] 23-02-2025 19:00:29: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\ocr_preprocessing_input_AdaptiveThreshold.png
+[INFO] 23-02-2025 19:00:29: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\opencv_adaptive_thresholding_input_GlobalThreshold.png
+[INFO] 23-02-2025 19:00:29: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\opencv_adaptive_thresholding_input_Shifted.png
+[INFO] 23-02-2025 19:00:29: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\ocr_preprocessing_input_GlobalThreshold.png
+[INFO] 23-02-2025 19:00:29: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\opencv_adaptive_thresholding_input_SaturationAdjusted.png
+[INFO] 23-02-2025 19:00:30: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\ocr_preprocessing_input_Shifted.png
+[INFO] 23-02-2025 19:00:30: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\ocr_preprocessing_input_SaturationAdjusted.png
+[INFO] 23-02-2025 19:00:30: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\opencv_adaptive_thresholding_input_Deskewed.png
+[INFO] 23-02-2025 19:00:31: Successfully processed image: opencv_adaptive_thresholding_input.png
+[INFO] 23-02-2025 19:00:31: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\ocr_preprocessing_input_Deskewed.png
+[INFO] 23-02-2025 19:00:31: Successfully processed image: ocr_preprocessing_input.png
+[INFO] 23-02-2025 19:00:31: Processing completed successfully.

@@ -2,7 +2,6 @@
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
-using System.Collections.Concurrent;
 using System.Threading.Tasks;
 using OCRProject.ImageProcessing;
 using OCRProject.Utils;
@@ -14,9 +13,12 @@ class Program
 {
     static void Main(string[] args)
     {
+        var logger = new Logger(); // Initialize logger
+
         try
         {
             Console.WriteLine("Starting Image Processing...");
+            logger.LogInfo("Starting Image Processing...");
 
             // Load configuration
             var config = new ConfigLoader();
@@ -25,29 +27,53 @@ class Program
             string outputFolderText = config.ExtractedTextFolder;
             string comparisonResults = config.ComparisionFolder;
 
+            // Ensure output directories exist
+            Directory.CreateDirectory(outputFolderImage);
+            Directory.CreateDirectory(outputFolderText);
+            Directory.CreateDirectory(comparisonResults);
+
+            logger.LogInfo("Configuration loaded successfully.");
+
             // Create output text file
             var fileCreator = new CreateFiles();
             string fileNameExtracted = $"ProcessedFile_{DateTime.Now:yyyyMMdd_HHmmss}.txt";
             string createdFilePath = fileCreator.CreateTextFile(outputFolderText, fileNameExtracted);
 
-            Console.WriteLine(createdFilePath != null
-                ? $"Text file created successfully: {createdFilePath}"
-                : "Failed to create text file.");
+            if (createdFilePath != null)
+            {
+                logger.LogInfo($"Text file created successfully: {createdFilePath}");
+                Console.WriteLine($"Text file created successfully: {createdFilePath}");
+            }
+            else
+            {
+                logger.LogError("Failed to create text file.");
+                Console.WriteLine("Failed to create text file.");
+                return; // Stop execution if text file cannot be created
+            }
 
             var fileWriter = new FileWriter();
-
-            // Parallel processing of images
             var imageFiles = Directory.GetFiles(inputFolder, "*.png");
             var timeTracker = new ProcessingTimeTracker(comparisonResults);
 
+            if (imageFiles.Length == 0)
+            {
+                logger.LogError("No images found in the input folder.");
+                Console.WriteLine("No images found in the input folder.");
+                return;
+            }
+
+            logger.LogInfo($"Processing {imageFiles.Length} images...");
+
+            // Parallel processing of images
             Parallel.ForEach(imageFiles, inputFilePath =>
             {
-                
                 try
                 {
                     string fileName = Path.GetFileNameWithoutExtension(inputFilePath);
                     using var inputImage = new Bitmap(inputFilePath);
                     ImageDisplayer.ShowImage(inputImage, "Original Image");
+
+                    logger.LogInfo($"Processing image: {fileName}.png");
 
                     var transformations = new (string, Func<Bitmap, Bitmap>)[]
                     {
@@ -66,21 +92,29 @@ class Program
                         string outputPath = Path.Combine(outputFolderImage, fileName + suffix + ".png");
                         processedImage.Save(outputPath, ImageFormat.Png);
 
+                        logger.LogInfo($"Saved processed image: {outputPath}");
+
                         TesseractProcessor.ExtractTextFromImage(processedImage, createdFilePath, fileWriter);
                         timeTracker.StopAndRecord(fileName, suffix);
                     }
+
+                    logger.LogInfo($"Successfully processed image: {fileName}.png");
                 }
                 catch (Exception ex)
                 {
+                    logger.LogError($"Error processing {inputFilePath}: {ex.Message}");
                     Console.WriteLine($"Error processing {inputFilePath}: {ex.Message}");
                 }
             });
 
             timeTracker.GenerateExcelReport();
+            logger.LogInfo("Processing completed successfully.");
+
             Console.WriteLine("Processing completed. Press any key to exit.");
         }
         catch (Exception ex)
         {
+            logger.LogError($"Critical error in process: {ex.Message}");
             Console.WriteLine($"Error in Process: {ex.Message}");
         }
         finally
