@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "jWwvEv8X+fg=",
+  "success": true,
+  "projectFilePath": "/Users/khushalsingh/Downloads/ocr-techtitans/src/OCR/Preprocessing/NoiseRemoval/ConsoleApp2/ConsoleApp2/ConsoleApp2.csproj",
+  "expectedPackageFiles": [
+    "/Users/khushalsingh/.nuget/packages/sixlabors.imagesharp/3.1.6/sixlabors.imagesharp.3.1.6.nupkg.sha512"
+  ],
+  "logs": []
+}
