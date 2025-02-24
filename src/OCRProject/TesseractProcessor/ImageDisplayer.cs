@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Threading.Tasks;
 
 namespace OCRProject.TesseractProcessor
 {
@@ -21,6 +22,12 @@ namespace OCRProject.TesseractProcessor
                 };
 
                 form.Controls.Add(pictureBox);
+                form.Load += async (sender, e) =>
+                {
+                    await Task.Delay(3000); // Wait for 3 seconds
+                    form.Close(); // Close the form automatically
+                };
+
                 Application.Run(form);
             }
         }

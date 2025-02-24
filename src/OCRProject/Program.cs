@@ -27,11 +27,7 @@ class Program
             string outputFolderText = config.ExtractedTextFolder;
             string comparisonResults = config.ComparisionFolder;
 
-            // Ensure output directories exist
-            Directory.CreateDirectory(outputFolderImage);
-            Directory.CreateDirectory(outputFolderText);
-            Directory.CreateDirectory(comparisonResults);
-
+          
             logger.LogInfo("Configuration loaded successfully.");
 
             // Create output text file
@@ -120,6 +116,7 @@ class Program
         finally
         {
             Console.ReadKey();
+           
         }
     }
 }
