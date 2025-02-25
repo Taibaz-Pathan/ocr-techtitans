@@ -4,36 +4,50 @@ using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.Processing;
 using SixLabors.ImageSharp.Formats.Jpeg;
 
-class NoiseRemoval
+namespace ImageProcessing
 {
-    static void Main()
+    class NoiseRemoval
     {
-        try
+        static void Main()
         {
-            Console.WriteLine("Loading image...");
-            string imagePath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Input/sample.jpg";
-
-            if (!File.Exists(imagePath))
+            try
             {
-                Console.WriteLine("Image file not found!");
-                return;
+                Console.WriteLine("Loading image...");
+                string imagePath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Input/sample.jpg";
+
+                if (!File.Exists(imagePath))
+                {
+                    Console.WriteLine("Error: Image file not found!");
+                    return;
+                }
+
+                // Ask user for noise removal intensity
+                Console.Write("Enter blur intensity (recommended: 1.5): ");
+                if (!float.TryParse(Console.ReadLine(), out float blurIntensity) || blurIntensity <= 0)
+                {
+                    Console.WriteLine("Invalid input! Using default blur intensity: 1.5");
+                    blurIntensity = 1.5f;
+                }
+
+                // Ensure output directory exists
+                string outputDirectory = "/Users/khushalsingh/Downloads/ocr-techtitans/Output/";
+                Directory.CreateDirectory(outputDirectory);
+
+                string timestamp = DateTime.Now.ToString("yyyyMMdd_HHmmss");
+                string outputPath = $"{outputDirectory}noise_removed_{timestamp}.jpg";
+
+                using (Image image = Image.Load(imagePath))
+                {
+                    Console.WriteLine($"Applying noise removal with intensity {blurIntensity}...");
+                    image.Mutate(x => x.GaussianBlur(blurIntensity));
+                    image.Save(outputPath, new JpegEncoder());
+                    Console.WriteLine($"Noise-removed image saved at: {outputPath}");
+                }
             }
-
-            string timestamp = DateTime.Now.ToString("yyyyMMdd_HHmmss");
-            string outputPath = $"/Users/khushalsingh/Downloads/ocr-techtitans/Output/noise_removed_{timestamp}.jpg";
-
-            using (Image image = Image.Load(imagePath))
+            catch (Exception ex)
             {
-                Console.WriteLine("Applying noise removal...");
-                image.Mutate(x => x.GaussianBlur(1.5f));  // Using Gaussian Blur as a noise reduction filter
-
-                image.Save(outputPath, new JpegEncoder());
-                Console.WriteLine($"Noise-removed image saved at: {outputPath}");
+                Console.WriteLine("An error occurred: " + ex.Message);
             }
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine("An error occurred: " + ex.Message);
         }
     }
 }
