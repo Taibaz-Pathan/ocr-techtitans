@@ -15,14 +15,12 @@ namespace ImageProcessing
                 Console.WriteLine("Loading image...");
                 string imagePath = @"/Users/khushalsingh/Downloads/ocr-techtitans/Input/sample.jpg";
 
-                // Ensure the image file exists
                 if (!File.Exists(imagePath))
                 {
                     Console.WriteLine("Error: Image file not found!");
                     return;
                 }
 
-                // Define new dimensions
                 Console.Write("Enter new width: ");
                 if (!int.TryParse(Console.ReadLine(), out int newWidth) || newWidth <= 0)
                 {
@@ -37,12 +35,18 @@ namespace ImageProcessing
                     return;
                 }
 
-                // Generate unique output file and log file names
                 string timestamp = DateTime.Now.ToString("yyyyMMdd_HHmmss");
-                string outputPath = $"/Users/khushalsingh/Downloads/ocr-techtitans/Output/resized_{timestamp}.jpg";
-                string logFilePath = $"/Users/khushalsingh/Downloads/ocr-techtitans/Logs/Resize_Log_{timestamp}.txt";
+                string outputDir = "/Users/khushalsingh/Downloads/ocr-techtitans/Output/";
+                string logDir = "/Users/khushalsingh/Downloads/ocr-techtitans/Logs/";
 
-                // Load the image and apply resizing
+                // **Ensure directories exist before saving files**
+                Directory.CreateDirectory(outputDir);
+                Directory.CreateDirectory(logDir);
+
+                string outputPath = $"{outputDir}resized_{timestamp}.jpg";
+                string logFilePath = $"{logDir}Resize_Log_{timestamp}.txt";
+
+                // Load and process the image
                 using (Image image = Image.Load(imagePath))
                 {
                     Console.WriteLine("Resizing image...");
@@ -52,13 +56,12 @@ namespace ImageProcessing
                     Console.WriteLine($"Resized image saved at: {outputPath}");
                 }
 
-                // Log the results
                 LogResults(logFilePath, imagePath, outputPath, newWidth, newHeight);
                 Console.WriteLine("Image resizing completed. Results logged.");
             }
             catch (Exception ex)
             {
-                Console.WriteLine("An error occurred: " + ex.Message);
+                Console.WriteLine($"An error occurred: {ex.Message}");
             }
         }
 
@@ -79,7 +82,7 @@ namespace ImageProcessing
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Failed to write log file: " + ex.Message);
+                Console.WriteLine($"Failed to write log file: {ex.Message}");
             }
         }
     }
