@@ -51,6 +51,34 @@
         "net9.0-windows7.0": {
           "targetAlias": "net9.0-windows",
           "dependencies": {
+            "AForge": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "AForge.Imaging": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "DocumentFormat.OpenXml": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "EPPlus": {
+              "target": "Package",
+              "version": "[8.0.0-beta, )"
+            },
+            "NPOI": {
+              "target": "Package",
+              "version": "[2.7.2, )"
+            },
+            "OpenAI": {
+              "target": "Package",
+              "version": "[1.11.0, )"
+            },
+            "OpenAI-DotNet": {
+              "target": "Package",
+              "version": "[8.5.4, )"
+            },
             "System.Drawing.Common": {
               "target": "Package",
               "version": "[9.0.0, )"
