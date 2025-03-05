@@ -1,9 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "S/pIJqONj+0=",
+  "dgSpecHash": "87PW2X56Tgc=",
   "success": true,
   "projectFilePath": "/Users/taibazpathan/Desktop/Git/ocr-techtitans/src/OCRProject/OCRProject.csproj",
   "expectedPackageFiles": [
+    "/Users/taibazpathan/Documents/RiderProjects/accord/3.8.2-alpha/accord.3.8.2-alpha.nupkg.sha512",
+    "/Users/taibazpathan/Documents/RiderProjects/accord.imaging/3.8.2-alpha/accord.imaging.3.8.2-alpha.nupkg.sha512",
+    "/Users/taibazpathan/Documents/RiderProjects/accord.math/3.8.2-alpha/accord.math.3.8.2-alpha.nupkg.sha512",
+    "/Users/taibazpathan/Documents/RiderProjects/accord.statistics/3.8.2-alpha/accord.statistics.3.8.2-alpha.nupkg.sha512",
     "/Users/taibazpathan/Documents/RiderProjects/microsoft.extensions.dependencyinjection.abstractions/8.0.2/microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
     "/Users/taibazpathan/Documents/RiderProjects/microsoft.extensions.logging.abstractions/8.0.2/microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
     "/Users/taibazpathan/Documents/RiderProjects/microsoft.win32.systemevents/9.0.0/microsoft.win32.systemevents.9.0.0.nupkg.sha512",
@@ -17,7 +21,8 @@
     "/Users/taibazpathan/Documents/RiderProjects/system.windows.forms.pictograms/1.2.20/system.windows.forms.pictograms.1.2.20.nupkg.sha512",
     "/Users/taibazpathan/Documents/RiderProjects/tesseract/5.2.0/tesseract.5.2.0.nupkg.sha512",
     "/Users/taibazpathan/Documents/RiderProjects/tesseract.data.english/4.0.0/tesseract.data.english.4.0.0.nupkg.sha512",
-    "/Users/taibazpathan/Documents/RiderProjects/tesseractocr/5.4.2/tesseractocr.5.4.2.nupkg.sha512"
+    "/Users/taibazpathan/Documents/RiderProjects/tesseractocr/5.4.2/tesseractocr.5.4.2.nupkg.sha512",
+    "/Users/taibazpathan/Documents/RiderProjects/microsoft.windowsdesktop.app.ref/9.0.0/microsoft.windowsdesktop.app.ref.9.0.0.nupkg.sha512"
   ],
   "logs": [
     {

@@ -5,5 +5,6 @@
     <Import Project="$(NuGetPackageRoot)/tesseractocr/5.4.2/build/TesseractOCR.targets" Condition="Exists('$(NuGetPackageRoot)/tesseractocr/5.4.2/build/TesseractOCR.targets')" />
     <Import Project="$(NuGetPackageRoot)/tesseract.data.english/4.0.0/build/Tesseract.Data.English.targets" Condition="Exists('$(NuGetPackageRoot)/tesseract.data.english/4.0.0/build/Tesseract.Data.English.targets')" />
     <Import Project="$(NuGetPackageRoot)/tesseract/5.2.0/build/Tesseract.targets" Condition="Exists('$(NuGetPackageRoot)/tesseract/5.2.0/build/Tesseract.targets')" />
+    <Import Project="$(NuGetPackageRoot)/accord/3.8.2-alpha/build/Accord.targets" Condition="Exists('$(NuGetPackageRoot)/accord/3.8.2-alpha/build/Accord.targets')" />
   </ImportGroup>
 </Project>
