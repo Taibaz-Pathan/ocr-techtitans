@@ -2,6 +2,7 @@
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
 using OCRProject.ImageProcessing;
 using OCRProject.Utils;
@@ -27,7 +28,6 @@ class Program
             string outputFolderText = config.ExtractedTextFolder;
             string comparisonResults = config.ComparisionFolder;
 
-          
             logger.LogInfo("Configuration loaded successfully.");
 
             // Create output text file
@@ -48,7 +48,17 @@ class Program
             }
 
             var fileWriter = new FileWriter();
-            var imageFiles = Directory.GetFiles(inputFolder, "*.png");
+
+            // Get all image files in the input folder (supporting multiple formats)
+            var imageFiles = Directory.GetFiles(inputFolder, "*.*", SearchOption.TopDirectoryOnly)
+                .Where(file => file.EndsWith(".png", StringComparison.OrdinalIgnoreCase) ||
+                               file.EndsWith(".jpg", StringComparison.OrdinalIgnoreCase) ||
+                               file.EndsWith(".jpeg", StringComparison.OrdinalIgnoreCase) ||
+                               file.EndsWith(".bmp", StringComparison.OrdinalIgnoreCase) ||
+                               file.EndsWith(".gif", StringComparison.OrdinalIgnoreCase) ||
+                               file.EndsWith(".tiff", StringComparison.OrdinalIgnoreCase))
+                .ToArray();
+
             var timeTracker = new ProcessingTimeTracker(comparisonResults);
 
             if (imageFiles.Length == 0)
@@ -60,48 +70,67 @@ class Program
 
             logger.LogInfo($"Processing {imageFiles.Length} images...");
 
-            // Parallel processing of images
-            Parallel.ForEach(imageFiles, inputFilePath =>
+            // Process images sequentially to avoid memory issues with large images
+            foreach (var inputFilePath in imageFiles)
             {
                 try
                 {
                     string fileName = Path.GetFileNameWithoutExtension(inputFilePath);
-                    using var inputImage = new Bitmap(inputFilePath);
-                    ImageDisplayer.ShowImage(inputImage, "Original Image");
+                    string fileExtension = Path.GetExtension(inputFilePath).ToLower();
 
-                    logger.LogInfo($"Processing image: {fileName}.png");
-
-                    var transformations = new (string, Func<Bitmap, Bitmap>)[]
+                    // Load the image in a memory-efficient way
+                    using (var fileStream = new FileStream(inputFilePath, FileMode.Open, FileAccess.Read))
+                    using (var inputImage = Image.FromStream(fileStream, false, false))
                     {
-                        ("_grayscale", img => new ConvertToGrayscale().Apply(img)),
-                        ("_AdaptiveThreshold", img => new AdaptiveThreshold().ApplyThreshold(img)),
-                        ("_GlobalThreshold", img => new GlobalThresholding(128).ApplyThreshold(img)),
-                        ("_Shifted", img => new ShiftImage().Apply(img, 5, 5)),
-                        ("_SaturationAdjusted", img => new SaturationAdjustment().Apply(img, 1.2f)),
-                        ("_Deskewed", img => new Deskew().Apply(img))
-                    };
+                        // Resize large images to a manageable size (e.g., max width/height of 2000 pixels)
+                        using (var resizedImage = ResizeImage(inputImage, 2000, 2000))
+                        {
+                            ImageDisplayer.ShowImage(resizedImage, "Original Image");
 
-                    foreach (var (suffix, transform) in transformations)
-                    {
-                        timeTracker.StartTimer();
-                        using var processedImage = transform(inputImage);
-                        string outputPath = Path.Combine(outputFolderImage, fileName + suffix + ".png");
-                        processedImage.Save(outputPath, ImageFormat.Png);
+                            logger.LogInfo($"Processing image: {fileName}{fileExtension}");
 
-                        logger.LogInfo($"Saved processed image: {outputPath}");
+                            var transformations = new (string, Func<Bitmap, Bitmap>)[]
+                            {
+                                ("_grayscale", img => new ConvertToGrayscale().Apply(img)),
+                                ("_AdaptiveThreshold", img => new AdaptiveThreshold().ApplyThreshold(img)),
+                                ("_GlobalThreshold", img => new GlobalThresholding(128).ApplyThreshold(img)),
+                                ("_Shifted", img => new ShiftImage().Apply(img, 5, 5)),
+                                ("_SaturationAdjusted", img => new SaturationAdjustment().Apply(img, 1.2f)),
+                                ("_Deskewed", img => new Deskew().Apply(img))
+                            };
 
-                        TesseractProcessor.ExtractTextFromImage(processedImage, createdFilePath, fileWriter);
-                        timeTracker.StopAndRecord(fileName, suffix);
+                            foreach (var (suffix, transform) in transformations)
+                            {
+                                timeTracker.StartTimer();
+                                using (var processedImage = transform(new Bitmap(resizedImage)))
+                                {
+                                    string outputPath = Path.Combine(outputFolderImage, fileName + suffix + fileExtension);
+
+                                    // Save the processed image in the same format as the input
+                                    processedImage.Save(outputPath, GetImageFormat(fileExtension));
+
+                                    logger.LogInfo($"Saved processed image: {outputPath}");
+
+                                    TesseractProcessor.ExtractTextFromImage(processedImage, createdFilePath, fileWriter);
+                                    timeTracker.StopAndRecord(fileName, suffix);
+                                }
+                            }
+
+                            logger.LogInfo($"Successfully processed image: {fileName}{fileExtension}");
+                        }
                     }
-
-                    logger.LogInfo($"Successfully processed image: {fileName}.png");
+                }
+                catch (OutOfMemoryException ex)
+                {
+                    logger.LogError($"Out of memory while processing {inputFilePath}: {ex.Message}");
+                    Console.WriteLine($"Out of memory while processing {inputFilePath}: {ex.Message}");
                 }
                 catch (Exception ex)
                 {
                     logger.LogError($"Error processing {inputFilePath}: {ex.Message}");
                     Console.WriteLine($"Error processing {inputFilePath}: {ex.Message}");
                 }
-            });
+            }
 
             timeTracker.GenerateExcelReport();
             logger.LogInfo("Processing completed successfully.");
@@ -116,7 +145,45 @@ class Program
         finally
         {
             Console.ReadKey();
-           
+        }
+    }
+
+    // Helper method to resize large images
+    private static Bitmap ResizeImage(Image image, int maxWidth, int maxHeight)
+    {
+        var ratioX = (double)maxWidth / image.Width;
+        var ratioY = (double)maxHeight / image.Height;
+        var ratio = Math.Min(ratioX, ratioY);
+
+        var newWidth = (int)(image.Width * ratio);
+        var newHeight = (int)(image.Height * ratio);
+
+        var newImage = new Bitmap(newWidth, newHeight);
+        using (var graphics = Graphics.FromImage(newImage))
+        {
+            graphics.DrawImage(image, 0, 0, newWidth, newHeight);
+        }
+
+        return newImage;
+    }
+
+    // Helper method to get the correct ImageFormat based on file extension
+    private static ImageFormat GetImageFormat(string extension)
+    {
+        switch (extension.ToLower())
+        {
+            case ".jpg":
+            case ".jpeg":
+                return ImageFormat.Jpeg;
+            case ".bmp":
+                return ImageFormat.Bmp;
+            case ".gif":
+                return ImageFormat.Gif;
+            case ".tiff":
+                return ImageFormat.Tiff;
+            case ".png":
+            default:
+                return ImageFormat.Png;
         }
     }
 }
