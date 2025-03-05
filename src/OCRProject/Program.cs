@@ -2,105 +2,188 @@
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
-using Utils;
-using Tesseract; 
-using System.Windows.Forms;
+using System.Linq;
+using System.Threading.Tasks;
 using OCRProject.ImageProcessing;
 using OCRProject.Utils;
-using System.IO.Pipelines;
 using OCRProject.TesseractProcessor;
-
+using OCRProject.ModelComparison;
+using Utils;
 
 class Program
 {
     static void Main(string[] args)
     {
+        var logger = new Logger(); // Initialize logger
+
         try
         {
             Console.WriteLine("Starting Image Processing...");
+            logger.LogInfo("Starting Image Processing...");
 
             // Load configuration
-            ConfigLoader config = new ConfigLoader();
+            var config = new ConfigLoader();
             string inputFolder = config.InputFolder;
             string outputFolderImage = config.OutputImageFolder;
             string outputFolderText = config.ExtractedTextFolder;
+            string comparisonResults = config.ComparisionFolder;
 
-            // Create an instance of CreateFiles
-            CreateFiles fileCreator = new CreateFiles();
-            string fileNameExtracted = "ProcessedFile_" + DateTime.Now.ToString("yyyyMMdd_HHmmss") + ".txt";
+            logger.LogInfo("Configuration loaded successfully.");
 
-            // Call the CreateTextFile method
-            string createdFilePath = fileCreator.CreateTextFile(outputFolderText, fileNameExtracted); 
+            // Create output text file
+            var fileCreator = new CreateFiles();
+            string fileNameExtracted = $"ProcessedFile_{DateTime.Now:yyyyMMdd_HHmmss}.txt";
+            string createdFilePath = fileCreator.CreateTextFile(outputFolderText, fileNameExtracted);
 
             if (createdFilePath != null)
             {
+                logger.LogInfo($"Text file created successfully: {createdFilePath}");
                 Console.WriteLine($"Text file created successfully: {createdFilePath}");
             }
             else
             {
+                logger.LogError("Failed to create text file.");
                 Console.WriteLine("Failed to create text file.");
+                return; // Stop execution if text file cannot be created
             }
 
-            FileWriter fileWriter = new FileWriter();
+            var fileWriter = new FileWriter();
 
-            // Process all images in the input folder
-            foreach (string inputFilePath in Directory.GetFiles(inputFolder, "*.png"))
+            // Get all image files in the input folder (supporting multiple formats)
+            var imageFiles = Directory.GetFiles(inputFolder, "*.*", SearchOption.TopDirectoryOnly)
+                .Where(file => file.EndsWith(".png", StringComparison.OrdinalIgnoreCase) ||
+                               file.EndsWith(".jpg", StringComparison.OrdinalIgnoreCase) ||
+                               file.EndsWith(".jpeg", StringComparison.OrdinalIgnoreCase) ||
+                               file.EndsWith(".bmp", StringComparison.OrdinalIgnoreCase) ||
+                               file.EndsWith(".gif", StringComparison.OrdinalIgnoreCase) ||
+                               file.EndsWith(".tiff", StringComparison.OrdinalIgnoreCase))
+                .ToArray();
+
+            var timeTracker = new ProcessingTimeTracker(comparisonResults);
+
+            if (imageFiles.Length == 0)
             {
-                string fileName = Path.GetFileNameWithoutExtension(inputFilePath);
-                string outputGrayscalePath = Path.Combine(outputFolderImage, fileName + "_grayscale.png");
-                string outputThresholdPath = Path.Combine(outputFolderImage, fileName + "_Adaptivethreshold.png");
+                logger.LogError("No images found in the input folder.");
+                Console.WriteLine("No images found in the input folder.");
+                return;
+            }
 
-                // Load the image
-                using (Bitmap inputImage = new Bitmap(inputFilePath))
+            logger.LogInfo($"Processing {imageFiles.Length} images...");
+
+            // Process images sequentially to avoid memory issues with large images
+            foreach (var inputFilePath in imageFiles)
+            {
+                try
                 {
-                    ImageDisplayer.ShowImage(inputImage, "Original Image");
+                    string fileName = Path.GetFileNameWithoutExtension(inputFilePath);
+                    string fileExtension = Path.GetExtension(inputFilePath).ToLower();
 
-                    // Convert to grayscale
-                    ConvertToGrayscale grayscaleConverter = new ConvertToGrayscale();
-                    Bitmap grayImage = grayscaleConverter.Apply(inputImage);
-                    //ShowImage(grayImage, "Grayscale Image");
-                    grayImage.Save(Path.Combine(outputFolderImage, fileName + "_grayscale.png"), System.Drawing.Imaging.ImageFormat.Png);
-                    TesseractProcessor.ExtractTextFromImage(grayImage, createdFilePath, fileWriter);
+                    // Load the image in a memory-efficient way
+                    using (var fileStream = new FileStream(inputFilePath, FileMode.Open, FileAccess.Read))
+                    using (var inputImage = Image.FromStream(fileStream, false, false))
+                    {
+                        // Resize large images to a manageable size (e.g., max width/height of 2000 pixels)
+                        using (var resizedImage = ResizeImage(inputImage, 2000, 2000))
+                        {
+                            ImageDisplayer.ShowImage(resizedImage, "Original Image");
 
-                    // Apply adaptive thresholding
-                    AdaptiveThreshold adaptiveThreshold = new AdaptiveThreshold();
-                    Bitmap adaptiveThresholdImage = adaptiveThreshold.ApplyThreshold(inputImage);
-                    //ShowImage(adaptiveThresholdImage, "Adaptive Threshold Image");
-                    adaptiveThresholdImage.Save(Path.Combine(outputFolderImage, fileName + "_AdaptiveThreshold.png"), System.Drawing.Imaging.ImageFormat.Png);
-                    TesseractProcessor.ExtractTextFromImage(adaptiveThresholdImage, createdFilePath, fileWriter);
+                            logger.LogInfo($"Processing image: {fileName}{fileExtension}");
 
-                    // Apply global thresholding (Example: threshold = 128)
-                    GlobalThresholding globalThresholding = new GlobalThresholding(128);
-                    Bitmap globalThresholdImage = globalThresholding.ApplyThreshold(inputImage);
-                    //ShowImage(globalThresholdImage, "Global Threshold Image");
-                    globalThresholdImage.Save(Path.Combine(outputFolderImage, fileName + "globalThreshold.png"), System.Drawing.Imaging.ImageFormat.Png);
-                    TesseractProcessor.ExtractTextFromImage(globalThresholdImage, createdFilePath, fileWriter);
+                            var transformations = new (string, Func<Bitmap, Bitmap>)[]
+                            {
+                                ("_grayscale", img => new ConvertToGrayscale().Apply(img)),
+                                ("_AdaptiveThreshold", img => new AdaptiveThreshold().ApplyThreshold(img)),
+                                ("_GlobalThreshold", img => new GlobalThresholding(128).ApplyThreshold(img)),
+                                ("_Shifted", img => new ShiftImage().Apply(img, 5, 5)),
+                                ("_SaturationAdjusted", img => new SaturationAdjustment().Apply(img, 1.2f)),
+                                ("_Deskewed", img => new Deskew().Apply(img))
+                            };
 
-                    ShiftImage shiftProcessor = new ShiftImage();
-                    Bitmap shiftedImage = shiftProcessor.Apply(inputImage, 5, 5);
-                    //ShowImage(shiftedImage, "Shifted Image");
-                    shiftedImage.Save(Path.Combine(outputFolderImage, fileName + "_shiftedImage.png"), System.Drawing.Imaging.ImageFormat.Png);
-                    TesseractProcessor.ExtractTextFromImage(shiftedImage, createdFilePath, fileWriter);
+                            foreach (var (suffix, transform) in transformations)
+                            {
+                                timeTracker.StartTimer();
+                                using (var processedImage = transform(new Bitmap(resizedImage)))
+                                {
+                                    string outputPath = Path.Combine(outputFolderImage, fileName + suffix + fileExtension);
 
-                    SaturationAdjustment saturationProcessor = new SaturationAdjustment();
-                    Bitmap adjustedImage = saturationProcessor.Apply(globalThresholdImage, 1.2f); // Adjust saturation factor
-                    //ShowImage(adjustedImage, "Saturation Adjusted Image");
-                    shiftedImage.Save(Path.Combine(outputFolderImage, fileName + "_SaturationAjusted.png"), System.Drawing.Imaging.ImageFormat.Png);
-                    TesseractProcessor.ExtractTextFromImage(adjustedImage, createdFilePath, fileWriter);
+                                    // Save the processed image in the same format as the input
+                                    processedImage.Save(outputPath, GetImageFormat(fileExtension));
 
+                                    logger.LogInfo($"Saved processed image: {outputPath}");
+
+                                    TesseractProcessor.ExtractTextFromImage(processedImage, createdFilePath, fileWriter);
+                                    timeTracker.StopAndRecord(fileName, suffix);
+                                }
+                            }
+
+                            logger.LogInfo($"Successfully processed image: {fileName}{fileExtension}");
+                        }
+                    }
+                }
+                catch (OutOfMemoryException ex)
+                {
+                    logger.LogError($"Out of memory while processing {inputFilePath}: {ex.Message}");
+                    Console.WriteLine($"Out of memory while processing {inputFilePath}: {ex.Message}");
+                }
+                catch (Exception ex)
+                {
+                    logger.LogError($"Error processing {inputFilePath}: {ex.Message}");
+                    Console.WriteLine($"Error processing {inputFilePath}: {ex.Message}");
                 }
             }
+
+            timeTracker.GenerateExcelReport();
+            logger.LogInfo("Processing completed successfully.");
 
             Console.WriteLine("Processing completed. Press any key to exit.");
         }
         catch (Exception ex)
         {
+            logger.LogError($"Critical error in process: {ex.Message}");
             Console.WriteLine($"Error in Process: {ex.Message}");
         }
         finally
         {
             Console.ReadKey();
         }
-    }   
-    
+    }
+
+    // Helper method to resize large images
+    private static Bitmap ResizeImage(Image image, int maxWidth, int maxHeight)
+    {
+        var ratioX = (double)maxWidth / image.Width;
+        var ratioY = (double)maxHeight / image.Height;
+        var ratio = Math.Min(ratioX, ratioY);
+
+        var newWidth = (int)(image.Width * ratio);
+        var newHeight = (int)(image.Height * ratio);
+
+        var newImage = new Bitmap(newWidth, newHeight);
+        using (var graphics = Graphics.FromImage(newImage))
+        {
+            graphics.DrawImage(image, 0, 0, newWidth, newHeight);
+        }
+
+        return newImage;
+    }
+
+    // Helper method to get the correct ImageFormat based on file extension
+    private static ImageFormat GetImageFormat(string extension)
+    {
+        switch (extension.ToLower())
+        {
+            case ".jpg":
+            case ".jpeg":
+                return ImageFormat.Jpeg;
+            case ".bmp":
+                return ImageFormat.Bmp;
+            case ".gif":
+                return ImageFormat.Gif;
+            case ".tiff":
+                return ImageFormat.Tiff;
+            case ".png":
+            default:
+                return ImageFormat.Png;
+        }
+    }
 }
