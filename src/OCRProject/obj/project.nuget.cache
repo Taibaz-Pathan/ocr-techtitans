@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "87PW2X56Tgc=",
+  "dgSpecHash": "UPEEmTn8qBQ=",
   "success": true,
   "projectFilePath": "/Users/taibazpathan/Desktop/Git/ocr-techtitans/src/OCRProject/OCRProject.csproj",
   "expectedPackageFiles": [
@@ -8,14 +8,34 @@
     "/Users/taibazpathan/Documents/RiderProjects/accord.imaging/3.8.2-alpha/accord.imaging.3.8.2-alpha.nupkg.sha512",
     "/Users/taibazpathan/Documents/RiderProjects/accord.math/3.8.2-alpha/accord.math.3.8.2-alpha.nupkg.sha512",
     "/Users/taibazpathan/Documents/RiderProjects/accord.statistics/3.8.2-alpha/accord.statistics.3.8.2-alpha.nupkg.sha512",
+    "/Users/taibazpathan/Documents/RiderProjects/aforge/2.2.5/aforge.2.2.5.nupkg.sha512",
+    "/Users/taibazpathan/Documents/RiderProjects/aforge.imaging/2.2.5/aforge.imaging.2.2.5.nupkg.sha512",
+    "/Users/taibazpathan/Documents/RiderProjects/aforge.math/2.2.5/aforge.math.2.2.5.nupkg.sha512",
+    "/Users/taibazpathan/Documents/RiderProjects/bouncycastle.cryptography/2.3.1/bouncycastle.cryptography.2.3.1.nupkg.sha512",
+    "/Users/taibazpathan/Documents/RiderProjects/documentformat.openxml/3.2.0/documentformat.openxml.3.2.0.nupkg.sha512",
+    "/Users/taibazpathan/Documents/RiderProjects/documentformat.openxml.framework/3.2.0/documentformat.openxml.framework.3.2.0.nupkg.sha512",
+    "/Users/taibazpathan/Documents/RiderProjects/enums.net/4.0.1/enums.net.4.0.1.nupkg.sha512",
+    "/Users/taibazpathan/Documents/RiderProjects/extendednumerics.bigdecimal/2025.1001.2.129/extendednumerics.bigdecimal.2025.1001.2.129.nupkg.sha512",
+    "/Users/taibazpathan/Documents/RiderProjects/mathnet.numerics.signed/5.0.0/mathnet.numerics.signed.5.0.0.nupkg.sha512",
     "/Users/taibazpathan/Documents/RiderProjects/microsoft.extensions.dependencyinjection.abstractions/8.0.2/microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
     "/Users/taibazpathan/Documents/RiderProjects/microsoft.extensions.logging.abstractions/8.0.2/microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "/Users/taibazpathan/Documents/RiderProjects/microsoft.io.recyclablememorystream/3.0.0/microsoft.io.recyclablememorystream.3.0.0.nupkg.sha512",
+    "/Users/taibazpathan/Documents/RiderProjects/microsoft.netcore.platforms/5.0.0/microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "/Users/taibazpathan/Documents/RiderProjects/microsoft.win32.systemevents/9.0.0/microsoft.win32.systemevents.9.0.0.nupkg.sha512",
+    "/Users/taibazpathan/Documents/RiderProjects/npoi/2.7.2/npoi.2.7.2.nupkg.sha512",
+    "/Users/taibazpathan/Documents/RiderProjects/sharpziplib/1.4.2/sharpziplib.1.4.2.nupkg.sha512",
+    "/Users/taibazpathan/Documents/RiderProjects/sixlabors.fonts/1.0.1/sixlabors.fonts.1.0.1.nupkg.sha512",
+    "/Users/taibazpathan/Documents/RiderProjects/sixlabors.imagesharp/2.1.9/sixlabors.imagesharp.2.1.9.nupkg.sha512",
     "/Users/taibazpathan/Documents/RiderProjects/system.drawing.common/9.0.0/system.drawing.common.9.0.0.nupkg.sha512",
     "/Users/taibazpathan/Documents/RiderProjects/system.drawing.pictograms/1.2.20/system.drawing.pictograms.1.2.20.nupkg.sha512",
+    "/Users/taibazpathan/Documents/RiderProjects/system.io.packaging/8.0.1/system.io.packaging.8.0.1.nupkg.sha512",
     "/Users/taibazpathan/Documents/RiderProjects/system.reactive/6.0.1/system.reactive.6.0.1.nupkg.sha512",
     "/Users/taibazpathan/Documents/RiderProjects/system.reactive.windows.forms/6.0.1/system.reactive.windows.forms.6.0.1.nupkg.sha512",
     "/Users/taibazpathan/Documents/RiderProjects/system.reflection.emit/4.7.0/system.reflection.emit.4.7.0.nupkg.sha512",
+    "/Users/taibazpathan/Documents/RiderProjects/system.runtime.compilerservices.unsafe/5.0.0/system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+    "/Users/taibazpathan/Documents/RiderProjects/system.security.cryptography.pkcs/8.0.1/system.security.cryptography.pkcs.8.0.1.nupkg.sha512",
+    "/Users/taibazpathan/Documents/RiderProjects/system.security.cryptography.xml/8.0.2/system.security.cryptography.xml.8.0.2.nupkg.sha512",
+    "/Users/taibazpathan/Documents/RiderProjects/system.text.encoding.codepages/5.0.0/system.text.encoding.codepages.5.0.0.nupkg.sha512",
     "/Users/taibazpathan/Documents/RiderProjects/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "/Users/taibazpathan/Documents/RiderProjects/system.windows.forms.datavisualization/1.0.0-prerelease.20110.1/system.windows.forms.datavisualization.1.0.0-prerelease.20110.1.nupkg.sha512",
     "/Users/taibazpathan/Documents/RiderProjects/system.windows.forms.pictograms/1.2.20/system.windows.forms.pictograms.1.2.20.nupkg.sha512",
@@ -41,6 +61,36 @@
       "warningLevel": 1,
       "message": "OCRProject depends on System.Windows.Forms.Pictograms (>= 1.2.0) but System.Windows.Forms.Pictograms 1.2.0 was not found. An approximate best match of System.Windows.Forms.Pictograms 1.2.20 was resolved.",
       "libraryId": "System.Windows.Forms.Pictograms",
+      "targetGraphs": [
+        "net9.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'AForge 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net9.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "AForge",
+      "targetGraphs": [
+        "net9.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'AForge.Imaging 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net9.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "AForge.Imaging",
+      "targetGraphs": [
+        "net9.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'AForge.Math 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net9.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "AForge.Math",
       "targetGraphs": [
         "net9.0-windows7.0"
       ]
