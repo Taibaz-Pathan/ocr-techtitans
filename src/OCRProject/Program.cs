@@ -96,7 +96,8 @@ class Program
                                 ("_GlobalThreshold", img => new GlobalThresholding(128).ApplyThreshold(img)),
                                 ("_Shifted", img => new ShiftImage().Apply(img, 5, 5)),
                                 ("_SaturationAdjusted", img => new SaturationAdjustment().Apply(img, 1.2f)),
-                                ("_Deskewed", img => new Deskew().Apply(img))
+                                ("_Deskewed", img => new Deskew().Apply(img)),
+                                ("_Contrast", img => new Contrast().AdjustContrast(img, 1.2f)) // Adjust brightness & contrast
                             };
 
                             foreach (var (suffix, transform) in transformations)
