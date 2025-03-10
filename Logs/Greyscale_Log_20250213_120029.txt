@@ -1,5 +1,0 @@
-===== Grayscale Processing Log =====
-Timestamp: 13/02/2025 12:00:31 PM
-Original Image Path: /Users/khushalsingh/Downloads/ocr-techtitans/Input/ColourAdjTest.jpg
-Processed Image Path: /Users/khushalsingh/Downloads/ocr-techtitans/Output/greyscale_20250213_120029.jpg
-================================

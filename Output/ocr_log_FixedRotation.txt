@@ -1,6 +1,0 @@
-OCR Results:
-Original Image OCR:
-Error performing OCR: Exception has been thrown by the target of an invocation.
-
-Processed Image OCR:
-Error performing OCR: Exception has been thrown by the target of an invocation.
