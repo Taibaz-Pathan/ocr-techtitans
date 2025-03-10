@@ -98,6 +98,7 @@ class Program
                                 ("_SaturationAdjusted", img => new SaturationAdjustment().Apply(img, 1.2f)),
                                 ("_Deskewed", img => new Deskew().Apply(img)),
                                 ("_Contrast", img => new Contrast().AdjustContrast(img, 1.2f)) // Adjust brightness & contrast
+                                ("_GaussianBlur", img => new GaussianBlur().Apply(img, 2.0f)) // Apply Gaussian blur
                             };
 
                             foreach (var (suffix, transform) in transformations)
