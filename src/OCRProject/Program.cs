@@ -99,6 +99,7 @@ class Program
                                 ("_Deskewed", img => new Deskew().Apply(img)),
                                 ("_Contrast", img => new Contrast().AdjustContrast(img, 1.2f)) // Adjust brightness & contrast
                                 ("_GaussianBlur", img => new GaussianBlur().Apply(img, 2.0f)) // Apply Gaussian blur
+                                ("_Binarization", img => new Binarization().ApplyBinarization(img, 0.5f)) // Apply binarization with a threshold of 0.5
                             };
 
                             foreach (var (suffix, transform) in transformations)
