@@ -11,11 +11,12 @@
   <ItemGroup>
     <PackageReference Include="AForge" Version="2.2.5" />
     <PackageReference Include="AForge.Imaging" Version="2.2.5" />
+    <PackageReference Include="ClosedXML" Version="0.105.0-rc" />
     <PackageReference Include="DocumentFormat.OpenXml" Version="3.2.0" />
     <PackageReference Include="EPPlus" Version="8.0.0-beta" />
     <PackageReference Include="NPOI" Version="2.7.2" />
-    <PackageReference Include="OpenAI" Version="1.11.0" />
-    <PackageReference Include="OpenAI-DotNet" Version="8.5.4" />
+    <PackageReference Include="OpenAI" Version="2.2.0-beta.2" />
+    <PackageReference Include="OpenAI-DotNet" Version="8.6.2" />
     <PackageReference Include="System.Drawing.Common" Version="9.0.0" />
     <PackageReference Include="System.Reactive.Windows.Forms" Version="6.0.1" />
     <PackageReference Include="System.Windows.Forms.DataVisualization" Version="1.0.0-prerelease.20110.1" />

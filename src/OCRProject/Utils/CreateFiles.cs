@@ -30,7 +30,7 @@ namespace OCRProject.Utils
                 if (!File.Exists(filePath))
                 {
                     using (File.Create(filePath)) { }
-                    Console.WriteLine($"File created: {filePath}");
+                    //Console.WriteLine($"File created: {filePath}");
                 }
                 else
                 {

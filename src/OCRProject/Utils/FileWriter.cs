@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace Utils
+namespace OCRProject.Utils
 {
     public class FileWriter
     {
@@ -15,8 +15,8 @@ namespace Utils
             try
             {
                 // Debug output
-                Console.WriteLine($"WriteToFile - filePath: {filePath}");
-                Console.WriteLine($"WriteToFile - text: {text}");
+                //Console.WriteLine($"WriteToFile - filePath: {filePath}");
+                //Console.WriteLine($"WriteToFile - text: {text}");
 
                 if (string.IsNullOrEmpty(filePath) || string.IsNullOrEmpty(text))
                 {
@@ -40,7 +40,7 @@ namespace Utils
 
                 // Append text to file
                 File.AppendAllText(filePath, text + Environment.NewLine);
-                Console.WriteLine("Text written to file successfully.");
+                //Console.WriteLine("Text written to file successfully.");
             }
             catch (Exception ex)
             {
