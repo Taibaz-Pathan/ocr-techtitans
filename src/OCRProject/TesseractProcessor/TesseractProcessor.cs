@@ -1,23 +1,25 @@
 ﻿using System;
 using System.Drawing;
-using System.Drawing.Imaging; 
+using System.Drawing.Imaging;
 using System.IO;
 using Tesseract;
 using OCRProject.Utils;
-using Utils;
+
 
 namespace OCRProject.TesseractProcessor
 {
     public class TesseractProcessor
     {
-        public static void ExtractTextFromImage(Bitmap image, string createdFilePath, FileWriter fileWriter)
+        public static string ExtractTextFromImage(Bitmap image, string createdFilePath, FileWriter fileWriter)
         {
+            string extractedText = string.Empty;
+
             try
             {
                 using (var stream = new MemoryStream())
                 {
                     // Save Bitmap as a TIFF in memory
-                    image.Save(stream, System.Drawing.Imaging.ImageFormat.Tiff); 
+                    image.Save(stream, System.Drawing.Imaging.ImageFormat.Tiff);
                     stream.Position = 0;
 
                     // Load the Pix from the memory stream
@@ -27,10 +29,10 @@ namespace OCRProject.TesseractProcessor
                         {
                             using (var page = engine.Process(pixImage))
                             {
-                                string extractedText = page.GetText();
-                                Console.WriteLine($"Extracted text: {extractedText}");
+                                extractedText = page.GetText();  // Extract text from image
+                                //Console.WriteLine($"Extracted text: {extractedText}");
 
-                                // Write extracted text to the generated file
+                                // Write the extracted text to the file using the fileWriter
                                 fileWriter.WriteToFile(createdFilePath, extractedText);
                             }
                         }
@@ -41,6 +43,8 @@ namespace OCRProject.TesseractProcessor
             {
                 Console.WriteLine($"Error in ExtractTextFromImage: {ex.Message}");
             }
+
+            return extractedText;  // Return the extracted text
         }
     }
 }

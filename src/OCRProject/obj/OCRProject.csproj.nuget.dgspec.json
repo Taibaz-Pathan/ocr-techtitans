@@ -59,6 +59,10 @@
               "target": "Package",
               "version": "[2.2.5, )"
             },
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.105.0-rc, )"
+            },
             "DocumentFormat.OpenXml": {
               "target": "Package",
               "version": "[3.2.0, )"
@@ -73,11 +77,11 @@
             },
             "OpenAI": {
               "target": "Package",
-              "version": "[1.11.0, )"
+              "version": "[2.2.0-beta.2, )"
             },
             "OpenAI-DotNet": {
               "target": "Package",
-              "version": "[8.5.4, )"
+              "version": "[8.6.2, )"
             },
             "System.Drawing.Common": {
               "target": "Package",

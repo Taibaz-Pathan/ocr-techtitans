@@ -3,25 +3,25 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
-using System.Threading.Tasks;
+using System.Collections.Generic;
 using OCRProject.ImageProcessing;
 using OCRProject.Utils;
 using OCRProject.TesseractProcessor;
 using OCRProject.ModelComparison;
-using Utils;
+using ModelComparison;
 
 class Program
 {
     static void Main(string[] args)
     {
-        var logger = new Logger(); // Initialize logger
+        var logger = new Logger();
+        var embeddingGenerator = new EmbeddingGeneratorService();
 
         try
         {
             Console.WriteLine("Starting Image Processing...");
             logger.LogInfo("Starting Image Processing...");
 
-            // Load configuration
             var config = new ConfigLoader();
             string inputFolder = config.InputFolder;
             string outputFolderImage = config.OutputImageFolder;
@@ -30,26 +30,28 @@ class Program
 
             logger.LogInfo("Configuration loaded successfully.");
 
-            // Create output text file
+            var directoryCleaner = new DirectoryCleaner(logger);
+            directoryCleaner.CleanDirectory(outputFolderImage);
+            directoryCleaner.CleanDirectory(outputFolderText);
+            directoryCleaner.CleanDirectory(comparisonResults);
+
             var fileCreator = new CreateFiles();
             string fileNameExtracted = $"ProcessedFile_{DateTime.Now:yyyyMMdd_HHmmss}.txt";
             string createdFilePath = fileCreator.CreateTextFile(outputFolderText, fileNameExtracted);
 
-            if (createdFilePath != null)
-            {
-                logger.LogInfo($"Text file created successfully: {createdFilePath}");
-                Console.WriteLine($"Text file created successfully: {createdFilePath}");
-            }
-            else
+            if (createdFilePath == null)
             {
                 logger.LogError("Failed to create text file.");
                 Console.WriteLine("Failed to create text file.");
-                return; // Stop execution if text file cannot be created
+                return;
             }
 
-            var fileWriter = new FileWriter();
+            logger.LogInfo($"Text file created successfully: {createdFilePath}");
 
-            // Get all image files in the input folder (supporting multiple formats)
+            var fileWriter = new FileWriter();
+            var timeTracker = new ProcessingTimeTracker(comparisonResults);
+            var similarityCalculator = new CosineSimilarityCalculator(comparisonResults);
+
             var imageFiles = Directory.GetFiles(inputFolder, "*.*", SearchOption.TopDirectoryOnly)
                 .Where(file => file.EndsWith(".png", StringComparison.OrdinalIgnoreCase) ||
                                file.EndsWith(".jpg", StringComparison.OrdinalIgnoreCase) ||
@@ -58,8 +60,6 @@ class Program
                                file.EndsWith(".gif", StringComparison.OrdinalIgnoreCase) ||
                                file.EndsWith(".tiff", StringComparison.OrdinalIgnoreCase))
                 .ToArray();
-
-            var timeTracker = new ProcessingTimeTracker(comparisonResults);
 
             if (imageFiles.Length == 0)
             {
@@ -70,7 +70,6 @@ class Program
 
             logger.LogInfo($"Processing {imageFiles.Length} images...");
 
-            // Process images sequentially to avoid memory issues with large images
             foreach (var inputFilePath in imageFiles)
             {
                 try
@@ -78,52 +77,44 @@ class Program
                     string fileName = Path.GetFileNameWithoutExtension(inputFilePath);
                     string fileExtension = Path.GetExtension(inputFilePath).ToLower();
 
-                    // Load the image in a memory-efficient way
                     using (var fileStream = new FileStream(inputFilePath, FileMode.Open, FileAccess.Read))
                     using (var inputImage = Image.FromStream(fileStream, false, false))
                     {
-                        // Resize large images to a manageable size (e.g., max width/height of 2000 pixels)
                         using (var resizedImage = ResizeImage(inputImage, 2000, 2000))
                         {
-                            ImageDisplayer.ShowImage(resizedImage, "Original Image");
-
                             logger.LogInfo($"Processing image: {fileName}{fileExtension}");
 
-                            var transformations = new (string, Func<Bitmap, Bitmap>)[]
+                            var transformations = new Dictionary<string, Func<Bitmap, Bitmap>>
                             {
-                                ("_grayscale", img => new ConvertToGrayscale().Apply(img)),
-                                ("_AdaptiveThreshold", img => new AdaptiveThreshold().ApplyThreshold(img)),
-                                ("_GlobalThreshold", img => new GlobalThresholding(128).ApplyThreshold(img)),
-                                ("_Shifted", img => new ShiftImage().Apply(img, 5, 5)),
-                                ("_SaturationAdjusted", img => new SaturationAdjustment().Apply(img, 1.2f)),
-                                ("_Deskewed", img => new Deskew().Apply(img))
+                                { "Grayscale", img => new ConvertToGrayscale().Apply(img) },
+                                { "GlobalThreshold", img => new GlobalThresholding(128).ApplyThreshold(img) },
+                                { "Shifted", img => new ShiftImage().Apply(img, 5, 5) },
+                                { "SaturationAdjusted", img => new SaturationAdjustment().Apply(img, 1.2f) },
+                                { "Deskewed", img => new Deskew().Apply(img) }
                             };
 
-                            foreach (var (suffix, transform) in transformations)
+                            var extractedTexts = new Dictionary<string, string>();
+
+                            foreach (var (modelName, transform) in transformations)
                             {
                                 timeTracker.StartTimer();
                                 using (var processedImage = transform(new Bitmap(resizedImage)))
                                 {
-                                    string outputPath = Path.Combine(outputFolderImage, fileName + suffix + fileExtension);
-
-                                    // Save the processed image in the same format as the input
+                                    string outputPath = Path.Combine(outputFolderImage, fileName + "_" + modelName + fileExtension);
                                     processedImage.Save(outputPath, GetImageFormat(fileExtension));
-
                                     logger.LogInfo($"Saved processed image: {outputPath}");
 
-                                    TesseractProcessor.ExtractTextFromImage(processedImage, createdFilePath, fileWriter);
-                                    timeTracker.StopAndRecord(fileName, suffix);
+                                    string extractedText = TesseractProcessor.ExtractTextFromImage(processedImage, createdFilePath, fileWriter);
+                                    extractedTexts[modelName] = extractedText;
+                                    timeTracker.StopAndRecord(fileName, modelName);
                                 }
                             }
 
+                            var embeddings = embeddingGenerator.GenerateEmbeddingsForModels(extractedTexts);
+                            similarityCalculator.ComputeAndSaveReport(embeddings);
                             logger.LogInfo($"Successfully processed image: {fileName}{fileExtension}");
                         }
                     }
-                }
-                catch (OutOfMemoryException ex)
-                {
-                    logger.LogError($"Out of memory while processing {inputFilePath}: {ex.Message}");
-                    Console.WriteLine($"Out of memory while processing {inputFilePath}: {ex.Message}");
                 }
                 catch (Exception ex)
                 {
@@ -134,7 +125,6 @@ class Program
 
             timeTracker.GenerateExcelReport();
             logger.LogInfo("Processing completed successfully.");
-
             Console.WriteLine("Processing completed. Press any key to exit.");
         }
         catch (Exception ex)
@@ -148,42 +138,33 @@ class Program
         }
     }
 
-    // Helper method to resize large images
     private static Bitmap ResizeImage(Image image, int maxWidth, int maxHeight)
     {
         var ratioX = (double)maxWidth / image.Width;
         var ratioY = (double)maxHeight / image.Height;
         var ratio = Math.Min(ratioX, ratioY);
-
         var newWidth = (int)(image.Width * ratio);
         var newHeight = (int)(image.Height * ratio);
 
         var newImage = new Bitmap(newWidth, newHeight);
         using (var graphics = Graphics.FromImage(newImage))
         {
+            graphics.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
             graphics.DrawImage(image, 0, 0, newWidth, newHeight);
         }
 
         return newImage;
     }
 
-    // Helper method to get the correct ImageFormat based on file extension
     private static ImageFormat GetImageFormat(string extension)
     {
-        switch (extension.ToLower())
+        return extension.ToLower() switch
         {
-            case ".jpg":
-            case ".jpeg":
-                return ImageFormat.Jpeg;
-            case ".bmp":
-                return ImageFormat.Bmp;
-            case ".gif":
-                return ImageFormat.Gif;
-            case ".tiff":
-                return ImageFormat.Tiff;
-            case ".png":
-            default:
-                return ImageFormat.Png;
-        }
+            ".jpg" or ".jpeg" => ImageFormat.Jpeg,
+            ".bmp" => ImageFormat.Bmp,
+            ".gif" => ImageFormat.Gif,
+            ".tiff" => ImageFormat.Tiff,
+            _ => ImageFormat.Png,
+        };
     }
 }

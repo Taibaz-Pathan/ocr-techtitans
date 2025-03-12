@@ -1,19 +1,17 @@
 ﻿using System;
 using System.IO;
-using Utils;
 using System.Reflection;
 
-namespace Utils
+namespace OCRProject.Utils
 {
     public class ConfigLoader
     {
         public string InputFolder { get; private set; }
         public string OutputImageFolder { get; private set; }
         public string ExtractedTextFolder { get; private set; }
-
         public string ComparisionFolder { get; private set; }
-
         public string LogFolder {  get; private set; }
+        public string scriptPath {  get; private set; }
 
         public ConfigLoader()
         {
@@ -42,6 +40,10 @@ namespace Utils
             //log details
             string log = Path.GetFullPath(Path.Combine(currentDirectory, relativePath, "Output", "Logs"));
             LogFolder = Path.GetFullPath(log);
+
+            //python details
+            string pysc = Path.GetFullPath(Path.Combine(currentDirectory, relativePath, "TesseractProcessor", "EasyOCRProcessor.py"));
+            scriptPath = Path.GetFullPath(log);
 
             // Ensure directories exist
             EnsureDirectoriesExist();
