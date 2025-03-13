@@ -9,6 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="NUnit\**" />
+    <EmbeddedResource Remove="NUnit\**" />
+    <None Remove="NUnit\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AForge" Version="2.2.5" />
     <PackageReference Include="AForge.Imaging" Version="2.2.5" />
     <PackageReference Include="ClosedXML" Version="0.105.0-rc" />
@@ -24,10 +30,6 @@
     <PackageReference Include="Tesseract" Version="5.2.0" />
     <PackageReference Include="Tesseract.Data.English" Version="4.0.0" />
     <PackageReference Include="TesseractOCR" Version="5.4.2" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="NUnit\" />
   </ItemGroup>
 
 </Project>

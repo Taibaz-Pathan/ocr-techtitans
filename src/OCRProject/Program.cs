@@ -39,11 +39,11 @@ class Program
             string fileNameExtracted = $"ProcessedFile_{DateTime.Now:yyyyMMdd_HHmmss}.txt";
             string createdFilePath = fileCreator.CreateTextFile(outputFolderText, fileNameExtracted);
 
-            if (createdFilePath == null)
+            if (string.IsNullOrEmpty(createdFilePath))
             {
                 logger.LogError("Failed to create text file.");
                 Console.WriteLine("Failed to create text file.");
-                return;
+                Environment.Exit(1);
             }
 
             logger.LogInfo($"Text file created successfully: {createdFilePath}");
@@ -53,19 +53,15 @@ class Program
             var similarityCalculator = new CosineSimilarityCalculator(comparisonResults);
 
             var imageFiles = Directory.GetFiles(inputFolder, "*.*", SearchOption.TopDirectoryOnly)
-                .Where(file => file.EndsWith(".png", StringComparison.OrdinalIgnoreCase) ||
-                               file.EndsWith(".jpg", StringComparison.OrdinalIgnoreCase) ||
-                               file.EndsWith(".jpeg", StringComparison.OrdinalIgnoreCase) ||
-                               file.EndsWith(".bmp", StringComparison.OrdinalIgnoreCase) ||
-                               file.EndsWith(".gif", StringComparison.OrdinalIgnoreCase) ||
-                               file.EndsWith(".tiff", StringComparison.OrdinalIgnoreCase))
+                .Where(file => new[] { ".png", ".jpg", ".jpeg", ".bmp", ".gif", ".tiff" }
+                .Contains(Path.GetExtension(file).ToLower()))
                 .ToArray();
 
             if (imageFiles.Length == 0)
             {
-                logger.LogError("No images found in the input folder.");
+                logger.LogWarning("No images found in the input folder.");
                 Console.WriteLine("No images found in the input folder.");
-                return;
+                Environment.Exit(0); // Exit cleanly if no images are found.
             }
 
             logger.LogInfo($"Processing {imageFiles.Length} images...");
@@ -77,44 +73,42 @@ class Program
                     string fileName = Path.GetFileNameWithoutExtension(inputFilePath);
                     string fileExtension = Path.GetExtension(inputFilePath).ToLower();
 
-                    using (var fileStream = new FileStream(inputFilePath, FileMode.Open, FileAccess.Read))
-                    using (var inputImage = Image.FromStream(fileStream, false, false))
+                    using var fileStream = new FileStream(inputFilePath, FileMode.Open, FileAccess.Read);
+                    using var inputImage = Image.FromStream(fileStream, false, false);
+                    using var resizedImage = ResizeImage(inputImage, 2000, 2000);
+
+                    logger.LogInfo($"Processing image: {fileName}{fileExtension}");
+
+                    var transformations = new Dictionary<string, Func<Bitmap, Bitmap>>
                     {
-                        using (var resizedImage = ResizeImage(inputImage, 2000, 2000))
-                        {
-                            logger.LogInfo($"Processing image: {fileName}{fileExtension}");
+                        { "Grayscale", img => new ConvertToGrayscale().Apply(img) },
+                        { "GlobalThreshold", img => new GlobalThresholding(128).ApplyThreshold(img) },
+                        { "Shifted", img => new ShiftImage().Apply(img, 5, 5) },
+                        { "SaturationAdjusted", img => new SaturationAdjustment().Apply(img, 1.2f) },
+                        { "Deskewed", img => new Deskew().Apply(img) }
+                    };
 
-                            var transformations = new Dictionary<string, Func<Bitmap, Bitmap>>
-                            {
-                                { "Grayscale", img => new ConvertToGrayscale().Apply(img) },
-                                { "GlobalThreshold", img => new GlobalThresholding(128).ApplyThreshold(img) },
-                                { "Shifted", img => new ShiftImage().Apply(img, 5, 5) },
-                                { "SaturationAdjusted", img => new SaturationAdjustment().Apply(img, 1.2f) },
-                                { "Deskewed", img => new Deskew().Apply(img) }
-                            };
+                    var extractedTexts = new Dictionary<string, string>();
 
-                            var extractedTexts = new Dictionary<string, string>();
+                    foreach (var (modelName, transform) in transformations)
+                    {
+                        timeTracker.StartTimer();
+                        using var processedImage = transform(new Bitmap(resizedImage));
 
-                            foreach (var (modelName, transform) in transformations)
-                            {
-                                timeTracker.StartTimer();
-                                using (var processedImage = transform(new Bitmap(resizedImage)))
-                                {
-                                    string outputPath = Path.Combine(outputFolderImage, fileName + "_" + modelName + fileExtension);
-                                    processedImage.Save(outputPath, GetImageFormat(fileExtension));
-                                    logger.LogInfo($"Saved processed image: {outputPath}");
+                        string outputPath = Path.Combine(outputFolderImage, $"{fileName}_{modelName}{fileExtension}");
+                        processedImage.Save(outputPath, GetImageFormat(fileExtension));
 
-                                    string extractedText = TesseractProcessor.ExtractTextFromImage(processedImage, createdFilePath, fileWriter);
-                                    extractedTexts[modelName] = extractedText;
-                                    timeTracker.StopAndRecord(fileName, modelName);
-                                }
-                            }
+                        logger.LogInfo($"Saved processed image: {outputPath}");
 
-                            var embeddings = embeddingGenerator.GenerateEmbeddingsForModels(extractedTexts);
-                            similarityCalculator.ComputeAndSaveReport(embeddings);
-                            logger.LogInfo($"Successfully processed image: {fileName}{fileExtension}");
-                        }
+                        string extractedText = TesseractProcessor.ExtractTextFromImage(processedImage, createdFilePath, fileWriter);
+                        extractedTexts[modelName] = extractedText;
+
+                        timeTracker.StopAndRecord(fileName, modelName);
                     }
+
+                    var embeddings = embeddingGenerator.GenerateEmbeddingsForModels(extractedTexts);
+                    similarityCalculator.ComputeAndSaveReport(embeddings);
+                    logger.LogInfo($"Successfully processed image: {fileName}{fileExtension}");
                 }
                 catch (Exception ex)
                 {
@@ -125,16 +119,14 @@ class Program
 
             timeTracker.GenerateExcelReport();
             logger.LogInfo("Processing completed successfully.");
-            Console.WriteLine("Processing completed. Press any key to exit.");
+            Console.WriteLine("Processing completed.");
+            Environment.Exit(0); // Ensure process exits cleanly
         }
         catch (Exception ex)
         {
             logger.LogError($"Critical error in process: {ex.Message}");
             Console.WriteLine($"Error in Process: {ex.Message}");
-        }
-        finally
-        {
-            Console.ReadKey();
+            Environment.Exit(1);
         }
     }
 
