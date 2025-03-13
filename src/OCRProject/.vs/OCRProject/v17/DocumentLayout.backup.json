@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C9651FEE-8827-4D69-B524-BD40B4BC51BD}|OCRProject.csproj|c:\\users\\mithi\\onedrive\\desktop\\softwareengg\\ocr-techtitans\\src\\ocrproject\\modelcomparision\\cosinesimilaritycalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9651FEE-8827-4D69-B524-BD40B4BC51BD}|OCRProject.csproj|solutionrelative:modelcomparision\\cosinesimilaritycalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C9651FEE-8827-4D69-B524-BD40B4BC51BD}|OCRProject.csproj|c:\\users\\mithi\\onedrive\\desktop\\softwareengg\\ocr-techtitans\\src\\ocrproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9651FEE-8827-4D69-B524-BD40B4BC51BD}|OCRProject.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C9651FEE-8827-4D69-B524-BD40B4BC51BD}|OCRProject.csproj|c:\\users\\mithi\\onedrive\\desktop\\softwareengg\\ocr-techtitans\\src\\ocrproject\\modelcomparision\\embeddinggeneratorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C9651FEE-8827-4D69-B524-BD40B4BC51BD}|OCRProject.csproj|solutionrelative:modelcomparision\\embeddinggeneratorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C9651FEE-8827-4D69-B524-BD40B4BC51BD}|OCRProject.csproj|c:\\users\\mithi\\onedrive\\desktop\\softwareengg\\ocr-techtitans\\src\\ocrproject\\modelcomparision\\cosinesimilaritycalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9651FEE-8827-4D69-B524-BD40B4BC51BD}|OCRProject.csproj|solutionrelative:modelcomparision\\cosinesimilaritycalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,24 +22,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "CosineSimilarityCalculator.cs",
               "DocumentMoniker": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\ModelComparision\\CosineSimilarityCalculator.cs",
               "RelativeDocumentMoniker": "ModelComparision\\CosineSimilarityCalculator.cs",
               "ToolTip": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\ModelComparision\\CosineSimilarityCalculator.cs",
               "RelativeToolTip": "ModelComparision\\CosineSimilarityCalculator.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAYwFMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAYwGoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-11T17:47:29.88Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "EmbeddingGeneratorService.cs",
               "DocumentMoniker": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\ModelComparision\\EmbeddingGeneratorService.cs",
               "RelativeDocumentMoniker": "ModelComparision\\EmbeddingGeneratorService.cs",
@@ -47,12 +47,11 @@
               "RelativeToolTip": "ModelComparision\\EmbeddingGeneratorService.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAYwDQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T16:47:35.856Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-11T16:47:35.856Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
