@@ -3,7 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{31405DE4-D850-41DF-9B4E-53FDD10AFB61}|..\\OCRTestProject\\OCRTestProject.csproj|c:\\users\\mithi\\onedrive\\desktop\\softwareengg\\ocr-techtitans\\src\\ocrtestproject\\ocrprojecte2etests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C9651FEE-8827-4D69-B524-BD40B4BC51BD}|OCRProject.csproj|c:\\users\\mithi\\onedrive\\desktop\\softwareengg\\ocr-techtitans\\src\\ocrproject\\imageprocessing\\adaptivethreshold.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9651FEE-8827-4D69-B524-BD40B4BC51BD}|OCRProject.csproj|solutionrelative:imageprocessing\\adaptivethreshold.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,14 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "OCRProjectE2ETests.cs",
-              "DocumentMoniker": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRTestProject\\OCRProjectE2ETests.cs",
-              "RelativeDocumentMoniker": "..\\OCRTestProject\\OCRProjectE2ETests.cs",
-              "ToolTip": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRTestProject\\OCRProjectE2ETests.cs",
-              "RelativeToolTip": "..\\OCRTestProject\\OCRProjectE2ETests.cs",
-              "ViewState": "AgIAAIwAAAAAAAAAAAAlwJAAAAA8AAAAAAAAAA==",
+              "Title": "AdaptiveThreshold.cs",
+              "DocumentMoniker": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\ImageProcessing\\AdaptiveThreshold.cs",
+              "RelativeDocumentMoniker": "ImageProcessing\\AdaptiveThreshold.cs",
+              "ToolTip": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\ImageProcessing\\AdaptiveThreshold.cs",
+              "RelativeToolTip": "ImageProcessing\\AdaptiveThreshold.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwCQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T15:41:19.49Z",
+              "WhenOpened": "2025-03-16T20:20:45.836Z",
               "EditorCaption": ""
             }
           ]

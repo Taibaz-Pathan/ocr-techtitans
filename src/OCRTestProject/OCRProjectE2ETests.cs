@@ -50,7 +50,7 @@ namespace OCRProject.Tests
         {
             CopyTestFile("corrupt-image.png");
             string output = RunOCRProcess();
-            Assert.That(output, Does.Contain("Error processing file"), "OCR did not handle a corrupt image correctly.");
+            Assert.That(output, Does.Contain("Error processing"), "OCR did not handle a corrupt image correctly.");
         }
 
         [Test]
