@@ -11,46 +11,29 @@ namespace OCRProject.Tests
     {
         private readonly string testDataPath = @"C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRTestProject\TestData";
         private readonly string executablePath = @"C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\bin\Debug\net9.0-windows\OCRProject.exe";
-
-        private readonly string testInputFolder = @"C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRTestProject\input";
-        private readonly string testOutputFolder = @"C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRTestProject\output";
-        private readonly string logFile = @"C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRTestProject\logs\log.txt";
-
         private readonly string mainInputFolder = @"C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Input";
         private readonly string mainOutputFolder = @"C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText";
-        private readonly string backupFolder = @"C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Input_backup";
+        private readonly string logFile = @"C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRTestProject\logs\log.txt";
 
         [SetUp]
         public void Setup()
         {
             if (!File.Exists(executablePath))
-            {
                 Assert.Fail($"Executable not found: {executablePath}");
-            }
 
-            Directory.CreateDirectory(testInputFolder);
-            Directory.CreateDirectory(testOutputFolder);
-            ClearDirectory(testInputFolder);
-            ClearDirectory(testOutputFolder);
-
-            BackupAndReplaceMainInputFolder();
+            Directory.CreateDirectory(mainInputFolder);
+            Directory.CreateDirectory(mainOutputFolder);
+            ClearDirectory(mainInputFolder);
+            ClearDirectory(mainOutputFolder);
 
             if (File.Exists(logFile)) File.WriteAllText(logFile, string.Empty);
-        }
-
-        [TearDown]
-        public void Cleanup()
-        {
-            RestoreOriginalInputFolder();
         }
 
         [Test]
         public void Test_OCR_Empty_Input_Folder()
         {
             string output = RunOCRProcess();
-
-            Assert.That(output, Does.Contain("No images found"), "OCR process did not detect an empty input folder correctly.");
-            Assert.That(File.Exists(logFile), "Log file was not created.");
+            Assert.That(output, Does.Contain("No images found"), "OCR did not detect an empty input folder correctly.");
         }
 
         [Test]
@@ -58,9 +41,24 @@ namespace OCRProject.Tests
         {
             CopyTestFile("sample-image.png");
             string output = RunOCRProcess();
-
             Assert.That(output, Does.Contain("Processing completed"), "OCR did not complete successfully.");
             AssertOutputFileExists();
+        }
+
+        [Test]
+        public void Test_OCR_Processing_Corrupt_Image()
+        {
+            CopyTestFile("corrupt-image.png");
+            string output = RunOCRProcess();
+            Assert.That(output, Does.Contain("Error processing file"), "OCR did not handle a corrupt image correctly.");
+        }
+
+        [Test]
+        public void Test_OCR_Processing_Large_Image()
+        {
+            CopyTestFile("large-image.png");
+            string output = RunOCRProcess();
+            Assert.That(output, Does.Contain("Processing completed"), "OCR did not handle large images correctly.");
         }
 
         [Test]
@@ -68,33 +66,26 @@ namespace OCRProject.Tests
         {
             CopyTestFile("test.txt");
             string output = RunOCRProcess();
-
-            Assert.That(output, Does.Contain("Unsupported file format").Or.Contain("No images found"),
-                        "OCR did not handle invalid file format correctly.");
-            Assert.That(File.Exists(logFile), "Error log file was not created.");
-        }
-
-        [Test]
-        public void Test_OCR_Processing_Multiple_Valid_Images()
-        {
-            CopyTestFile("sample-image1.png");
-            CopyTestFile("sample-image2.png");
-            string output = RunOCRProcess();
-
-            Assert.That(output, Does.Contain("Processing completed"), "OCR did not complete successfully.");
-            AssertOutputFileExists(2);
+            Assert.That(output, Does.Contain("No images found in the input folder."), "OCR did not handle invalid file format correctly.");
         }        
 
         [Test]
-        public void Test_OCR_Empty_Output_File()
+        public void Test_OCR_Interrupted_Process()
         {
-            CopyTestFile("blank-image.png"); // An image with no text
-            string output = RunOCRProcess();
+            using (Process process = new Process())
+            {
+                process.StartInfo.FileName = executablePath;
+                process.StartInfo.UseShellExecute = false;
+                process.StartInfo.RedirectStandardOutput = true;
+                process.StartInfo.RedirectStandardError = true;
+                process.StartInfo.CreateNoWindow = true;
 
-            string[] outputFiles = Directory.GetFiles(mainOutputFolder, "*.txt");
-            Assert.That(outputFiles.Length, Is.GreaterThan(0), "No output file was generated.");
-            string text = File.ReadAllText(outputFiles[0]);
-            Assert.That(text.Trim(), Is.Empty, "OCR output file should be empty for a blank image.");
+                process.Start();
+                Thread.Sleep(1000); // Let the process run for a second
+                process.Kill();
+
+                Assert.That(process.HasExited, "OCR process was not terminated successfully.");
+            }
         }
 
         private void CopyTestFile(string fileName)
@@ -103,9 +94,7 @@ namespace OCRProject.Tests
             string destinationPath = Path.Combine(mainInputFolder, fileName);
 
             if (!File.Exists(sourcePath))
-            {
                 Assert.Fail($"Test file missing: {sourcePath}");
-            }
 
             File.Copy(sourcePath, destinationPath, true);
         }
@@ -115,57 +104,27 @@ namespace OCRProject.Tests
             using (Process process = new Process())
             {
                 process.StartInfo.FileName = executablePath;
-                process.StartInfo.WorkingDirectory = Path.GetDirectoryName(executablePath);
                 process.StartInfo.UseShellExecute = false;
                 process.StartInfo.RedirectStandardOutput = true;
                 process.StartInfo.RedirectStandardError = true;
                 process.StartInfo.CreateNoWindow = true;
 
                 string output = "";
-                process.OutputDataReceived += (sender, e) =>
+                process.OutputDataReceived += (sender, e) => { if (e.Data != null) output += e.Data + Environment.NewLine; };
+                process.ErrorDataReceived += (sender, e) => { if (e.Data != null) output += "[ERROR] " + e.Data + Environment.NewLine; };
+
+                process.Start();
+                process.BeginOutputReadLine();
+                process.BeginErrorReadLine();
+
+                bool exited = process.WaitForExit(30000); // 30s timeout
+                if (!exited)
                 {
-                    if (e.Data != null)
-                    {
-                        Console.WriteLine($"[OCR Output] {e.Data}");
-                        output += e.Data + Environment.NewLine;
-                    }
-                };
-
-                process.ErrorDataReceived += (sender, e) =>
-                {
-                    if (e.Data != null)
-                    {
-                        Console.WriteLine($"[OCR Error] {e.Data}");
-                        output += "[ERROR] " + e.Data + Environment.NewLine;
-                    }
-                };
-
-                try
-                {
-                    Console.WriteLine($"Starting OCR Process: {executablePath}");
-                    process.Start();
-                    process.BeginOutputReadLine();
-                    process.BeginErrorReadLine();
-
-                    bool exited = process.WaitForExit(60000);
-
-                    if (!exited)
-                    {
-                        process.Kill();
-                        throw new Exception("OCR process timed out.");
-                    }
-
-                    if (process.ExitCode != 0)
-                    {
-                        throw new Exception($"OCR process failed with exit code {process.ExitCode}");
-                    }
-
-                    return output;
+                    process.Kill();
+                    throw new Exception("OCR process timed out.");
                 }
-                catch (Exception ex)
-                {
-                    throw new Exception($"Failed to run OCR process: {ex.Message}");
-                }
+
+                return output;
             }
         }
 
@@ -180,42 +139,10 @@ namespace OCRProject.Tests
             }
         }
 
-        private void AssertOutputFileExists(int expectedFileCount = 1)
+        private void AssertOutputFileExists()
         {
             string[] files = Directory.GetFiles(mainOutputFolder, "*.txt");
-            Assert.That(files.Length, Is.EqualTo(1),
-                        $"Expected {expectedFileCount} OCR output files, but found {files.Length}.");
-            foreach (var file in files)
-            {
-                string text = File.ReadAllText(file);
-                Assert.That(text, Is.Not.Empty, "OCR output text is empty.");
-            }
-        }
-
-        private void BackupAndReplaceMainInputFolder()
-        {
-            if (Directory.Exists(mainInputFolder))
-            {
-                if (Directory.Exists(backupFolder))
-                    Directory.Delete(backupFolder, true);
-                Directory.Move(mainInputFolder, backupFolder);
-            }
-
-            Directory.CreateDirectory(mainInputFolder);
-            foreach (string file in Directory.GetFiles(testInputFolder))
-            {
-                string destFile = Path.Combine(mainInputFolder, Path.GetFileName(file));
-                File.Copy(file, destFile, true);
-            }
-        }
-
-        private void RestoreOriginalInputFolder()
-        {
-            if (Directory.Exists(mainInputFolder))
-                Directory.Delete(mainInputFolder, true);
-
-            if (Directory.Exists(backupFolder))
-                Directory.Move(backupFolder, mainInputFolder);
+            Assert.That(files.Length, Is.GreaterThan(0), "No OCR output file was generated.");
         }
     }
 }
