@@ -2,6 +2,7 @@ using System;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Runtime.InteropServices;
+using System.Threading.Tasks;
 
 namespace OCRProject.ImageProcessing
 {
@@ -19,12 +20,13 @@ namespace OCRProject.ImageProcessing
             Marshal.Copy(imageData.Scan0, buffer, 0, bytes);
             image.UnlockBits(imageData);
 
-            for (int i = 0; i < buffer.Length; i += 3)
+            Parallel.For(0, buffer.Length / 3, i =>
             {
-                int gray = (int)(0.299 * buffer[i + 2] + 0.587 * buffer[i + 1] + 0.114 * buffer[i]);
+                int index = i * 3;
+                int gray = (int)(0.299 * buffer[index + 2] + 0.587 * buffer[index + 1] + 0.114 * buffer[index]);
                 byte binColor = (byte)(gray < (threshold * 255) ? 0 : 255);
-                buffer[i] = buffer[i + 1] = buffer[i + 2] = binColor;
-            }
+                buffer[index] = buffer[index + 1] = buffer[index + 2] = binColor;
+            });
 
             Marshal.Copy(buffer, 0, binData.Scan0, bytes);
             binarizedImage.UnlockBits(binData);
