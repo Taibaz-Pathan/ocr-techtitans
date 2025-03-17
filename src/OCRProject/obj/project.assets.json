@@ -2,6 +2,22 @@
   "version": 3,
   "targets": {
     "net9.0-windows7.0": {
+      "Accord/3.8.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Accord.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Accord.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/Accord.targets": {}
+        }
+      },
       "AForge/2.2.5": {
         "type": "package",
         "compile": {
@@ -400,28 +416,6 @@
           }
         }
       },
-      "Microsoft.Win32.SystemEvents/9.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net9.0/Microsoft.Win32.SystemEvents.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net9.0/Microsoft.Win32.SystemEvents.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net8.0/_._": {}
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/net9.0/Microsoft.Win32.SystemEvents.dll": {
-            "assetType": "runtime",
-            "rid": "win"
-          }
-        }
-      },
       "NPOI/2.7.2": {
         "type": "package",
         "dependencies": {
@@ -491,6 +485,26 @@
           "lib/net8.0/OpenAI-DotNet.dll": {}
         }
       },
+      "OpenCV/2.4.11": {
+        "type": "package"
+      },
+      "OpenCvSharp4/4.10.0.20241108": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.5",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/OpenCvSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "RBush.Signed/4.0.0": {
         "type": "package",
         "compile": {
@@ -517,34 +531,73 @@
           }
         }
       },
-      "SixLabors.Fonts/1.0.1": {
+      "SixLabors.Fonts/2.0.8": {
         "type": "package",
         "compile": {
-          "lib/netcoreapp3.1/SixLabors.Fonts.dll": {
+          "lib/net6.0/SixLabors.Fonts.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netcoreapp3.1/SixLabors.Fonts.dll": {
+          "lib/net6.0/SixLabors.Fonts.dll": {
             "related": ".xml"
           }
         }
       },
-      "SixLabors.ImageSharp/2.1.9": {
+      "SixLabors.ImageSharp/3.1.7": {
         "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0",
-          "System.Text.Encoding.CodePages": "5.0.0"
-        },
         "compile": {
-          "lib/netcoreapp3.1/SixLabors.ImageSharp.dll": {
+          "lib/net6.0/SixLabors.ImageSharp.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netcoreapp3.1/SixLabors.ImageSharp.dll": {
+          "lib/net6.0/SixLabors.ImageSharp.dll": {
             "related": ".xml"
           }
+        },
+        "build": {
+          "build/SixLabors.ImageSharp.props": {}
+        }
+      },
+      "SixLabors.ImageSharp.Drawing/2.1.5": {
+        "type": "package",
+        "dependencies": {
+          "SixLabors.Fonts": "2.0.8",
+          "SixLabors.ImageSharp": "3.1.6"
+        },
+        "compile": {
+          "lib/net6.0/SixLabors.ImageSharp.Drawing.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SixLabors.ImageSharp.Drawing.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "SixLabors.ImageSharp.Web/3.1.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.IO.RecyclableMemoryStream": "3.0.1",
+          "SixLabors.ImageSharp": "3.1.5"
+        },
+        "compile": {
+          "lib/net6.0/SixLabors.ImageSharp.Web.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/SixLabors.ImageSharp.Web.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ],
+        "build": {
+          "build/SixLabors.ImageSharp.Web.props": {}
         }
       },
       "System.ClientModel/1.2.1": {
@@ -596,40 +649,6 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "System.Drawing.Common/9.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Win32.SystemEvents": "9.0.0"
-        },
-        "compile": {
-          "lib/net9.0/System.Drawing.Common.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net9.0/System.Private.Windows.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net9.0/System.Drawing.Common.dll": {
-            "related": ".pdb;.xml"
-          },
-          "lib/net9.0/System.Private.Windows.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net8.0/_._": {}
-        }
-      },
-      "System.Drawing.Pictograms/1.2.20": {
-        "type": "package",
-        "compile": {
-          "lib/net40/System.Drawing.Pictograms.dll": {}
-        },
-        "runtime": {
-          "lib/net40/System.Drawing.Pictograms.dll": {}
-        }
-      },
       "System.IO.Packaging/8.0.1": {
         "type": "package",
         "compile": {
@@ -644,6 +663,15 @@
         },
         "build": {
           "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Memory/4.5.5": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
         }
       },
       "System.Memory.Data/6.0.0": {
@@ -663,39 +691,6 @@
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
-        }
-      },
-      "System.Reactive/6.0.1": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/System.Reactive.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/System.Reactive.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net6.0/_._": {}
-        }
-      },
-      "System.Reactive.Windows.Forms/6.0.1": {
-        "type": "package",
-        "dependencies": {
-          "System.Reactive": "6.0.1",
-          "System.Threading.Tasks.Extensions": "4.5.4"
-        },
-        "compile": {
-          "lib/net472/System.Reactive.Windows.Forms.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net472/System.Reactive.Windows.Forms.dll": {
-            "related": ".xml"
-          }
         }
       },
       "System.Reflection.Emit/4.7.0": {
@@ -831,41 +826,6 @@
           "buildTransitive/netcoreapp3.1/System.Text.Json.targets": {}
         }
       },
-      "System.Threading.Tasks.Extensions/4.5.4": {
-        "type": "package",
-        "compile": {
-          "ref/netcoreapp2.1/_._": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.1/_._": {}
-        }
-      },
-      "System.Windows.Forms.DataVisualization/1.0.0-prerelease.20110.1": {
-        "type": "package",
-        "compile": {
-          "ref/netcoreapp3.0/System.Windows.Forms.DataVisualization.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.0/System.Windows.Forms.DataVisualization.dll": {
-            "related": ".pdb"
-          }
-        },
-        "frameworkReferences": [
-          "Microsoft.NETCore.App"
-        ]
-      },
-      "System.Windows.Forms.Pictograms/1.2.20": {
-        "type": "package",
-        "dependencies": {
-          "System.Drawing.Pictograms": "1.2.0"
-        },
-        "compile": {
-          "lib/net40/System.Windows.Forms.Pictograms.dll": {}
-        },
-        "runtime": {
-          "lib/net40/System.Windows.Forms.Pictograms.dll": {}
-        }
-      },
       "Tesseract/5.2.0": {
         "type": "package",
         "dependencies": {
@@ -914,6 +874,41 @@
     }
   },
   "libraries": {
+    "Accord/3.8.0": {
+      "sha512": "7kJrB570dO5ELim+2KWQNozuvWO9/BuZfZspdFy36fcWPNF2CEccblLuILeUlI8QJYd2DlBy0bfK8BlCx/uayA==",
+      "type": "package",
+      "path": "accord/3.8.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "accord.3.8.0.nupkg.sha512",
+        "accord.nuspec",
+        "build/Accord.dll.config",
+        "build/Accord.targets",
+        "lib/net35-unity full v3.5/Accord.dll",
+        "lib/net35-unity full v3.5/Accord.xml",
+        "lib/net35-unity micro v3.5/Accord.dll",
+        "lib/net35-unity micro v3.5/Accord.xml",
+        "lib/net35-unity subset v3.5/Accord.dll",
+        "lib/net35-unity subset v3.5/Accord.xml",
+        "lib/net35-unity web v3.5/Accord.dll",
+        "lib/net35-unity web v3.5/Accord.xml",
+        "lib/net35/Accord.dll",
+        "lib/net35/Accord.xml",
+        "lib/net40/Accord.dll",
+        "lib/net40/Accord.xml",
+        "lib/net45/Accord.dll",
+        "lib/net45/Accord.xml",
+        "lib/net46/Accord.dll",
+        "lib/net46/Accord.xml",
+        "lib/net462/Accord.dll",
+        "lib/net462/Accord.xml",
+        "lib/netstandard1.4/Accord.dll",
+        "lib/netstandard1.4/Accord.xml",
+        "lib/netstandard2.0/Accord.dll",
+        "lib/netstandard2.0/Accord.xml"
+      ]
+    },
     "AForge/2.2.5": {
       "sha512": "clkumhM9DggqIzEXAHgVLeWO4arG5YfoPr7J4jfjJx35AoeEIJSSm49J25bwp/9mXQYLwi7y1Wunc8qgYJsGxg==",
       "type": "package",
@@ -1557,38 +1552,6 @@
         "microsoft.io.recyclablememorystream.nuspec"
       ]
     },
-    "Microsoft.Win32.SystemEvents/9.0.0": {
-      "sha512": "z8FfGIaoeALdD+KF44A2uP8PZIQQtDGiXsOLuN8nohbKhkyKt7zGaZb+fKiCxTuBqG22Q7myIAioSWaIcOOrOw==",
-      "type": "package",
-      "path": "microsoft.win32.systemevents/9.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "PACKAGE.md",
-        "THIRD-PARTY-NOTICES.TXT",
-        "buildTransitive/net461/Microsoft.Win32.SystemEvents.targets",
-        "buildTransitive/net462/_._",
-        "buildTransitive/net8.0/_._",
-        "buildTransitive/netcoreapp2.0/Microsoft.Win32.SystemEvents.targets",
-        "lib/net462/Microsoft.Win32.SystemEvents.dll",
-        "lib/net462/Microsoft.Win32.SystemEvents.xml",
-        "lib/net8.0/Microsoft.Win32.SystemEvents.dll",
-        "lib/net8.0/Microsoft.Win32.SystemEvents.xml",
-        "lib/net9.0/Microsoft.Win32.SystemEvents.dll",
-        "lib/net9.0/Microsoft.Win32.SystemEvents.xml",
-        "lib/netstandard2.0/Microsoft.Win32.SystemEvents.dll",
-        "lib/netstandard2.0/Microsoft.Win32.SystemEvents.xml",
-        "microsoft.win32.systemevents.9.0.0.nupkg.sha512",
-        "microsoft.win32.systemevents.nuspec",
-        "runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.dll",
-        "runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.xml",
-        "runtimes/win/lib/net9.0/Microsoft.Win32.SystemEvents.dll",
-        "runtimes/win/lib/net9.0/Microsoft.Win32.SystemEvents.xml",
-        "useSharedDesignerContext.txt"
-      ]
-    },
     "NPOI/2.7.2": {
       "sha512": "hKJeAQOuVl8b2qiQQg0ph8uhqm5ihq94SDSnmPu5ytCLIRTVcg2rFA274ow+IacrORImdvo0Q3K51L1t3vLqpw==",
       "type": "package",
@@ -1689,6 +1652,208 @@
         "openai-dotnet.nuspec"
       ]
     },
+    "OpenCV/2.4.11": {
+      "sha512": "1W5nlWqWx82FI6q6ISqLUj3paH5DpbfXqnNrFi9eOCeChr59I0d0xklDtMMNsGt8JLlZTMu6IW2Pyp7IMnGVAA==",
+      "type": "package",
+      "path": "opencv/2.4.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "NuGet-Overlay.cmd",
+        "build/configurations.autopkg",
+        "build/native/OpenCV.props",
+        "build/native/OpenCV.targets",
+        "build/native/default-propertiesui.xml",
+        "build/native/docs/LICENSE",
+        "build/native/include/opencv/cv.h",
+        "build/native/include/opencv/cv.hpp",
+        "build/native/include/opencv/cvaux.h",
+        "build/native/include/opencv/cvaux.hpp",
+        "build/native/include/opencv/cvwimage.h",
+        "build/native/include/opencv/cxcore.h",
+        "build/native/include/opencv/cxcore.hpp",
+        "build/native/include/opencv/cxeigen.hpp",
+        "build/native/include/opencv/cxmisc.h",
+        "build/native/include/opencv/highgui.h",
+        "build/native/include/opencv/ml.h",
+        "build/native/include/opencv2/calib3d/calib3d.hpp",
+        "build/native/include/opencv2/contrib/contrib.hpp",
+        "build/native/include/opencv2/contrib/detection_based_tracker.hpp",
+        "build/native/include/opencv2/contrib/hybridtracker.hpp",
+        "build/native/include/opencv2/contrib/openfabmap.hpp",
+        "build/native/include/opencv2/contrib/retina.hpp",
+        "build/native/include/opencv2/core/affine.hpp",
+        "build/native/include/opencv2/core/core.hpp",
+        "build/native/include/opencv2/core/core_c.h",
+        "build/native/include/opencv2/core/cuda_devptrs.hpp",
+        "build/native/include/opencv2/core/devmem2d.hpp",
+        "build/native/include/opencv2/core/eigen.hpp",
+        "build/native/include/opencv2/core/gpumat.hpp",
+        "build/native/include/opencv2/core/internal.hpp",
+        "build/native/include/opencv2/core/mat.hpp",
+        "build/native/include/opencv2/core/opengl_interop.hpp",
+        "build/native/include/opencv2/core/opengl_interop_deprecated.hpp",
+        "build/native/include/opencv2/core/operations.hpp",
+        "build/native/include/opencv2/core/types_c.h",
+        "build/native/include/opencv2/core/version.hpp",
+        "build/native/include/opencv2/core/wimage.hpp",
+        "build/native/include/opencv2/features2d/features2d.hpp",
+        "build/native/include/opencv2/flann/all_indices.h",
+        "build/native/include/opencv2/flann/allocator.h",
+        "build/native/include/opencv2/flann/any.h",
+        "build/native/include/opencv2/flann/autotuned_index.h",
+        "build/native/include/opencv2/flann/composite_index.h",
+        "build/native/include/opencv2/flann/config.h",
+        "build/native/include/opencv2/flann/defines.h",
+        "build/native/include/opencv2/flann/dist.h",
+        "build/native/include/opencv2/flann/dummy.h",
+        "build/native/include/opencv2/flann/dynamic_bitset.h",
+        "build/native/include/opencv2/flann/flann.hpp",
+        "build/native/include/opencv2/flann/flann_base.hpp",
+        "build/native/include/opencv2/flann/general.h",
+        "build/native/include/opencv2/flann/ground_truth.h",
+        "build/native/include/opencv2/flann/hdf5.h",
+        "build/native/include/opencv2/flann/heap.h",
+        "build/native/include/opencv2/flann/hierarchical_clustering_index.h",
+        "build/native/include/opencv2/flann/index_testing.h",
+        "build/native/include/opencv2/flann/kdtree_index.h",
+        "build/native/include/opencv2/flann/kdtree_single_index.h",
+        "build/native/include/opencv2/flann/kmeans_index.h",
+        "build/native/include/opencv2/flann/linear_index.h",
+        "build/native/include/opencv2/flann/logger.h",
+        "build/native/include/opencv2/flann/lsh_index.h",
+        "build/native/include/opencv2/flann/lsh_table.h",
+        "build/native/include/opencv2/flann/matrix.h",
+        "build/native/include/opencv2/flann/miniflann.hpp",
+        "build/native/include/opencv2/flann/nn_index.h",
+        "build/native/include/opencv2/flann/object_factory.h",
+        "build/native/include/opencv2/flann/params.h",
+        "build/native/include/opencv2/flann/random.h",
+        "build/native/include/opencv2/flann/result_set.h",
+        "build/native/include/opencv2/flann/sampling.h",
+        "build/native/include/opencv2/flann/saving.h",
+        "build/native/include/opencv2/flann/simplex_downhill.h",
+        "build/native/include/opencv2/flann/timer.h",
+        "build/native/include/opencv2/gpu/device/block.hpp",
+        "build/native/include/opencv2/gpu/device/border_interpolate.hpp",
+        "build/native/include/opencv2/gpu/device/color.hpp",
+        "build/native/include/opencv2/gpu/device/common.hpp",
+        "build/native/include/opencv2/gpu/device/datamov_utils.hpp",
+        "build/native/include/opencv2/gpu/device/detail/color_detail.hpp",
+        "build/native/include/opencv2/gpu/device/detail/reduce.hpp",
+        "build/native/include/opencv2/gpu/device/detail/reduce_key_val.hpp",
+        "build/native/include/opencv2/gpu/device/detail/transform_detail.hpp",
+        "build/native/include/opencv2/gpu/device/detail/type_traits_detail.hpp",
+        "build/native/include/opencv2/gpu/device/detail/vec_distance_detail.hpp",
+        "build/native/include/opencv2/gpu/device/dynamic_smem.hpp",
+        "build/native/include/opencv2/gpu/device/emulation.hpp",
+        "build/native/include/opencv2/gpu/device/filters.hpp",
+        "build/native/include/opencv2/gpu/device/funcattrib.hpp",
+        "build/native/include/opencv2/gpu/device/functional.hpp",
+        "build/native/include/opencv2/gpu/device/limits.hpp",
+        "build/native/include/opencv2/gpu/device/reduce.hpp",
+        "build/native/include/opencv2/gpu/device/saturate_cast.hpp",
+        "build/native/include/opencv2/gpu/device/scan.hpp",
+        "build/native/include/opencv2/gpu/device/simd_functions.hpp",
+        "build/native/include/opencv2/gpu/device/static_check.hpp",
+        "build/native/include/opencv2/gpu/device/transform.hpp",
+        "build/native/include/opencv2/gpu/device/type_traits.hpp",
+        "build/native/include/opencv2/gpu/device/utility.hpp",
+        "build/native/include/opencv2/gpu/device/vec_distance.hpp",
+        "build/native/include/opencv2/gpu/device/vec_math.hpp",
+        "build/native/include/opencv2/gpu/device/vec_traits.hpp",
+        "build/native/include/opencv2/gpu/device/warp.hpp",
+        "build/native/include/opencv2/gpu/device/warp_reduce.hpp",
+        "build/native/include/opencv2/gpu/device/warp_shuffle.hpp",
+        "build/native/include/opencv2/gpu/devmem2d.hpp",
+        "build/native/include/opencv2/gpu/gpu.hpp",
+        "build/native/include/opencv2/gpu/gpumat.hpp",
+        "build/native/include/opencv2/gpu/stream_accessor.hpp",
+        "build/native/include/opencv2/highgui/cap_ios.h",
+        "build/native/include/opencv2/highgui/highgui.hpp",
+        "build/native/include/opencv2/highgui/highgui_c.h",
+        "build/native/include/opencv2/highgui/ios.h",
+        "build/native/include/opencv2/imgproc/imgproc.hpp",
+        "build/native/include/opencv2/imgproc/imgproc_c.h",
+        "build/native/include/opencv2/imgproc/types_c.h",
+        "build/native/include/opencv2/legacy/blobtrack.hpp",
+        "build/native/include/opencv2/legacy/compat.hpp",
+        "build/native/include/opencv2/legacy/legacy.hpp",
+        "build/native/include/opencv2/legacy/streams.hpp",
+        "build/native/include/opencv2/ml/ml.hpp",
+        "build/native/include/opencv2/nonfree/features2d.hpp",
+        "build/native/include/opencv2/nonfree/gpu.hpp",
+        "build/native/include/opencv2/nonfree/nonfree.hpp",
+        "build/native/include/opencv2/nonfree/ocl.hpp",
+        "build/native/include/opencv2/objdetect/objdetect.hpp",
+        "build/native/include/opencv2/ocl/matrix_operations.hpp",
+        "build/native/include/opencv2/ocl/ocl.hpp",
+        "build/native/include/opencv2/opencv.hpp",
+        "build/native/include/opencv2/opencv_modules.hpp",
+        "build/native/include/opencv2/photo/photo.hpp",
+        "build/native/include/opencv2/photo/photo_c.h",
+        "build/native/include/opencv2/stitching/detail/autocalib.hpp",
+        "build/native/include/opencv2/stitching/detail/blenders.hpp",
+        "build/native/include/opencv2/stitching/detail/camera.hpp",
+        "build/native/include/opencv2/stitching/detail/exposure_compensate.hpp",
+        "build/native/include/opencv2/stitching/detail/matchers.hpp",
+        "build/native/include/opencv2/stitching/detail/motion_estimators.hpp",
+        "build/native/include/opencv2/stitching/detail/seam_finders.hpp",
+        "build/native/include/opencv2/stitching/detail/util.hpp",
+        "build/native/include/opencv2/stitching/detail/util_inl.hpp",
+        "build/native/include/opencv2/stitching/detail/warpers.hpp",
+        "build/native/include/opencv2/stitching/detail/warpers_inl.hpp",
+        "build/native/include/opencv2/stitching/stitcher.hpp",
+        "build/native/include/opencv2/stitching/warpers.hpp",
+        "build/native/include/opencv2/superres/optical_flow.hpp",
+        "build/native/include/opencv2/superres/superres.hpp",
+        "build/native/include/opencv2/ts/gpu_perf.hpp",
+        "build/native/include/opencv2/ts/gpu_test.hpp",
+        "build/native/include/opencv2/ts/ts.hpp",
+        "build/native/include/opencv2/ts/ts_gtest.h",
+        "build/native/include/opencv2/ts/ts_perf.hpp",
+        "build/native/include/opencv2/video/background_segm.hpp",
+        "build/native/include/opencv2/video/tracking.hpp",
+        "build/native/include/opencv2/video/video.hpp",
+        "build/native/include/opencv2/videostab/deblurring.hpp",
+        "build/native/include/opencv2/videostab/fast_marching.hpp",
+        "build/native/include/opencv2/videostab/fast_marching_inl.hpp",
+        "build/native/include/opencv2/videostab/frame_source.hpp",
+        "build/native/include/opencv2/videostab/global_motion.hpp",
+        "build/native/include/opencv2/videostab/inpainting.hpp",
+        "build/native/include/opencv2/videostab/log.hpp",
+        "build/native/include/opencv2/videostab/motion_stabilizing.hpp",
+        "build/native/include/opencv2/videostab/optical_flow.hpp",
+        "build/native/include/opencv2/videostab/stabilizer.hpp",
+        "build/native/include/opencv2/videostab/videostab.hpp",
+        "build/native/pivot-list.txt",
+        "build/native/private/CoApp.NuGetNativeExtensions.dll",
+        "build/native/private/CoApp.NuGetNativeMSBuildTasks.dll.orig",
+        "build/native/private/nuget.exe",
+        "build/publisher-info.txt",
+        "opencv.2.4.11.nupkg.sha512",
+        "opencv.nuspec"
+      ]
+    },
+    "OpenCvSharp4/4.10.0.20241108": {
+      "sha512": "4Lw57NQzOaR0fi9et7GMWB1rpdGzGuNgXHXy45Gltvt8SizQLOGufUonNF9Z+9mo3dcwGC/mL4w5NBgJCqZdHQ==",
+      "type": "package",
+      "path": "opencvsharp4/4.10.0.20241108",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net48/OpenCvSharp.dll",
+        "lib/net48/OpenCvSharp.xml",
+        "lib/net6.0/OpenCvSharp.dll",
+        "lib/net6.0/OpenCvSharp.xml",
+        "lib/netstandard2.0/OpenCvSharp.dll",
+        "lib/netstandard2.0/OpenCvSharp.xml",
+        "lib/netstandard2.1/OpenCvSharp.dll",
+        "lib/netstandard2.1/OpenCvSharp.xml",
+        "opencvsharp4.4.10.0.20241108.nupkg.sha512",
+        "opencvsharp4.nuspec"
+      ]
+    },
     "RBush.Signed/4.0.0": {
       "sha512": "aP5KQxL5RnFNGW1f0euYVBfCatkLw5iEzMRJcXKq8LWWP4Cp3+qoSq1tDDL2vvJ2rM0ychmVMa2VaEKLS6uX4w==",
       "type": "package",
@@ -1728,44 +1893,66 @@
         "sharpziplib.nuspec"
       ]
     },
-    "SixLabors.Fonts/1.0.1": {
-      "sha512": "ljezRHWc7N0azdQViib7Aa5v+DagRVkKI2/93kEbtjVczLs+yTkSq6gtGmvOcx4IqyNbO3GjLt7SAQTpLkySNw==",
+    "SixLabors.Fonts/2.0.8": {
+      "sha512": "psTLKJVKaD8PKm+Bz/mSSNo4m0VCTYoJ97TF/ynxEWkn4sFUipI0rzE2V/KBtfU0TOn/gF/+1XBOEvusGZZMhA==",
       "type": "package",
-      "path": "sixlabors.fonts/1.0.1",
+      "path": "sixlabors.fonts/2.0.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/netcoreapp3.1/SixLabors.Fonts.dll",
-        "lib/netcoreapp3.1/SixLabors.Fonts.xml",
-        "lib/netstandard2.0/SixLabors.Fonts.dll",
-        "lib/netstandard2.0/SixLabors.Fonts.xml",
-        "lib/netstandard2.1/SixLabors.Fonts.dll",
-        "lib/netstandard2.1/SixLabors.Fonts.xml",
-        "sixlabors.fonts.1.0.1.nupkg.sha512",
+        "LICENSE",
+        "lib/net6.0/SixLabors.Fonts.dll",
+        "lib/net6.0/SixLabors.Fonts.xml",
         "sixlabors.fonts.128.png",
+        "sixlabors.fonts.2.0.8.nupkg.sha512",
         "sixlabors.fonts.nuspec"
       ]
     },
-    "SixLabors.ImageSharp/2.1.9": {
-      "sha512": "VcjfKbOExie3RgZGrQL1jJMI4iZ3J9B6ifDo2QpDVJUYhTZKVcKnBhpNOHqbvNjHgadAks1jzhRjB7OZet1PJA==",
+    "SixLabors.ImageSharp/3.1.7": {
+      "sha512": "9fIOOAsyLFid6qKypM2Iy0Z3Q9yoanV8VoYAHtI2sYGMNKzhvRTjgFDHonIiVe+ANtxIxM6SuqUzj0r91nItpA==",
       "type": "package",
-      "path": "sixlabors.imagesharp/2.1.9",
+      "path": "sixlabors.imagesharp/3.1.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/net472/SixLabors.ImageSharp.dll",
-        "lib/net472/SixLabors.ImageSharp.xml",
-        "lib/netcoreapp2.1/SixLabors.ImageSharp.dll",
-        "lib/netcoreapp2.1/SixLabors.ImageSharp.xml",
-        "lib/netcoreapp3.1/SixLabors.ImageSharp.dll",
-        "lib/netcoreapp3.1/SixLabors.ImageSharp.xml",
-        "lib/netstandard2.0/SixLabors.ImageSharp.dll",
-        "lib/netstandard2.0/SixLabors.ImageSharp.xml",
-        "lib/netstandard2.1/SixLabors.ImageSharp.dll",
-        "lib/netstandard2.1/SixLabors.ImageSharp.xml",
+        "LICENSE",
+        "build/SixLabors.ImageSharp.props",
+        "lib/net6.0/SixLabors.ImageSharp.dll",
+        "lib/net6.0/SixLabors.ImageSharp.xml",
         "sixlabors.imagesharp.128.png",
-        "sixlabors.imagesharp.2.1.9.nupkg.sha512",
+        "sixlabors.imagesharp.3.1.7.nupkg.sha512",
         "sixlabors.imagesharp.nuspec"
+      ]
+    },
+    "SixLabors.ImageSharp.Drawing/2.1.5": {
+      "sha512": "cER1JfvshYDmTxw+gUy/x5e1xoNWhrD6s3AFf8rRUx9hWSXYdOFreQfUrM/QooMj0rF7+hkVtvGnV3EdMx4dxA==",
+      "type": "package",
+      "path": "sixlabors.imagesharp.drawing/2.1.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net6.0/SixLabors.ImageSharp.Drawing.dll",
+        "lib/net6.0/SixLabors.ImageSharp.Drawing.xml",
+        "sixlabors.imagesharp.drawing.128.png",
+        "sixlabors.imagesharp.drawing.2.1.5.nupkg.sha512",
+        "sixlabors.imagesharp.drawing.nuspec"
+      ]
+    },
+    "SixLabors.ImageSharp.Web/3.1.3": {
+      "sha512": "lk6y7QYcJKR0VZV8m//zJ3NZNdvXuyDSY/CpaL/Ps11v9iWt7KZUzAsNmOZpvGFDpsjFdPA0FNhHftRfUy696Q==",
+      "type": "package",
+      "path": "sixlabors.imagesharp.web/3.1.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "build/SixLabors.ImageSharp.Web.props",
+        "lib/net6.0/SixLabors.ImageSharp.Web.dll",
+        "lib/net6.0/SixLabors.ImageSharp.Web.xml",
+        "sixlabors.imagesharp.web.128.png",
+        "sixlabors.imagesharp.web.3.1.3.nupkg.sha512",
+        "sixlabors.imagesharp.web.nuspec"
       ]
     },
     "System.ClientModel/1.2.1": {
@@ -1901,60 +2088,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Drawing.Common/9.0.0": {
-      "sha512": "uoozjI3+dlgKh2onFJcz8aNLh6TRCPlLSh8Dbuljc8CdvqXrxHOVysJlrHvlsOCqceqGBR1wrMPxlnzzhynktw==",
-      "type": "package",
-      "path": "system.drawing.common/9.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "PACKAGE.md",
-        "THIRD-PARTY-NOTICES.TXT",
-        "buildTransitive/net461/System.Drawing.Common.targets",
-        "buildTransitive/net462/_._",
-        "buildTransitive/net8.0/_._",
-        "buildTransitive/netcoreapp2.0/System.Drawing.Common.targets",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net462/System.Drawing.Common.dll",
-        "lib/net462/System.Drawing.Common.pdb",
-        "lib/net462/System.Drawing.Common.xml",
-        "lib/net8.0/System.Drawing.Common.dll",
-        "lib/net8.0/System.Drawing.Common.pdb",
-        "lib/net8.0/System.Drawing.Common.xml",
-        "lib/net8.0/System.Private.Windows.Core.dll",
-        "lib/net8.0/System.Private.Windows.Core.xml",
-        "lib/net9.0/System.Drawing.Common.dll",
-        "lib/net9.0/System.Drawing.Common.pdb",
-        "lib/net9.0/System.Drawing.Common.xml",
-        "lib/net9.0/System.Private.Windows.Core.dll",
-        "lib/net9.0/System.Private.Windows.Core.xml",
-        "lib/netstandard2.0/System.Drawing.Common.dll",
-        "lib/netstandard2.0/System.Drawing.Common.pdb",
-        "lib/netstandard2.0/System.Drawing.Common.xml",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "system.drawing.common.9.0.0.nupkg.sha512",
-        "system.drawing.common.nuspec",
-        "useSharedDesignerContext.txt"
-      ]
-    },
-    "System.Drawing.Pictograms/1.2.20": {
-      "sha512": "kyQiiGainoGdR8/xeUuG9M3Z80QxjMR5tvQiX6DGc6zYRV5rl2l2zIg56vSeyShNj7l7RDW5PhrlOLaLVJ5UJg==",
-      "type": "package",
-      "path": "system.drawing.pictograms/1.2.20",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/System.Drawing.Pictograms.dll",
-        "system.drawing.pictograms.1.2.20.nupkg.sha512",
-        "system.drawing.pictograms.nuspec"
-      ]
-    },
     "System.IO.Packaging/8.0.1": {
       "sha512": "KYkIOAvPexQOLDxPO2g0BVoWInnQhPpkFzRqvNrNrMhVT6kqhVr0zEb6KCHlptLFukxnZrjuMVAnxK7pOGUYrw==",
       "type": "package",
@@ -1984,6 +2117,29 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "System.Memory/4.5.5": {
+      "sha512": "XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
+      "type": "package",
+      "path": "system.memory/4.5.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Memory.dll",
+        "lib/net461/System.Memory.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.5.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Memory.Data/6.0.0": {
       "sha512": "ntFHArH3I4Lpjf5m4DCXQHJuGwWPNVJPaAvM95Jy/u+2Yzt2ryiyIN04LAogkjP9DeRcEOiviAjQotfmPq/FrQ==",
       "type": "package",
@@ -2005,49 +2161,6 @@
         "system.memory.data.6.0.0.nupkg.sha512",
         "system.memory.data.nuspec",
         "useSharedDesignerContext.txt"
-      ]
-    },
-    "System.Reactive/6.0.1": {
-      "sha512": "rHaWtKDwCi9qJ3ObKo8LHPMuuwv33YbmQi7TcUK1C264V3MFnOr5Im7QgCTdLniztP3GJyeiSg5x8NqYJFqRmg==",
-      "type": "package",
-      "path": "system.reactive/6.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "build/net6.0-windows10.0.19041/_._",
-        "build/net6.0/_._",
-        "buildTransitive/net6.0-windows10.0.19041/_._",
-        "buildTransitive/net6.0/_._",
-        "icon.png",
-        "lib/net472/System.Reactive.dll",
-        "lib/net472/System.Reactive.xml",
-        "lib/net6.0-windows10.0.19041/System.Reactive.dll",
-        "lib/net6.0-windows10.0.19041/System.Reactive.xml",
-        "lib/net6.0/System.Reactive.dll",
-        "lib/net6.0/System.Reactive.xml",
-        "lib/netstandard2.0/System.Reactive.dll",
-        "lib/netstandard2.0/System.Reactive.xml",
-        "lib/uap10.0.18362/System.Reactive.dll",
-        "lib/uap10.0.18362/System.Reactive.pri",
-        "lib/uap10.0.18362/System.Reactive.xml",
-        "readme.md",
-        "system.reactive.6.0.1.nupkg.sha512",
-        "system.reactive.nuspec"
-      ]
-    },
-    "System.Reactive.Windows.Forms/6.0.1": {
-      "sha512": "3U2N9OqlZilRNy95xGpzRi0Jm2AwsddPHKWvlunHVigldIf1xJZNqJ6MbkO8kih5GLSITiyH3yBArH1nk53Qyg==",
-      "type": "package",
-      "path": "system.reactive.windows.forms/6.0.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "icon.png",
-        "lib/net472/System.Reactive.Windows.Forms.dll",
-        "lib/net472/System.Reactive.Windows.Forms.xml",
-        "readme.md",
-        "system.reactive.windows.forms.6.0.1.nupkg.sha512",
-        "system.reactive.windows.forms.nuspec"
       ]
     },
     "System.Reflection.Emit/4.7.0": {
@@ -2308,71 +2421,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Threading.Tasks.Extensions/4.5.4": {
-      "sha512": "zteT+G8xuGu6mS+mzDzYXbzS7rd3K6Fjb9RiZlYlJPam2/hU7JCBZBVEcywNuR+oZ1ncTvc/cq0faRr3P01OVg==",
-      "type": "package",
-      "path": "system.threading.tasks.extensions/4.5.4",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net461/System.Threading.Tasks.Extensions.dll",
-        "lib/net461/System.Threading.Tasks.Extensions.xml",
-        "lib/netcoreapp2.1/_._",
-        "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll",
-        "lib/netstandard1.0/System.Threading.Tasks.Extensions.xml",
-        "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll",
-        "lib/netstandard2.0/System.Threading.Tasks.Extensions.xml",
-        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.dll",
-        "lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.xml",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/netcoreapp2.1/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-        "system.threading.tasks.extensions.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "System.Windows.Forms.DataVisualization/1.0.0-prerelease.20110.1": {
-      "sha512": "1EdLFl/I5QobO4shpqUNslDGWTeRbpt3pLMSkiLQYzdWBDqf44/8TM5hXMtkA8ktHU80aVZYVEuxr8vJqcB1Ig==",
-      "type": "package",
-      "path": "system.windows.forms.datavisualization/1.0.0-prerelease.20110.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/netcoreapp3.0/System.Windows.Forms.DataVisualization.dll",
-        "lib/netcoreapp3.0/System.Windows.Forms.DataVisualization.pdb",
-        "ref/netcoreapp3.0/System.Windows.Forms.DataVisualization.dll",
-        "system.windows.forms.datavisualization.1.0.0-prerelease.20110.1.nupkg.sha512",
-        "system.windows.forms.datavisualization.nuspec"
-      ]
-    },
-    "System.Windows.Forms.Pictograms/1.2.20": {
-      "sha512": "XwJbRnjDedblkE4pX0BCumk7gEP/f0BADkq85rtQ9Lb4OCBjtnh49bm9G2fW9rrG1pMNpAAzAQ7KlW8fPDnjAA==",
-      "type": "package",
-      "path": "system.windows.forms.pictograms/1.2.20",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/System.Windows.Forms.Pictograms.dll",
-        "system.windows.forms.pictograms.1.2.20.nupkg.sha512",
-        "system.windows.forms.pictograms.nuspec"
-      ]
-    },
     "Tesseract/5.2.0": {
       "sha512": "YB7feJlrTWSXtK8+WaCcseGSPK/1r2d2FWeKGyndlrPwYClrzTlCoHD4/oQEUjKafmpkWlhTZZ7pxiRJYZgj6w==",
       "type": "package",
@@ -2447,16 +2495,18 @@
     "net9.0-windows7.0": [
       "AForge >= 2.2.5",
       "AForge.Imaging >= 2.2.5",
+      "Accord >= 3.8.0",
       "ClosedXML >= 0.105.0-rc",
       "DocumentFormat.OpenXml >= 3.2.0",
       "EPPlus >= 8.0.0-beta",
       "NPOI >= 2.7.2",
       "OpenAI >= 2.2.0-beta.2",
       "OpenAI-DotNet >= 8.6.2",
-      "System.Drawing.Common >= 9.0.0",
-      "System.Reactive.Windows.Forms >= 6.0.1",
-      "System.Windows.Forms.DataVisualization >= 1.0.0-prerelease.20110.1",
-      "System.Windows.Forms.Pictograms >= 1.2.0",
+      "OpenCV >= 2.4.11",
+      "OpenCvSharp4 >= 4.10.0.20241108",
+      "SixLabors.ImageSharp >= 3.1.7",
+      "SixLabors.ImageSharp.Drawing >= 2.1.5",
+      "SixLabors.ImageSharp.Web >= 3.1.3",
       "Tesseract >= 5.2.0",
       "Tesseract.Data.English >= 4.0.0",
       "TesseractOCR >= 5.4.2"
@@ -2521,6 +2571,10 @@
             "target": "Package",
             "version": "[2.2.5, )"
           },
+          "Accord": {
+            "target": "Package",
+            "version": "[3.8.0, )"
+          },
           "ClosedXML": {
             "target": "Package",
             "version": "[0.105.0-rc, )"
@@ -2545,21 +2599,25 @@
             "target": "Package",
             "version": "[8.6.2, )"
           },
-          "System.Drawing.Common": {
+          "OpenCV": {
             "target": "Package",
-            "version": "[9.0.0, )"
+            "version": "[2.4.11, )"
           },
-          "System.Reactive.Windows.Forms": {
+          "OpenCvSharp4": {
             "target": "Package",
-            "version": "[6.0.1, )"
+            "version": "[4.10.0.20241108, )"
           },
-          "System.Windows.Forms.DataVisualization": {
+          "SixLabors.ImageSharp": {
             "target": "Package",
-            "version": "[1.0.0-prerelease.20110.1, )"
+            "version": "[3.1.7, )"
           },
-          "System.Windows.Forms.Pictograms": {
+          "SixLabors.ImageSharp.Drawing": {
             "target": "Package",
-            "version": "[1.2.0, )"
+            "version": "[2.1.5, )"
+          },
+          "SixLabors.ImageSharp.Web": {
+            "target": "Package",
+            "version": "[3.1.3, )"
           },
           "Tesseract": {
             "target": "Package",
@@ -2599,36 +2657,6 @@
   },
   "logs": [
     {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "System.Windows.Forms.Pictograms 1.2.20 depends on System.Drawing.Pictograms (>= 1.2.0) but System.Drawing.Pictograms 1.2.0 was not found. System.Drawing.Pictograms 1.2.20 was resolved instead.",
-      "libraryId": "System.Drawing.Pictograms",
-      "targetGraphs": [
-        "net9.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "OCRProject depends on System.Windows.Forms.Pictograms (>= 1.2.0) but System.Windows.Forms.Pictograms 1.2.0 was not found. System.Windows.Forms.Pictograms 1.2.20 was resolved instead.",
-      "libraryId": "System.Windows.Forms.Pictograms",
-      "targetGraphs": [
-        "net9.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'SixLabors.ImageSharp' 2.1.9 has a known high severity vulnerability, https://github.com/advisories/GHSA-2cmq-823j-5qj8",
-      "libraryId": "SixLabors.ImageSharp",
-      "targetGraphs": [
-        "net9.0-windows7.0"
-      ]
-    },
-    {
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
@@ -2654,36 +2682,6 @@
       "warningLevel": 1,
       "message": "Package 'AForge.Math 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net9.0-windows7.0'. This package may not be fully compatible with your project.",
       "libraryId": "AForge.Math",
-      "targetGraphs": [
-        "net9.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Drawing.Pictograms 1.2.20' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net9.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "System.Drawing.Pictograms",
-      "targetGraphs": [
-        "net9.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Reactive.Windows.Forms 6.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net9.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "System.Reactive.Windows.Forms",
-      "targetGraphs": [
-        "net9.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Windows.Forms.Pictograms 1.2.20' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net9.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "System.Windows.Forms.Pictograms",
       "targetGraphs": [
         "net9.0-windows7.0"
       ]

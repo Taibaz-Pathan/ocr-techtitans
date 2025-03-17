@@ -1269,3 +1269,17 @@
 [INFO] 16-03-2025 21:18:42: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\sample-image_Deskewed.png
 [INFO] 16-03-2025 21:18:42: Successfully processed image: sample-image.png
 [INFO] 16-03-2025 21:18:42: Processing completed successfully.
+[INFO] 17-03-2025 21:34:52: Starting Image Processing...
+[INFO] 17-03-2025 21:34:52: Configuration loaded successfully.
+[INFO] 17-03-2025 21:34:52: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\sample-image_Deskewed.png
+[INFO] 17-03-2025 21:34:52: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\sample-image_GlobalThreshold.png
+[INFO] 17-03-2025 21:34:52: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\sample-image_Grayscale.png
+[INFO] 17-03-2025 21:34:52: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\sample-image_SaturationAdjusted.png
+[INFO] 17-03-2025 21:34:52: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\sample-image_Shifted.png
+[INFO] 17-03-2025 21:34:52: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250316_211835.txt
+[INFO] 17-03-2025 21:34:52: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 17-03-2025 21:34:52: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250317_213452.txt
+[INFO] 17-03-2025 21:34:52: Processing 1 images...
+[INFO] 17-03-2025 21:34:56: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\ocr_preprocessing_input_Grayscale.png
+[ERROR] 17-03-2025 21:35:11: Error processing C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Input\ocr_preprocessing_input.png: Parameter "threshold" (System.Single) must be between or equal to 0 and 1, was 128 (Parameter 'threshold')
+[INFO] 17-03-2025 21:35:22: Processing completed successfully.

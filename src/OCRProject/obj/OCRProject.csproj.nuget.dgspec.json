@@ -59,6 +59,10 @@
               "target": "Package",
               "version": "[2.2.5, )"
             },
+            "Accord": {
+              "target": "Package",
+              "version": "[3.8.0, )"
+            },
             "ClosedXML": {
               "target": "Package",
               "version": "[0.105.0-rc, )"
@@ -83,21 +87,25 @@
               "target": "Package",
               "version": "[8.6.2, )"
             },
-            "System.Drawing.Common": {
+            "OpenCV": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[2.4.11, )"
             },
-            "System.Reactive.Windows.Forms": {
+            "OpenCvSharp4": {
               "target": "Package",
-              "version": "[6.0.1, )"
+              "version": "[4.10.0.20241108, )"
             },
-            "System.Windows.Forms.DataVisualization": {
+            "SixLabors.ImageSharp": {
               "target": "Package",
-              "version": "[1.0.0-prerelease.20110.1, )"
+              "version": "[3.1.7, )"
             },
-            "System.Windows.Forms.Pictograms": {
+            "SixLabors.ImageSharp.Drawing": {
               "target": "Package",
-              "version": "[1.2.0, )"
+              "version": "[2.1.5, )"
+            },
+            "SixLabors.ImageSharp.Web": {
+              "target": "Package",
+              "version": "[3.1.3, )"
             },
             "Tesseract": {
               "target": "Package",
