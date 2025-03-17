@@ -1,6 +1,7 @@
 using System;
 using System.Drawing;
 using System.Drawing.Imaging;
+using System.Runtime.InteropServices;
 
 namespace OCRProject.ImageProcessing
 {
@@ -11,24 +12,31 @@ namespace OCRProject.ImageProcessing
             contrast = (100.0f + contrast) / 100.0f;
             contrast *= contrast;
 
-            Bitmap adjustedImage = new Bitmap(image.Width, image.Height);
+            Bitmap adjustedImage = new Bitmap(image.Width, image.Height, PixelFormat.Format24bppRgb);
+            Rectangle rect = new Rectangle(0, 0, image.Width, image.Height);
+            BitmapData imageData = image.LockBits(rect, ImageLockMode.ReadOnly, PixelFormat.Format24bppRgb);
+            BitmapData adjData = adjustedImage.LockBits(rect, ImageLockMode.WriteOnly, PixelFormat.Format24bppRgb);
 
-            using (Graphics g = Graphics.FromImage(adjustedImage))
+            int bytes = Math.Abs(imageData.Stride) * image.Height;
+            byte[] buffer = new byte[bytes];
+            Marshal.Copy(imageData.Scan0, buffer, 0, bytes);
+            image.UnlockBits(imageData);
+
+            for (int i = 0; i < buffer.Length; i += 3)
             {
-                ImageAttributes attributes = new ImageAttributes();
-                float[][] colorMatrixElements = {
-                    new float[] {contrast, 0, 0, 0, 0},
-                    new float[] {0, contrast, 0, 0, 0},
-                    new float[] {0, 0, contrast, 0, 0},
-                    new float[] {0, 0, 0, 1, 0},
-                    new float[] {0.5f * (1.0f - contrast), 0.5f * (1.0f - contrast), 0.5f * (1.0f - contrast), 0, 1}
-                };
-                ColorMatrix colorMatrix = new ColorMatrix(colorMatrixElements);
-                attributes.SetColorMatrix(colorMatrix);
-
-                g.DrawImage(image, new Rectangle(0, 0, image.Width, image.Height), 0, 0, image.Width, image.Height, GraphicsUnit.Pixel, attributes);
+                for (int j = 0; j < 3; j++)
+                {
+                    float color = buffer[i + j] / 255.0f;
+                    color -= 0.5f;
+                    color *= contrast;
+                    color += 0.5f;
+                    color *= 255;
+                    buffer[i + j] = (byte)Math.Max(0, Math.Min(255, color));
+                }
             }
 
+            Marshal.Copy(buffer, 0, adjData.Scan0, bytes);
+            adjustedImage.UnlockBits(adjData);
             return adjustedImage;
         }
     }
