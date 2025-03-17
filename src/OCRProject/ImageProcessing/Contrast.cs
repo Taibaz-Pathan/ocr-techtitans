@@ -2,6 +2,7 @@ using System;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Runtime.InteropServices;
+using System.Threading.Tasks;
 
 namespace OCRProject.ImageProcessing
 {
@@ -22,18 +23,19 @@ namespace OCRProject.ImageProcessing
             Marshal.Copy(imageData.Scan0, buffer, 0, bytes);
             image.UnlockBits(imageData);
 
-            for (int i = 0; i < buffer.Length; i += 3)
+            Parallel.For(0, buffer.Length / 3, i =>
             {
+                int index = i * 3;
                 for (int j = 0; j < 3; j++)
                 {
-                    float color = buffer[i + j] / 255.0f;
+                    float color = buffer[index + j] / 255.0f;
                     color -= 0.5f;
                     color *= contrast;
                     color += 0.5f;
                     color *= 255;
-                    buffer[i + j] = (byte)Math.Max(0, Math.Min(255, color));
+                    buffer[index + j] = (byte)Math.Max(0, Math.Min(255, color));
                 }
-            }
+            });
 
             Marshal.Copy(buffer, 0, adjData.Scan0, bytes);
             adjustedImage.UnlockBits(adjData);
