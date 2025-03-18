@@ -59,7 +59,6 @@ namespace OCRProject.ModelComparison
                 workbook.Write(fileStream);
             }
             
-            //closing workbook
             workbook.Close();
         }
     }

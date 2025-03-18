@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using OCRProject.Interfaces;
 using NPOI.SS.UserModel;
 using NPOI.XSSF.UserModel;
-
 namespace ModelComparison
 {
-    public class CosineSimilarityCalculator
+    public class CosineSimilarityCalculator : ICosineSimilarityCalculator
     {
         private readonly string _outputFolder;
 
