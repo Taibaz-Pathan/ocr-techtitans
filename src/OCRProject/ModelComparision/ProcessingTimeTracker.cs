@@ -5,10 +5,11 @@ using System.IO;
 using DocumentFormat.OpenXml.Spreadsheet;
 using NPOI.SS.UserModel;
 using NPOI.XSSF.UserModel;
+using OCRProject.Interfaces;
 
 namespace OCRProject.ModelComparison
 {
-    public class ProcessingTimeTracker
+    public class ProcessingTimeTracker : IProcessingTimeTracker
     {
         private Stopwatch stopwatch;
         private List<(string ImageName, string ProcessingStep, double TimeTaken)> processingTimes;
