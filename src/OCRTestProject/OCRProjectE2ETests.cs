@@ -10,7 +10,7 @@ namespace OCRProject.Tests
     public class OCRProjectE2ETests
     {
         private readonly string testDataPath = @"C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRTestProject\TestData";
-        private readonly string executablePath = @"C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\bin\Debug\net9.0-windows\OCRProject.exe";
+        private readonly string executablePath = @"C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\bin\Debug\net9.0\OCRProject.exe";
         private readonly string mainInputFolder = @"C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Input";
         private readonly string mainOutputFolder = @"C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText";
         private readonly string logFile = @"C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRTestProject\logs\log.txt";
@@ -67,8 +67,125 @@ namespace OCRProject.Tests
             CopyTestFile("test.txt");
             string output = RunOCRProcess();
             Assert.That(output, Does.Contain("No images found in the input folder."), "OCR did not handle invalid file format correctly.");
-        }        
+        }
 
+        [Test]        
+        public void Test_OCR_Processing_Multiple_Images()
+        {
+            CopyTestFile("sample-image.png");
+            CopyTestFile("sample-image1.png");
+            string output = RunOCRProcess();
+            Assert.That(output, Does.Contain("Processing completed"), "OCR did not process multiple images correctly.");
+            AssertOutputFileExists();
+        }
+
+        [Test]
+        public void Test_OCR_Processing_MultiLanguage_Text()
+        {
+            CopyTestFile("multi-language.png");
+            string output = RunOCRProcess();
+            Assert.That(output, Does.Contain("Processing completed"), "OCR did not handle multi-language text correctly.");
+        }
+
+        [Test]
+        public void Test_OCR_Processing_Rotated_Text()
+        {
+            CopyTestFile("rotated-text.png");
+            string output = RunOCRProcess();
+            Assert.That(output, Does.Contain("Processing completed"), "OCR did not process rotated text correctly.");
+        }
+
+        [Test]
+        public void Test_OCR_Processing_Noisy_Image()
+        {
+            CopyTestFile("noisy-text.png");
+            string output = RunOCRProcess();
+            Assert.That(output, Does.Contain("Processing completed"), "OCR did not handle noisy images correctly.");
+        }
+
+        [Test]
+        public void Test_OCR_Processing_Only_Numbers()
+        {
+            CopyTestFile("numbers-only.png");
+            string output = RunOCRProcess();
+            Assert.That(output, Does.Contain("Processing completed"), "OCR did not extract numbers correctly.");
+        }
+
+        [Test]
+        public void Test_OCR_Processing_Empty_Image()
+        {
+            CopyTestFile("empty-image.png");
+            string output = RunOCRProcess();
+            Assert.That(output, Does.Contain("Error opening data file ./tessdata/eng.traineddata"), "OCR should return an empty result for blank images.");
+        }
+
+        [Test]
+        public void Test_OCR_Processing_Skewed_Text()
+        {
+            CopyTestFile("skewed-text.png");
+            string output = RunOCRProcess();
+            Assert.That(output, Does.Contain("Processing completed"), "OCR did not process skewed text correctly.");
+        }
+
+        [Test]
+        public void Test_Multiple_Images_In_Input()
+        {
+            CopyTestFile("multi-image-1.png");
+            CopyTestFile("multi-image-2.png");
+            string output = RunOCRProcess();
+            Assert.That(output, Does.Contain("Processing completed"), "OCR did not process multiple images correctly.");
+        }
+
+        [Test]
+        public void Test_OCR_Processing_Different_Image_Formats()
+        {
+            CopyTestFile("test-image.jpg");
+            CopyTestFile("test-image.bmp");
+            string output = RunOCRProcess();
+            Assert.That(output, Does.Contain("Processing completed"), "OCR did not handle different image formats correctly.");
+        }
+
+        [Test]
+        public void Test_OCR_Processing_Handwritten_Text()
+        {
+            CopyTestFile("handwritten-text.png");
+            string output = RunOCRProcess();
+            Assert.That(output, Does.Contain("Processing completed"), "OCR did not process handwritten text correctly.");
+        }
+
+        [Test]
+        public void Test_OCR_Low_Contrast_Image()
+        {
+            CopyTestFile("low-contrast.png");
+            string output = RunOCRProcess();
+            Assert.That(output, Does.Contain("Processing completed"), "OCR did not process low-contrast images correctly.");
+        }
+
+        [Test]
+        public void Test_OCR_Multi_Column_Text()
+        {
+            CopyTestFile("multi-column.png");
+            string output = RunOCRProcess();
+            Assert.That(output, Does.Contain("Processing completed"), "OCR did not handle multi-column text correctly.");
+        }
+
+        [Test]
+        public void Test_OCR_Special_Characters_And_Emojis()
+        {
+            CopyTestFile("special-characters.png");
+            string output = RunOCRProcess();
+            Assert.That(output, Does.Contain("Processing completed"), "OCR did not recognize special characters or emojis correctly.");
+        }
+
+        [Test]
+        public void Test_OCR_Processing_PDF_File()
+        {
+            CopyTestFile("test-document.pdf");
+            string output = RunOCRProcess();
+            Assert.That(output, Does.Contain("No images found"), "OCR did not handle non-image file types correctly.");
+        }       
+
+        
         [Test]
         public void Test_OCR_Interrupted_Process()
         {

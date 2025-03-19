@@ -1,13 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "IgVr5WbXgkY=",
+  "dgSpecHash": "GMzppeUx3P0=",
   "success": true,
   "projectFilePath": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\OCRProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mithi\\.nuget\\packages\\accord\\3.8.0\\accord.3.8.0.nupkg.sha512",
-    "C:\\Users\\mithi\\.nuget\\packages\\aforge\\2.2.5\\aforge.2.2.5.nupkg.sha512",
-    "C:\\Users\\mithi\\.nuget\\packages\\aforge.imaging\\2.2.5\\aforge.imaging.2.2.5.nupkg.sha512",
-    "C:\\Users\\mithi\\.nuget\\packages\\aforge.math\\2.2.5\\aforge.math.2.2.5.nupkg.sha512",
     "C:\\Users\\mithi\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
     "C:\\Users\\mithi\\.nuget\\packages\\closedxml\\0.105.0-rc\\closedxml.0.105.0-rc.nupkg.sha512",
     "C:\\Users\\mithi\\.nuget\\packages\\closedxml.parser\\2.0.0-preview1\\closedxml.parser.2.0.0-preview1.nupkg.sha512",
@@ -58,36 +55,5 @@
     "C:\\Users\\mithi\\.nuget\\packages\\tesseract.data.english\\4.0.0\\tesseract.data.english.4.0.0.nupkg.sha512",
     "C:\\Users\\mithi\\.nuget\\packages\\tesseractocr\\5.4.2\\tesseractocr.5.4.2.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'AForge 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net9.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "AForge",
-      "targetGraphs": [
-        "net9.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'AForge.Imaging 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net9.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "AForge.Imaging",
-      "targetGraphs": [
-        "net9.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'AForge.Math 2.2.5' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net9.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "AForge.Math",
-      "targetGraphs": [
-        "net9.0-windows7.0"
-      ]
-    }
-  ]
+  "logs": []
 }

@@ -21,9 +21,6 @@ C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\bin\D
 C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\bin\Debug\net9.0-windows\OCRProject.dll
 C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\bin\Debug\net9.0-windows\OCRProject.pdb
 C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\bin\Debug\net9.0-windows\Accord.dll
-C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\bin\Debug\net9.0-windows\AForge.dll
-C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\bin\Debug\net9.0-windows\AForge.Imaging.dll
-C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\bin\Debug\net9.0-windows\AForge.Math.dll
 C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\bin\Debug\net9.0-windows\BouncyCastle.Cryptography.dll
 C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\bin\Debug\net9.0-windows\ClosedXML.dll
 C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\bin\Debug\net9.0-windows\ClosedXML.Parser.dll
