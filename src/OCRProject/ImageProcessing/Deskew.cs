@@ -1,52 +1,53 @@
 ﻿using System;
-using System.Drawing;
-using System.Drawing.Imaging;
-using System.Drawing.Drawing2D;
-using AForge.Imaging.Filters; 
-using AForge.Imaging;
+using OpenCvSharp;
+using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.PixelFormats;
+using SixLabors.ImageSharp.Processing;
+using System.Runtime.InteropServices;
 
 namespace OCRProject.ImageProcessing
 {
     public class Deskew
     {
         /// <summary>
-        /// Applies deskewing to correct image rotation
+        /// Applies deskewing to correct image rotation using Hough Transform.
         /// </summary>
-        /// <param name="inputImage">The input image</param>
-        /// <returns>Deskewed image</returns>
-        public Bitmap Apply(Bitmap inputImage)
+        public Image<Rgba32> Apply(Image<Rgba32> inputImage)
         {
             try
             {
-                // Convert to grayscale
-                Grayscale grayscaleFilter = new Grayscale(0.2125, 0.7154, 0.0721);
-                Bitmap grayImage = grayscaleFilter.Apply(inputImage);
+                // Convert ImageSharp image to OpenCV Mat
+                Mat grayMat = ConvertToMat(inputImage);
 
-                // Apply Hough Line Transform to detect skew angle
-                HoughLineTransformation houghTransform = new HoughLineTransformation();
-                houghTransform.ProcessImage(grayImage);
-                HoughLine[] lines = houghTransform.GetLinesByRelativeIntensity(0.5);
+                // Apply Canny edge detection
+                Mat edges = new Mat();
+                Cv2.Canny(grayMat, edges, 50, 150, 3);
+
+                // Apply Hough Line Transform
+                LineSegmentPolar[] lines = Cv2.HoughLines(edges, 1, Math.PI / 180, 100);
 
                 if (lines.Length == 0)
                     return inputImage; // No skew detected
 
+                // Compute the average skew angle
                 double angleSum = 0;
                 int count = 0;
-
-                foreach (HoughLine line in lines)
+                foreach (var line in lines)
                 {
-                    double theta = line.Theta;
-                    if (theta > 45 && theta < 135)
+                    double theta = line.Theta * (180 / Math.PI); // Convert radians to degrees
+                    if (theta > 45 && theta < 135) // Filter out irrelevant angles
                     {
-                        angleSum += theta - 90;
+                        angleSum += theta - 90; // Convert to rotation angles
                         count++;
                     }
                 }
 
                 if (count == 0)
-                    return inputImage;
+                    return inputImage; // No valid lines detected
 
                 double skewAngle = angleSum / count;
+
+                // Rotate image to correct skew
                 return RotateImage(inputImage, -skewAngle);
             }
             catch (Exception ex)
@@ -57,21 +58,39 @@ namespace OCRProject.ImageProcessing
         }
 
         /// <summary>
-        /// Rotates an image by a given angle
+        /// Rotates an image by the given angle.
         /// </summary>
-        private Bitmap RotateImage(Bitmap inputImage, double angle)
+        private Image<Rgba32> RotateImage(Image<Rgba32> image, double angle)
         {
-            Bitmap rotatedImage = new Bitmap(inputImage.Width, inputImage.Height);
-            using (Graphics g = Graphics.FromImage(rotatedImage))
+            image.Mutate(x => x.Rotate((float)angle));
+            return image;
+        }
+
+        /// <summary>
+        /// Converts an ImageSharp image to an OpenCV Mat.
+        /// </summary>
+        private Mat ConvertToMat(Image<Rgba32> image)
+        {
+            int width = image.Width;
+            int height = image.Height;
+            byte[] grayscaleData = new byte[width * height];
+
+            image.ProcessPixelRows(accessor =>
             {
-                g.Clear(Color.White);
-                g.InterpolationMode = InterpolationMode.HighQualityBicubic;
-                g.TranslateTransform(inputImage.Width / 2, inputImage.Height / 2);
-                g.RotateTransform((float)angle);
-                g.TranslateTransform(-inputImage.Width / 2, -inputImage.Height / 2);
-                g.DrawImage(inputImage, new Point(0, 0));
-            }
-            return rotatedImage;
+                for (int y = 0; y < height; y++)
+                {
+                    var row = accessor.GetRowSpan(y);
+                    for (int x = 0; x < width; x++)
+                    {
+                        grayscaleData[y * width + x] = row[x].R; // Use Red channel as grayscale
+                    }
+                }
+            });
+
+            // Create a Mat manually from grayscale data
+            Mat mat = new Mat(height, width, MatType.CV_8UC1);
+            Marshal.Copy(grayscaleData, 0, mat.Data, grayscaleData.Length);
+            return mat;
         }
     }
 }
