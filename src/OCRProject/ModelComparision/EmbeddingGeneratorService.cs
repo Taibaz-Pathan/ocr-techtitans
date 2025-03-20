@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using OCRProject.Interfaces;
 
 namespace ModelComparison
 {
-    public class EmbeddingGeneratorService
+    public class EmbeddingGeneratorService : IEmbeddingGeneratorService
     {
         private readonly Random _random;
         private const int EmbeddingSize = 1536; // Simulating OpenAI embedding size
