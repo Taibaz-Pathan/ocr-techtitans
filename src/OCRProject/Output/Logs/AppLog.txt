@@ -1,0 +1,11 @@
+[INFO] 21-03-2025 17:29:25: Starting Image Processing...
+[INFO] 21-03-2025 17:29:25: Configuration loaded successfully.
+[INFO] 21-03-2025 17:29:25: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250321_172925.txt
+[INFO] 21-03-2025 17:29:25: Processing 1 images...
+[INFO] 21-03-2025 17:29:26: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\ocr_preprocessing_input_Grayscale.png
+[INFO] 21-03-2025 17:29:30: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\ocr_preprocessing_input_GlobalThreshold.png
+[INFO] 21-03-2025 17:29:31: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\ocr_preprocessing_input_Shifted.png
+[INFO] 21-03-2025 17:29:32: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\ocr_preprocessing_input_SaturationAdjusted.png
+[INFO] 21-03-2025 17:29:34: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\ocr_preprocessing_input_Deskewed.png
+[INFO] 21-03-2025 17:29:36: Successfully processed image: ocr_preprocessing_input.png
+[INFO] 21-03-2025 17:29:36: Processing completed successfully.

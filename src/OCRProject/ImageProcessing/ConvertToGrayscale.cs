@@ -1,34 +1,33 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.PixelFormats;
+using SixLabors.ImageSharp.Processing;
 
 namespace OCRProject.ImageProcessing
 {
-    public class ConvertToGrayscale 
+    public class ConvertToGrayscale
     {
-        public Bitmap Apply(Bitmap original) 
+        public Image<L8> Apply(Image<Rgba32> original)
         {
-            Bitmap grayscaleImage = new Bitmap(original.Width, original.Height);
+            // Clone the original image to avoid modifying it directly
+            Image<L8> grayscaleImage = original.CloneAs<L8>();
 
-            // Loop through each pixel of the image
-            for (int y = 0; y < original.Height; y++)
+            // Apply grayscale processing (looping manually, similar to original code)
+            for (int y = 0; y < grayscaleImage.Height; y++)
             {
-                for (int x = 0; x < original.Width; x++)
+                for (int x = 0; x < grayscaleImage.Width; x++)
                 {
-                    // Get the color of the current pixel
-                    Color originalColor = original.GetPixel(x, y);
+                    Rgba32 pixelColor = original[x, y];
 
-                    // Calculate the grayscale value using the luminance formula
-                    int gray = (int)(0.3 * originalColor.R + 0.59 * originalColor.G + 0.11 * originalColor.B);
+                    // Calculate grayscale value using luminance formula
+                    byte gray = (byte)(0.3 * pixelColor.R + 0.59 * pixelColor.G + 0.11 * pixelColor.B);
 
-                    // Set the pixel color in the grayscale image
-                    grayscaleImage.SetPixel(x, y, Color.FromArgb(gray, gray, gray));
+                    // Set the grayscale pixel value
+                    grayscaleImage[x, y] = new L8(gray);
                 }
             }
 
-            return grayscaleImage; //Return the processed grayscale image
+            return grayscaleImage; // Return the processed grayscale image
         }
     }
 }

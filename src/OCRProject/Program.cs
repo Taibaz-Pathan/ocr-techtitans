@@ -1,18 +1,26 @@
 ﻿using System;
-using System.Drawing;
-using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
 using System.Collections.Generic;
+using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.Processing;
+using SixLabors.ImageSharp.PixelFormats;
+using SixLabors.ImageSharp.Formats;
+using SixLabors.ImageSharp.Formats.Bmp;
+using SixLabors.ImageSharp.Formats.Gif;
+using SixLabors.ImageSharp.Formats.Jpeg;
+using SixLabors.ImageSharp.Formats.Png;
+using SixLabors.ImageSharp.Formats.Tiff;
 using OCRProject.ImageProcessing;
-using OCRProject.Utils;
-using OCRProject.TesseractProcessor;
-using OCRProject.ModelComparison;
 using ModelComparison;
+using OCRProject.Utils;
+using OCRProject.ModelComparison;
+using OCRProject.TesseractProcessor;
 
 class Program
 {
-    static void Main(string[] args)
+    private static readonly string[] AllowedExtensions = { ".png", ".jpg", ".jpeg", ".bmp", ".gif", ".tiff" };
+    static void Main()
     {
         var logger = new Logger();
         var embeddingGenerator = new EmbeddingGeneratorService();
@@ -39,11 +47,11 @@ class Program
             string fileNameExtracted = $"ProcessedFile_{DateTime.Now:yyyyMMdd_HHmmss}.txt";
             string createdFilePath = fileCreator.CreateTextFile(outputFolderText, fileNameExtracted);
 
-            if (createdFilePath == null)
+            if (string.IsNullOrEmpty(createdFilePath))
             {
                 logger.LogError("Failed to create text file.");
                 Console.WriteLine("Failed to create text file.");
-                return;
+                Environment.Exit(1);
             }
 
             logger.LogInfo($"Text file created successfully: {createdFilePath}");
@@ -52,20 +60,15 @@ class Program
             var timeTracker = new ProcessingTimeTracker(comparisonResults);
             var similarityCalculator = new CosineSimilarityCalculator(comparisonResults);
 
-            var imageFiles = Directory.GetFiles(inputFolder, "*.*", SearchOption.TopDirectoryOnly)
-                .Where(file => file.EndsWith(".png", StringComparison.OrdinalIgnoreCase) ||
-                               file.EndsWith(".jpg", StringComparison.OrdinalIgnoreCase) ||
-                               file.EndsWith(".jpeg", StringComparison.OrdinalIgnoreCase) ||
-                               file.EndsWith(".bmp", StringComparison.OrdinalIgnoreCase) ||
-                               file.EndsWith(".gif", StringComparison.OrdinalIgnoreCase) ||
-                               file.EndsWith(".tiff", StringComparison.OrdinalIgnoreCase))
+            var imageFiles = Directory.GetFiles(inputFolder, "*.*")
+                .Where(file => AllowedExtensions.Contains(Path.GetExtension(file).ToLower()))
                 .ToArray();
 
             if (imageFiles.Length == 0)
             {
-                logger.LogError("No images found in the input folder.");
+                logger.LogWarning("No images found in the input folder.");
                 Console.WriteLine("No images found in the input folder.");
-                return;
+                Environment.Exit(0);
             }
 
             logger.LogInfo($"Processing {imageFiles.Length} images...");
@@ -76,45 +79,39 @@ class Program
                 {
                     string fileName = Path.GetFileNameWithoutExtension(inputFilePath);
                     string fileExtension = Path.GetExtension(inputFilePath).ToLower();
+                    using var inputImage = SixLabors.ImageSharp.Image.Load<Rgba32>(inputFilePath);
+                    using var resizedImage = ResizeImage(inputImage, 2000, 2000);
 
-                    using (var fileStream = new FileStream(inputFilePath, FileMode.Open, FileAccess.Read))
-                    using (var inputImage = Image.FromStream(fileStream, false, false))
-                    {
-                        using (var resizedImage = ResizeImage(inputImage, 2000, 2000))
+                    var transformations = new Dictionary<string, Func<Image<Rgba32>, Image<Rgba32>>>()
                         {
-                            logger.LogInfo($"Processing image: {fileName}{fileExtension}");
+                            { "Grayscale", img => img.CloneAs<L8>().CloneAs<Rgba32>() },
+                            { "GlobalThreshold", img => ApplyGlobalThreshold(img, 1) },
+                            { "Shifted", img => ApplyShiftImage(img, 5, 5) },
+                            { "SaturationAdjusted", img => ApplySaturationAdjustment(img, 1.2f) },
+                            { "Deskewed", img => ApplyDeskew(img) }
+                        };
 
-                            var transformations = new Dictionary<string, Func<Bitmap, Bitmap>>
-                            {
-                                { "Grayscale", img => new ConvertToGrayscale().Apply(img) },
-                                { "GlobalThreshold", img => new GlobalThresholding(128).ApplyThreshold(img) },
-                                { "Shifted", img => new ShiftImage().Apply(img, 5, 5) },
-                                { "SaturationAdjusted", img => new SaturationAdjustment().Apply(img, 1.2f) },
-                                { "Deskewed", img => new Deskew().Apply(img) }
-                            };
+                    var extractedTexts = new Dictionary<string, string>();
 
-                            var extractedTexts = new Dictionary<string, string>();
+                    foreach (var (modelName, transform) in transformations)
+                    {
+                        timeTracker.StartTimer();
+                        using var processedImage = transform(resizedImage.Clone());
 
-                            foreach (var (modelName, transform) in transformations)
-                            {
-                                timeTracker.StartTimer();
-                                using (var processedImage = transform(new Bitmap(resizedImage)))
-                                {
-                                    string outputPath = Path.Combine(outputFolderImage, fileName + "_" + modelName + fileExtension);
-                                    processedImage.Save(outputPath, GetImageFormat(fileExtension));
-                                    logger.LogInfo($"Saved processed image: {outputPath}");
+                        string outputPath = Path.Combine(outputFolderImage, $"{fileName}_{modelName}{fileExtension}");
+                        processedImage.Save(outputPath, GetImageEncoder(fileExtension));
 
-                                    string extractedText = TesseractProcessor.ExtractTextFromImage(processedImage, createdFilePath, fileWriter);
-                                    extractedTexts[modelName] = extractedText;
-                                    timeTracker.StopAndRecord(fileName, modelName);
-                                }
-                            }
+                        logger.LogInfo($"Saved processed image: {outputPath}");
 
-                            var embeddings = embeddingGenerator.GenerateEmbeddingsForModels(extractedTexts);
-                            similarityCalculator.ComputeAndSaveReport(embeddings);
-                            logger.LogInfo($"Successfully processed image: {fileName}{fileExtension}");
-                        }
+                        string extractedText = TesseractProcessor.ExtractTextFromImage(processedImage, createdFilePath, fileWriter);
+                        extractedTexts[modelName] = extractedText;
+
+                        timeTracker.StopAndRecord(fileName, modelName);
                     }
+
+                    var embeddings = embeddingGenerator.GenerateEmbeddingsForModels(extractedTexts);
+                    similarityCalculator.ComputeAndSaveReport(embeddings);
+                    logger.LogInfo($"Successfully processed image: {fileName}{fileExtension}");
                 }
                 catch (Exception ex)
                 {
@@ -125,46 +122,56 @@ class Program
 
             timeTracker.GenerateExcelReport();
             logger.LogInfo("Processing completed successfully.");
-            Console.WriteLine("Processing completed. Press any key to exit.");
+            Console.WriteLine("Processing completed.");
+            Environment.Exit(0);
         }
         catch (Exception ex)
         {
             logger.LogError($"Critical error in process: {ex.Message}");
             Console.WriteLine($"Error in Process: {ex.Message}");
-        }
-        finally
-        {
-            Console.ReadKey();
+            Environment.Exit(1);
         }
     }
-
-    private static Bitmap ResizeImage(Image image, int maxWidth, int maxHeight)
+    private static Image<Rgba32> ApplyGlobalThreshold(Image<Rgba32> image, byte threshold)
     {
-        var ratioX = (double)maxWidth / image.Width;
-        var ratioY = (double)maxHeight / image.Height;
-        var ratio = Math.Min(ratioX, ratioY);
-        var newWidth = (int)(image.Width * ratio);
-        var newHeight = (int)(image.Height * ratio);
-
-        var newImage = new Bitmap(newWidth, newHeight);
-        using (var graphics = Graphics.FromImage(newImage))
-        {
-            graphics.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
-            graphics.DrawImage(image, 0, 0, newWidth, newHeight);
-        }
-
-        return newImage;
+        var grayImage = image.CloneAs<L8>();
+        grayImage.Mutate(x => x.BinaryThreshold(threshold));
+        return grayImage.CloneAs<Rgba32>();
     }
 
-    private static ImageFormat GetImageFormat(string extension)
+    private static Image<Rgba32> ApplyShiftImage(Image<Rgba32> image, int shiftX, int shiftY)
+    {
+        image.Mutate(x => x.Transform(new AffineTransformBuilder().AppendTranslation(new SixLabors.ImageSharp.PointF(shiftX, shiftY))));
+        return image;
+    }
+
+    private static Image<Rgba32> ApplySaturationAdjustment(Image<Rgba32> image, float saturationFactor)
+    {
+        image.Mutate(x => x.Saturate(saturationFactor));
+        return image;
+    }
+
+    private static Image<Rgba32> ApplyDeskew(Image<Rgba32> image)
+    {
+        return new Deskew().Apply(image);
+    }
+
+    private static Image<Rgba32> ResizeImage(Image<Rgba32> image, int maxWidth, int maxHeight)
+    {
+        var ratio = Math.Min((double)maxWidth / image.Width, (double)maxHeight / image.Height);
+        image.Mutate(x => x.Resize(new SixLabors.ImageSharp.Size((int)(image.Width * ratio), (int)(image.Height * ratio))));
+        return image;
+    }
+
+    private static IImageEncoder GetImageEncoder(string extension)
     {
         return extension.ToLower() switch
         {
-            ".jpg" or ".jpeg" => ImageFormat.Jpeg,
-            ".bmp" => ImageFormat.Bmp,
-            ".gif" => ImageFormat.Gif,
-            ".tiff" => ImageFormat.Tiff,
-            _ => ImageFormat.Png,
+            ".jpg" or ".jpeg" => new JpegEncoder(),
+            ".bmp" => new BmpEncoder(),
+            ".gif" => new GifEncoder(),
+            ".tiff" => new TiffEncoder(),
+            _ => new PngEncoder(),
         };
     }
 }

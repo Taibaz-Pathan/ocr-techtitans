@@ -21,21 +21,25 @@ namespace OCRProject.Utils
 
         public void LogError(string message)
         {
-            try
-            {
-                File.AppendAllText(_logFilePath, $"[ERROR] {DateTime.Now}: {message}{Environment.NewLine}");
-            }
-            catch (UnauthorizedAccessException ex)
-            {
-                Console.WriteLine($"Permission error: {ex.Message}");
-            }
+            Log("[ERROR]", message);
         }
 
         public void LogInfo(string message)
         {
+            Log("[INFO]", message);
+        }
+
+        // Add this method for warnings
+        public void LogWarning(string message)
+        {
+            Log("[WARNING]", message);
+        }
+
+        private void Log(string logLevel, string message)
+        {
             try
             {
-                File.AppendAllText(_logFilePath, $"[INFO] {DateTime.Now}: {message}{Environment.NewLine}");
+                File.AppendAllText(_logFilePath, $"{logLevel} {DateTime.Now}: {message}{Environment.NewLine}");
             }
             catch (UnauthorizedAccessException ex)
             {

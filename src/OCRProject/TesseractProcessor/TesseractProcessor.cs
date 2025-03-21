@@ -1,16 +1,17 @@
 ﻿using System;
-using System.Drawing;
-using System.Drawing.Imaging;
 using System.IO;
+using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.PixelFormats;
+using SixLabors.ImageSharp.Processing;
+using SixLabors.ImageSharp.Formats.Png;
 using Tesseract;
 using OCRProject.Utils;
-
 
 namespace OCRProject.TesseractProcessor
 {
     public class TesseractProcessor
     {
-        public static string ExtractTextFromImage(Bitmap image, string createdFilePath, FileWriter fileWriter)
+        public static string ExtractTextFromImage(Image<Rgba32> image, string createdFilePath, FileWriter fileWriter)
         {
             string extractedText = string.Empty;
 
@@ -18,22 +19,19 @@ namespace OCRProject.TesseractProcessor
             {
                 using (var stream = new MemoryStream())
                 {
-                    // Save Bitmap as a TIFF in memory
-                    image.Save(stream, System.Drawing.Imaging.ImageFormat.Tiff);
+                    // Convert ImageSharp Image to PNG stream
+                    image.SaveAsPng(stream);
                     stream.Position = 0;
 
-                    // Load the Pix from the memory stream
-                    using (var pixImage = Pix.LoadTiffFromMemory(stream.ToArray()))
+                    // Load the image into Tesseract Pix format
+                    using (var pixImage = Pix.LoadFromMemory(stream.ToArray()))
                     {
                         using (var engine = new TesseractEngine(@"./tessdata", "eng", EngineMode.Default))
                         {
                             using (var page = engine.Process(pixImage))
                             {
-                                extractedText = page.GetText();  // Extract text from image
-                                //Console.WriteLine($"Extracted text: {extractedText}");
-
-                                // Write the extracted text to the file using the fileWriter
-                                fileWriter.WriteToFile(createdFilePath, extractedText);
+                                extractedText = page.GetText();  // Extract text
+                                fileWriter.WriteToFile(createdFilePath, extractedText); // Save text
                             }
                         }
                     }
@@ -44,7 +42,7 @@ namespace OCRProject.TesseractProcessor
                 Console.WriteLine($"Error in ExtractTextFromImage: {ex.Message}");
             }
 
-            return extractedText;  // Return the extracted text
+            return extractedText; // Return extracted text
         }
     }
 }
