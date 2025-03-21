@@ -7,7 +7,7 @@ using NPOI.SS.UserModel;
 using NPOI.XSSF.UserModel;
 using OCRProject.Interfaces;
 
-namespace OCRProject.ModelComparison
+namespace ModelComparison
 {
     public class ProcessingTimeTracker : IProcessingTimeTracker
     {

@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace ModelComparison
+namespace OCRProject.ModelComparison
 {
     public class EmbeddingGeneratorService : IEmbeddingGeneratorService
     {
