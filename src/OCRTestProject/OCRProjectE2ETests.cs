@@ -9,11 +9,12 @@ namespace OCRProject.Tests
     [TestFixture]
     public class OCRProjectE2ETests
     {
-        private readonly string testDataPath = @"C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRTestProject\TestData";
-        private readonly string executablePath = @"C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\bin\Debug\net9.0\OCRProject.exe";
-        private readonly string mainInputFolder = @"C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Input";
-        private readonly string mainOutputFolder = @"C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText";
-        private readonly string logFile = @"C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRTestProject\logs\log.txt";
+        private readonly static string basePath = Path.Combine(Directory.GetCurrentDirectory(), "..", "..", "..", "..");
+        private readonly string testDataPath = Path.Combine(basePath, "OCRTestProject", "TestData");
+        private readonly string executablePath = Path.Combine(basePath, "OCRProject", "bin", "Debug", "net9.0", "OCRProject.exe");
+        private readonly string mainInputFolder = Path.Combine(basePath, "OCRProject", "Input");
+        private readonly string mainOutputFolder = Path.Combine(basePath, "OCRProject", "Output", "ExtractedText");
+        private readonly string logFile = Path.Combine(basePath, "OCRTestProject", "logs", "log.txt");
 
         [SetUp]
         public void Setup()
@@ -69,7 +70,7 @@ namespace OCRProject.Tests
             Assert.That(output, Does.Contain("No images found in the input folder."), "OCR did not handle invalid file format correctly.");
         }
 
-        [Test]        
+        [Test]
         public void Test_OCR_Processing_Multiple_Images()
         {
             CopyTestFile("sample-image.png");
@@ -183,9 +184,33 @@ namespace OCRProject.Tests
             CopyTestFile("test-document.pdf");
             string output = RunOCRProcess();
             Assert.That(output, Does.Contain("No images found"), "OCR did not handle non-image file types correctly.");
-        }       
+        }
 
-        
+        [Test]
+        public void Test_ImageProcessing_Grayscale()
+        {
+            CopyTestFile("grayscale-test.png");
+            string output = RunOCRProcess();
+            Assert.That(output, Does.Contain("Processing completed"), "OCR did not process grayscale images correctly.");
+        }
+
+        [Test]
+        public void Test_ImageProcessing_NoiseReduction()
+        {
+            CopyTestFile("noise-reduction-test.png");
+            string output = RunOCRProcess();
+            Assert.That(output, Does.Contain("Processing completed"), "OCR did not handle noise reduction correctly.");
+        }
+
+        [Test]
+        public void Test_ImageProcessing_Rotation()
+        {
+            CopyTestFile("rotated-image.png");
+            string output = RunOCRProcess();
+            Assert.That(output, Does.Contain("Processing completed"), "OCR did not process rotated images correctly.");
+        }
+
+
         [Test]
         public void Test_OCR_Interrupted_Process()
         {
