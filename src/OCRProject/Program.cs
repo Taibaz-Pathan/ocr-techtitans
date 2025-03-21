@@ -12,14 +12,15 @@ using SixLabors.ImageSharp.Formats.Jpeg;
 using SixLabors.ImageSharp.Formats.Png;
 using SixLabors.ImageSharp.Formats.Tiff;
 using OCRProject.ImageProcessing;
-using ModelComparison;
-using OCRProject.Utils;
 using OCRProject.ModelComparison;
+using OCRProject.Utils;
 using OCRProject.TesseractProcessor;
+using ModelComparison;
 
 class Program
 {
     private static readonly string[] AllowedExtensions = { ".png", ".jpg", ".jpeg", ".bmp", ".gif", ".tiff" };
+
     static void Main()
     {
         var logger = new Logger();
@@ -58,6 +59,7 @@ class Program
 
             var fileWriter = new FileWriter();
             var timeTracker = new ProcessingTimeTracker(comparisonResults);
+            var memoryTracker = new ProcessingMemoryTracker(comparisonResults);
             var similarityCalculator = new CosineSimilarityCalculator(comparisonResults);
 
             var imageFiles = Directory.GetFiles(inputFolder, "*.*")
@@ -79,34 +81,42 @@ class Program
                 {
                     string fileName = Path.GetFileNameWithoutExtension(inputFilePath);
                     string fileExtension = Path.GetExtension(inputFilePath).ToLower();
-                    using var inputImage = SixLabors.ImageSharp.Image.Load<Rgba32>(inputFilePath);
+                    using var inputImage = Image.Load<Rgba32>(inputFilePath);
                     using var resizedImage = ResizeImage(inputImage, 2000, 2000);
 
                     var transformations = new Dictionary<string, Func<Image<Rgba32>, Image<Rgba32>>>()
-                        {
-                            { "Grayscale", img => img.CloneAs<L8>().CloneAs<Rgba32>() },
-                            { "GlobalThreshold", img => ApplyGlobalThreshold(img, 1) },
-                            { "Shifted", img => ApplyShiftImage(img, 5, 5) },
-                            { "SaturationAdjusted", img => ApplySaturationAdjustment(img, 1.2f) },
-                            { "Deskewed", img => ApplyDeskew(img) }
-                        };
+                    {
+                        { "Grayscale", img => img.CloneAs<L8>().CloneAs<Rgba32>() },
+                        { "GlobalThreshold", img => ApplyGlobalThreshold(img, 1) },
+                        { "Shifted", img => ApplyShiftImage(img, 5, 5) },
+                        { "SaturationAdjusted", img => ApplySaturationAdjustment(img, 1.2f) },
+                        { "Deskewed", img => ApplyDeskew(img) }
+                    };
 
                     var extractedTexts = new Dictionary<string, string>();
 
                     foreach (var (modelName, transform) in transformations)
                     {
+                        Image<Rgba32>? processedImage = null;
+
                         timeTracker.StartTimer();
-                        using var processedImage = transform(resizedImage.Clone());
+                        memoryTracker.MeasureMemoryUsage(fileName, modelName, () =>
+                        {
+                            processedImage = transform(resizedImage.Clone());
+                        });
+                        timeTracker.StopAndRecord(fileName, modelName);
+
+                        if (processedImage == null)
+                        {
+                            throw new InvalidOperationException("Image transformation returned null.");
+                        }
 
                         string outputPath = Path.Combine(outputFolderImage, $"{fileName}_{modelName}{fileExtension}");
                         processedImage.Save(outputPath, GetImageEncoder(fileExtension));
-
                         logger.LogInfo($"Saved processed image: {outputPath}");
 
-                        string extractedText = TesseractProcessor.ExtractTextFromImage(processedImage, createdFilePath, fileWriter);
+                        string extractedText = TesseractProcessor.ExtractTextFromImage(processedImage, modelName, createdFilePath, fileWriter);
                         extractedTexts[modelName] = extractedText;
-
-                        timeTracker.StopAndRecord(fileName, modelName);
                     }
 
                     var embeddings = embeddingGenerator.GenerateEmbeddingsForModels(extractedTexts);
@@ -121,6 +131,23 @@ class Program
             }
 
             timeTracker.GenerateExcelReport();
+            memoryTracker.AppendMemoryUsageToExcel();
+
+            // Run final model evaluation and ranking
+            string similarityFilePath = Path.Combine(comparisonResults, "CosineSimilarity.xlsx");
+            string performanceFilePath = Path.Combine(comparisonResults, "ProcessingResults.xlsx");
+
+            if (File.Exists(similarityFilePath) && File.Exists(performanceFilePath))
+            {
+                var evaluator = new PreprocessingModelEvaluator(similarityFilePath, performanceFilePath);
+                evaluator.EvaluateAndReportBestModels();
+            }
+            else
+            {
+                logger.LogWarning("Similarity or Performance file missing. Skipping model evaluation.");
+            }
+
+
             logger.LogInfo("Processing completed successfully.");
             Console.WriteLine("Processing completed.");
             Environment.Exit(0);
@@ -132,6 +159,7 @@ class Program
             Environment.Exit(1);
         }
     }
+
     private static Image<Rgba32> ApplyGlobalThreshold(Image<Rgba32> image, byte threshold)
     {
         var grayImage = image.CloneAs<L8>();
@@ -145,33 +173,44 @@ class Program
         return image;
     }
 
-    private static Image<Rgba32> ApplySaturationAdjustment(Image<Rgba32> image, float saturationFactor)
+    private static Image<Rgba32> ApplySaturationAdjustment(Image<Rgba32> image, float saturation)
     {
-        image.Mutate(x => x.Saturate(saturationFactor));
+        image.Mutate(x => x.Saturate(saturation));
         return image;
     }
 
     private static Image<Rgba32> ApplyDeskew(Image<Rgba32> image)
     {
-        return new Deskew().Apply(image);
+        // Deskew logic placeholder
+        return image;
     }
 
     private static Image<Rgba32> ResizeImage(Image<Rgba32> image, int maxWidth, int maxHeight)
     {
-        var ratio = Math.Min((double)maxWidth / image.Width, (double)maxHeight / image.Height);
-        image.Mutate(x => x.Resize(new SixLabors.ImageSharp.Size((int)(image.Width * ratio), (int)(image.Height * ratio))));
+        int newWidth = image.Width;
+        int newHeight = image.Height;
+
+        if (image.Width > maxWidth || image.Height > maxHeight)
+        {
+            double ratioX = (double)maxWidth / image.Width;
+            double ratioY = (double)maxHeight / image.Height;
+            double ratio = Math.Min(ratioX, ratioY);
+            newWidth = (int)(image.Width * ratio);
+            newHeight = (int)(image.Height * ratio);
+        }
+
+        image.Mutate(x => x.Resize(newWidth, newHeight));
         return image;
     }
 
-    private static IImageEncoder GetImageEncoder(string extension)
+    private static IImageEncoder GetImageEncoder(string extension) => extension.ToLower() switch
     {
-        return extension.ToLower() switch
-        {
-            ".jpg" or ".jpeg" => new JpegEncoder(),
-            ".bmp" => new BmpEncoder(),
-            ".gif" => new GifEncoder(),
-            ".tiff" => new TiffEncoder(),
-            _ => new PngEncoder(),
-        };
-    }
+        ".bmp" => new BmpEncoder(),
+        ".gif" => new GifEncoder(),
+        ".jpg" => new JpegEncoder(),
+        ".jpeg" => new JpegEncoder(),
+        ".png" => new PngEncoder(),
+        ".tiff" => new TiffEncoder(),
+        _ => new PngEncoder()
+    };
 }
