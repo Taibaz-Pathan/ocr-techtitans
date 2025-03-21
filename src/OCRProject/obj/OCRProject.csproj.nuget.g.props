@@ -12,4 +12,10 @@
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="/Users/taibazpathan/Documents/RiderProjects/" />
   </ItemGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net9.0' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgOpenCVSharp Condition=" '$(PkgOpenCVSharp)' == '' ">/Users/taibazpathan/Documents/RiderProjects/opencvsharp/2.4.0.1</PkgOpenCVSharp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net9.0-windows' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgOpenCVSharp Condition=" '$(PkgOpenCVSharp)' == '' ">/Users/taibazpathan/Documents/RiderProjects/opencvsharp/2.4.0.1</PkgOpenCVSharp>
+  </PropertyGroup>
 </Project>

@@ -66,6 +66,10 @@
               "target": "Package",
               "version": "[3.2.0, )"
             },
+            "Emgu.CV": {
+              "target": "Package",
+              "version": "[4.10.0.5680, )"
+            },
             "Microsoft.Maui.Essentials": {
               "target": "Package",
               "version": "[9.0.0, )"
@@ -73,6 +77,18 @@
             "NPOI": {
               "target": "Package",
               "version": "[2.7.2, )"
+            },
+            "OpenCV": {
+              "target": "Package",
+              "version": "[2.4.11, )"
+            },
+            "OpenCVSharp": {
+              "target": "Package",
+              "version": "[2.4.0.1, )"
+            },
+            "OpenCvSharp4": {
+              "target": "Package",
+              "version": "[4.10.0.20241108, )"
             },
             "System.Drawing.Common": {
               "target": "Package",
@@ -140,6 +156,10 @@
               "target": "Package",
               "version": "[3.2.0, )"
             },
+            "Emgu.CV": {
+              "target": "Package",
+              "version": "[4.10.0.5680, )"
+            },
             "Microsoft.Windows.Compatibility": {
               "target": "Package",
               "version": "[9.0.0, )"
@@ -147,6 +167,18 @@
             "NPOI": {
               "target": "Package",
               "version": "[2.7.2, )"
+            },
+            "OpenCV": {
+              "target": "Package",
+              "version": "[2.4.11, )"
+            },
+            "OpenCVSharp": {
+              "target": "Package",
+              "version": "[2.4.0.1, )"
+            },
+            "OpenCvSharp4": {
+              "target": "Package",
+              "version": "[4.10.0.20241108, )"
             },
             "System.Drawing.Common": {
               "target": "Package",

@@ -1,27 +1,50 @@
 ﻿using System;
-using System.Drawing;
-using System.Windows.Forms;
+using System.IO;
+using System.Threading.Tasks;
+using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.PixelFormats;
+using SixLabors.ImageSharp.Processing;
+using SixLabors.ImageSharp.Formats.Png;
 
 namespace OCRProject.TesseractProcessor
 {
     public class ImageDisplayer
     {
-        public static void ShowImage(Bitmap image, string title)
+        public static async Task ShowImage(Image<Rgba32> image, string title)
         {
-            using (var form = new Form())
+            // Save the image as a temporary file
+            string tempPath = Path.Combine(Path.GetTempPath(), "temp_display_image.png");
+            await image.SaveAsync(tempPath, new PngEncoder());
+
+            Console.WriteLine($"Displaying image: {title}");
+
+            // Open the image in the default viewer
+            OpenImage(tempPath);
+
+            // Wait for 3 seconds before automatically closing
+            await Task.Delay(3000);
+        }
+
+        private static void OpenImage(string filePath)
+        {
+            try
             {
-                form.Text = title;
-                form.ClientSize = new Size(image.Width, image.Height);
-
-                var pictureBox = new PictureBox
+                if (OperatingSystem.IsWindows())
                 {
-                    Dock = DockStyle.Fill,
-                    Image = image,
-                    SizeMode = PictureBoxSizeMode.Zoom
-                };
-
-                form.Controls.Add(pictureBox);
-                Application.Run(form);
+                    System.Diagnostics.Process.Start("explorer", filePath);
+                }
+                else if (OperatingSystem.IsMacOS())
+                {
+                    System.Diagnostics.Process.Start("open", filePath);
+                }
+                else if (OperatingSystem.IsLinux())
+                {
+                    System.Diagnostics.Process.Start("xdg-open", filePath);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error opening image: {ex.Message}");
             }
         }
     }
