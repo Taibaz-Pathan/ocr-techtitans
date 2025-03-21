@@ -4,10 +4,11 @@ using System.IO;
 using System.Linq;
 using NPOI.SS.UserModel;
 using NPOI.XSSF.UserModel;
+using OCRProject.Interfaces;
 
 namespace OCRProject.ModelComparison
 {
-    public class PreprocessingModelEvaluator
+    public class PreprocessingModelEvaluator : IPreprocessingModelEvaluator
     {
         private readonly string _similarityFilePath;
         private readonly string _performanceFilePath;
