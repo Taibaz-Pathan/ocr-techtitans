@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xcZtlrsp+l8=",
+  "dgSpecHash": "JzkUj+moh4s=",
   "success": true,
-  "projectFilePath": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRTestProject\\OCRTestProject.csproj",
+  "projectFilePath": "C:\\Users\\mithi\\OneDrive\\Desktop\\Projects\\ocr-techtitans\\ocr-techtitans\\src\\OCRTestProject\\OCRTestProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mithi\\.nuget\\packages\\coverlet.collector\\6.0.2\\coverlet.collector.6.0.2.nupkg.sha512",
     "C:\\Users\\mithi\\.nuget\\packages\\microsoft.codecoverage\\17.11.1\\microsoft.codecoverage.17.11.1.nupkg.sha512",

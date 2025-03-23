@@ -128,3 +128,65 @@ using System.Diagnostics;
 Members of OCRTechTitans and FrankfurtUAS.
 
 
+Dependencies
+Required Libraries
+The following libraries are required to run the OCR project. You can install these dependencies via NuGet.
+For OCR Processing:
+using System;
+using System.IO;
+using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.PixelFormats;
+using SixLabors.ImageSharp.Processing;
+using SixLabors.ImageSharp.Formats.Png;
+using Tesseract;
+For Image Preprocessing:
+using System;
+using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.PixelFormats;
+using SixLabors.ImageSharp.Processing; 
+using System.Linq;
+For Configuration & Utilities:
+using System;
+using System.IO;
+using System.Reflection;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+For Cosine similarity and Conversion to matrix:
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using NPOI.SS.UserModel;
+using NPOI.XSSF.UserModel;
+using OCRProject.Interfaces;
+using System.Diagnostics;
+Setup Instructions
+1. Prerequisites
+Before using this project, ensure you have the following installed:
+* .NET 9: Required to build and run the project.
+* Tesseract OCR Engine: Ensure Tesseract is installed and accessible on your system. You can find installation instructions here.
+* NuGet Packages: The required NuGet packages will be automatically installed when you restore the project.
+2. Installation
+Clone or download the project:
+git clone https://github.com/Taibaz-Pathan/ocr-techtitans.git
+After cloning the repository, navigate to the project folder and restore the necessary NuGet packages:
+dotnet restore
+Usage Instructions
+Once the project is set up, follow these steps to run the OCR pipeline:
+1. Place Your Raw Images:
+o Place the raw images that need to be processed in the Input/ folder. 
+2. Build the Project:
+o Open a command prompt or terminal and navigate to the project directory.
+o Run the following command to build the project- dotnet build
+3. Run the Application:
+o Navigate to the output directory:
+4. cd bin/Debug/net9.0/
+o Run the application: OCRProject.exe
+This will process the input images, extract the text, and save the results in the Output/ folder.
+
+Team Members
+* Mithila Prabhu
+* Taibaz Pathan
+* Khushal Singh
