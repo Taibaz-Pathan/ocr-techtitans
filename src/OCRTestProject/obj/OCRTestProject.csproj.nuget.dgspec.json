@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mithi\\OneDrive\\Desktop\\Projects\\ocr-techtitans\\ocr-techtitans\\src\\OCRTestProject\\OCRTestProject.csproj": {}
+    "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRTestProject\\OCRTestProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mithi\\OneDrive\\Desktop\\Projects\\ocr-techtitans\\ocr-techtitans\\src\\OCRTestProject\\OCRTestProject.csproj": {
+    "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRTestProject\\OCRTestProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mithi\\OneDrive\\Desktop\\Projects\\ocr-techtitans\\ocr-techtitans\\src\\OCRTestProject\\OCRTestProject.csproj",
+        "projectUniqueName": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRTestProject\\OCRTestProject.csproj",
         "projectName": "OCRTestProject",
-        "projectPath": "C:\\Users\\mithi\\OneDrive\\Desktop\\Projects\\ocr-techtitans\\ocr-techtitans\\src\\OCRTestProject\\OCRTestProject.csproj",
+        "projectPath": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRTestProject\\OCRTestProject.csproj",
         "packagesPath": "C:\\Users\\mithi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mithi\\OneDrive\\Desktop\\Projects\\ocr-techtitans\\ocr-techtitans\\src\\OCRTestProject\\obj\\",
+        "outputPath": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRTestProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

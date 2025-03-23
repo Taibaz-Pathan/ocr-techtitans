@@ -1,4 +1,6 @@
 ﻿using System;
+using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.PixelFormats;
 
 namespace OCRProject.ImageProcessing
 {
@@ -13,70 +15,39 @@ namespace OCRProject.ImageProcessing
             _threshold = threshold;
         }
 
-        // ApplyThreshold: Applies global thresholding to the input image data.
+        // ApplyThreshold: Applies global thresholding to the input image.
         // Parameters:
-        //   imageData: A byte array containing the raw pixel data of the image.
-        //   width: The width of the image in pixels.
-        //   height: The height of the image in pixels.
-        //   bytesPerPixel: The number of bytes per pixel (1 for grayscale, 3 for RGB, 4 for RGBA).
+        //   image: The Image<Rgba32> object to be thresholded.
         // Returns:
-        //   A byte array containing the thresholded (black and white) image data.
-        public byte[] ApplyThreshold(byte[] imageData, int width, int height, int bytesPerPixel)
+        //   The thresholded Image<Rgba32>.
+        public Image<Rgba32> ApplyThreshold(Image<Rgba32> image)
         {
-            // Input validation: Check for null input data.
-            if (imageData == null)
-            {
-                throw new ArgumentNullException(nameof(imageData), "The input image data cannot be null.");
-            }
+            // Create a new image to store the thresholded data.
+            var thresholdedImage = image.Clone();
 
-            // Input validation: Check for invalid image dimensions or bytes per pixel.
-            if (width <= 0 || height <= 0 || bytesPerPixel <= 0)
+            // Process the image pixel by pixel.
+            thresholdedImage.Mutate(ctx =>
             {
-                throw new ArgumentException("Invalid image dimensions or bytes per pixel.");
-            }
-
-            // Input validation: Check if the image data length matches the provided dimensions and bytes per pixel.
-            if (imageData.Length != width * height * bytesPerPixel)
-            {
-                throw new ArgumentException("Image data length does not match provided dimensions and bytes per pixel.");
-            }
-
-            // Create a new byte array to store the thresholded image data (grayscale, black and white).
-            byte[] outputData = new byte[width * height];
-
-            // Loop through each pixel of the image.
-            for (int y = 0; y < height; y++)
-            {
-                for (int x = 0; x < width; x++)
+                for (int y = 0; y < image.Height; y++)
                 {
-                    // Calculate the index of the current pixel in the imageData byte array.
-                    int pixelIndex = (y * width + x) * bytesPerPixel;
-
-                    // Variable to store the grayscale value of the pixel.
-                    int grayscale;
-
-                    // Determine the grayscale value based on the number of bytes per pixel.
-                    switch (bytesPerPixel)
+                    for (int x = 0; x < image.Width; x++)
                     {
-                        case 1: // Grayscale image
-                            grayscale = imageData[pixelIndex];
-                            break;
-                        case 3: // RGB image
-                        case 4: // RGBA image
-                            grayscale = (imageData[pixelIndex] + imageData[pixelIndex + 1] + imageData[pixelIndex + 2]) / 3;
-                            break;
-                        default:
-                            throw new ArgumentException("Unsupported bytes per pixel.");
+                        // Get the current pixel.
+                        Rgba32 pixel = image[x, y];
+
+                        // Convert the pixel to grayscale.
+                        byte grayscale = (byte)((0.3 * pixel.R) + (0.59 * pixel.G) + (0.11 * pixel.B));
+
+                        // Apply threshold: if the grayscale value is greater than or equal to the threshold, set to white (255), else black (0).
+                        byte value = grayscale >= _threshold ? (byte)255 : (byte)0;
+
+                        // Set the pixel to black or white (thresholded).
+                        thresholdedImage[x, y] = new Rgba32(value, value, value, 255);
                     }
-
-                    // Apply the threshold: Set the pixel to white (255) if the grayscale value is greater than or equal to the threshold,
-                    // otherwise set it to black (0).
-                    outputData[y * width + x] = grayscale >= _threshold ? (byte)255 : (byte)0;
                 }
-            }
+            });
 
-            // Return the thresholded image data.
-            return outputData;
+            return thresholdedImage;
         }
     }
 }
