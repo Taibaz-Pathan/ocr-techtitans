@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VhlpH/UuF28=",
+  "dgSpecHash": "5bvWjWJTsOk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\mithi\\OneDrive\\Desktop\\Projects\\ocr-techtitans\\ocr-techtitans\\src\\OCRProject\\OCRProject.csproj",
+  "projectFilePath": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\OCRProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mithi\\.nuget\\packages\\accord\\3.8.0\\accord.3.8.0.nupkg.sha512",
     "C:\\Users\\mithi\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
@@ -27,6 +27,7 @@
     "C:\\Users\\mithi\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
     "C:\\Users\\mithi\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.1\\microsoft.extensions.primitives.9.0.1.nupkg.sha512",
     "C:\\Users\\mithi\\.nuget\\packages\\microsoft.io.recyclablememorystream\\3.0.1\\microsoft.io.recyclablememorystream.3.0.1.nupkg.sha512",
+    "C:\\Users\\mithi\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\mithi\\.nuget\\packages\\npoi\\2.7.2\\npoi.2.7.2.nupkg.sha512",
     "C:\\Users\\mithi\\.nuget\\packages\\openai\\2.2.0-beta.2\\openai.2.2.0-beta.2.nupkg.sha512",
     "C:\\Users\\mithi\\.nuget\\packages\\openai-dotnet\\8.6.2\\openai-dotnet.8.6.2.nupkg.sha512",

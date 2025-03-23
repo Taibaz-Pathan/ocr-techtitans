@@ -318,3 +318,667 @@
 [INFO] 23-03-2025 15:47:35: Saved processed image: C:\Users\mithi\OneDrive\Desktop\Projects\ocr-techtitans\ocr-techtitans\src\OCRProject\Output\ProcessedImage\ocr_preprocessing_input_Deskewed.png
 [INFO] 23-03-2025 15:47:36: Successfully processed image: ocr_preprocessing_input.png
 [INFO] 23-03-2025 15:47:36: Processing completed successfully.
+[INFO] 23-03-2025 21:17:45: Starting Image Processing...
+[INFO] 23-03-2025 21:17:46: Configuration loaded successfully.
+[INFO] 23-03-2025 21:17:46: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\ocr_preprocessing_input_Deskewed.png
+[INFO] 23-03-2025 21:17:46: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\ocr_preprocessing_input_GlobalThreshold.png
+[INFO] 23-03-2025 21:17:46: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\ocr_preprocessing_input_Grayscale.png
+[INFO] 23-03-2025 21:17:46: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\ocr_preprocessing_input_SaturationAdjusted.png
+[INFO] 23-03-2025 21:17:46: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\ocr_preprocessing_input_Shifted.png
+[INFO] 23-03-2025 21:17:46: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_154732.txt
+[INFO] 23-03-2025 21:17:46: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\BestModelRanking.xlsx
+[INFO] 23-03-2025 21:17:46: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\CosineSimilarity.xlsx
+[INFO] 23-03-2025 21:17:46: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 23-03-2025 21:17:46: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_211746.txt
+[INFO] 23-03-2025 21:17:46: Processing 1 images...
+[INFO] 23-03-2025 21:17:46: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\ocr_preprocessing_input_Grayscale.png
+[INFO] 23-03-2025 21:17:47: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\ocr_preprocessing_input_GlobalThreshold.png
+[INFO] 23-03-2025 21:17:48: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\ocr_preprocessing_input_Shifted.png
+[INFO] 23-03-2025 21:17:48: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\ocr_preprocessing_input_SaturationAdjusted.png
+[INFO] 23-03-2025 21:17:49: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\ocr_preprocessing_input_Deskewed.png
+[INFO] 23-03-2025 21:17:50: Successfully processed image: ocr_preprocessing_input.png
+[INFO] 23-03-2025 21:17:50: Processing completed successfully.
+[INFO] 23-03-2025 21:25:00: Starting Image Processing...
+[INFO] 23-03-2025 21:25:00: Configuration loaded successfully.
+[INFO] 23-03-2025 21:25:00: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\ocr_preprocessing_input_Deskewed.png
+[INFO] 23-03-2025 21:25:00: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\ocr_preprocessing_input_GlobalThreshold.png
+[INFO] 23-03-2025 21:25:00: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\ocr_preprocessing_input_Grayscale.png
+[INFO] 23-03-2025 21:25:00: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\ocr_preprocessing_input_SaturationAdjusted.png
+[INFO] 23-03-2025 21:25:00: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\ocr_preprocessing_input_Shifted.png
+[INFO] 23-03-2025 21:25:00: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_211746.txt
+[INFO] 23-03-2025 21:25:00: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\BestModelRanking.xlsx
+[INFO] 23-03-2025 21:25:00: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\CosineSimilarity.xlsx
+[INFO] 23-03-2025 21:25:00: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 23-03-2025 21:25:00: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_212500.txt
+[INFO] 23-03-2025 21:25:00: Processing 1 images...
+[INFO] 23-03-2025 21:25:00: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\ocr_preprocessing_input_Grayscale.png
+[INFO] 23-03-2025 21:25:01: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\ocr_preprocessing_input_GlobalThreshold.png
+[INFO] 23-03-2025 21:25:02: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\ocr_preprocessing_input_Shifted.png
+[INFO] 23-03-2025 21:25:02: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\ocr_preprocessing_input_SaturationAdjusted.png
+[INFO] 23-03-2025 21:25:02: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\ocr_preprocessing_input_Deskewed.png
+[INFO] 23-03-2025 21:25:03: Successfully processed image: ocr_preprocessing_input.png
+[INFO] 23-03-2025 21:25:03: Processing completed successfully.
+[INFO] 23-03-2025 21:27:23: Starting Image Processing...
+[INFO] 23-03-2025 21:27:23: Configuration loaded successfully.
+[INFO] 23-03-2025 21:27:23: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\ocr_preprocessing_input_Deskewed.png
+[INFO] 23-03-2025 21:27:23: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\ocr_preprocessing_input_GlobalThreshold.png
+[INFO] 23-03-2025 21:27:23: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\ocr_preprocessing_input_Grayscale.png
+[INFO] 23-03-2025 21:27:23: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\ocr_preprocessing_input_SaturationAdjusted.png
+[INFO] 23-03-2025 21:27:23: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\ocr_preprocessing_input_Shifted.png
+[INFO] 23-03-2025 21:27:23: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_212500.txt
+[INFO] 23-03-2025 21:27:23: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\BestModelRanking.xlsx
+[INFO] 23-03-2025 21:27:23: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\CosineSimilarity.xlsx
+[INFO] 23-03-2025 21:27:23: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 23-03-2025 21:27:23: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_212723.txt
+[INFO] 23-03-2025 21:27:23: Processing 1 images...
+[INFO] 23-03-2025 21:27:24: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\OCR_input_Grayscale.png
+[INFO] 23-03-2025 21:27:25: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\OCR_input_GlobalThreshold.png
+[INFO] 23-03-2025 21:27:25: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\OCR_input_Shifted.png
+[INFO] 23-03-2025 21:27:25: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\OCR_input_SaturationAdjusted.png
+[INFO] 23-03-2025 21:27:25: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\OCR_input_Deskewed.png
+[INFO] 23-03-2025 21:27:26: Successfully processed image: OCR_input.png
+[INFO] 23-03-2025 21:27:26: Processing completed successfully.
+[INFO] 23-03-2025 21:28:25: Starting Image Processing...
+[INFO] 23-03-2025 21:28:25: Configuration loaded successfully.
+[INFO] 23-03-2025 21:28:25: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\OCR_input_Deskewed.png
+[INFO] 23-03-2025 21:28:25: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\OCR_input_GlobalThreshold.png
+[INFO] 23-03-2025 21:28:25: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\OCR_input_Grayscale.png
+[INFO] 23-03-2025 21:28:25: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\OCR_input_SaturationAdjusted.png
+[INFO] 23-03-2025 21:28:25: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\OCR_input_Shifted.png
+[INFO] 23-03-2025 21:28:25: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_212723.txt
+[INFO] 23-03-2025 21:28:25: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\BestModelRanking.xlsx
+[INFO] 23-03-2025 21:28:25: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\CosineSimilarity.xlsx
+[INFO] 23-03-2025 21:28:25: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 23-03-2025 21:28:25: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_212825.txt
+[INFO] 23-03-2025 21:28:25: Processing 1 images...
+[INFO] 23-03-2025 21:28:25: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\OCR_input_Grayscale.png
+[INFO] 23-03-2025 21:28:26: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\OCR_input_GlobalThreshold.png
+[INFO] 23-03-2025 21:28:27: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\OCR_input_Shifted.png
+[INFO] 23-03-2025 21:28:27: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\OCR_input_SaturationAdjusted.png
+[INFO] 23-03-2025 21:28:27: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\OCR_input_Deskewed.png
+[INFO] 23-03-2025 21:28:28: Successfully processed image: OCR_input.png
+[INFO] 23-03-2025 21:28:28: Processing completed successfully.
+[INFO] 23-03-2025 21:29:02: Starting Image Processing...
+[INFO] 23-03-2025 21:29:02: Configuration loaded successfully.
+[INFO] 23-03-2025 21:29:02: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\OCR_input_Deskewed.png
+[INFO] 23-03-2025 21:29:02: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\OCR_input_GlobalThreshold.png
+[INFO] 23-03-2025 21:29:02: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\OCR_input_Grayscale.png
+[INFO] 23-03-2025 21:29:02: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\OCR_input_SaturationAdjusted.png
+[INFO] 23-03-2025 21:29:02: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\OCR_input_Shifted.png
+[INFO] 23-03-2025 21:29:02: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_212825.txt
+[INFO] 23-03-2025 21:29:02: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\BestModelRanking.xlsx
+[INFO] 23-03-2025 21:29:02: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\CosineSimilarity.xlsx
+[INFO] 23-03-2025 21:29:02: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 23-03-2025 21:29:02: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_212902.txt
+[INFO] 23-03-2025 21:29:02: Processing 1 images...
+[INFO] 23-03-2025 21:29:02: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\unnamed_Grayscale.png
+[INFO] 23-03-2025 21:29:04: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\unnamed_GlobalThreshold.png
+[INFO] 23-03-2025 21:29:04: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\unnamed_Shifted.png
+[INFO] 23-03-2025 21:29:05: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\unnamed_SaturationAdjusted.png
+[INFO] 23-03-2025 21:29:05: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\unnamed_Deskewed.png
+[INFO] 23-03-2025 21:29:06: Successfully processed image: unnamed.png
+[INFO] 23-03-2025 21:29:06: Processing completed successfully.
+[INFO] 23-03-2025 22:14:48: Starting Image Processing...
+[INFO] 23-03-2025 22:14:48: Configuration loaded successfully.
+[INFO] 23-03-2025 22:14:48: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\unnamed_Deskewed.png
+[INFO] 23-03-2025 22:14:48: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\unnamed_GlobalThreshold.png
+[INFO] 23-03-2025 22:14:48: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\unnamed_Grayscale.png
+[INFO] 23-03-2025 22:14:48: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\unnamed_SaturationAdjusted.png
+[INFO] 23-03-2025 22:14:48: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\unnamed_Shifted.png
+[INFO] 23-03-2025 22:14:48: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_212902.txt
+[INFO] 23-03-2025 22:14:48: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\BestModelRanking.xlsx
+[ERROR] 23-03-2025 22:14:48: Error cleaning directory C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision: The process cannot access the file 'C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\CosineSimilarity.xlsx' because it is being used by another process.
+[INFO] 23-03-2025 22:14:48: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_221448.txt
+[INFO] 23-03-2025 22:14:48: Processing 1 images...
+[INFO] 23-03-2025 22:14:48: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\unnamed_Grayscale.png
+[INFO] 23-03-2025 22:14:50: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\unnamed_GlobalThreshold.png
+[INFO] 23-03-2025 22:14:50: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\unnamed_Shifted.png
+[INFO] 23-03-2025 22:14:50: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\unnamed_SaturationAdjusted.png
+[INFO] 23-03-2025 22:14:51: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\unnamed_Deskewed.png
+[ERROR] 23-03-2025 22:14:53: Error processing C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Input\unnamed.png: The process cannot access the file 'C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\CosineSimilarity.xlsx' because it is being used by another process.
+[ERROR] 23-03-2025 22:14:54: Critical error in process: The process cannot access the file 'C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\CosineSimilarity.xlsx' because it is being used by another process.
+[INFO] 23-03-2025 22:15:27: Starting Image Processing...
+[INFO] 23-03-2025 22:15:27: Configuration loaded successfully.
+[INFO] 23-03-2025 22:15:27: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\unnamed_Deskewed.png
+[INFO] 23-03-2025 22:15:27: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\unnamed_GlobalThreshold.png
+[INFO] 23-03-2025 22:15:27: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\unnamed_Grayscale.png
+[INFO] 23-03-2025 22:15:27: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\unnamed_SaturationAdjusted.png
+[INFO] 23-03-2025 22:15:27: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\unnamed_Shifted.png
+[INFO] 23-03-2025 22:15:27: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_221448.txt
+[INFO] 23-03-2025 22:15:27: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\CosineSimilarity.xlsx
+[INFO] 23-03-2025 22:15:27: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 23-03-2025 22:15:27: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_221527.txt
+[INFO] 23-03-2025 22:15:27: Processing 1 images...
+[INFO] 23-03-2025 22:15:27: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\unnamed_Grayscale.png
+[INFO] 23-03-2025 22:15:28: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\unnamed_GlobalThreshold.png
+[INFO] 23-03-2025 22:15:28: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\unnamed_Shifted.png
+[INFO] 23-03-2025 22:15:29: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\unnamed_SaturationAdjusted.png
+[INFO] 23-03-2025 22:15:29: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\unnamed_Deskewed.png
+[INFO] 23-03-2025 22:15:32: Successfully processed image: unnamed.png
+[INFO] 23-03-2025 22:15:32: Processing completed successfully.
+[INFO] 23-03-2025 22:42:08: Starting Image Processing...
+[INFO] 23-03-2025 22:42:08: Configuration loaded successfully.
+[INFO] 23-03-2025 22:42:08: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\unnamed_Deskewed.png
+[INFO] 23-03-2025 22:42:08: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\unnamed_GlobalThreshold.png
+[INFO] 23-03-2025 22:42:08: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\unnamed_Grayscale.png
+[INFO] 23-03-2025 22:42:08: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\unnamed_SaturationAdjusted.png
+[INFO] 23-03-2025 22:42:08: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\unnamed_Shifted.png
+[INFO] 23-03-2025 22:42:08: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_221527.txt
+[INFO] 23-03-2025 22:42:08: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\BestModelRanking.xlsx
+[INFO] 23-03-2025 22:42:08: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\CosineSimilarity.xlsx
+[INFO] 23-03-2025 22:42:08: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 23-03-2025 22:42:08: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_224208.txt
+[INFO] 23-03-2025 22:42:08: Processing 1 images...
+[INFO] 23-03-2025 22:42:09: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 23-03-2025 22:42:13: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[INFO] 23-03-2025 22:42:13: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Shifted.jpg
+[INFO] 23-03-2025 22:42:16: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted.jpg
+[INFO] 23-03-2025 22:42:18: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Deskewed.jpg
+[INFO] 23-03-2025 22:42:24: Successfully processed image: Test_OCR_document.jpg
+[INFO] 23-03-2025 22:42:25: Processing completed successfully.
+[INFO] 23-03-2025 23:15:26: Starting Image Processing...
+[INFO] 23-03-2025 23:15:26: Configuration loaded successfully.
+[INFO] 23-03-2025 23:15:26: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Deskewed.jpg
+[INFO] 23-03-2025 23:15:26: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[INFO] 23-03-2025 23:15:26: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 23-03-2025 23:15:26: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted.jpg
+[INFO] 23-03-2025 23:15:26: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Shifted.jpg
+[INFO] 23-03-2025 23:15:26: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_224208.txt
+[INFO] 23-03-2025 23:15:26: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\BestModelRanking.xlsx
+[INFO] 23-03-2025 23:15:26: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\CosineSimilarity.xlsx
+[INFO] 23-03-2025 23:15:26: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 23-03-2025 23:15:26: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_231526.txt
+[INFO] 23-03-2025 23:15:26: Processing 1 images...
+[INFO] 23-03-2025 23:15:27: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 23-03-2025 23:15:30: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[INFO] 23-03-2025 23:15:31: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Shifted.jpg
+[INFO] 23-03-2025 23:15:34: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted.jpg
+[INFO] 23-03-2025 23:15:36: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Deskewed.jpg
+[INFO] 23-03-2025 23:15:42: Successfully processed image: Test_OCR_document.jpg
+[INFO] 23-03-2025 23:15:42: Processing completed successfully.
+[INFO] 23-03-2025 23:31:04: Starting Image Processing...
+[INFO] 23-03-2025 23:31:04: Configuration loaded successfully.
+[INFO] 23-03-2025 23:31:04: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Deskewed.jpg
+[INFO] 23-03-2025 23:31:04: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[INFO] 23-03-2025 23:31:04: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 23-03-2025 23:31:04: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted.jpg
+[INFO] 23-03-2025 23:31:04: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Shifted.jpg
+[INFO] 23-03-2025 23:31:04: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_231526.txt
+[INFO] 23-03-2025 23:31:04: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\BestModelRanking.xlsx
+[INFO] 23-03-2025 23:31:04: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\CosineSimilarity.xlsx
+[INFO] 23-03-2025 23:31:04: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 23-03-2025 23:31:04: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_233104.txt
+[INFO] 23-03-2025 23:31:04: Processing 1 images...
+[INFO] 23-03-2025 23:31:05: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 23-03-2025 23:31:08: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[INFO] 23-03-2025 23:31:10: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Shifted.jpg
+[INFO] 23-03-2025 23:31:13: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted.jpg
+[INFO] 23-03-2025 23:31:15: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Deskewed.jpg
+[INFO] 23-03-2025 23:31:21: Successfully processed image: Test_OCR_document.jpg
+[INFO] 23-03-2025 23:31:21: Processing completed successfully.
+[INFO] 23-03-2025 23:34:53: Starting Image Processing...
+[INFO] 23-03-2025 23:34:53: Configuration loaded successfully.
+[INFO] 23-03-2025 23:34:53: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Deskewed.jpg
+[INFO] 23-03-2025 23:34:53: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[INFO] 23-03-2025 23:34:53: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 23-03-2025 23:34:53: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted.jpg
+[INFO] 23-03-2025 23:34:53: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Shifted.jpg
+[INFO] 23-03-2025 23:34:53: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_233104.txt
+[INFO] 23-03-2025 23:34:53: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\BestModelRanking.xlsx
+[INFO] 23-03-2025 23:34:53: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\CosineSimilarity.xlsx
+[INFO] 23-03-2025 23:34:53: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 23-03-2025 23:34:53: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_233453.txt
+[INFO] 23-03-2025 23:34:53: Processing 1 images...
+[INFO] 23-03-2025 23:34:54: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 23-03-2025 23:34:57: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[INFO] 23-03-2025 23:35:00: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Deskewed.jpg
+[INFO] 23-03-2025 23:35:02: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Shifted.jpg
+[INFO] 23-03-2025 23:35:05: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted.jpg
+[INFO] 23-03-2025 23:35:11: Successfully processed image: Test_OCR_document.jpg
+[INFO] 23-03-2025 23:35:12: Processing completed successfully.
+[INFO] 23-03-2025 23:40:33: Starting Image Processing...
+[INFO] 23-03-2025 23:40:33: Configuration loaded successfully.
+[INFO] 23-03-2025 23:40:33: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Deskewed.jpg
+[INFO] 23-03-2025 23:40:33: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[INFO] 23-03-2025 23:40:33: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 23-03-2025 23:40:33: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted.jpg
+[INFO] 23-03-2025 23:40:33: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Shifted.jpg
+[INFO] 23-03-2025 23:40:33: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_233453.txt
+[INFO] 23-03-2025 23:40:33: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\BestModelRanking.xlsx
+[INFO] 23-03-2025 23:40:33: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\CosineSimilarity.xlsx
+[INFO] 23-03-2025 23:40:33: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 23-03-2025 23:40:33: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_234033.txt
+[INFO] 23-03-2025 23:40:33: Processing 1 images...
+[INFO] 23-03-2025 23:40:34: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 23-03-2025 23:40:37: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[ERROR] 23-03-2025 23:40:39: Error processing C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Input\Test_OCR_document.jpg: Index was outside the bounds of the array.
+[WARNING] 23-03-2025 23:40:40: Similarity or Performance file missing. Skipping model evaluation.
+[INFO] 23-03-2025 23:40:40: Processing completed successfully.
+[INFO] 23-03-2025 23:45:19: Starting Image Processing...
+[INFO] 23-03-2025 23:45:19: Configuration loaded successfully.
+[INFO] 23-03-2025 23:45:19: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[INFO] 23-03-2025 23:45:19: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 23-03-2025 23:45:19: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_234033.txt
+[INFO] 23-03-2025 23:45:19: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 23-03-2025 23:45:19: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_234519.txt
+[INFO] 23-03-2025 23:45:19: Processing 1 images...
+[INFO] 23-03-2025 23:45:20: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 23-03-2025 23:45:23: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[ERROR] 23-03-2025 23:45:25: Error processing C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Input\Test_OCR_document.jpg: Index was outside the bounds of the array.
+[WARNING] 23-03-2025 23:45:26: Similarity or Performance file missing. Skipping model evaluation.
+[INFO] 23-03-2025 23:45:26: Processing completed successfully.
+[INFO] 23-03-2025 23:45:50: Starting Image Processing...
+[INFO] 23-03-2025 23:45:50: Configuration loaded successfully.
+[INFO] 23-03-2025 23:45:50: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[INFO] 23-03-2025 23:45:50: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 23-03-2025 23:45:50: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_234519.txt
+[INFO] 23-03-2025 23:45:50: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 23-03-2025 23:45:50: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_234550.txt
+[INFO] 23-03-2025 23:45:50: Processing 1 images...
+[INFO] 23-03-2025 23:45:51: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 23-03-2025 23:45:54: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[INFO] 23-03-2025 23:45:56: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted.jpg
+[INFO] 23-03-2025 23:45:59: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Deskewed.jpg
+[INFO] 23-03-2025 23:46:04: Successfully processed image: Test_OCR_document.jpg
+[INFO] 23-03-2025 23:46:04: Processing completed successfully.
+[INFO] 23-03-2025 23:46:50: Starting Image Processing...
+[INFO] 23-03-2025 23:46:50: Configuration loaded successfully.
+[INFO] 23-03-2025 23:46:50: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Deskewed.jpg
+[INFO] 23-03-2025 23:46:50: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[INFO] 23-03-2025 23:46:50: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 23-03-2025 23:46:50: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted.jpg
+[INFO] 23-03-2025 23:46:50: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_234550.txt
+[INFO] 23-03-2025 23:46:50: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\BestModelRanking.xlsx
+[INFO] 23-03-2025 23:46:50: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\CosineSimilarity.xlsx
+[INFO] 23-03-2025 23:46:50: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 23-03-2025 23:46:50: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_234650.txt
+[INFO] 23-03-2025 23:46:50: Processing 1 images...
+[INFO] 23-03-2025 23:46:51: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 23-03-2025 23:46:54: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[ERROR] 23-03-2025 23:46:57: Error processing C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Input\Test_OCR_document.jpg: Index was outside the bounds of the array.
+[WARNING] 23-03-2025 23:46:57: Similarity or Performance file missing. Skipping model evaluation.
+[INFO] 23-03-2025 23:46:57: Processing completed successfully.
+[INFO] 23-03-2025 23:47:35: Starting Image Processing...
+[INFO] 23-03-2025 23:47:35: Configuration loaded successfully.
+[INFO] 23-03-2025 23:47:35: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[INFO] 23-03-2025 23:47:35: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 23-03-2025 23:47:35: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_234650.txt
+[INFO] 23-03-2025 23:47:35: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 23-03-2025 23:47:35: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_234735.txt
+[INFO] 23-03-2025 23:47:35: Processing 1 images...
+[INFO] 23-03-2025 23:47:36: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 23-03-2025 23:47:39: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[ERROR] 23-03-2025 23:47:41: Error processing C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Input\Test_OCR_document.jpg: Index was outside the bounds of the array.
+[WARNING] 23-03-2025 23:47:42: Similarity or Performance file missing. Skipping model evaluation.
+[INFO] 23-03-2025 23:47:42: Processing completed successfully.
+[INFO] 23-03-2025 23:48:53: Starting Image Processing...
+[INFO] 23-03-2025 23:48:53: Configuration loaded successfully.
+[INFO] 23-03-2025 23:48:53: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[INFO] 23-03-2025 23:48:53: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 23-03-2025 23:48:53: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_234735.txt
+[INFO] 23-03-2025 23:48:53: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 23-03-2025 23:48:53: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_234853.txt
+[INFO] 23-03-2025 23:48:53: Processing 1 images...
+[INFO] 23-03-2025 23:48:54: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 23-03-2025 23:48:57: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[ERROR] 23-03-2025 23:48:59: Error processing C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Input\Test_OCR_document.jpg: Specified argument was out of the range of valid values. (Parameter 'x')
+[WARNING] 23-03-2025 23:48:59: Similarity or Performance file missing. Skipping model evaluation.
+[INFO] 23-03-2025 23:48:59: Processing completed successfully.
+[INFO] 23-03-2025 23:49:33: Starting Image Processing...
+[INFO] 23-03-2025 23:49:33: Configuration loaded successfully.
+[INFO] 23-03-2025 23:49:33: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[INFO] 23-03-2025 23:49:33: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 23-03-2025 23:49:33: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_234853.txt
+[INFO] 23-03-2025 23:49:33: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 23-03-2025 23:49:33: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_234933.txt
+[INFO] 23-03-2025 23:49:33: Processing 1 images...
+[INFO] 23-03-2025 23:49:34: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 23-03-2025 23:49:37: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[ERROR] 23-03-2025 23:49:40: Error processing C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Input\Test_OCR_document.jpg: Specified argument was out of the range of valid values. (Parameter 'x')
+[WARNING] 23-03-2025 23:49:40: Similarity or Performance file missing. Skipping model evaluation.
+[INFO] 23-03-2025 23:49:40: Processing completed successfully.
+[INFO] 23-03-2025 23:50:18: Starting Image Processing...
+[INFO] 23-03-2025 23:50:18: Configuration loaded successfully.
+[INFO] 23-03-2025 23:50:18: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[INFO] 23-03-2025 23:50:18: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 23-03-2025 23:50:18: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_234933.txt
+[INFO] 23-03-2025 23:50:18: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 23-03-2025 23:50:18: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_235018.txt
+[INFO] 23-03-2025 23:50:18: Processing 1 images...
+[INFO] 23-03-2025 23:50:19: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 23-03-2025 23:50:22: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[ERROR] 23-03-2025 23:50:25: Error processing C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Input\Test_OCR_document.jpg: Specified argument was out of the range of valid values. (Parameter 'x')
+[WARNING] 23-03-2025 23:50:25: Similarity or Performance file missing. Skipping model evaluation.
+[INFO] 23-03-2025 23:50:25: Processing completed successfully.
+[INFO] 23-03-2025 23:51:06: Starting Image Processing...
+[INFO] 23-03-2025 23:51:06: Configuration loaded successfully.
+[INFO] 23-03-2025 23:51:06: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[INFO] 23-03-2025 23:51:06: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 23-03-2025 23:51:06: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_235018.txt
+[INFO] 23-03-2025 23:51:06: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 23-03-2025 23:51:06: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_235106.txt
+[INFO] 23-03-2025 23:51:06: Processing 1 images...
+[INFO] 23-03-2025 23:51:07: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 23-03-2025 23:51:10: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[ERROR] 23-03-2025 23:51:13: Error processing C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Input\Test_OCR_document.jpg: Specified argument was out of the range of valid values. (Parameter 'x')
+[WARNING] 23-03-2025 23:51:13: Similarity or Performance file missing. Skipping model evaluation.
+[INFO] 23-03-2025 23:51:13: Processing completed successfully.
+[INFO] 23-03-2025 23:52:24: Starting Image Processing...
+[INFO] 23-03-2025 23:52:24: Configuration loaded successfully.
+[INFO] 23-03-2025 23:52:24: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[INFO] 23-03-2025 23:52:24: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 23-03-2025 23:52:24: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_235106.txt
+[INFO] 23-03-2025 23:52:24: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 23-03-2025 23:52:24: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_235224.txt
+[INFO] 23-03-2025 23:52:24: Processing 1 images...
+[INFO] 23-03-2025 23:52:25: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 23-03-2025 23:52:28: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[ERROR] 23-03-2025 23:52:30: Error processing C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Input\Test_OCR_document.jpg: Specified argument was out of the range of valid values. (Parameter 'x')
+[WARNING] 23-03-2025 23:52:31: Similarity or Performance file missing. Skipping model evaluation.
+[INFO] 23-03-2025 23:52:31: Processing completed successfully.
+[INFO] 23-03-2025 23:53:31: Starting Image Processing...
+[INFO] 23-03-2025 23:53:31: Configuration loaded successfully.
+[INFO] 23-03-2025 23:53:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[INFO] 23-03-2025 23:53:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 23-03-2025 23:53:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_235224.txt
+[INFO] 23-03-2025 23:53:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 23-03-2025 23:53:31: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_235331.txt
+[INFO] 23-03-2025 23:53:31: Processing 1 images...
+[INFO] 23-03-2025 23:53:32: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 23-03-2025 23:53:35: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[INFO] 23-03-2025 23:55:21: Starting Image Processing...
+[INFO] 23-03-2025 23:55:21: Configuration loaded successfully.
+[INFO] 23-03-2025 23:55:21: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[INFO] 23-03-2025 23:55:21: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 23-03-2025 23:55:21: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_235331.txt
+[INFO] 23-03-2025 23:55:21: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_235521.txt
+[INFO] 23-03-2025 23:55:21: Processing 1 images...
+[INFO] 23-03-2025 23:55:22: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 23-03-2025 23:55:25: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[INFO] 23-03-2025 23:55:44: Starting Image Processing...
+[INFO] 23-03-2025 23:55:44: Configuration loaded successfully.
+[INFO] 23-03-2025 23:55:44: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[INFO] 23-03-2025 23:55:44: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 23-03-2025 23:55:44: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_235521.txt
+[INFO] 23-03-2025 23:55:44: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_235544.txt
+[INFO] 23-03-2025 23:55:44: Processing 1 images...
+[INFO] 23-03-2025 23:55:45: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 23-03-2025 23:55:48: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[ERROR] 23-03-2025 23:55:50: Error processing C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Input\Test_OCR_document.jpg: Specified argument was out of the range of valid values. (Parameter 'x')
+[WARNING] 23-03-2025 23:55:51: Similarity or Performance file missing. Skipping model evaluation.
+[INFO] 23-03-2025 23:55:51: Processing completed successfully.
+[INFO] 23-03-2025 23:56:53: Starting Image Processing...
+[INFO] 23-03-2025 23:56:53: Configuration loaded successfully.
+[INFO] 23-03-2025 23:56:53: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[INFO] 23-03-2025 23:56:53: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 23-03-2025 23:56:53: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_235544.txt
+[INFO] 23-03-2025 23:56:53: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 23-03-2025 23:56:53: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_235653.txt
+[INFO] 23-03-2025 23:56:53: Processing 1 images...
+[INFO] 23-03-2025 23:56:54: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 23-03-2025 23:56:57: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[ERROR] 23-03-2025 23:56:59: Error processing C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Input\Test_OCR_document.jpg: Specified argument was out of the range of valid values. (Parameter 'x')
+[WARNING] 23-03-2025 23:56:59: Similarity or Performance file missing. Skipping model evaluation.
+[INFO] 23-03-2025 23:56:59: Processing completed successfully.
+[INFO] 23-03-2025 23:58:02: Starting Image Processing...
+[INFO] 23-03-2025 23:58:02: Configuration loaded successfully.
+[INFO] 23-03-2025 23:58:02: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[INFO] 23-03-2025 23:58:02: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 23-03-2025 23:58:02: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_235653.txt
+[INFO] 23-03-2025 23:58:02: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 23-03-2025 23:58:02: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_235802.txt
+[INFO] 23-03-2025 23:58:02: Processing 1 images...
+[INFO] 23-03-2025 23:58:03: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 23-03-2025 23:58:04: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[ERROR] 23-03-2025 23:58:05: Error processing C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Input\Test_OCR_document.jpg: Specified argument was out of the range of valid values. (Parameter 'y')
+[WARNING] 23-03-2025 23:58:06: Similarity or Performance file missing. Skipping model evaluation.
+[INFO] 23-03-2025 23:58:06: Processing completed successfully.
+[INFO] 23-03-2025 23:59:34: Starting Image Processing...
+[INFO] 23-03-2025 23:59:34: Configuration loaded successfully.
+[INFO] 23-03-2025 23:59:34: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[INFO] 23-03-2025 23:59:34: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 23-03-2025 23:59:34: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_235802.txt
+[INFO] 23-03-2025 23:59:34: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 23-03-2025 23:59:34: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_235934.txt
+[INFO] 23-03-2025 23:59:34: Processing 1 images...
+[INFO] 23-03-2025 23:59:34: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 23-03-2025 23:59:36: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[ERROR] 23-03-2025 23:59:37: Error processing C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Input\Test_OCR_document.jpg: Specified argument was out of the range of valid values. (Parameter 'y')
+[WARNING] 23-03-2025 23:59:38: Similarity or Performance file missing. Skipping model evaluation.
+[INFO] 23-03-2025 23:59:38: Processing completed successfully.
+[INFO] 24-03-2025 00:00:25: Starting Image Processing...
+[INFO] 24-03-2025 00:00:25: Configuration loaded successfully.
+[INFO] 24-03-2025 00:00:25: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[INFO] 24-03-2025 00:00:25: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 24-03-2025 00:00:25: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250323_235934.txt
+[INFO] 24-03-2025 00:00:25: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 24-03-2025 00:00:25: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250324_000025.txt
+[INFO] 24-03-2025 00:00:25: Processing 1 images...
+[INFO] 24-03-2025 00:00:25: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 24-03-2025 00:00:27: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[INFO] 24-03-2025 00:00:28: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted.jpg
+[INFO] 24-03-2025 00:00:30: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Deskewed.jpg
+[INFO] 24-03-2025 00:00:33: Successfully processed image: Test_OCR_document.jpg
+[INFO] 24-03-2025 00:00:33: Processing completed successfully.
+[INFO] 24-03-2025 00:02:57: Starting Image Processing...
+[INFO] 24-03-2025 00:02:57: Configuration loaded successfully.
+[INFO] 24-03-2025 00:02:57: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Deskewed.jpg
+[INFO] 24-03-2025 00:02:57: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[INFO] 24-03-2025 00:02:57: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 24-03-2025 00:02:57: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted.jpg
+[INFO] 24-03-2025 00:02:57: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250324_000025.txt
+[INFO] 24-03-2025 00:02:57: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\BestModelRanking.xlsx
+[INFO] 24-03-2025 00:02:57: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\CosineSimilarity.xlsx
+[INFO] 24-03-2025 00:02:57: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 24-03-2025 00:02:57: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250324_000257.txt
+[INFO] 24-03-2025 00:02:57: Processing 1 images...
+[INFO] 24-03-2025 00:02:58: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 24-03-2025 00:03:00: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[ERROR] 24-03-2025 00:03:01: Error processing C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Input\Test_OCR_document.jpg: Specified argument was out of the range of valid values. (Parameter 'y')
+[WARNING] 24-03-2025 00:03:01: Similarity or Performance file missing. Skipping model evaluation.
+[INFO] 24-03-2025 00:03:01: Processing completed successfully.
+[INFO] 24-03-2025 00:04:04: Starting Image Processing...
+[INFO] 24-03-2025 00:04:04: Configuration loaded successfully.
+[INFO] 24-03-2025 00:04:04: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[INFO] 24-03-2025 00:04:04: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 24-03-2025 00:04:04: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250324_000257.txt
+[INFO] 24-03-2025 00:04:04: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 24-03-2025 00:04:04: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250324_000404.txt
+[INFO] 24-03-2025 00:04:05: Processing 1 images...
+[INFO] 24-03-2025 00:04:05: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 24-03-2025 00:04:07: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[ERROR] 24-03-2025 00:04:08: Error processing C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Input\Test_OCR_document.jpg: Specified argument was out of the range of valid values. (Parameter 'y')
+[WARNING] 24-03-2025 00:04:08: Similarity or Performance file missing. Skipping model evaluation.
+[INFO] 24-03-2025 00:04:08: Processing completed successfully.
+[INFO] 24-03-2025 00:05:50: Starting Image Processing...
+[INFO] 24-03-2025 00:05:50: Configuration loaded successfully.
+[INFO] 24-03-2025 00:05:50: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[INFO] 24-03-2025 00:05:50: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 24-03-2025 00:05:50: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250324_000404.txt
+[INFO] 24-03-2025 00:05:50: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 24-03-2025 00:05:50: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250324_000550.txt
+[INFO] 24-03-2025 00:05:50: Processing 1 images...
+[INFO] 24-03-2025 00:05:51: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 24-03-2025 00:05:54: Successfully processed image: Test_OCR_document.jpg
+[WARNING] 24-03-2025 00:05:54: Similarity or Performance file missing. Skipping model evaluation.
+[INFO] 24-03-2025 00:05:54: Processing completed successfully.
+[INFO] 24-03-2025 00:06:08: Starting Image Processing...
+[INFO] 24-03-2025 00:06:08: Configuration loaded successfully.
+[INFO] 24-03-2025 00:06:08: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 24-03-2025 00:06:08: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250324_000550.txt
+[INFO] 24-03-2025 00:06:08: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 24-03-2025 00:06:08: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250324_000608.txt
+[INFO] 24-03-2025 00:06:08: Processing 1 images...
+[INFO] 24-03-2025 00:06:08: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 24-03-2025 00:06:10: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[INFO] 24-03-2025 00:06:13: Successfully processed image: Test_OCR_document.jpg
+[INFO] 24-03-2025 00:06:13: Processing completed successfully.
+[INFO] 24-03-2025 00:07:14: Starting Image Processing...
+[INFO] 24-03-2025 00:07:14: Configuration loaded successfully.
+[INFO] 24-03-2025 00:07:14: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[INFO] 24-03-2025 00:07:14: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 24-03-2025 00:07:14: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250324_000608.txt
+[INFO] 24-03-2025 00:07:14: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\BestModelRanking.xlsx
+[INFO] 24-03-2025 00:07:14: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\CosineSimilarity.xlsx
+[INFO] 24-03-2025 00:07:14: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 24-03-2025 00:07:14: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250324_000714.txt
+[INFO] 24-03-2025 00:07:14: Processing 1 images...
+[INFO] 24-03-2025 00:07:15: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 24-03-2025 00:07:17: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[ERROR] 24-03-2025 00:07:17: Error processing C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Input\Test_OCR_document.jpg: Specified argument was out of the range of valid values. (Parameter 'y')
+[WARNING] 24-03-2025 00:07:18: Similarity or Performance file missing. Skipping model evaluation.
+[INFO] 24-03-2025 00:07:18: Processing completed successfully.
+[INFO] 24-03-2025 00:08:55: Starting Image Processing...
+[INFO] 24-03-2025 00:08:55: Configuration loaded successfully.
+[INFO] 24-03-2025 00:08:55: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[INFO] 24-03-2025 00:08:55: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 24-03-2025 00:08:55: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250324_000714.txt
+[INFO] 24-03-2025 00:08:55: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 24-03-2025 00:08:55: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250324_000855.txt
+[INFO] 24-03-2025 00:08:55: Processing 1 images...
+[INFO] 24-03-2025 00:08:57: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_Grayscale.png
+[INFO] 24-03-2025 00:08:58: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_GlobalThreshold.png
+[ERROR] 24-03-2025 00:08:59: Error processing C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Input\67ca2f2a16079f4f6a833a91_V2.png: Specified argument was out of the range of valid values. (Parameter 'y')
+[WARNING] 24-03-2025 00:08:59: Similarity or Performance file missing. Skipping model evaluation.
+[INFO] 24-03-2025 00:08:59: Processing completed successfully.
+[INFO] 24-03-2025 00:11:31: Starting Image Processing...
+[INFO] 24-03-2025 00:11:31: Configuration loaded successfully.
+[INFO] 24-03-2025 00:11:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_GlobalThreshold.png
+[INFO] 24-03-2025 00:11:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_Grayscale.png
+[INFO] 24-03-2025 00:11:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250324_000855.txt
+[INFO] 24-03-2025 00:11:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 24-03-2025 00:11:31: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250324_001131.txt
+[INFO] 24-03-2025 00:11:31: Processing 1 images...
+[INFO] 24-03-2025 00:11:32: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_Grayscale.png
+[INFO] 24-03-2025 00:11:33: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_GlobalThreshold.png
+[ERROR] 24-03-2025 00:11:34: Error processing C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Input\67ca2f2a16079f4f6a833a91_V2.png: Specified argument was out of the range of valid values. (Parameter 'y')
+[WARNING] 24-03-2025 00:11:34: Similarity or Performance file missing. Skipping model evaluation.
+[INFO] 24-03-2025 00:11:34: Processing completed successfully.
+[INFO] 24-03-2025 00:13:03: Starting Image Processing...
+[INFO] 24-03-2025 00:13:03: Configuration loaded successfully.
+[INFO] 24-03-2025 00:13:03: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_GlobalThreshold.png
+[INFO] 24-03-2025 00:13:03: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_Grayscale.png
+[INFO] 24-03-2025 00:13:03: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250324_001131.txt
+[INFO] 24-03-2025 00:13:03: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 24-03-2025 00:13:03: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250324_001303.txt
+[INFO] 24-03-2025 00:13:03: Processing 1 images...
+[INFO] 24-03-2025 00:13:04: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_Grayscale.png
+[INFO] 24-03-2025 00:13:06: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_GlobalThreshold.png
+[ERROR] 24-03-2025 00:13:06: Error processing C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Input\67ca2f2a16079f4f6a833a91_V2.png: Specified argument was out of the range of valid values. (Parameter 'y')
+[WARNING] 24-03-2025 00:13:07: Similarity or Performance file missing. Skipping model evaluation.
+[INFO] 24-03-2025 00:13:07: Processing completed successfully.
+[INFO] 24-03-2025 00:13:25: Starting Image Processing...
+[INFO] 24-03-2025 00:13:25: Configuration loaded successfully.
+[INFO] 24-03-2025 00:13:25: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_GlobalThreshold.png
+[INFO] 24-03-2025 00:13:25: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_Grayscale.png
+[INFO] 24-03-2025 00:13:25: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250324_001303.txt
+[INFO] 24-03-2025 00:13:25: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 24-03-2025 00:13:39: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250324_001339.txt
+[INFO] 24-03-2025 00:13:39: Processing 1 images...
+[INFO] 24-03-2025 00:13:40: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_Grayscale.png
+[INFO] 24-03-2025 00:13:42: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_GlobalThreshold.png
+[ERROR] 24-03-2025 00:13:42: Error processing C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Input\67ca2f2a16079f4f6a833a91_V2.png: Specified argument was out of the range of valid values. (Parameter 'y')
+[WARNING] 24-03-2025 00:13:42: Similarity or Performance file missing. Skipping model evaluation.
+[INFO] 24-03-2025 00:13:42: Processing completed successfully.
+[INFO] 24-03-2025 00:14:31: Starting Image Processing...
+[INFO] 24-03-2025 00:14:31: Configuration loaded successfully.
+[INFO] 24-03-2025 00:14:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_GlobalThreshold.png
+[INFO] 24-03-2025 00:14:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_Grayscale.png
+[INFO] 24-03-2025 00:14:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250324_001339.txt
+[INFO] 24-03-2025 00:14:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 24-03-2025 00:14:43: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250324_001443.txt
+[INFO] 24-03-2025 00:14:43: Processing 1 images...
+[INFO] 24-03-2025 00:15:11: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_Grayscale.png
+[INFO] 24-03-2025 00:15:12: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_GlobalThreshold.png
+[ERROR] 24-03-2025 00:15:29: Error processing C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Input\67ca2f2a16079f4f6a833a91_V2.png: Specified argument was out of the range of valid values. (Parameter 'y')
+[WARNING] 24-03-2025 00:15:29: Similarity or Performance file missing. Skipping model evaluation.
+[INFO] 24-03-2025 00:15:29: Processing completed successfully.
+[INFO] 24-03-2025 00:16:34: Starting Image Processing...
+[INFO] 24-03-2025 00:16:34: Configuration loaded successfully.
+[INFO] 24-03-2025 00:16:34: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_GlobalThreshold.png
+[INFO] 24-03-2025 00:16:34: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_Grayscale.png
+[INFO] 24-03-2025 00:16:34: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250324_001443.txt
+[INFO] 24-03-2025 00:16:34: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 24-03-2025 00:16:34: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250324_001634.txt
+[INFO] 24-03-2025 00:16:34: Processing 1 images...
+[INFO] 24-03-2025 00:16:43: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_Grayscale.png
+[INFO] 24-03-2025 00:16:45: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_GlobalThreshold.png
+[ERROR] 24-03-2025 00:17:17: Error processing C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Input\67ca2f2a16079f4f6a833a91_V2.png: Specified argument was out of the range of valid values. (Parameter 'y')
+[WARNING] 24-03-2025 00:17:17: Similarity or Performance file missing. Skipping model evaluation.
+[INFO] 24-03-2025 00:17:17: Processing completed successfully.
+[INFO] 24-03-2025 00:17:35: Starting Image Processing...
+[INFO] 24-03-2025 00:17:35: Configuration loaded successfully.
+[INFO] 24-03-2025 00:17:35: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_GlobalThreshold.png
+[INFO] 24-03-2025 00:17:35: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_Grayscale.png
+[INFO] 24-03-2025 00:17:35: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250324_001634.txt
+[INFO] 24-03-2025 00:17:35: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 24-03-2025 00:17:35: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250324_001735.txt
+[INFO] 24-03-2025 00:17:35: Processing 1 images...
+[INFO] 24-03-2025 00:17:40: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_Grayscale.png
+[INFO] 24-03-2025 00:17:41: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_GlobalThreshold.png
+[ERROR] 24-03-2025 00:18:11: Error processing C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Input\67ca2f2a16079f4f6a833a91_V2.png: Specified argument was out of the range of valid values. (Parameter 'y')
+[WARNING] 24-03-2025 00:18:11: Similarity or Performance file missing. Skipping model evaluation.
+[INFO] 24-03-2025 00:18:11: Processing completed successfully.
+[INFO] 24-03-2025 00:19:36: Starting Image Processing...
+[INFO] 24-03-2025 00:19:36: Configuration loaded successfully.
+[INFO] 24-03-2025 00:19:36: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_GlobalThreshold.png
+[INFO] 24-03-2025 00:19:36: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_Grayscale.png
+[INFO] 24-03-2025 00:19:36: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250324_001735.txt
+[INFO] 24-03-2025 00:19:36: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 24-03-2025 00:19:36: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250324_001936.txt
+[INFO] 24-03-2025 00:19:36: Processing 1 images...
+[INFO] 24-03-2025 00:19:42: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_Grayscale.png
+[INFO] 24-03-2025 00:19:43: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_GlobalThreshold.png
+[ERROR] 24-03-2025 00:19:44: Error processing C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Input\67ca2f2a16079f4f6a833a91_V2.png: Specified argument was out of the range of valid values. (Parameter 'y')
+[WARNING] 24-03-2025 00:19:44: Similarity or Performance file missing. Skipping model evaluation.
+[INFO] 24-03-2025 00:19:44: Processing completed successfully.
+[INFO] 24-03-2025 00:20:32: Starting Image Processing...
+[INFO] 24-03-2025 00:20:32: Configuration loaded successfully.
+[INFO] 24-03-2025 00:20:32: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_GlobalThreshold.png
+[INFO] 24-03-2025 00:20:32: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_Grayscale.png
+[INFO] 24-03-2025 00:20:32: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250324_001936.txt
+[INFO] 24-03-2025 00:20:32: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 24-03-2025 00:20:32: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250324_002032.txt
+[INFO] 24-03-2025 00:20:32: Processing 1 images...
+[INFO] 24-03-2025 00:20:33: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_Grayscale.png
+[INFO] 24-03-2025 00:20:34: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_GlobalThreshold.png
+[INFO] 24-03-2025 00:20:35: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_SaturationAdjusted.png
+[INFO] 24-03-2025 00:20:37: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_Deskewed.png
+[INFO] 24-03-2025 00:20:40: Successfully processed image: 67ca2f2a16079f4f6a833a91_V2.png
+[INFO] 24-03-2025 00:20:40: Processing completed successfully.
+[INFO] 24-03-2025 00:21:51: Starting Image Processing...
+[INFO] 24-03-2025 00:21:51: Configuration loaded successfully.
+[INFO] 24-03-2025 00:21:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_Deskewed.png
+[INFO] 24-03-2025 00:21:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_GlobalThreshold.png
+[INFO] 24-03-2025 00:21:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_Grayscale.png
+[INFO] 24-03-2025 00:21:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\67ca2f2a16079f4f6a833a91_V2_SaturationAdjusted.png
+[INFO] 24-03-2025 00:21:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250324_002032.txt
+[INFO] 24-03-2025 00:21:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\BestModelRanking.xlsx
+[INFO] 24-03-2025 00:21:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\CosineSimilarity.xlsx
+[INFO] 24-03-2025 00:21:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 24-03-2025 00:21:51: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250324_002151.txt
+[INFO] 24-03-2025 00:21:51: Processing 1 images...
+[INFO] 24-03-2025 00:21:51: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\opencv_adaptive_thresholding_input_Grayscale.png
+[INFO] 24-03-2025 00:21:52: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\opencv_adaptive_thresholding_input_GlobalThreshold.png
+[INFO] 24-03-2025 00:21:52: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\opencv_adaptive_thresholding_input_SaturationAdjusted.png
+[INFO] 24-03-2025 00:21:53: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\opencv_adaptive_thresholding_input_Deskewed.png
+[INFO] 24-03-2025 00:21:55: Successfully processed image: opencv_adaptive_thresholding_input.png
+[INFO] 24-03-2025 00:21:55: Processing completed successfully.
+[INFO] 24-03-2025 00:22:59: Starting Image Processing...
+[INFO] 24-03-2025 00:22:59: Configuration loaded successfully.
+[INFO] 24-03-2025 00:22:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\opencv_adaptive_thresholding_input_Deskewed.png
+[INFO] 24-03-2025 00:22:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\opencv_adaptive_thresholding_input_GlobalThreshold.png
+[INFO] 24-03-2025 00:22:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\opencv_adaptive_thresholding_input_Grayscale.png
+[INFO] 24-03-2025 00:22:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\opencv_adaptive_thresholding_input_SaturationAdjusted.png
+[INFO] 24-03-2025 00:22:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250324_002151.txt
+[INFO] 24-03-2025 00:22:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\BestModelRanking.xlsx
+[INFO] 24-03-2025 00:22:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\CosineSimilarity.xlsx
+[INFO] 24-03-2025 00:22:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 24-03-2025 00:22:59: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ExtractedText\ProcessedFile_20250324_002259.txt
+[INFO] 24-03-2025 00:22:59: Processing 1 images...
+[INFO] 24-03-2025 00:23:00: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.jpg
+[INFO] 24-03-2025 00:23:02: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold.jpg
+[INFO] 24-03-2025 00:23:03: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted.jpg
+[INFO] 24-03-2025 00:23:04: Saved processed image: C:\Users\mithi\OneDrive\Desktop\SoftwareEngg\ocr-techtitans\src\OCRProject\Output\ProcessedImage\Test_OCR_document_Deskewed.jpg
+[INFO] 24-03-2025 00:23:08: Successfully processed image: Test_OCR_document.jpg
+[INFO] 24-03-2025 00:23:08: Processing completed successfully.

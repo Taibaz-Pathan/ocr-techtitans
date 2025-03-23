@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
+using OCRProject.Interfaces;
 using NPOI.SS.UserModel;
 using NPOI.XSSF.UserModel;
-using OCRProject.Interfaces;
 
-namespace ModelComparison
+namespace OCRProject.ModelComparision
 {
+    /// <summary>
+    /// Computes cosine similarity between model embeddings and generates an Excel report.
+    /// </summary>
     public class CosineSimilarityCalculator : ICosineSimilarityCalculator
     {
         private readonly string _outputFolder;
@@ -18,9 +20,9 @@ namespace ModelComparison
         }
 
         /// <summary>
-        /// Computes cosine similarity between different model embeddings and generates an Excel report.
+        /// Calculates cosine similarity between models and saves the results in an Excel file.
         /// </summary>
-        /// <param name="embeddings">Dictionary with model names and their embeddings.</param>
+        /// <param name="embeddings">Dictionary containing model names and their embeddings.</param>
         public void ComputeAndSaveReport(Dictionary<string, float[]> embeddings)
         {
             if (embeddings.Count < 2)
@@ -28,12 +30,6 @@ namespace ModelComparison
                 Console.WriteLine("Not enough models to compare.");
                 return;
             }
-
-            // Normalize embeddings and remove negatives (if needed)
-            var normalizedEmbeddings = embeddings.ToDictionary(
-                kvp => kvp.Key,
-                kvp => NormalizeVector(kvp.Value)
-            );
 
             string outputFile = Path.Combine(_outputFolder, "CosineSimilarity.xlsx");
 
@@ -46,26 +42,24 @@ namespace ModelComparison
             headerRow.CreateCell(0).SetCellValue("Model");
 
             int colIdx = 1;
-            foreach (var model in normalizedEmbeddings.Keys)
+            foreach (var model in embeddings.Keys)
             {
                 headerRow.CreateCell(colIdx++).SetCellValue(model);
             }
 
-            // Compute similarity for each model pair
-            foreach (var modelA in normalizedEmbeddings)
+            // Compute cosine similarity between models
+            foreach (var modelA in embeddings)
             {
                 IRow row = sheet.CreateRow(rowIdx++);
                 row.CreateCell(0).SetCellValue(modelA.Key);
                 colIdx = 1;
-
-                foreach (var modelB in normalizedEmbeddings)
+                foreach (var modelB in embeddings)
                 {
-                    float similarity = ComputeCosineSimilarity(modelA.Value, modelB.Value);
-                    row.CreateCell(colIdx++).SetCellValue(similarity);
+                    row.CreateCell(colIdx++).SetCellValue(ComputeCosineSimilarity(modelA.Value, modelB.Value));
                 }
             }
 
-            // Save report to file
+            // Save report to an Excel file
             using (FileStream fileStream = new FileStream(outputFile, FileMode.Create, FileAccess.Write))
             {
                 workbook.Write(fileStream);
@@ -75,33 +69,25 @@ namespace ModelComparison
         }
 
         /// <summary>
-        /// Computes the cosine similarity between two normalized vectors.
+        /// Computes the cosine similarity between two embedding vectors.
         /// </summary>
-        /// <param name="vectorA">First vector.</param>
-        /// <param name="vectorB">Second vector.</param>
-        /// <returns>Cosine similarity value between 0 and 1, rounded to 6 decimal places.</returns>
         private float ComputeCosineSimilarity(float[] vectorA, float[] vectorB)
         {
-            float dotProduct = vectorA.Zip(vectorB, (a, b) => a * b).Sum();
+            float dotProduct = 0f;
+            float magnitudeA = 0f;
+            float magnitudeB = 0f;
 
-            // Ensure similarity is within 0 and 1
-            return (float)Math.Round(Math.Max(dotProduct, 0), 6);
-        }
+            for (int i = 0; i < vectorA.Length; i++)
+            {
+                dotProduct += vectorA[i] * vectorB[i];
+                magnitudeA += vectorA[i] * vectorA[i];
+                magnitudeB += vectorB[i] * vectorB[i];
+            }
 
-        /// <summary>
-        /// Normalizes a vector and ensures non-negative values.
-        /// </summary>
-        /// <param name="vector">The input vector.</param>
-        /// <returns>Normalized and non-negative vector.</returns>
-        private float[] NormalizeVector(float[] vector)
-        {
-            // Take absolute values to avoid negative similarities
-            vector = vector.Select(x => Math.Abs(x)).ToArray();
+            magnitudeA = (float)Math.Sqrt(magnitudeA);
+            magnitudeB = (float)Math.Sqrt(magnitudeB); 
 
-            float magnitude = (float)Math.Sqrt(vector.Sum(x => x * x));
-            if (magnitude == 0) return new float[vector.Length];  // Avoid division by zero
-
-            return vector.Select(x => x / magnitude).ToArray();
+            return (magnitudeA == 0 || magnitudeB == 0) ? 0 : dotProduct / (magnitudeA * magnitudeB);
         }
     }
 }
