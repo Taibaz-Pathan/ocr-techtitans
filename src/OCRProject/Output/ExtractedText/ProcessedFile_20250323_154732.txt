@@ -1,0 +1,66 @@
+Model: Grayscale
+Printed Text - Clear and Easy to Read
+
+Handritten: Similated cursive handriting here.
+
+SumGEs: e B A% i B e
+
+Text vith meven spacing: T hi s
+
+SLightly tilted text for skew similation
+
+
+Model: GlobalThreshold
+Printed Text - Clear and Easy to Read
+
+Handritten: Similated cursive handriting here.
+
+Low contrast text on white background
+
+SumGEs: e B A% i B e
+
+Text vith meven spacing: T hi s
+
+SLightly tilted text for skew similation
+
+
+Model: Shifted
+ 
+
+Printed Text - Clear and Easy to Read
+
+Handritten: Similated cursive handriting here.
+
+Smezs: v gy et
+
+ 
+
+Text vith meven spacing: T hi s
+
+SLightly tilted text for skew similation
+
+
+Model: SaturationAdjusted
+Printed Text - Clear and Easy to Read
+
+Handritten: Similated cursive handriting here.
+
+SumGEs: e B A% i B e
+
+Text vith meven spacing: T hi s
+
+SLightly tilted text for skew similation
+
+
+Model: Deskewed
+Printed Text - Clear and Easy to Read
+
+Handritten: Similated cursive handriting here.
+
+SumGEs: e B A% i B e
+
+Text vith meven spacing: T hi s
+
+SLightly tilted text for skew similation
+
+
