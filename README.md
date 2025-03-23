@@ -43,7 +43,7 @@ This will process the input images, extract the text, and save the results in th
 - `OCRProject.csproj`: Project configuration file.
 - `Program.cs`: Main entry point of the application.
 
-![Project Structure](./image.png)  <!-- Path to your image file -->
+![Project Structure](.assets/ProjectFolderStructure.png.png)  <!-- Path to your image file -->
 
 - `OCRProject.csproj`: Project configuration file.
 - `Program.cs`: Main entry point of the application.
@@ -128,9 +128,16 @@ using System.Diagnostics;
 Members of OCRTechTitans and FrankfurtUAS.
 
 
-Dependencies
+4. Cosine Similarity Calculation: The generated embeddings are compared using the cosine similarity method to measure the similarity between different preprocessing approaches. The results of cosine similarity matrix are stored in Output/Comparison folder by name CosineSimilarity.xlsx.
+
+5. Time Tracking and memory usage- While we apply preprocessing technique and extract text using Tessearct we calculate the time taken by each processing step and the memory usage of that pre processing step. The results are the stored in Output/Comparison folder by name ProcessingResults.xlsx.
+
+6. Ranking the preprocessing- Based on results of cosine similarity, time taken by pre-processing method and memory usage-each pre processing step is ranked from high to low order and is store in Output/Comparison folder by name BestModelRanking.xlsx
+
+## Dependencies
 Required Libraries
 The following libraries are required to run the OCR project. You can install these dependencies via NuGet.
+
 For OCR Processing:
 using System;
 using System.IO;
@@ -139,12 +146,14 @@ using SixLabors.ImageSharp.PixelFormats;
 using SixLabors.ImageSharp.Processing;
 using SixLabors.ImageSharp.Formats.Png;
 using Tesseract;
+
 For Image Preprocessing:
 using System;
 using SixLabors.ImageSharp;
 using SixLabors.ImageSharp.PixelFormats;
 using SixLabors.ImageSharp.Processing; 
 using System.Linq;
+
 For Configuration & Utilities:
 using System;
 using System.IO;
@@ -153,6 +162,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 For Cosine similarity and Conversion to matrix:
 using System;
 using System.Collections.Generic;
@@ -162,7 +172,8 @@ using NPOI.SS.UserModel;
 using NPOI.XSSF.UserModel;
 using OCRProject.Interfaces;
 using System.Diagnostics;
-Setup Instructions
+
+## Setup Instructions
 1. Prerequisites
 Before using this project, ensure you have the following installed:
 * .NET 9: Required to build and run the project.
@@ -173,7 +184,8 @@ Clone or download the project:
 git clone https://github.com/Taibaz-Pathan/ocr-techtitans.git
 After cloning the repository, navigate to the project folder and restore the necessary NuGet packages:
 dotnet restore
-Usage Instructions
+
+## Usage Instructions
 Once the project is set up, follow these steps to run the OCR pipeline:
 1. Place Your Raw Images:
 o Place the raw images that need to be processed in the Input/ folder. 
