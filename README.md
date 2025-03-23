@@ -44,7 +44,6 @@ This will process the input images, extract the text, and save the results in th
 - `Program.cs`: Main entry point of the application.
 
 ![Project Structure](./assets/ProjectFolderStructure.png)  
-
 - `OCRProject.csproj`: Project configuration file.
 - `Program.cs`: Main entry point of the application.
 - `Input/`: Folder containing input image files.
