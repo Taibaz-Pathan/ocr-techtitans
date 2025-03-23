@@ -43,7 +43,7 @@ This will process the input images, extract the text, and save the results in th
 - `OCRProject.csproj`: Project configuration file.
 - `Program.cs`: Main entry point of the application.
 
-![Project Structure](./image.png)  <!-- Path to your image file -->
+![Project Structure](./assets/ProjectFolderStructure.png)  
 
 - `OCRProject.csproj`: Project configuration file.
 - `Program.cs`: Main entry point of the application.
@@ -125,6 +125,8 @@ using OCRProject.Interfaces;
 using System.Diagnostics;
 
 ## Contributing
-Members of OCRTechTitans and FrankfurtUAS.
+Mithila Prabhu
+Taibaz Pathan
+Khushal Singh
 
 
