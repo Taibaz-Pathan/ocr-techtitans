@@ -8,7 +8,7 @@ The OCR (Optical Character Recognition) Project is designed to process documents
 - Uses OCR to extract text
 - Outputs recognized text to  file
 
-## Prerequisites
+## Prerequisite
 - .NET SDK (latest version recommended)
 - Visual Studio or any C# IDE
 - Tesseract OCR library (if applicable)
