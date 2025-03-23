@@ -8,17 +8,28 @@ using OCRProject.Interfaces;
 
 namespace OCRProject.ModelComparison
 {
+    /// <summary>
+    /// Evaluates preprocessing models based on cosine similarity and performance metrics.
+    /// </summary>
     public class PreprocessingModelEvaluator : IPreprocessingModelEvaluator
     {
         private readonly string _similarityFilePath;
         private readonly string _performanceFilePath;
 
+        /// <summary>
+        /// Initializes the evaluator with file paths for similarity and performance data.
+        /// </summary>
+        /// <param name="similarityFilePath">Path to the Excel file containing cosine similarity scores.</param>
+        /// <param name="performanceFilePath">Path to the Excel file containing performance metrics.</param>
         public PreprocessingModelEvaluator(string similarityFilePath, string performanceFilePath)
         {
             _similarityFilePath = similarityFilePath;
             _performanceFilePath = performanceFilePath;
         }
 
+        /// <summary>
+        /// Evaluates models based on similarity and performance, ranks them, and generates a report.
+        /// </summary>
         public void EvaluateAndReportBestModels()
         {
             var similarityScores = LoadCosineSimilarity();
@@ -27,7 +38,7 @@ namespace OCRProject.ModelComparison
             var models = similarityScores.Keys.Intersect(performanceMetrics.Keys).ToList();
             var report = new List<(string Model, double FinalScore)>();
 
-            // Normalize scores
+            // Normalize values for fair comparison
             double maxSimilarity = similarityScores.Values.Max();
             double maxTime = performanceMetrics.Values.Max(v => v.TimeTaken);
             double maxMemory = performanceMetrics.Values.Max(v => v.MemoryUsage);
@@ -35,16 +46,17 @@ namespace OCRProject.ModelComparison
             foreach (var model in models)
             {
                 double normalizedSim = similarityScores[model] / maxSimilarity;
-                double normalizedTime = 1 - (performanceMetrics[model].TimeTaken / maxTime); // lower is better
-                double normalizedMem = 1 - (performanceMetrics[model].MemoryUsage / maxMemory); // lower is better
+                double normalizedTime = 1 - (performanceMetrics[model].TimeTaken / maxTime); // Lower is better
+                double normalizedMem = 1 - (performanceMetrics[model].MemoryUsage / maxMemory); // Lower is better
 
-                // Weighting factors can be adjusted
+                // Weighted scoring
                 double finalScore = (0.5 * normalizedSim) + (0.3 * normalizedTime) + (0.2 * normalizedMem);
                 report.Add((model, finalScore));
             }
 
             var sortedReport = report.OrderByDescending(r => r.FinalScore).ToList();
 
+            // Display the ranking in console
             Console.WriteLine("\n📊 Preprocessing Model Evaluation Report (Best to Worst):\n");
             int rank = 1;
             foreach (var item in sortedReport)
@@ -55,6 +67,10 @@ namespace OCRProject.ModelComparison
             SaveReportToExcel(sortedReport);
         }
 
+        /// <summary>
+        /// Loads cosine similarity scores from an Excel file.
+        /// </summary>
+        /// <returns>A dictionary with model names as keys and their cosine similarity scores as values.</returns>
         private Dictionary<string, double> LoadCosineSimilarity()
         {
             var result = new Dictionary<string, double>();
@@ -67,7 +83,7 @@ namespace OCRProject.ModelComparison
                 for (int row = 1; row <= sheet.LastRowNum; row++) // Skip header
                 {
                     IRow currentRow = sheet.GetRow(row);
-                    if (currentRow == null) continue; // Skip empty rows
+                    if (currentRow == null) continue;
 
                     string model = currentRow.GetCell(0)?.ToString() ?? "";
                     double score = double.TryParse(currentRow.GetCell(1)?.ToString(), out var val) ? val : 0;
@@ -78,6 +94,10 @@ namespace OCRProject.ModelComparison
             return result;
         }
 
+        /// <summary>
+        /// Loads performance metrics from an Excel file.
+        /// </summary>
+        /// <returns>A dictionary with model names as keys and a tuple containing time taken and memory usage.</returns>
         private Dictionary<string, (double TimeTaken, double MemoryUsage)> LoadPerformanceData()
         {
             var result = new Dictionary<string, (double, double)>();
@@ -90,7 +110,7 @@ namespace OCRProject.ModelComparison
                 for (int row = 1; row <= sheet.LastRowNum; row++) // Skip header
                 {
                     IRow currentRow = sheet.GetRow(row);
-                    if (currentRow == null) continue; // Skip empty rows
+                    if (currentRow == null) continue;
 
                     string model = currentRow.GetCell(1)?.ToString() ?? "";
                     double time = double.TryParse(currentRow.GetCell(2)?.ToString(), out var t) ? t : 0;
@@ -102,6 +122,10 @@ namespace OCRProject.ModelComparison
             return result;
         }
 
+        /// <summary>
+        /// Saves the ranked model evaluation report to an Excel file.
+        /// </summary>
+        /// <param name="report">A list of tuples containing model names and their final scores.</param>
         private void SaveReportToExcel(List<(string Model, double FinalScore)> report)
         {
             string outputFolder = Path.GetDirectoryName(_similarityFilePath) ?? Directory.GetCurrentDirectory();

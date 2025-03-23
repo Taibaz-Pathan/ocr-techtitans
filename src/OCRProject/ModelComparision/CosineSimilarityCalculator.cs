@@ -4,8 +4,12 @@ using System.IO;
 using OCRProject.Interfaces;
 using NPOI.SS.UserModel;
 using NPOI.XSSF.UserModel;
+
 namespace ModelComparison
 {
+    /// <summary>
+    /// Computes cosine similarity between model embeddings and generates an Excel report.
+    /// </summary>
     public class CosineSimilarityCalculator : ICosineSimilarityCalculator
     {
         private readonly string _outputFolder;
@@ -16,9 +20,9 @@ namespace ModelComparison
         }
 
         /// <summary>
-        /// Computes cosine similarity between different model embeddings and generates an Excel report.
+        /// Calculates cosine similarity between models and saves the results in an Excel file.
         /// </summary>
-        /// <param name="embeddings">Dictionary with model names and their embeddings.</param>
+        /// <param name="embeddings">Dictionary containing model names and their embeddings.</param>
         public void ComputeAndSaveReport(Dictionary<string, float[]> embeddings)
         {
             if (embeddings.Count < 2)
@@ -32,6 +36,7 @@ namespace ModelComparison
             IWorkbook workbook = new XSSFWorkbook();
             ISheet sheet = workbook.CreateSheet("Similarity Report");
 
+            // Create header row
             int rowIdx = 0;
             IRow headerRow = sheet.CreateRow(rowIdx++);
             headerRow.CreateCell(0).SetCellValue("Model");
@@ -42,6 +47,7 @@ namespace ModelComparison
                 headerRow.CreateCell(colIdx++).SetCellValue(model);
             }
 
+            // Compute cosine similarity between models
             foreach (var modelA in embeddings)
             {
                 IRow row = sheet.CreateRow(rowIdx++);
@@ -53,6 +59,7 @@ namespace ModelComparison
                 }
             }
 
+            // Save report to an Excel file
             using (FileStream fileStream = new FileStream(outputFile, FileMode.Create, FileAccess.Write))
             {
                 workbook.Write(fileStream);
@@ -61,6 +68,9 @@ namespace ModelComparison
             Console.WriteLine($"Report saved to {outputFile}");
         }
 
+        /// <summary>
+        /// Computes the cosine similarity between two embedding vectors.
+        /// </summary>
         private float ComputeCosineSimilarity(float[] vectorA, float[] vectorB)
         {
             float dotProduct = 0f;

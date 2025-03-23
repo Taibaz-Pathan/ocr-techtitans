@@ -10,29 +10,41 @@ namespace OCRProject.ImageProcessing
 {
     public class AdaptiveThreshold
     {
+        // Threshold value used to decide whether a pixel should be black or white.
         private int thresholdValue;
 
+        /// <summary>
+        /// Applies a simple adaptive thresholding technique to a given image.
+        /// Converts pixels to either black or white based on their grayscale value.
+        /// </summary>
+        /// <param name="original">The input bitmap image</param>
+        /// <returns>A thresholded bitmap image</returns>
         public Bitmap ApplyThreshold(Bitmap original)
         {
-            //using (var image = (Bitmap)Image.FromFile(inputPath))
+            // Create a new bitmap with the same dimensions as the original image.
             Bitmap image = new Bitmap(original.Width, original.Height);
+            
+            // Create another bitmap to store the thresholded result.
+            var thresholdedImage = new Bitmap(image.Width, image.Height);
+
+            // Iterate through each pixel in the image.
+            for (int x = 0; x < image.Width; x++)
             {
-                var thresholdedImage = new Bitmap(image.Width, image.Height);
-                for (int x = 0; x < image.Width; x++)
+                for (int y = 0; y < image.Height; y++)
                 {
-                    for (int y = 0; y < image.Height; y++)
-                    {
-                        var pixel = image.GetPixel(x, y);
+                    // Get the pixel color at the current (x, y) coordinate.
+                    var pixel = image.GetPixel(x, y);
 
-                        int grayscale = (pixel.R + pixel.G + pixel.B) / 3;
+                    // Convert the pixel to grayscale using an average of RGB components.
+                    int grayscale = (pixel.R + pixel.G + pixel.B) / 3;
 
-                        thresholdedImage.SetPixel(x, y, grayscale < thresholdValue ? Color.Black : Color.White);
-                    }
-
+                    // Apply thresholding: if grayscale value is below threshold, set to black; otherwise, set to white.
+                    thresholdedImage.SetPixel(x, y, grayscale < thresholdValue ? Color.Black : Color.White);
                 }
-                //thresholdedImage.Save(outputPath, ImageFormat.Png);
-                return thresholdedImage;
             }
+
+            // Return the processed thresholded image.
+            return thresholdedImage;
         }
     }
 }

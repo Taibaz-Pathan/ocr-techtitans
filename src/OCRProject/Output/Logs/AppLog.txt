@@ -1,0 +1,15 @@
+[INFO] 23/03/2025 2:35:00 PM: Starting Image Processing...
+[INFO] 23/03/2025 2:35:00 PM: Configuration loaded successfully.
+[INFO] 23/03/2025 2:35:00 PM: Deleted file: /Users/taibazpathan/Desktop/Git/ocr-techtitans/src/OCRProject/Output/ProcessedImage/.DS_Store
+[INFO] 23/03/2025 2:35:00 PM: Deleted file: /Users/taibazpathan/Desktop/Git/ocr-techtitans/src/OCRProject/Output/ExtractedText/.DS_Store
+[INFO] 23/03/2025 2:35:00 PM: Deleted file: /Users/taibazpathan/Desktop/Git/ocr-techtitans/src/OCRProject/Output/Comparision/.DS_Store
+[INFO] 23/03/2025 2:35:00 PM: Text file created successfully: /Users/taibazpathan/Desktop/Git/ocr-techtitans/src/OCRProject/Output/ExtractedText/ProcessedFile_20250323_143500.txt
+[INFO] 23/03/2025 2:35:00 PM: Processing 1 images...
+[INFO] 23/03/2025 2:35:01 PM: Saved processed image: /Users/taibazpathan/Desktop/Git/ocr-techtitans/src/OCRProject/Output/ProcessedImage/best_summer_Grayscale.jpeg
+[INFO] 23/03/2025 2:35:02 PM: Saved processed image: /Users/taibazpathan/Desktop/Git/ocr-techtitans/src/OCRProject/Output/ProcessedImage/best_summer_GlobalThreshold.jpeg
+[INFO] 23/03/2025 2:35:02 PM: Saved processed image: /Users/taibazpathan/Desktop/Git/ocr-techtitans/src/OCRProject/Output/ProcessedImage/best_summer_Shifted.jpeg
+[INFO] 23/03/2025 2:35:03 PM: Saved processed image: /Users/taibazpathan/Desktop/Git/ocr-techtitans/src/OCRProject/Output/ProcessedImage/best_summer_SaturationAdjusted.jpeg
+[INFO] 23/03/2025 2:35:04 PM: Saved processed image: /Users/taibazpathan/Desktop/Git/ocr-techtitans/src/OCRProject/Output/ProcessedImage/best_summer_Deskewed.jpeg
+[INFO] 23/03/2025 2:35:04 PM: Successfully processed image: best_summer.jpeg
+[WARNING] 23/03/2025 2:35:04 PM: Similarity or Performance file missing. Skipping model evaluation.
+[INFO] 23/03/2025 2:35:04 PM: Processing completed successfully.

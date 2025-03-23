@@ -34,9 +34,8 @@ namespace ModelComparison
             return embeddings;
         }
 
-        /// <summary>
+        
         /// Generates a random numerical embedding vector.
-        /// </summary>
         /// <returns>Array of floating-point numbers representing the embedding.</returns>
         private float[] GenerateRandomEmbedding()
         {
