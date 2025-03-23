@@ -43,6 +43,18 @@ This will process the input images, extract the text, and save the results in th
 - `OCRProject.csproj`: Project configuration file.
 - `Program.cs`: Main entry point of the application.
 
+![Project Structure](./image.png)  <!-- Path to your image file -->
+
+- `OCRProject.csproj`: Project configuration file.
+- `Program.cs`: Main entry point of the application.
+- `Input/`: Folder containing input image files.
+- `Output/`: Folder for saving processed images and extracted text.
+- `ModelComparison/`: Folder for storing model comparison results and embeddings.
+- `ImageProcessing/`: Folder for image preprocessing scripts.
+- `TesseractProcessor/`: Folder for handling text extraction via Tesseract.
+- `Utils/`: Folder for utility scripts.
+
+
 ## Project Workflow
 The OCR Project follows a pipeline for each input image through several steps:
 1. Image Preprocessing
