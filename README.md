@@ -30,9 +30,9 @@ dotnet restore
 Once the project is set up, follow these steps to run the OCR pipeline:
 1. Place Your Raw Images:Place the raw images that need to be processed in the Input/ folder. 
 2. Build the Project:Open a command prompt or terminal and navigate to the project directory. Run the following command to build the project- dotnet build
-3. Run the Application: Navigate to the output directory:cd bin/Debug/net9.0/
-4.Run the application: OCRProject.exe
-This will process the input images, extract the text, and save the results in the Output/ folder.
+3. Add your Open AI API Key in Utils/app.json file. 
+4. Run the Application: Navigate to the output directory:cd bin/Debug/net9.0/
+5.Run the application: OCRProject.exe. This will process the input images, extract the text, and save the results in the Output/ folder.
 
 ## Usage
 1. Build and run the project using Visual Studio or `dotnet run` from the command line.
@@ -43,7 +43,7 @@ This will process the input images, extract the text, and save the results in th
 - `OCRProject.csproj`: Project configuration file.
 - `Program.cs`: Main entry point of the application.
 
-![Project Structure](.assets/ProjectFolderStructure.png.png)  <!-- Path to your image file -->
+![Project Structure](.assets/ProjectFolderStructure.png.png)  
 
 - `OCRProject.csproj`: Project configuration file.
 - `Program.cs`: Main entry point of the application.

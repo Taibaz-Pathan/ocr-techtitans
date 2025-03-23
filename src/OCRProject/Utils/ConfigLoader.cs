@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Extensions.Configuration;
+using System;
 using System.IO;
 using System.Reflection;
 
@@ -11,7 +12,7 @@ namespace OCRProject.Utils
         public string ExtractedTextFolder { get; private set; }
         public string ComparisionFolder { get; private set; }
         public string LogFolder {  get; private set; }
-        public string scriptPath {  get; private set; }
+        public string appkeypath {  get; private set; }
 
         public ConfigLoader()
         {
@@ -41,9 +42,9 @@ namespace OCRProject.Utils
             string log = Path.GetFullPath(Path.Combine(currentDirectory, relativePath, "Output", "Logs"));
             LogFolder = Path.GetFullPath(log);
 
-            //python details
-            string pysc = Path.GetFullPath(Path.Combine(currentDirectory, relativePath, "TesseractProcessor", "EasyOCRProcessor.py"));
-            scriptPath = Path.GetFullPath(log);
+            //key details
+            string appkey = Path.GetFullPath(Path.Combine(currentDirectory, relativePath, "Utils", "app.json"));
+            appkeypath = Path.GetFullPath(appkey);
 
             // Ensure directories exist
             EnsureDirectoriesExist();
@@ -59,5 +60,6 @@ namespace OCRProject.Utils
             };
 
         }
+
     }
 }

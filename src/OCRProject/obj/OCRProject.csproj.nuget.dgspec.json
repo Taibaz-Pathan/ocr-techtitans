@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mithi\\OneDrive\\Desktop\\Projects\\ocr-techtitans\\ocr-techtitans\\src\\OCRProject\\OCRProject.csproj": {}
+    "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\OCRProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mithi\\OneDrive\\Desktop\\Projects\\ocr-techtitans\\ocr-techtitans\\src\\OCRProject\\OCRProject.csproj": {
+    "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\OCRProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mithi\\OneDrive\\Desktop\\Projects\\ocr-techtitans\\ocr-techtitans\\src\\OCRProject\\OCRProject.csproj",
+        "projectUniqueName": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\OCRProject.csproj",
         "projectName": "OCRProject",
-        "projectPath": "C:\\Users\\mithi\\OneDrive\\Desktop\\Projects\\ocr-techtitans\\ocr-techtitans\\src\\OCRProject\\OCRProject.csproj",
+        "projectPath": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\OCRProject.csproj",
         "packagesPath": "C:\\Users\\mithi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mithi\\OneDrive\\Desktop\\Projects\\ocr-techtitans\\ocr-techtitans\\src\\OCRProject\\obj\\",
+        "outputPath": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -70,6 +70,10 @@
             "NPOI": {
               "target": "Package",
               "version": "[2.7.2, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             },
             "OpenAI": {
               "target": "Package",

@@ -12,19 +12,19 @@ using SixLabors.ImageSharp.Formats.Jpeg;
 using SixLabors.ImageSharp.Formats.Png;
 using SixLabors.ImageSharp.Formats.Tiff;
 using OCRProject.ImageProcessing;
-using OCRProject.ModelComparison;
+using OCRProject.ModelComparision;
 using OCRProject.Utils;
 using OCRProject.TesseractProcessor;
-using ModelComparison;
+using OCRProject.ModelComparison;
 
 class Program
 {
     private static readonly string[] AllowedExtensions = { ".png", ".jpg", ".jpeg", ".bmp", ".gif", ".tiff" };
 
-    static void Main()
+    static async Task Main()
     {
         var logger = new Logger();
-        var embeddingGenerator = new EmbeddingGeneratorService();
+        var embeddingGenerator = new EmbeddingGeneratorService();  // Correct reference to EmbeddingGeneratorService
 
         try
         {
@@ -39,11 +39,13 @@ class Program
 
             logger.LogInfo("Configuration loaded successfully.");
 
+            // Clean directories
             var directoryCleaner = new DirectoryCleaner(logger);
             directoryCleaner.CleanDirectory(outputFolderImage);
             directoryCleaner.CleanDirectory(outputFolderText);
             directoryCleaner.CleanDirectory(comparisonResults);
 
+            // Create file for extracted text
             var fileCreator = new CreateFiles();
             string fileNameExtracted = $"ProcessedFile_{DateTime.Now:yyyyMMdd_HHmmss}.txt";
             string createdFilePath = fileCreator.CreateTextFile(outputFolderText, fileNameExtracted);
@@ -84,17 +86,19 @@ class Program
                     using var inputImage = Image.Load<Rgba32>(inputFilePath);
                     using var resizedImage = ResizeImage(inputImage, 2000, 2000);
 
+                    // Define image transformations
                     var transformations = new Dictionary<string, Func<Image<Rgba32>, Image<Rgba32>>>()
                     {
-                        { "Grayscale", img => img.CloneAs<L8>().CloneAs<Rgba32>() },
-                        { "GlobalThreshold", img => ApplyGlobalThreshold(img, 1) },
-                        { "Shifted", img => ApplyShiftImage(img, 5, 5) },
-                        { "SaturationAdjusted", img => ApplySaturationAdjustment(img, 1.2f) },
-                        { "Deskewed", img => ApplyDeskew(img) }
+                        { "Grayscale", img => new ConvertToGrayscale().Apply(img).CloneAs<Rgba32>() }, // Grayscale conversion using ConvertToGrayscale
+                        { "GlobalThreshold", img => new GlobalThresholding(128).ApplyThreshold(img) },  // Global Thresholding using GlobalThresholding class
+                        //{ "Shifted", img => ApplyShift(img, resizedImage, 0, 0) }, // Shift image using custom logic in Program.cs
+                        { "SaturationAdjusted", img => ApplySaturationAdjustment(img, 1.2f) }, // Apply saturation adjustment directly
+                        { "Deskewed", img => new Deskew().Apply(img) } // Deskew using Deskew class
                     };
 
                     var extractedTexts = new Dictionary<string, string>();
 
+                    // Apply transformations and extract text
                     foreach (var (modelName, transform) in transformations)
                     {
                         Image<Rgba32>? processedImage = null;
@@ -119,7 +123,10 @@ class Program
                         extractedTexts[modelName] = extractedText;
                     }
 
-                    var embeddings = embeddingGenerator.GenerateEmbeddingsForModels(extractedTexts);
+                    // Call embedding generator asynchronously and await the result
+                    var embeddings = await embeddingGenerator.GenerateEmbeddingsForModelsAsync(extractedTexts);
+
+                    // Calculate and save similarity report
                     similarityCalculator.ComputeAndSaveReport(embeddings);
                     logger.LogInfo($"Successfully processed image: {fileName}{fileExtension}");
                 }
@@ -130,6 +137,7 @@ class Program
                 }
             }
 
+            // Generate final reports
             timeTracker.GenerateExcelReport();
             memoryTracker.AppendMemoryUsageToExcel();
 
@@ -147,7 +155,6 @@ class Program
                 logger.LogWarning("Similarity or Performance file missing. Skipping model evaluation.");
             }
 
-
             logger.LogInfo("Processing completed successfully.");
             Console.WriteLine("Processing completed.");
             Environment.Exit(0);
@@ -160,29 +167,50 @@ class Program
         }
     }
 
-    private static Image<Rgba32> ApplyGlobalThreshold(Image<Rgba32> image, byte threshold)
+    private static Image<Rgba32> ApplyShift(Image<Rgba32> image, Image<Rgba32> resizedImage, int shiftX, int shiftY)
     {
-        var grayImage = image.CloneAs<L8>();
-        grayImage.Mutate(x => x.BinaryThreshold(threshold));
-        return grayImage.CloneAs<Rgba32>();
+        // Get the dimensions of the image.
+        int width = resizedImage.Width;
+        int height = resizedImage.Height;
+
+        // Ensure shift values stay within bounds.
+        // For shiftX, we can restrict it to [-width+1, width-1], so shifting stays within bounds
+        shiftX = Math.Clamp(shiftX, -width + 1, width - 1);
+        shiftY = Math.Clamp(shiftY, -height + 1, height - 1);
+
+        // Now apply the shift using the ShiftImage class
+        return new ShiftImage().Apply(resizedImage, shiftX, shiftY);
     }
 
-    private static Image<Rgba32> ApplyShiftImage(Image<Rgba32> image, int shiftX, int shiftY)
-    {
-        image.Mutate(x => x.Transform(new AffineTransformBuilder().AppendTranslation(new SixLabors.ImageSharp.PointF(shiftX, shiftY))));
-        return image;
-    }
 
     private static Image<Rgba32> ApplySaturationAdjustment(Image<Rgba32> image, float saturation)
     {
-        image.Mutate(x => x.Saturate(saturation));
-        return image;
-    }
+        // Step 1: Extract pixel data manually by iterating over the image.
+        int width = image.Width;
+        int height = image.Height;
 
-    private static Image<Rgba32> ApplyDeskew(Image<Rgba32> image)
-    {
-        // Deskew logic placeholder
-        return image;
+        byte[] imageData = new byte[width * height * 4]; // 4 bytes per pixel (RGBA)
+
+        // Copy pixels from the image into the byte array manually
+        for (int y = 0; y < height; y++)
+        {
+            for (int x = 0; x < width; x++)
+            {
+                var pixel = image[x, y]; // Get the pixel at position (x, y)
+                int index = (y * width + x) * 4; // Calculate index for the pixel in the byte array
+
+                imageData[index] = pixel.R;
+                imageData[index + 1] = pixel.G;
+                imageData[index + 2] = pixel.B;
+                imageData[index + 3] = pixel.A;
+            }
+        }
+
+        // Step 2: Apply the saturation adjustment using the SaturationAdjustment class
+        var adjustedData = new SaturationAdjustment().Apply(imageData, width, height, 4, saturation);
+
+        // Step 3: Convert the adjusted byte array back to an Image<Rgba32>
+        return Image.LoadPixelData<Rgba32>(adjustedData, width, height);
     }
 
     private static Image<Rgba32> ResizeImage(Image<Rgba32> image, int maxWidth, int maxHeight)
