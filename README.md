@@ -43,8 +43,7 @@ Once the project is set up, follow these steps to run the OCR pipeline:
 - `OCRProject.csproj`: Project configuration file.
 - `Program.cs`: Main entry point of the application.
 
-![Project Structure](.assets/ProjectFolderStructure.png.png)  
-
+![Project Structure](./assets/ProjectFolderStructure.png)  
 - `OCRProject.csproj`: Project configuration file.
 - `Program.cs`: Main entry point of the application.
 - `Input/`: Folder containing input image files.
