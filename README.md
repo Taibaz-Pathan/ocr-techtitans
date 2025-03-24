@@ -1,7 +1,7 @@
 # OCRProject
 
 ## Overview
-The OCR (Optical Character Recognition) Project is designed to process documents, extract meaningful text data, and perform image preprocessing for better OCR accuracy. This project leverages Tesseract for optical character recognition and includes a modular pipeline for processing images, extracting text, and organizing output data into structured formats. The solution is built in .NET and provides flexibility for OCR tasks such as extracting text from various document formats.
+The OCR (Optical Character Recognition) Project is designed to process images, extract meaningful text data, and perform image preprocessing for better OCR accuracy. This project leverages Tesseract for optical character recognition and includes a modular pipeline for processing images, extracting text, and organizing output data into structured formats. The solution is built in .NET and provides flexibility for OCR tasks such as extracting text from various document formats.
 
 ## Features
 - Reads image files
@@ -43,8 +43,7 @@ Once the project is set up, follow these steps to run the OCR pipeline:
 - `OCRProject.csproj`: Project configuration file.
 - `Program.cs`: Main entry point of the application.
 
-![Project Structure](.assets/ProjectFolderStructure.png.png)  
-
+![Project Structure](./assets/ProjectFolderStructure.png)  
 - `OCRProject.csproj`: Project configuration file.
 - `Program.cs`: Main entry point of the application.
 - `Input/`: Folder containing input image files.
