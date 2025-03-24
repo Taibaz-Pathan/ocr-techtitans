@@ -4,10 +4,11 @@ using System.IO;
 using System.Linq;
 using NPOI.SS.UserModel;
 using NPOI.XSSF.UserModel;
+using OCRProject.Interfaces;
 
 namespace ModelComparison
 {
-    public class CosineSimilarityCalculator
+    public class CosineSimilarityCalculator : ICosineSimilarityCalculator
     {
         private readonly string _outputFolder;
 

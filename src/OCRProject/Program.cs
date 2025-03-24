@@ -19,7 +19,8 @@ using OCRProject.TesseractProcessor;
 
 class Program
 {
-    static void Main(string[] args)
+    private static readonly string[] AllowedExtensions = { ".png", ".jpg", ".jpeg", ".bmp", ".gif", ".tiff" };
+    static void Main()
     {
         var logger = new Logger();
         var embeddingGenerator = new EmbeddingGeneratorService();
@@ -60,15 +61,14 @@ class Program
             var similarityCalculator = new CosineSimilarityCalculator(comparisonResults);
 
             var imageFiles = Directory.GetFiles(inputFolder, "*.*")
-                .Where(file => new[] { ".png", ".jpg", ".jpeg", ".bmp", ".gif", ".tiff" }
-                .Contains(Path.GetExtension(file).ToLower()))
+                .Where(file => AllowedExtensions.Contains(Path.GetExtension(file).ToLower()))
                 .ToArray();
 
             if (imageFiles.Length == 0)
             {
                 logger.LogWarning("No images found in the input folder.");
                 Console.WriteLine("No images found in the input folder.");
-                Environment.Exit(0); // Exit cleanly if no images are found.
+                Environment.Exit(0);
             }
 
             logger.LogInfo($"Processing {imageFiles.Length} images...");
@@ -82,21 +82,21 @@ class Program
                     using var inputImage = SixLabors.ImageSharp.Image.Load<Rgba32>(inputFilePath);
                     using var resizedImage = ResizeImage(inputImage, 2000, 2000);
 
-                    var transformations = new Dictionary<string, Func<Image<Rgba32>, Image<Rgba32>>>
-                    {
-                        { "Grayscale", img => img.CloneAs<L8>().CloneAs<Rgba32>() },
-                        { "GlobalThreshold", img => ApplyGlobalThreshold(img, 128) },
-                        { "Shifted", img => ApplyShiftImage(img, 5, 5) },
-                        { "SaturationAdjusted", img => ApplySaturationAdjustment(img, 1.2f) },
-                        { "Deskewed", img => ApplyDeskew(img) }
-                    };
+                    var transformations = new Dictionary<string, Func<Image<Rgba32>, Image<Rgba32>>>()
+                        {
+                            { "Grayscale", img => img.CloneAs<L8>().CloneAs<Rgba32>() },
+                            { "GlobalThreshold", img => ApplyGlobalThreshold(img, 1) },
+                            { "Shifted", img => ApplyShiftImage(img, 5, 5) },
+                            { "SaturationAdjusted", img => ApplySaturationAdjustment(img, 1.2f) },
+                            { "Deskewed", img => ApplyDeskew(img) }
+                        };
 
                     var extractedTexts = new Dictionary<string, string>();
 
                     foreach (var (modelName, transform) in transformations)
                     {
                         timeTracker.StartTimer();
-                        using var processedImage = transform(resizedImage.Clone()); // Clone to avoid modifying original
+                        using var processedImage = transform(resizedImage.Clone());
 
                         string outputPath = Path.Combine(outputFolderImage, $"{fileName}_{modelName}{fileExtension}");
                         processedImage.Save(outputPath, GetImageEncoder(fileExtension));
@@ -123,7 +123,7 @@ class Program
             timeTracker.GenerateExcelReport();
             logger.LogInfo("Processing completed successfully.");
             Console.WriteLine("Processing completed.");
-            Environment.Exit(0); // Ensure process exits cleanly
+            Environment.Exit(0);
         }
         catch (Exception ex)
         {
@@ -132,7 +132,6 @@ class Program
             Environment.Exit(1);
         }
     }
-
     private static Image<Rgba32> ApplyGlobalThreshold(Image<Rgba32> image, byte threshold)
     {
         var grayImage = image.CloneAs<L8>();
