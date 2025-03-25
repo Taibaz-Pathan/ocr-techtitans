@@ -1,35 +1,31 @@
-namespace OCRProject.ModelComparision;
+using System;
+using System.Collections.Generic;
 
-/// <summary>
-/// Evaluates preprocessing models and reports the best ones.
-/// </summary>
-public interface IPreprocessingModelEvaluator
+namespace OCRProject.Interfaces
 {
-    void EvaluateAndReportBestModels();
-}
+    /// <summary>
+    /// Defines the contract for tracking memory usage during processing.
+    /// </summary>
+    public interface IProcessingMemoryTracker
+    {
+        /// <summary>
+        /// Measures memory usage during a specific action for a given model.
+        /// </summary>
+        /// <param name="modelName">The name of the model for which memory usage is tracked.</param>
+        /// <param name="action">The action to perform while measuring memory usage.</param>
+        void MeasureMemoryUsage(string modelName, Action action);
 
-/// <summary>
-/// Loads similarity scores and performance data from files.
-/// </summary>
-public interface IDataLoader
-{
-    Dictionary<string, double> LoadCosineSimilarity(string filePath);
-    Dictionary<string, (double TimeTaken, double MemoryUsage)> LoadPerformanceData(string filePath);
-}
+        /// <summary>
+        /// Retrieves the last recorded memory usage for a given model.
+        /// </summary>
+        /// <param name="modelName">The name of the model.</param>
+        /// <returns>The last recorded memory usage in MB.</returns>
+        double GetLastMemoryUsage(string modelName);
 
-/// <summary>
-/// Generates reports and saves them to an Excel file.
-/// </summary>
-public interface IReportGenerator
-{
-    void SaveReportToExcel(List<(string Model, double FinalScore)> report, string outputPath);
-}
-
-/// <summary>
-/// Tracks and logs memory usage during image processing.
-/// </summary>
-public interface IProcessingMemoryTracker
-{
-    void MeasureMemoryUsage(string imageName, string processingStep, Action action);
-    void AppendMemoryUsageToExcel();
+        /// <summary>
+        /// Computes and returns the average memory usage for each model.
+        /// </summary>
+        /// <returns>A dictionary with model names as keys and their average memory usage in MB as values.</returns>
+        Dictionary<string, double> GetAverageMemoryResults();
+    }
 }

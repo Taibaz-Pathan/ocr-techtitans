@@ -15,32 +15,38 @@ namespace OCRProject.Utils
         {
             try
             {
-                // Ensure the directory exists
+                // Ensure the directory exists, if not, create it
                 if (!Directory.Exists(folderPath))
                 {
                     Directory.CreateDirectory(folderPath);  // Create the directory if it doesn't exist
                 }
 
+                // Combine the folder path and file name to get the full file path
                 string filePath = Path.Combine(folderPath, fileName);
 
-                // Create an empty file if it does not exist
+                // Check if the file already exists
                 if (!File.Exists(filePath))
                 {
-                    using (File.Create(filePath)) { }  // Create the file and close it
-                    Console.WriteLine($"File created: {filePath}");
+                    // Create an empty file if it doesn't exist
+                    using (File.Create(filePath)) { }  // Create the file and close it immediately
+                    Console.WriteLine($"File created: {filePath}");  // Log that the file was created
                 }
                 else
                 {
+                    // Log that the file already exists
                     Console.WriteLine($"File already exists: {filePath}");
                 }
 
-                return filePath;  // Return the full path of the created file
+                // Return the full path of the created (or existing) file
+                return filePath;
             }
             catch (Exception ex)
             {
-                // Log the error and return an empty string in case of failure
+                // Catch any errors (e.g., permissions issue) and log the exception message
                 Console.WriteLine($"Error creating file: {ex.Message}");
-                return string.Empty;  // Return an empty string to avoid returning null
+
+                // Return an empty string to indicate that file creation failed
+                return string.Empty;  // Avoid returning null, return an empty string instead
             }
         }
     }

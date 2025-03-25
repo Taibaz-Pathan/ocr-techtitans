@@ -14,37 +14,39 @@ namespace OCRProject.Utils
         {
             try
             {
-                // Debug output
+                // Debug output (currently commented out)
                 //Console.WriteLine($"WriteToFile - filePath: {filePath}");
                 //Console.WriteLine($"WriteToFile - text: {text}");
 
+                // Check if either the file path or the text is null or empty
                 if (string.IsNullOrEmpty(filePath) || string.IsNullOrEmpty(text))
                 {
-                    Console.WriteLine("Invalid file path or text.");
+                    Console.WriteLine("Invalid file path or text."); // Error message for invalid inputs
                     return;
                 }
 
-                // Check if the file path is valid
+                // Check if the provided file path is absolute
                 if (!Path.IsPathRooted(filePath))
                 {
-                    Console.WriteLine("File path is not absolute.");
+                    Console.WriteLine("File path is not absolute."); // Error message for relative paths
                     return;
                 }
 
-                // Ensure the file exists and is writable
+                // Ensure the file exists before trying to write to it
                 if (!File.Exists(filePath))
                 {
-                    Console.WriteLine($"The file does not exist at {filePath}. Ensure the file creation step has been successful.");
+                    Console.WriteLine($"The file does not exist at {filePath}. Ensure the file creation step has been successful."); // Inform user that the file doesn't exist
                     return;
                 }
 
-                // Append text to file
+                // Append the provided text to the file, adding a new line after the text
                 File.AppendAllText(filePath, text + Environment.NewLine);
-                //Console.WriteLine("Text written to file successfully.");
+                //Console.WriteLine("Text written to file successfully."); // Success message (currently commented out)
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error writing to file: {ex.Message}");
+                // Catch any exceptions and display the error message
+                Console.WriteLine($"Error writing to file: {ex.Message}"); // Display error details if something goes wrong
             }
         }
     }

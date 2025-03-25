@@ -7,8 +7,16 @@
       "RelativeMoniker": "D:0:0:{C9651FEE-8827-4D69-B524-BD40B4BC51BD}|OCRProject.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9651FEE-8827-4D69-B524-BD40B4BC51BD}|OCRProject.csproj|c:\\users\\mithi\\onedrive\\desktop\\softwareengg\\ocr-techtitans\\src\\ocrproject\\imageprocessing\\shiftimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9651FEE-8827-4D69-B524-BD40B4BC51BD}|OCRProject.csproj|solutionrelative:imageprocessing\\shiftimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C9651FEE-8827-4D69-B524-BD40B4BC51BD}|OCRProject.csproj|c:\\users\\mithi\\onedrive\\desktop\\softwareengg\\ocr-techtitans\\src\\ocrproject\\imageprocessing\\saturationadjustment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9651FEE-8827-4D69-B524-BD40B4BC51BD}|OCRProject.csproj|solutionrelative:imageprocessing\\saturationadjustment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9651FEE-8827-4D69-B524-BD40B4BC51BD}|OCRProject.csproj|c:\\users\\mithi\\onedrive\\desktop\\softwareengg\\ocr-techtitans\\src\\ocrproject\\imageprocessing\\globalthresholding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9651FEE-8827-4D69-B524-BD40B4BC51BD}|OCRProject.csproj|solutionrelative:imageprocessing\\globalthresholding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9651FEE-8827-4D69-B524-BD40B4BC51BD}|OCRProject.csproj|c:\\users\\mithi\\onedrive\\desktop\\softwareengg\\ocr-techtitans\\src\\ocrproject\\imageprocessing\\adaptivethreshold.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9651FEE-8827-4D69-B524-BD40B4BC51BD}|OCRProject.csproj|solutionrelative:imageprocessing\\adaptivethreshold.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,19 +26,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ShiftImage.cs",
-              "DocumentMoniker": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\ImageProcessing\\ShiftImage.cs",
-              "RelativeDocumentMoniker": "ImageProcessing\\ShiftImage.cs",
-              "ToolTip": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\ImageProcessing\\ShiftImage.cs",
-              "RelativeToolTip": "ImageProcessing\\ShiftImage.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAYwD0AAAAAAAAAAAAAAA==",
+              "Title": "SaturationAdjustment.cs",
+              "DocumentMoniker": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\ImageProcessing\\SaturationAdjustment.cs",
+              "RelativeDocumentMoniker": "ImageProcessing\\SaturationAdjustment.cs",
+              "ToolTip": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\ImageProcessing\\SaturationAdjustment.cs",
+              "RelativeToolTip": "ImageProcessing\\SaturationAdjustment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T22:35:18.737Z"
+              "WhenOpened": "2025-03-25T22:22:59.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GlobalThresholding.cs",
+              "DocumentMoniker": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\ImageProcessing\\GlobalThresholding.cs",
+              "RelativeDocumentMoniker": "ImageProcessing\\GlobalThresholding.cs",
+              "ToolTip": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\ImageProcessing\\GlobalThresholding.cs",
+              "RelativeToolTip": "ImageProcessing\\GlobalThresholding.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T22:19:34.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdaptiveThreshold.cs",
+              "DocumentMoniker": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\ImageProcessing\\AdaptiveThreshold.cs",
+              "RelativeDocumentMoniker": "ImageProcessing\\AdaptiveThreshold.cs",
+              "ToolTip": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\ImageProcessing\\AdaptiveThreshold.cs",
+              "RelativeToolTip": "ImageProcessing\\AdaptiveThreshold.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAwGwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T20:24:04.876Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -40,9 +75,9 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\mithi\\OneDrive\\Desktop\\SoftwareEngg\\ocr-techtitans\\src\\OCRProject\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAALcAAAAAAAAAAAAgwMMAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAHEAAABfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-23T21:22:18.504Z",
+              "WhenOpened": "2025-03-25T19:50:41.289Z",
               "EditorCaption": ""
             }
           ]

@@ -1,115 +1,75 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.IO;
-using System.Linq;
-using NPOI.SS.UserModel;
-using NPOI.XSSF.UserModel;
-using OCRProject.ModelComparision;
 using OCRProject.Interfaces;
 
-namespace OCRProject.ModelComparison
+namespace OCRProject.ModelComparision
 {
-    /// <summary>
-    /// Tracks memory usage for different processing steps in OCR image processing.
-    /// </summary>
+    // This class is responsible for tracking memory usage during processing
     public class ProcessingMemoryTracker : IProcessingMemoryTracker
     {
-        private readonly List<(string ImageName, string ProcessingStep, double MemoryUsedInMB)> memoryUsages;
-        private readonly string outputExcelPath;
+        // Dictionary to store memory usage data for each model (modelName -> list of memory usage values)
+        private readonly Dictionary<string, List<double>> _memoryResults = new();
 
         /// <summary>
-        /// Initializes the memory tracker and sets the output Excel file path.
+        /// Measures memory usage of a given transformation process.
+        /// This method will track how much memory is used during a specific action.
         /// </summary>
-        /// <param name="outputFolder">The folder where the Excel file will be saved.</param>
-        public ProcessingMemoryTracker(string outputFolder)
+        public void MeasureMemoryUsage(string modelName, Action action)
         {
-            memoryUsages = new List<(string, string, double)>();
-            outputExcelPath = Path.Combine(outputFolder, "ProcessingResults.xlsx");
+            // Get memory usage before the action starts
+            long before = GC.GetTotalMemory(true);
+
+            // Perform the action (e.g., image processing)
+            action();
+
+            // Get memory usage after the action is completed
+            long after = GC.GetTotalMemory(true);
+
+            // Calculate the difference in memory usage and convert it to MB
+            double memoryUsedMB = (after - before) / (1024.0 * 1024.0);
+
+            // If the model is not already in the dictionary, add it with a new list for memory usage
+            if (!_memoryResults.ContainsKey(modelName))
+                _memoryResults[modelName] = new List<double>();
+
+            // Add the measured memory usage for this model
+            _memoryResults[modelName].Add(memoryUsedMB);
         }
 
         /// <summary>
-        /// Measures the memory usage of a given processing step.
+        /// Retrieves the last recorded memory usage for a given model.
+        /// This will return the most recent memory usage recorded for the specified model.
         /// </summary>
-        /// <param name="imageName">The name of the image being processed.</param>
-        /// <param name="processingStep">The specific step in the image processing pipeline.</param>
-        /// <param name="action">The processing action whose memory usage needs to be measured.</param>
-        public void MeasureMemoryUsage(string imageName, string processingStep, Action action)
+        public double GetLastMemoryUsage(string modelName)
         {
-            var process = Process.GetCurrentProcess();
-            long memoryBefore = process.PrivateMemorySize64; // Memory before execution
-
-            action(); // Execute the processing step
-
-            process.Refresh(); // Refresh memory info after execution
-            long memoryAfter = process.PrivateMemorySize64; // Memory after execution
-
-            double memoryUsedInMB = (memoryAfter - memoryBefore) / (1024.0 * 1024.0);
-            memoryUsages.Add((imageName, processingStep, Math.Round(memoryUsedInMB, 2))); // Store memory usage
+            // Check if the model exists in the dictionary and has recorded memory usage
+            return _memoryResults.ContainsKey(modelName) && _memoryResults[modelName].Count > 0
+                // If so, return the last recorded memory value
+                ? _memoryResults[modelName].Last()
+                // If not, return 0 (indicating no memory usage recorded yet)
+                : 0;
         }
 
         /// <summary>
-        /// Appends the recorded memory usage data to an existing Excel file.
+        /// Computes and returns average memory usage for each model.
+        /// This method will calculate the average of all recorded memory usage values for each model.
         /// </summary>
-        public void AppendMemoryUsageToExcel()
+        public Dictionary<string, double> GetAverageMemoryResults()
         {
-            if (!File.Exists(outputExcelPath))
+            // Create a new dictionary to store the average memory usage for each model
+            var averageResults = new Dictionary<string, double>();
+
+            // Loop through each model and its list of memory usage values
+            foreach (var (model, memoryUsage) in _memoryResults)
             {
-                Console.WriteLine("Excel file not found. Cannot write memory usage.");
-                return;
+                // For each model, calculate the average of its memory usage values
+                // If no memory values are recorded, set the average to 0
+                averageResults[model] = memoryUsage.Count > 0 ? memoryUsage.Average() : 0;
             }
 
-            IWorkbook workbook;
-
-            // Open the existing Excel file
-            using (FileStream fileStream = new FileStream(outputExcelPath, FileMode.Open, FileAccess.Read))
-            {
-                workbook = new XSSFWorkbook(fileStream);
-            }
-
-            // Retrieve or create the "Processing Times" sheet
-            ISheet sheet = workbook.GetSheet("Processing Times") ?? workbook.CreateSheet("Processing Times");
-
-            // Get or create the header row
-            IRow headerRow = sheet.GetRow(0) ?? sheet.CreateRow(0);
-            int memoryColumnIndex = headerRow.LastCellNum; // Identify next available column
-
-            // Add "Memory Usage (MB)" column if it doesn't exist
-            if (headerRow.Cells.All(c => c.StringCellValue != "Memory Usage (MB)"))
-            {
-                headerRow.CreateCell(memoryColumnIndex).SetCellValue("Memory Usage (MB)");
-            }
-            else
-            {
-                memoryColumnIndex = headerRow.Cells.FindIndex(c => c.StringCellValue == "Memory Usage (MB)");
-            }
-
-            // Update each row with recorded memory usage
-            for (int i = 1; i <= sheet.LastRowNum; i++)
-            {
-                IRow? row = sheet.GetRow(i);
-                if (row == null || row.Cells.Count < 2) continue; // Skip if the row is empty or incomplete
-
-                string imageName = row.GetCell(0)?.ToString() ?? string.Empty;
-                string step = row.GetCell(1)?.ToString() ?? string.Empty;
-
-                // Find matching memory usage record
-                var match = memoryUsages.FirstOrDefault(m => m.ImageName == imageName && m.ProcessingStep == step);
-
-                if (match != default)
-                {
-                    ICell cell = row.CreateCell(memoryColumnIndex);
-                    cell.SetCellValue(match.MemoryUsedInMB); // Write memory usage
-                }
-            }
-
-            // Save the updated Excel file
-            using (var memoryStream = new MemoryStream())
-            {
-                workbook.Write(memoryStream);
-                workbook.Close();
-                File.WriteAllBytes(outputExcelPath, memoryStream.ToArray());
-            }
+            // Return the dictionary containing the average memory usage for each model
+            return averageResults;
         }
     }
 }
