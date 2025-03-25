@@ -7,15 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18627e74-cf52-4497-b4d0-cec4f72204c6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OCRProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OCRProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/OCRProject.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/OCRProject.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net9.0/OCRProject.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net9.0/OCRProject.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OCRTestProject/obj/Debug/net9.0/OCRTestProject.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../OCRTestProject/obj/Debug/net9.0/OCRTestProject.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OCRTestProject/obj/Debug/net9.0/OCRTestProject.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../OCRTestProject/obj/Debug/net9.0/OCRTestProject.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OCRTestProject/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/../OCRTestProject/obj/rider.project.model.nuget.info" afterDir="false" />
-    </list>
+    <list default="true" id="18627e74-cf52-4497-b4d0-cec4f72204c6" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,7 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1742331750704</updated>
       <workItem from="1742331751428" duration="4536000" />
-      <workItem from="1742833642298" duration="6870000" />
+      <workItem from="1742833642298" duration="7299000" />
     </task>
     <servers />
   </component>
