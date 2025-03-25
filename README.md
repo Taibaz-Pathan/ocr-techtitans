@@ -123,16 +123,6 @@ using NPOI.XSSF.UserModel;
 using OCRProject.Interfaces;
 using System.Diagnostics;
 
-## Contributing
-Members of OCRTechTitans and FrankfurtUAS.
-
-
-4. Cosine Similarity Calculation: The generated embeddings are compared using the cosine similarity method to measure the similarity between different preprocessing approaches. The results of cosine similarity matrix are stored in Output/Comparison folder by name CosineSimilarity.xlsx.
-
-5. Time Tracking and memory usage- While we apply preprocessing technique and extract text using Tessearct we calculate the time taken by each processing step and the memory usage of that pre processing step. The results are the stored in Output/Comparison folder by name ProcessingResults.xlsx.
-
-6. Ranking the preprocessing- Based on results of cosine similarity, time taken by pre-processing method and memory usage-each pre processing step is ranked from high to low order and is store in Output/Comparison folder by name BestModelRanking.xlsx
-
 ## Dependencies
 Required Libraries
 The following libraries are required to run the OCR project. You can install these dependencies via NuGet.
