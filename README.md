@@ -177,14 +177,14 @@ dotnet restore
 ## Usage Instructions
 Once the project is set up, follow these steps to run the OCR pipeline:
 1. Place Your Raw Images:
-o Place the raw images that need to be processed in the Input/ folder. 
+Place the raw images that need to be processed in the Input/ folder. 
 2. Build the Project:
-o Open a command prompt or terminal and navigate to the project directory.
-o Run the following command to build the project- dotnet build
+Open a command prompt or terminal and navigate to the project directory.
+Run the following command to build the project- dotnet build
 3. Run the Application:
-o Navigate to the output directory:
+Navigate to the output directory:
 4. cd bin/Debug/net9.0/
-o Run the application: OCRProject.exe
+Run the application: OCRProject.exe
 This will process the input images, extract the text, and save the results in the Output/ folder.
 
 Team Members
