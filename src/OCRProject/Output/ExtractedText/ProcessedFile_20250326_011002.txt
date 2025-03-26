@@ -1,0 +1,3765 @@
+Model: Grayscale
+DC’SI 7 l) 01 ) n ) niey
+
+g'
+(/)( YOut 1 I,l( [
+en
+
+- cularly if the proje
+C
+e be\tp ] ltlmvolw:s designing
+possible L
+e answer 1n the d | i
+k(\)“” L o nsui
+N\\ St
+\ ctore
+VOLL rart
+
+A
+n()tll(l “(l/ 0 lU]L Sa
+\\\ (hll () e
+‘ r cent of th 1 |
+
+mentation.
+
+wi(h any desig .
+ms ) 1gn pro_;u[ cause 80 pe
+T cent of
+l‘h
+COStS Or O
+run
+
+d (h«][ 8() Pt
+md are hugely
+
+~ent ()" t‘ ]
+r(‘] esSe C
+|t1(dl} ()l lLln\ 1Tl
+< SC 11 '.ll‘
+1€S 1 )| ) des
+> 101 i
+
+C,\'pcn\l\e to
+corre
+rrect later, requiri
+ng mas
+SSIVE TCWOT K
+
+ 
+
+
+Model: GlobalThreshold_80
+Desi
+
+)(‘\Iy” /)('
+o
+
+ST
+
+. RN -
+
+P‘lr(l(lll‘ll']\ i the pr
+| project |
+e the be olve
+st os e
+P”\\ll‘\k‘ " devienm
+JTISAA O . L
+
+m
+1t N
+
+vou h.
+ym Jementd
+{ ton Another st
+jome wath any de S0 20y
+({L\lAL[]] PH”(' l“l(\ ~AN \
+oo AN
+. Alse N '
+R
+ol the P
+s T [
+1t v
+Al P
+“‘lw]
+e
+"
+
+pd that <1 pet cont
+
+L h\l”k‘l\- .
+- CNPens
+ne
+tory cOrreet ‘
+et
+L N
+L
+
+nd At
+e s retoohng
+
+oS
+
+ 
+
+ 
+
+
+Model: GlobalThreshold_100
+Desi
+Sigh Dofore vou m;/./( e
+[
+
+v 1t the P“‘JU(‘I ivolves deston
+Untng oo
+
+arl
+
+p‘,mcul
+o the best possible answer m e
+¢ode oy e
+
+wou hat
+
+(‘]H( IltJtlOllA Iay ]()th T Q 5 i
+) ’ lh SAVS i i LN
+t !
+
+nnp]
+any design project dase RO Pt o
+Uit oot
+
+em® with
+nd that 80 per Cet
+
+ad are huge!
+
+\ e o
+
+1t ot these critical p]'nl\lvm\ 1\
+v C.\'}‘Cn\‘\"‘ tO correct Llk'l' regun
+. AT
+
+wes retooling.
+
+1
+
+ 
+
+
+Model: GlobalThreshold_110
+DC_:I TH ) '} ) 12 e
+(g l
+(, [SAY ! ]! /( f
+oM
+
+)r(lﬂ‘\it.t > "¢ 14
+P a Jar he p!({]t(t mvolves d
+¢S W
+I lllh N ‘!‘l\nlw
+
+ave thL b
+at101t. Another 8020
+rule cavs thar oy
+. o
+
+o h est possible
+I ible answer i the
+Coddesteg
+ooy !
+
+lplc‘"“ nt
+
+\
+
+any desiy rOJ¢
+1z project cause s p
+Crooent o
+tal :
+
+0 Pcr cent (\f. [I
+108C CTitie
+cal probl
+CHIS Al
+~ et
+
+‘ NSV
+2 ¢ (O COI ot Ll[L] e ‘
+Ll\””\" !
+(& H
+
+ 
+
+
+Model: GlobalThreshold_120
+Design before xyou mmplenient
+
+nculﬂf“' if the project mvolves destgnmygs apadoe s | ©o
+e ‘ .
+pa . the best possible answer i the deven phoo U .
+
+CAnother 80720 rule says that 20 ey g
+
+hany design project cause 8O per cont ot the v
+th am ¢ -
+
+that 80 p¢ »
+hugely expensive to correct laters requuiring noea
+
+¢ cent of these crincal problems e 1 i
+and
+
+.u\d are
+
+e Cases retooling.
+) e
+
+n s
+
+ 
+
+
+Model: GlobalThreshold_140
+Design before you implement
+
+ularly if the project involves designing . product cr services cnsne
+
+artiC .
+
+P have the best possible answer m the deven phoase botore o e
+u
+
+yo | mentation. Another 80720 rule says that 20 por conn of he probs
+
+. € '
+
+imp
+
+sth any design project cause 80 per cent of the costs ar o
+W ’
+e[‘l‘lS
+
+1
+and that 80 peT
+
+,nd are huge
+
+cent of these critical problems arise i the desien plice
+
+ly expensive to correct later, requirmyg mastee v ok
+
+ 
+
+
+Model: GlobalThreshold_150
+Design before you implement
+
+ 
+
+larly if the project involves designing a product or service, ensure
+
+4 sz thc best possible answer in the dk‘.\igl] P‘\-\\L‘ betore VOu start
+ul mentation. Another 80/20 rule says that 20 per cent of the prob-
+: C
+
+with any design project cause 80 per cent of the costs o1 overruns,
+Jems
+and that
+
+and are hUES
+
+g0 per cent of these critical problems arise m the design phase
+ly expensive to correct later, requiring massive rework and
+
+retooling.
+
+ 
+
+
+Model: SaturationAdjusted_1.2
+Design before you implement
+
+jarly if the project ivolves designing a product or ] nsur
+g . ;hc best possible answer in the design phase befor ta
+you i tation. Another 80/20 rule says that 20 per cent of the prol
+‘mplem-cn \ wv design project cause 80 per cent of the costs or overr
+jouts (e r CL‘;I( of these critical problems arise in the d
+
+at 80 p€
+and i hugely expensive to correct later, requiring massive rewor}
+» hugely ¢
+are NUE
+and ¢
+
+ne cases retooling.
+)| ad
+
+in st
+
+ 
+
+
+Model: SaturationAdjusted_0.6
+Design before you implement
+
+if the project mvolves designing a product or ser
+
+pamcu]arly |
+have the best possible answer in the design phase befor ta
+
+you Jentation. Another 80/20 rule says that 20 per cent of the prol
+
+1mPle‘]'jth Jny design project cause 80 per cent of the costs or overrun
+
+s 80 };CT cent of these critical problems arise in the d
+
+: 4 ly expensive to correct later, requiring massive rework
+
+md are huge ‘
+l ases retooling.
+
+n some €
+
+ 
+
+
+Model: SaturationAdjusted_0.9
+Design before you implement
+
+if the project involves designing a product or service, ensun
+
+. best pocmblc answer in the design phase before vou st
+
+. with any design project cause 80 per cent of the costs or overrun
+s O ;
+le et 80 per cent of these critical problems arise i the d
+tnd
+Rk :
+an hugely expensive to correct later, requiring massive rework
+
+.U\d are
+
+Jme Cases retooling.
+C
+
+mns
+
+ 
+
+
+Model: SaturationAdjusted_1.6
+Design before you implement
+
+ularly if the project ivolves designing a product or service, ensur
+
+]
+-~
+=
+=
+o
+o
+(973
+w
+~
+o
+)
+P
+7
+=
+o
+—
+o
+&
+=
+7
+z
+<
+¢]
+-
+=
+-
+=
+o
+~
+%
+15
+
+entation. Another 80/20 rule says that 20 per nt of the prol
+ementd
+
+]
+imp b any design project cause 80 per cent of the costs or overr
+
+hat 80 per cent of these critical problems arise i the d
+that
+
+_md h vel\’ C\'pcn%i\'e to correct later, requiring 1massi reWork
+Ugely & ‘
+
+md are
+
+me cases retooling.
+) =
+
+in St
+
+ 
+
+
+Model: SaturationAdjusted_2
+Design before you implement
+
+fly if the project involves designing a product or ser , ensur
+est possible answer in the design Nn ¢ before you start
+,tion. Another 80720 rule says that 20 p. nt of the prol
+
+esign project cause 80 per cent of the costs o
+
+pensive to correct later, requiring massive rewor}
+
+re hugely €X
+
+ 
+
+
+Model: SaturationAdjusted_2.5
+Design before you implement
+
+ation. Another 80720 rule says that 20 per cent of the prol
+
+with any design project cause 80 per cent of the costs o
+
+( per cent of these critical problems arise in the d
+
+7 C,\'pcn\'l\'c‘ to correct later, requiring 1massi ]
+
+ 
+
+
+Model: Deskewed
+Desi f
+ign before you implement
+
+cularly if the project involves designing a prod
+g MTOALC O1 cry ¢
+the best possible answer in the design pl ¥
+gn phase before
+VOLU rart
+
+n()tl‘lt v
+A P U]L J\\ (l].ll 2\) “‘ r cent | |
+i ¢ 8() ]() I S ¢ t Of th D1 \ll
+
+mentation.
+
+o with any design project cause 80 per cent of tl
+1¢ COSt or o 1
+rrun
+
+d (h«][ 8() Pt
+md are hugely
+
+r cent of these critical problems arise in the d
+e design pha
+
+expensive to correct later, requiring mas
+SSIVE TCWOTK
+
+ 
+
+
+Model: AdaptiveThreshold
+Design before you implenent
+
+cuhfl)’ if the’ pro_]ect mvolvcs dLSlgmng a prodlxct or service, ensure
+qve the best possible answer in.the design ‘phase before you start
+nmnon Another 80/20 rule says that 20" per cént of the prob-
+i any design project cause 80"per cent of the costs or overruns;
+r cent of these critical problems arise in the design phase
+
+Partt
+ou h
+
+pen51ve to.:correct later, requmng, massive rework and
+
+ 
+
+
+Model: Grayscale
+OCR Testing Environment
+
+R e e LS N Feeiy Lo ww dn ond D remas L v eed
+ENEm Overat conidonot: weren
+Rosut
+) WWMM{".O‘T%M'v"&' frm bleg b o v v Douimy -
+Angel Adept Bind Badice Clique Coast T S B S e e
+Durce Cocle Ennct Ecsn Furlong Fooal el e A A P g et bt
+
+Grone Gondols Haman Holat Ivet lodine
+Justin Jooose €ncl Koals Linden Loads
+Milner Modal Nunber Nodule Orset
+Odabell Prneums Ponoho CQuanto Qoghs
+Rrone Roman Snout Sedium Tundm Toasin
+Unche UWdder Vucan Vocal Whake Woman
+Xrras Xencn Yunran Young Zloty Zodbo
+
+
+Model: GlobalThreshold_80
+DCR Testirg Ervicoamens
+
+X P o [
+' A t
+' ' oo g ' T
+1oL " Voot
+oo oo : o
+| Sy ) S
+. vy ! ! ey
+Il (R ) NI AT
+
+
+Model: GlobalThreshold_100
+OCR Testirg Environment
+
+S RS TR RS S TR ICRTE U LI B AT Wl
+Doeve e dh Honan s at b et Loy
+.I .t " |. -"." L4 —'-! ".'.I. l l‘.‘."l [ .'.'.
+
+(AT TT RIS B £ JUE PERSE TN BRI
+
+[ B N TR S [y s ‘
+I PR TR TS SRR ISR THNS BN LE2 LETRRNTRE
+Ve e W Y AT
+
+
+Model: GlobalThreshold_110
+OCR Testing Environment
+
+u
+
+Sl Aot s Toaize Cleon Dot
+
+T N O B T R 1
+
+DS R TREBERES
+Troetree Do bl Hon et L oeU L,
+
+- a-,
+
+B R O R B R Y L I
+lnes Wb Nonos e e b v -
+Db DR e e B D S D
+FORTELTRRCE NS TR TR TRPRNL S IPEPS B DO B LH LSV RNEE I ED
+Lbo, Loee Saes Voo W oae 'Wonan
+
+e veecen rnse e vy S, ey
+
+
+Model: GlobalThreshold_120
+OCR Testing Environment
+
+_- Crpvy o o
+
+Rovga®
+
+Noel fudent Fiol Bize Cloo: Cioace
+Vs ende e e b e bl
+Soere Cond i Hoanan =cat et fo_e.
+Joate coran dmel By Lacrernn e
+el b Mo e e b 0
+Aol Aelnn Poe it Guntta Dl
+Jtene Sdtanen Since 2 tues o 1ol e
+bk Ulge Voo Verd W oae 'Woaan
+
+Xreae sesen dpnman vy S, Aeaae
+
+
+Model: GlobalThreshold_140
+OCR Testing Environment
+
+| B Decrat Lo
+Rrngat
+
+Nl Adeot nd Basize Clgous Zizast
+
+wren Svclecessctesn b candtoral o .
+Soetre Gondods Homuan =ceet et o,
+
+Jomte Lcense €l Kasls Licgen _ants
+
+P ey Nacbel Moanios:r Podlde -t
+
+DAzl Aveamn Poocnn Cuntta ke
+
+Wecne 18mcnian Since.s Caadrar oodene “ecian
+
+Ueh Wode Yuca Vel 'Wiae Woaan
+
+Xrrae ¥ecen runcan v ng Sty fedun
+
+
+Model: GlobalThreshold_150
+OCR Testing Environment
+
+ee e pmpe - " L S N feen L wver et p el oyt
+-- Tt Orerdd cohlorce: - -
+Rrsut
+L he 18 B ek W T e e e e b eqte- - @ se.- e
+Angel Adopt Slind Buchze Clque Crast JITIANe e Tt enmoemtes Smace cren e
+Ource Docla Ennct Eoxn furong Focsl wam e e Ly et e
+
+Grerre Gendida Hoamn kahat 1det Iodne
+Justn Joorse Yzl Kosls Li-den Londs
+P ee Waxciel Poosniioet Noch.le Qr-cent
+
+Q3chall Proumd Peaems Cuarto Qachs
+Fronea Ramn Snot Sedim Tondis Tocein
+
+Weehe UWddo’ Yucar Vocal Wrae Weaan
+Xrr3s Xeacn Yynran Ya.ng Lty Zodbe
+
+
+Model: SaturationAdjusted_1.2
+OCR Testing Environment
+
+i e A RE S Nl feeiy Lo ww s 0nd (G gt e e
+ENEm Overat conidonot: wesn
+Fosut
+) WWMM{".O‘T%M'v"&' fram blog b o v Doaimy -
+Angel Adept Bind Badice Clique Coast A ————
+Durce Cocle Ennct Ecsn Furlong Fooal el e A A P g et bt
+
+Grone Gondols Haman Holat Ivet lodine
+Justin Jooose €ncl Koals Linden Loads
+Milner Modal Numbser Nodule Orset
+Odabell Prneums Penoho Cuanto Qoghs
+Rrone Roman Snout Sedium Tundm Toasin
+Uncle UWdder Vucan Vocal Whake Woman
+Xrras Xencn Yurnran Young Zloty Zodbo
+
+
+Model: SaturationAdjusted_0.6
+OCR Testing Environment
+
+-t ep g ¢ P e e el N e e NS Feeiy L ww dn ond SR rrman t pvepmaed
+ENEm Overat conidonot: wersr
+Rosut
+) WWMM{".O‘T%M'v"&' frm blog b o wivece Douimy -
+Angel Adept Bind Badice Clique Coast S ———
+Ource Cocle Ennct Ecsn Furlong Fooal el e A A P g s bt
+
+Grome Gondals Haman Holat Ivet lodine
+Justin Jooose €ncl Koals Linden Loads
+Mikner Modal Number Nodule Orset
+Odabell Prneums Ponoho CQuanto Qoghs
+Rrone Roman Snout Sedium Tundm Tocsin
+Uncle UWdder Vucan Vocal Whake Woman
+Xrras Xencn Yunran Young Zloty Zodbo
+
+
+Model: SaturationAdjusted_0.9
+OCR Testing Environment
+
+Tt epap ¢ P e e el N e e NS Feeiy L ww dn ond SR rrman t e aed
+ENEm Overat conidonot: wersr
+Rosut
+) WWMM{".O‘T%M'v"&' frm blog b o wivece Douimy -~
+Angel Adept Bind Badice Clique Coast S ———
+Durce Cocle Enact Ecsn Furlong Fooal el e A A P g ot bt
+
+Grone Gondols Haman Holat Ivet lodine
+Justin Jooose €ncl Koals Linden Loads
+Milner Modal Number Nodule Orset
+Odabell Prneums Ponoho Cuanto Qophs
+Rrone Roman Snout Sedium Tundm Toasin
+Unche UWdder Vucan Vocal Whake Woman
+Xrras Xencn Yunran Young Zloty Zodbo
+
+
+Model: SaturationAdjusted_1.6
+OCR Testing Environment
+
+Tt epmp ¢ P e e el N e be Nl feeiy Lo ww s 0nd (i gt e e
+ENEm Overat conidonot: wesn
+Rosut
+) WWMM{".O‘T%M'v"&' fram blog b o wivece Douimy -
+Angel Adept Bind Badice Clique Coast S ———
+Durce Cocle Ennct Ecsn Furlong Fooal el e A A P g ot bt
+
+Grone Gondols Haman Holat Ivet lodine
+Justin Jooose €ncl Koals Linden Loads
+Milner Modal Numbser Nodule Orset
+Odabell Prneums Penoho Cuanto Qoghs
+Rrone Roman Snout Sedium Tundm Toasin
+Uncle UWdder Vucan Vocal Whake Woman
+Xrras Xencn Yunran Young Zloty Zodbo
+
+
+Model: SaturationAdjusted_2
+OCR Testing Environment
+
+B e e e L Nl fseiy Lo ww e 0nd S pmat e e
+ENEm Overat conidonot: weor
+Rosut
+) WWMM,F\-‘:-‘M%")—‘I fra bl w g b o v e Douimy -
+Angel Adept Bind Badice Clique Coast S ——
+Ource Docle Enact Eosn Furlong Fooal Wl e b s P S e bt
+
+Grore Gondods Haman Mot Indet lodine
+Justin Jooose €ncl Koals Linden Loads
+Milner Modal Nunber Nodule Orset
+Odabell Prneums Ponoho Cuanto Qoghs
+Rrone Roman Snout Scdium Tundr Tocsin
+Unche Udder Vucan Vocal Whale Waoman
+Xrras Xencn Yunran Young Zloty Zodbo
+
+
+Model: SaturationAdjusted_2.5
+OCR Testing Environment
+
+e B e A aE S Nn Feevy L ww wn ond DR remas L e aed
+ENEm Overat conidonot: wesr
+Rosut
+. WWMM{".O‘T%M'v"&' frm blog b o v s Douimy -~
+Angel Adept Bind Badice Clique Coast S ———
+Durce Cocle Ennct Ecsn Furlong Fooal el B A A P g o bt
+
+Grone Gondols Haman Holat Ivet lodine
+Justn Jooose €ncl Koals Linden Loads
+Mikner Modal Noumber Nodule Orset
+Odabell Prneums Penoho Cuanto Qoghs
+Rrone Roman Snout Sedium Tundm Tocsin
+Unche UWdder Vucan Vocal Whake Woman
+Xrras Xencn Yunran Young Zloty Zodbo
+
+
+Model: Deskewed
+OCR Testing Environment
+
+-t ep g ¢ P e e el N e e NS Feeiy L ww dn ond SR rrman t pvepmaed
+ENEm Overat conidonot: wersr
+Rosut
+) WWMM{".O‘T%M'v"&' frm blog b o wivece Douimy -
+Angel Adept Bind Badice Clique Coast S ———
+Ource Cocle Ennct Ecsn Furlong Fooal el e A A P g s bt
+
+Grome Gondals Haman Holat Ivet lodine
+Justin Jooose €ncl Koals Linden Loads
+Mikner Modal Number Nodule Orset
+Odabell Prneums Ponoho CQuanto Qoghs
+Rrone Roman Snout Sedium Tundm Tocsin
+Uncle UWdder Vucan Vocal Whake Woman
+Xrras Xencn Yunran Young Zloty Zodbo
+
+
+Model: AdaptiveThreshold
+OCR Testing Environment
+
+N Pioop s oAby o ] L N N Pandy 12 wnesid aod 4L vveiad inrpeund.
+m='*"‘ formra Overad CLARICrAl smvia
+st
+| Ld ‘ :’ .. l St By (18 ::-.'tn [0 Lot Tt Tor o e Do by o' ) alnrennd Boin bm gt
+) : i ‘AN 3 AL Pt iy TN LS LS SAAST LA P em A Lt aTRAE L 0 KAt
+ﬂ.r"- 'r cpt 3 n B-':':"-‘ c qu- 0:0‘. Forymt ey Qv o 2 ate Somng Brmps Jmad b e Smbw Voo U Thion Pp i B
+Gu-cv Loglo Envet Eoen Fyrdona Foml e i Lt
+
+Grere Genda Humin Heht 1ot odins
+Justia Jeooso EnaliKoals Li-don Loxds
+Miknee Saehad Reanbr NRocklo Qs
+Qd:badl Priewms Penetd Cuonsn Qochis
+one Reaan Snwst Scdbm Teudio Toosin
+Urels Leder Wu'een Vozal Winak Weean
+Xmras Yonan Yuntan Young Slote Zedbo
+
+
+Model: Grayscale
+‘[‘hrougho“t a project, some activities will b
+' ; e completed i i
+b fnished ahead of schedule, and others will be ﬁni.&;d lat(:: :;‘r;\:;:\;uzg‘
+
+AC‘“’I p,-ogrcss——whcthgr‘fastcr or slower than planned—will have an effect on
+the schedule (.’f tht.. remaiming, uncompleted activities of the project. Specifically
+the actual fu.ush ames (AFS) of completed activities will determine the carlics.t
+sart and earliest finish times for the remaining activities in the network diagram,
+
+5 well as the total slack.
+
+Throughout a project: changcs may occur that have an impact on the
+These changes might be initiated by the customer or the project team,
+
+might be the result of an unanticipated occurrence. Any type of
+omer, the contractor, the project man-
+t—will require a modification to
+
+or they ‘
+change—whether initiated by the cust
+
+ager, a team member, or an unanticipated even
+
+ 
+
+
+Model: GlobalThreshold_80
+
+
+Model: GlobalThreshold_100
+ey
+'_‘.U’,\
+l ot
+R ERE
+‘lfl{") .
+'
+et \kl)F"\ e
+.
+o ) .
+I[”ull‘_lﬂ
+. ' 4 B
+R e sttt
+; b
+1
+ivpes
+DURAL R LA
+1 i
+e ne THE T
+[ '
+; PG PR
+i
+R A4 1
+. A
+P N N
+by
+[1;‘\' .
+oo ]
+TSR
+R ATS
+PRI BR)
+RGN .
+e L4 M
+ol (RSN
+-~
+Y o\ e + M
+[N -
+P e
+- N vee OV
+el Ayt
+FAEARRE MR SNV
+Yero 0 e
+\ AR L)
+P S .
+Coet o ™ ".L:
+
+U e COre gy
+b dittroule by s ‘
+
+i !)l"{l”' oty
+
+i t "'Hl ‘”‘l .
+. . IR
+! .'.‘li S | R e N P ) F LA
+i cathyon ) P, R .
+L C \ i (SRR PEAES B IRS A y'!H“ ,\‘,, S
+Vot RN l 4 i .
+[ N
+' Vel : cod i
+L ‘ RTINS B 1 PR ERNT PR d CR
+‘
+
+Ly
+
+IS R R DR B RS AR ‘!1" Dt ».4,,“.. “‘.1'-,'!““
+
+1 . [ . . o .
+D cibe croes ow o e b e an,u! i1y the
+ot e by the :
+
+. R A N AT PRI UTAS BB Y| lh!‘ “-lu\'(‘n‘ Teratny,
+oot ..:;.1.!1\1;\1!‘\'\“ dvouttene e Any tvpe ot
+
+PRI R A A Caatorniers the comtrector the project nan
+
+ 
+
+concrntoparad onent i nepere moditicanon o
+: i ' P N
+. SURREEETTLILIG S LS ISR N RN AR W Ben st b hanges are
+R o s ot g end aead e e bendhimak
+- [ L EE LN \\.»' ‘(“\ R .A‘”\\\l‘
+: '
+ol S LG N SRR B ARt L L ol \omp\cud
+N . N N .
+ve . . . ear e R OO '.\“.1(\‘, }‘1\\1\\( \\’hcdu\\
+Y . \ ’ .
+
+
+Model: GlobalThreshold_110
+. and kg ettectve correcgy
+.
+
+. . A0ty
+e may be dithicult to ey o
+. .
+
+(‘)«- }
+
+bud } o) : ‘;“j]("' PO OO fur Gur of
+. ) - LK‘(. < he ] oot . PP
+he COPL | : cdule, or Guae, Diree vathout acnfiony
+- iwhout a4 proje . |
+Throuy Projectsome wvtiane call b onnlened
+: " Hhpleted o e, e :
+. Ot .’.’)“
+
+‘]”]\hcki J}l("lli (’r Ny hvki\ll(\ -l“li \)[l)(']‘ X l” l . “ ] i l
+. i [N P ater !h;tl) " h"'ill""ir
+
+be f
+- oo
+’r“urg N \\Al([h('l T.l\(('l . \
+pros ot loseer g, Planmed ol e g effenn o
+A . 2R
+
+Actudl
+) . SOt e T, .
+the “h“hll( Cramanimy uncompleted e op } < f1e )
+R Ly 1t ;rt))!'ll """l oally
+
+ol dneh Gries AP ot complened
+‘ cleny Aoty gty ‘,'.l” 114'[11“”“'. 'h,‘ ,,,”h‘.,‘
+
+T ' "\EA SRR BTSN t\” I}] ) LA TUR [l 1t '()]& (hl‘lllll
+. { AN § L . } i ¥
+. ]_. gt [ L . ;": .
+
+R D . S .
+: I G }Y\\!k\(. \llll)r\~ iy occntr that have an ““P'“‘ On ‘h('
+¢ conees meht be nntnted by the costomer or the project team,
+
+e rens]
+e tesuit oot oan un.mlmp‘nml Ououtrence. Any tvpe of
+
+o ded By the customer, the contracton, the project iman
+wall reguire a moditication to
+
+When such changes are
+wed s the benchmark
+
+or they mniie
+
+,a;cr.} et poirhens oran unanticpated event
+
+A N TS ELNRRI IR Al budeet, and o «Chedule
+plan 1 estabhshed and
+
+N be comparad.
+
+I fsh tmes ot cowpleted
+
+ted on the acedd
+o apdatad project whedule
+
+; :
+areed upon, o new bascitne
+
+sgant which aotaal
+Once data hasve beencoia
+Jovities and the ctiodts of }‘!\‘1\‘\.( .
+
+stofet }\‘H\‘IIH.\H\ ¢
+
+AT,
+
+
+Model: GlobalThreshold_120
+and aking effecuve correciy
+Tve
+
+early , 1
+
+ol it may be dithcul . | .
+
+contr i p o achieve e Proje project gets too far out of
+
+the SCOPE udget, schedule, or quahiey I ohyective without sacrific
+ahty, ’ - acnficing
+
+completed on tine, some will
+AC(UJ] Pf()gl’c\\"‘\\'hc(hcr taster or slower ) | vt later than scheduled
+i b . -
+. wchedule ot the rem. v plamed  wy ave an clie
+the «che v ¢ u\mnk, uncompleted acane. of 1 Il have .:Sn effect on
+. ctugl hinsh tnes oAl ~of the project. Speaihic:
+the act { | t ] oy ot nnll‘lt'lcd activities wall dt‘t(r: “U " ;uy’
+arhe L tin ] . . > ternnine the oo :
+Jqart and ¢ s shoames tor the temaming acuvities 1 the network d o
+) “network diagram,
+
+15 well as the total sack
+Throughout . project. chanees iy occur that have an inpact on the
+' ‘ ¢ . . ) .
+
+i e} .
+whedule. These hanges might be mtated by the customer or the project team
+ult ot an unanuapated occurrence. An.\' type of
+
+or they mught be the res
+l\\' (hc cintomeer, the contractor, the pr()jck‘l man-
+
+change—whether initated
+or an unantapated event will require @ moditication to
+
+and or schedule, When wich changes are
+v established and wed as the benchmark
+
+1 be compared.
+ual finsh tmes ot completed
+
+an updated project schedule
+
+ager. 3 team meimber.
+the plan 1 terms ol scope.
+
+wreed upon. 4 new baschine plan
+
+wainst which actual projedt pertormanee W
+“C((L’d on the W
+
+budget.
+
+
+Model: GlobalThreshold_140
+und taking cffc-zctive corrective actions, |f
+dy _ it may be difficult to achieve the g, :
+
+‘he SCOPE: budget, schedule, or quality.
+Throughout a project, some activities will be completed on ti »
+be finished ahead of schedule, and others will be ﬁnif})mt((jclf o tlmc,'somc wil
+Aduﬂl progrcss——whcthcr faster or slower than pl;mncdc_“:t](;rhthm sc\;;‘fdu\cd.
+the schedule (?f (ht..‘ remaining, uncompleted activities of the pmj::clf Zt;cci;ccta\‘\):
+the actual finish ames (AFS) of completed activities will determine the cariest
+art and carliest finish ames for the remaining activities in the network diagram,
+5 well as the total slack.
+Throughout a project, changes may occur that have an impact on the
+-hedule. These changes might be imuated by the customer or the project team,
+
+or they might be the result of an unanticipated occurrence. Any type of
+
+- project gets too far out of
+Project objective without sacrificing
+
+ber, or an unanticip \
+in terms of scope. budget. and/or schedule. When such changes are
+e pun 12 P ' Jblished and used as the benchmark
+
+agreed upon, 2 new baseline plan is establ |
+against which actual proj rformance will be compared.
+Ouce pb“nrojmpc Jctual finish times of completed
+d on the actual tuush nmes o
+
+. data have collected on Jn updated project schedule,
+
+  
+
+
+Model: GlobalThreshold_150
+ 
+
+
+Model: SaturationAdjusted_1.2
+a project gets too far out of
+t objective without sacrificing
+
+fnished ahead of schedule, and others will be finished later than scheduled.
+be | progress—whether faster or slower than planned—will have an effect on
+
+«hedule. These changes might be initiated by the customer or the project team,
+
+or they might be the
+initia
+
+change—whether
+
+  
+
+
+Model: SaturationAdjusted_0.6
+1, it may be di}ﬁ‘icult to achieve the pr.oj
+st budget, sc f:dule. or quality,
+| ahlw utda p;o_];cté some activities will be completed on time, some will
+be :gress—ca othhc ?lc. and others will be finished later than scheduled.
+ﬁ’”’lp' ﬂhw ether faster or slower than planned—will have an effect on
+#Am"'xh St of the remaining, uncompleted activities of the project. Specifically,
+the actual ﬁr.nsh mes (AFS) of completed activities will determine the earliest
+qart and earliest finish times for the remaining activities in the network diagram,
+
+Throughout a project, changes may occur that have an impact on the
+
+schedule. These changes might be initiated by the customer or the project team,
+or they might be the result of an unanticipated occurrence. Any type of
+
+change—whether initiated by the cust
+
+ 
+
+
+Model: SaturationAdjusted_0.9
+he SCOPE> budget, schf:dule, or quality,
+Throughout a project, some activities will be comp i :
+b finished ahead of schedule, and others will be npleted on time, some will
+Actual Progrcss—whcther faster or slower than pl iched I A
+* hedule B i, uncomol an'p‘a.nncd——-wdl have an effect on
+the Rk T pleted activities of the project. Specifically,
+the actual ames (AFs) of completed activiti il ' :
+4 carliest finish times for th bd ies will determine the carliest
+m B ool ack or the remaining activities in the network diagram,
+Throughout a projcctt chang.es. may occur that have an impact on the
+«hedule. These changes might be initiated by the customer or the project team,
+
+or they might be the result of an unanticipated occurrence. Any type of
+jated by the customer, the contractor, the project man-
+
+change—whether initia
+ager, a team member, or an unanticipated event—will require a modification to
+
+in terms of scope, budget, and/or schedule. When such changes are
+- ' lan is established and used as the benchmark
+
+agreed upon new baseline
+RS . : . willbecomp:!ted.‘
+
+ 
+
+
+Model: SaturationAdjusted_1.6
+, schedule, or qual;
+scopes budget, sc , » Or quality,
+the Wout a4 project, some activities will be completed on time, some will
+
+G finished ahead of schedule, and others wil] be finished later than scheduled.
+Progres—WhC‘he' faster or slower than planned—will have an effect on
+
+the schedule qf the remaining, uncompleted activities of the project. Specifically,
+the actual finish times (AFs) of completed activities will determine the earliest
+qart and earliest finish times for the remaining activities in the network diagram,
+
+2 well as the total slack.
+
+«hedule. These changes might be initiated by the customer or the project team,
+
+or they
+
+ 
+ 
+ 
+    
+
+
+Model: SaturationAdjusted_2
+or they might be the result of an unanticipated occurrence. Any type of
+
+| w—-Whethcr initiated by the customer, the contractor, the project man=
+er, 2 team member, or an unanticipated event—will require a modification to
+in terms of scope, budget, and/or schedule. When such changes are
+
+. : ; benchil
+
+   
+
+
+Model: SaturationAdjusted_2.5
+P
+A f the remainin Seies :
+g ;ched“le of the g, uncompleted activities of the project. Specifically,
+e actual ﬁmsh times (AFs) of completed activities will d:;er.:lﬁne rhe carl‘?:st
+qart and earliest finish times for the remaining activities in the network diagram,
+
+s well the total slack.
+Throughout a project, changes may occur that have an impact on the
+
+«hedule. These changes might be initiated by the customer or the project team,
+or they
+% W ber. or an unanticipated event—will require a modification to
+
+ 
+
+
+Model: Deskewed
+Wout a project, some activities will b
+' ; ¢ completed i i
+e finished ahead of schedule, and others will be ﬁni.&cd lat(:: :;\?:s:\:‘;uzg‘
+
+Aﬂ“’l pfogcss——whcthgr'fastcr or slower than planned—will have an effect on
+
+the schedule (.’f th".. remaming, uncompleted activities of the project. Specifically
+
+the actual finish times (AFs) of completed activities will determine the e
+gart and earliest finish times for the remaining activities in the network di
+
+» well as the total slack. s
+
+Throughout a project, changes may occur that have an impact on the
+These changes might be initiated by the customer or the project team,
+
+or they might be the result of an unanticipated occurrence. Any type of
+m——whcthcr initiated by the customer, the contractor, the project man-
+
+ager, a team member, or an unanticipated even
+*
+
+ 
+
+
+Model: AdaptiveThreshold
+| project gets too far ‘out of
+budget,‘schfadule, or quality. ObjcCtivcgwit}:gZtf:arcr(;fk’:fjx?s S
+' Throughout a project, some activities wil R g
+be finished ahead of schedule, and others \:’lilll 1;)0 completed on time, some will
+-~ peral prog,rrcss—;\rhctllsrr.fastcx'bor slower than )chﬁnlsih,ed la'tcr than scheduled.
+‘the SCthlllc‘(.)fth? remaining, uncompleted actilvi(tillm'(fl'TW‘]1 h’avc an Cf?cct- on:
+the actual ﬁx:nsh times (AFs) of completed activitic: 3/';113 project. Specifically,
+and earliest finish times for the remaining ?\Ctiv‘ilticqlin t;%;n;::;)rttiltcl;‘:ﬁ
+' bt ~2baline
+
+start
+55 well as the total slack.
+
+‘ ' Thr_ougho-ut a project, clmng.cs. may occur that have an impact on the
+~chedule. These changes might be initiated by the customer or the project team
+M » 33 > H H - . ) , v
+ight be the result of an unanticipated occurrence. Any type of .
+
+or they mi
+change—whether initiated by the customer, the contractor, the project man-
+Jager, a team member, or an unanticipated event—will require a modification to
+the plan in terms of scope, budget, and/or schedule. When such changes are
+
+Jan is established and used as. the benchmark
+
+agreed upoin. 2 new baseline f
+
+~aminst which actual project performance will be compared. . |
+
+Once data have been collected on the actual finish times of complctcd.
+A 3 the efl ject changes, an updated project schedule
+
+wdvidges and the eticems of any projc
+
+
+Model: Grayscale
+ 
+
+Nasdaq & AMEX
+
+Stocks in bold rose or fell 5% or more
+
+   
+
+P07 [rack your investments with our continuously
+1(® »7.\'4 updated stocks. Visit us on the web at
+
+widld money.usatoday.com
+
+ 
+
+52-week 52-week
+High  Low Stock Last Change | Mish Low Stock Last Change
+45.71 3250 Biomet %.71 —0.42
+276 1.20 Biomira 1.46 +0.03
+A 9.07 5.3 BiloScrip 8.05 +0.34
+= 68.88 50.65 Biosite 50.05 —4.57
+B R LA 1988 157 | 2122513103 BiolechT 20465 —0.84
+3.3 1351 ADA—ES 209 +3.16 | 850 140 BirchMton 652 —0.45
+27.14 1288 ADC Telrs 2321 +0.13 [ 1821 10.73 Bickboud  17.90 +0.70
+1645 1047 AFCEnts 1540 —0.14 | 4435 2415 BlueNile  40.30 —1.10
+8.37 450 ASE Tst 7.76 +0.40 26.45 19.91 BobEwn 22.99 "
+13.94 ASML HId  21.24 +0.46 | 621 156 Bookham  5.94 +0.06
+1639 ASV Incs 2676 +0.14 | 1180 499 Borlond g - Shi
+
+20:53 ATMI Inc 29.95 +1.29 18.62 10.01 BHminT 11.53 +0.20
+
+1468 7,10 BrigExp 1210 —0.23
+16.76 ATP O&G 38.40 —0.59
+1.99 AVI Blo 362 _9.92 46.72 26-65 Brlﬂherl S 38.90 -0.80
+
+TN e E 99 PBalotbs o 4 - ol s 4 Ve
+
+.2 BBINBS
+RBRAIEIR
+=
+]
+
+T N ARG Y2 e Mgl b P WP SN
+
+
+Model: GlobalThreshold_80
+
+
+Model: GlobalThreshold_100
+ 
+
+ 
+
+e L | | !
+S ) { i S
+in . o |
+INOReY s Gt i T
+Y-Usatoday com
+L] ca ‘ |
+' Y .
+.. Lk
+, JEE
+i
+Ty
+i
+— e —
+- | 54\ | 4 ?
+4 > . o "
+| R §ont
+N [T b . |
+b ) SN G g}
+oo “’
+
+
+Model: GlobalThreshold_110
+ 
+
+Y IV AN RIS BE FYRTEY SURRUEE § RUNRTS Ccontimionshy
+
+Vo
+
+dpcates s tack s N o o e weelh g
+
+) . L o -
+;_; Uk boSToNeek
+n [Ty N1 ! : oy
+1y A oo LAt Lrunge o Migr Low  S*acx a5t Change
+|
+i to .. o
+
+63 88 W AS Biosile S0
+o [ TR | Sl na
+6
+
+TE?Y 12 45 AL Mopare JERENY |57 e e
+R B I (S U S Fows v 3 4 B30 140 BirchMt gn 52
+' ; L . : T
+i B i
+. _ o ' { b BRI b
+337 4 AL T P e 40 ‘ g R 7
+. R ) ' HER i t ;
+. : o] [ [ ' i
+1 . .
+. ' Bt
+ot SR )
+PR ; Lo
+: P EIRIE
+
+
+Model: GlobalThreshold_120
+ 
+
+NdS
+
+Stos s i bold jose ¢
+
+ook
+
+52 week
+
+High Low
+
+'y 1 ke
+v TA
+b oy
+83/ 45
+19 B
+1) . ey
+
+0 ’y
+
+&AMEX
+
+fell 5
+
+MOre
+
+[ [ Vour tnvestime ‘ntx W l[lx OUr u'n[nmr)usl\'
+updated stacks, Visit as on the web al
+
+Stock
+
+money.usatoday.com
+
+Las! Zrhangye
+
+.
+s s
+e
+PSR
+o
+
+ 
+
+ 
+
+Low
+1200
+LA
+b
+30 65
+] ,.'.l
+1 40
+A
+T3z
+sS40
+A
+6o
+I =é
+
+11 [
+
+Stack
+
+S ISTINE EETR
+Hion: ro tog
+Hanah i 4
+Biosite 50.05
+|t SRS ol | Jodoné
+
+BirchM¢t gn 6.52
+
+Filokbcod TR
+e ot 4 ‘,".
+Mo by e A
+
+Aokt wn Yl 9‘.3
+Stdine e 15 39
+Base o e
+Evorr foogd i Sh
+ST R RIS ik
+By n T Py
+Vit gy [ IR
+SRNTET PR NN 13,
+
+ 
+
+Last Change
+
+Sy 4
+s 003
+E
+—4.5)
+
+T84
+
+-0.45
+
+RV EREH
+
+T )
+10
+EREER T
+Ga
+oy
+oo/
+10
+QU
+O
+
+ 
+
+
+Model: GlobalThreshold_140
+ 
+
+ 
+
+Nasdaq & AMEX
+
+Stocks in bold rose or fell 5% or more
+
+   
+
+| Track your investments with our continuously
+j(® »".\ # updated stocks. Visit us on the web at
+ai.ul money.usatoday.com
+
+ 
+
+51 week 52-week
+High Low Stock Last Chonge Migh Low Stack Last Change
+4571 32.50 Biomet 3%.717 —0.42
+A 276 .20 Biomira 1.46 +003
+- I— .07 513 BioScrip 8.05 +0 34
+919 689 ABX Airn 752 —aip | 68.88 5045 Biosite 0.05 —d4.57
+
+2014 1288 ADC leirs 2321 ~p13 | 1821 1073 Bickboud  17.90 +0.70
+
+0 ; - 979 . A 71 %273 1286 BluCoat 41.29 +1.30
+‘,'::2 o719 :L’g‘g;,\ fjjé _ﬁ:‘ 4435 2415 BlueNile 4030 -110
+837 450 ASE Tst 7.76 +0.40 | 2645 19.91 BobEwn 22.99 3
+1925 1275 AStMoetl - 0sss 9oy | 1394 612 Bodisenn 1545 0 45
+2092 1394 ASML Hid 21 24 +0 44 6.21 15 Bookham 594 (.06
+20 1879 ASV inc s 2876 —0og | 1180 499 Borlond 668 +0.14
+1982 1047 AT! Tech 17.89 0 &8 31 90 21 19 BostPry 3118 fﬂ.(.)r
+3362 2051 ATMI inc 2995 —129 | 1862 10.01 BttminT 1.5410.20
+N 1676 ATP ORG 3840 —0 59 14.68  7.10° BrigExp 12,10 —0.23
+124 190 AVIBio 442 002 | W77 2685 BrightHrzs 3890 —0.80
+
+
+Model: GlobalThreshold_150
+ 
+
+Nasdaq & AMEX
+
+Stocks in bold rose or fell 5% or more
+
+   
+
+CHTY.\ rack your investments with our continuously
+1@, Y.\ 4 updated stocks. Visit us on the web at
+
+aiill money.usatoday.com
+
+ 
+
+52-weak $2-week
+High Lew Stock LastChonge | Migh Low Stock Last Change
+45.77 32.50 Biomet B.7 —0.42
+276 1.20 Biomira 1.46 +0.03
+A 9.07 5.3 BiloScrip 8.05 +0.34
+- 68.98 50.45 Biosite 50.06 —4.57
+,;;g ,;;2 zmn ,;:2 _‘,’;;," 212.25131.03 BiotechT  204.46 —0.84
+16.45 10.47 AFC Ents 1540 —0.14 | 4435 2415 BiuveNile 40.30 —1.10
+.y 4.50 ASE T" 7.76 Ma 26.45 19.91 BobEvn 22.99 ees
+19.25 12.75 ASM Intl  17.65 —0.03 | 1594 f-;f Bodisenn  15.45 :°-‘5
+2092 13.94 ASML Hid  21.24 +0.46 ,‘&‘, ™ Bookham 5.94 +g-‘1“
+27.38 1639 ASVincs 2676 +0.14 1.80 499 Borlond 6.68 +0.14
+424 159 AVI Blo 3.62 —0.02 | 4672 26.45 BrightHrzs 38.90 —0.80
+
+a AL - . &
+
+
+Model: SaturationAdjusted_1.2
+ 
+
+Nasdaq & AMEX
+
+Stocks in bold rose or fell 5% or more
+
+   
+
+PN 1.7 [rack your investments with our continuously
+1(® »7.\'4 updated stocks. Visit us on the web at
+
+widld money.usatoday.com
+
+ 
+
+52-week 52-week
+Hish  Low Stock Last Change | Migh Low Stock Last Change
+45.71 3250 Biomet W7 —0.42
+276 1.20 Biomiro 1.46 +0.03
+A 9.07 513 BiloScrip 8.05 +0.34
+9.19 689 ABX Airn  7.52 —0.10 | 6888 50.45 Biosite g
+
+0 ¥
+50 Acskesre - taEs 212.25 131.03 BiotechT  204.66 —0.84
+g 48 e oty A B S g ey gy -
+27.14 1288 ADC Telrs 23.21 +0.13 18.21 10.73 Bickbaud 17.90 +0.70
+
+30.40 16.70 ADECPE 27.32 +0.73 52.73 13.86 BluCoat 41.29 +1.30
+1645 1047 AFC Ents 1540 —0.14 | 4435 2415 BlueNile 40.30 ~1.10
+8.37 450 ASE Tst 7.76 +0.40 | 2645 19.91 BobEvn 29 ..
+19.25 12.75 ASM Intl 1765 —0.03 | 1394 f';f gw'mn 12.45 40'45
+2092 1394 ASML Hid  21.24 +0.46 #g - Bookhom 94 +g.?6
+2738 1639 ASVincs 2676 +0.14 : 4, orland 6.68 +0.14
+19.82 10.47 ATI! Tech 17.89 +0.48 31.90 21.10 BostPrv 31.18 —0.,07
+
+33.62 20.53 ATMI! Inc 29.95 +1.29 18.62 10.01 B"m'nT 11.53 +0.20
+1468 7,10 BrigExp 1210 —0.23
+
+N2 16.76 ATP Q&G 38.40 —0.59 46.72 26.65 BrightH 38.90 —0.80
+
+424 199 AVI Bio 3.62 —0.02 : 09 Brightrirzs  38. .
+
+-2 T N TN e Y b o~ TR YR RRT N ol e 4 el
+r A Y1 o~ Mgl St ¥ ot
+
+
+Model: SaturationAdjusted_0.6
+ 
+
+Nasdaq & AMEX
+
+Stocks in bold rose or fell 5% or more
+
+   
+
+PN 1.7 [rack your investments with our continuously
+1(® »7.\4 updated stocks. Visit us on the web at
+
+widld money.usatoday.com
+
+ 
+
+52-week 52-week
+Hish  Low Stock Last Change | Migh Low Stock Last Change
+45.71 3250 Biomet W7 —0.42
+276 1.20 Biomira 1.46 +0.03
+A 9.07 513 BiloScrip 8.05 +0.34
+9.19 689 ABX Airn  7.52 —0.10 | 6888 50.45 Biosite g -
+
+0 ¥
+50 Acskosre - tEs 212.25 131.03 BiotechT  204.66 —0.84
+g 48 e o g A I S B v gy -
+27.14 1288 ADC Telrs 23.21 +0.13 18.21 10.73 Bickbaoud 17.90 +0.70
+
+30.40 16.70 ADECPE 27.32 +0.73 52.73 13.86 BluCoat 41.29 +1.30
+1645 1047 AFCEnts 1540 —0.14 | 4435 2415 BlueNile 40.30 ~1.10
+8.37 450 ASE Tst 7.76 +0.40 | 2645 19.91 BobEvn 29 ..
+19.25 12.75 ASM Intl 1765 —0.03 | 1394 f';f gw'mn 12.45 40'45
+2092 1394 ASML Hid  21.24 +0.46 #g o Bookhom 94 +g.?6
+2738 1639 ASVincs 2676 +0.14 : 4, orland 6.68 +0.14
+19.82 10.47 ATI! Tech 17.89 +0.48 31.90 21.10 BostPrv 31.18 —0.07
+
+33.62 20.53 ATMI! Inc 29.95 +1.29 18.62 10.01 B"m'nT 11.53 +0.20
+1468 7,10 BrigExp 1210 —0.23
+
+N2 1676 ATP Q&G 38.40 —0.59 46.72 26.65 BrightH 38.90 —0.80
+
+424 199 AVI Bio 3.62 —0.02 : 09 Brightrirzs  38. .
+
+ey T N TN e Y b - T IR R RN N ol e 4 ot
+r A Y1 o~ Mgl St ¥ ot
+
+
+Model: SaturationAdjusted_0.9
+ 
+
+Nasdaq & AMEX
+
+Stocks in bold rose or fell 5% or more
+
+   
+
+PR V.7 [rack your investments with our continuously
+1(® »7.\4 updated stocks. Visit us on the web at
+
+widld money.usatoday.com
+
+ 
+
+52-week 52-week
+Hish  Low Stock Last Change | Migh Low Stock Last Change
+45.71 3250 Biomet %7 —0.42
+276 1.20 Biomira 1.46 +0.03
+A 9.07 513 BiloScrip 8.05 +0.34
+9.19 689 ABX Airn  7.52 —0.10 | 68.88 50.45 Biosite g -
+
+0 ¥
+50 Acskosre - tes 212.25 131.03 BiotechT  204.66 —0.84
+g 48 e g g A I S B v gy
+27.14 1288 ADC Telrs 23.21 +0.13 18.21 10.73 Bickbaoud 17.90 +0.70
+
+30.40 16.70 ADECPE 27.32 +0.73 52.73 13.86 BluCoat 41.29 +1.30
+1645 1047 AFC Ents 1540 —0.14 | 4435 2415 BlueNile 40.30 ~1.10
+8.37 450 ASE Tst 7.76 +0.40 | 2645 19.91 BobEvn 29 ..
+19.25 12.75 ASM Intl 1765 —0.03 | 1394 f';f gw'mn 12.45 40'45
+2092 1394 ASML Hid  21.24 +0.46 #g o Bookhom 94 +g.?6
+2738 1639 ASVincs 2676 +0.14 : 4, orland 6.68 +0.14
+19.82 10.47 ATI! Tech 17.89 +0.48 31.90 21.10 BostPrv 31.18 —0.07
+
+33.62 20.53 ATMI! Inc 29.95 +1.29 18.62 10.01 B"m'nT 11.53 +0.20
+1468 7,10 BrigExp 1210 —0.23
+
+N2 16.76 ATP Q&G 38.40 —0.59 46.72 26.65 BrightH 38.90 —0.80
+
+424 199 AVI Bio 3.62 —0.02 : 09 Brightrirzs  38. .
+
+-2 T N TN e Y b o T YR R RN N ol e 4 ot
+r A Y1 o Mgl Sal ¥ ot
+
+
+Model: SaturationAdjusted_1.6
+ 
+
+Nasdaq & AMEX
+
+Stocks in bold rose or fell 5% or more
+
+   
+
+PR 1.7 [rack your investments with our continuously
+1(® »7.\4 updated stocks. Visit us on the web at
+
+il money.usatoday.com
+
+ 
+
+52-week 52-week
+Hish  Low Stock Last Change | Migh Low Stock Last Change
+45.71 3250 Biomet %7 —0.42
+276 1.20 Biomira 1.46 +0.03
+A 9.07 513 BiloScrip 8.05 +0.34
+9.19 689 ABX Airn  7.52 —0.10 | 6888 50.45 Biosite g -
+
+0 ¥
+50 Acskeare - tEE 212.25 131.03 BiotechT  204.66 —0.84
+g 48 ey oty A I S g e gy -
+27.14 1288 ADC Telrs 23.21 +0.13 18.21 10.73 Bickbaoud 17.90 +0.70
+
+30.40 16.70 ADECPE 27.32 +0.73 52.73 13.86 BluCoat 41.29 +1.30
+1645 1047 AFCEnts 1540 —0.14 | 4435 2415 BlueNile 40.30 ~1.10
+8.37 450 ASE Tst 7.76 +0.40 | 2645 19.91 BobEvn 29 ..
+19.25 12.75 ASM Intl 1765 —0.03 | 1394 f';f gw'mn 12.45 40'45
+2092 1394 ASML Hid  21.24 +0.46 #g e Bookhom 94 +g.?6
+2738 1639 ASVincs 2676 +0.14 : 4, orland 6.68 +0.14
+19.82 10.47 ATI! Tech 17.89 +0.48 31.90 21.10 BostPrv 31.18 —0.07
+
+33.62 20.53 ATMI! Inc 29.95 +1.29 18.62 10.01 B"m'nT 11.53 +0.20
+1468 7,10 BrigExp 1210 —0.23
+
+.2 1676 ATP Q&G 38.40 —0.59 46.72 26.65 BrightH 38.90 —0.80
+
+424 199 AVI Bio 3.62 —0.02 : 09 Brightrirzs  38. .
+
+-2 T N TN o E 9 PBalotbs o 4o - ol e 4 e
+r A Y1 e Mgl St +¥ ot
+
+
+Model: SaturationAdjusted_2
+ 
+
+Nasdaq & AMEX
+
+Stocks in bold rose or fell 5% or more
+
+   
+
+PN 1.7 [rack your investments with our continuously
+1(® »7.\'4 updated stocks. Visit us on the web at
+
+widld money.usatoday.com
+
+ 
+
+52-week 52-week
+High  Low Stock Last Change | Mish Low Stock Last Change
+45.71 3250 Biomet %71 —0.42
+276 1.20 Biomira 1.46 +0.03
+A 9.07 5.3 BiloScrip 8.05 +0.34
+= 68.88 50.65 Biosite 50.05 —4.57
+B R LA 188 157 | 2122513103 BiolechT ~ 204.45 —0.84
+3.3 1351 ADA—ES 209 +3.16 | 850 140 BirchMton 652 —0.45
+27.14 1288 ADC Telrs 2321 +0,13 [ 1821 10.73 Bickboud  17.90 +0.70
+1645 1047 AFCEnts 1540 —0.14 | 4435 2415 BlueNile  40.30 —1.10
+8.37 450 ASE Tst 7.76 +0.40 26.45 19.91 BobEwn 22.99 ™
+13.94 ASML HId  21.24 +0.46 | 621 156 Bookham  5.94 +0.06
+16.39 ASV Incs 2676 +0.14 | 1180 499 Borlond g - Shi
+
+20:53 ATMI Inc 29.95 +1.29 18.62 10.01 BHminT 11.53 +0.20
+
+1468 7,10 BrigExp 1210 —0.23
+16.76 ATP O&G 38.40 —0.59
+1.99 AVI Blo 362 _9.92 46.72 26-65 Brlﬂherl S 38.90 -0.80
+
+N e P O » T . PO PNy Y OOy VTN W
+
+2 BBINBS
+RBRAIJEIR
+=
+]
+
+1T N ARG Y1 e Mgl b P R pE SN
+
+
+Model: SaturationAdjusted_2.5
+ 
+
+Nasdaq & AMEX
+
+Stocks in bold rose or fell 5% or more
+
+   
+
+PR 0.7 [rack your investments with our continuously
+1(® »7.\'4 updated stocks. Visit us on the web at
+
+il money.usatoday.com
+
+ 
+
+52-week 52-week
+High  Low Stock Last Change | Mish Low Stock Last Change
+45.71 3250 Biomet %.71 —0.42
+276 1.20 Biomira 1.46 +0.03
+A 9.07 5.3 BiloScrip 8.05 +0.34
+= 68.88 50.65 Biosite 50.05 —4.57
+B R LA 1988 157 | 2122513103 BiotechT 20445 —0.84
+3.3 1351 ADA—ES 209 +3.16 | 850 140 BirchMton 652 —0.45
+27.14 1288 ADC Telrs 2321 +0.13 [ 1821 10.73 Bickboud  17.90 +0.70
+1645 1047 AFCEnts 1540 —0.14 | 4435 2415 BlueNile  40.30 —1.10
+8.37 450 ASE Tst 7.76 +0.40 26.45 19.91 BobEwn 22.99 ™
+13.94 ASML HId  21.24 +0.46 | 621 156 Bookham 594 +0.06
+1639 ASV Incs 2676 +0.14 | 1180 499 Borlond g i Shi
+
+20:53 ATMI Inc 29.95 +1.29 18.62 10.01 BHmiInT 11.53 +0.20
+
+1468 7,10 BrigExp 1210 —0.23
+16.76 ATP O&G 38.40 —0.59
+1.99 AVI Blo 362 _9.92 46.72 26-65 Brlﬂherl S 38.90 -0.80
+
+TN e P » T . PO Y Y U VTN Ve P
+
+2 BBINBS
+RBRAJEIR
+=
+1
+
+1T N ARG Y1 e Mgl b P WP E N
+
+
+Model: Deskewed
+ 
+
+Nasdaq & AMEX
+
+Stocks in bold rose or fell 5% or more
+
+   
+
+PR3 [rack your investments with our continuously
+1(® »7.\'4 updated stocks. Visit us on the web at
+
+widld money.usatoday.com
+
+ 
+
+52 week 52-week
+Hish  Low Stock Last Change | Migh Low Stock Last Change
+45.71 3250 Biomet W7 —0.42
+276 1.20 Biomira 1.46 +0.03
+A 9.07 513 BiloScrip 8.05 +0.34
+9.19 689 ABX Airn  7.52 —0.10 | 68.88 50.45 Biosite g -
+
+0 ¥
+50 Acskosre - tes 212.25 131.03 BiotechT  204.66 —0.84
+g 48 e b g A I S B v gy
+27.14 1288 ADC Telrs 23.21 +0.13 18.21 10.73 Blickboud 17.90 +0.70
+
+30.40 16.70 ADECPE 27.32 +0.73 52.73 13.86 BluCoat 41.29 +1.30
+1645 1047 AFCEnts 1540 —0.14 | 4435 2415 BlueNile 40.30 ~1.10
+8.37 450 ASE Tst 7.76 +0.40 | 2645 19.91 BobEvn 29 ..
+19.25 12.75 ASM Intl 1765 —0.03 | 1394 f';f gw'mn 12.45 40'45
+2092 1394 ASML Hid  21.24 +0.46 #g - Bookhom 94 +g.?6
+2738 1639 ASVincs 2676 +0.14 : 4, orland 6.68 +0.14
+19.82 10.47 ATI! Tech 17.89 +0.48 31.90 21.10 BostPrv 31.18 —0.07
+
+33.62 20.53 ATMI! Inc 29.95 +1.29 18.62 10.01 B"m'nT 11.53 +0.20
+1468 7,10 BrigExp 1210 —0.23
+
+N2 16.76 ATP Q&G 38.40 —0.59 46.72 26.65 BrightH 38.90 —0.80
+
+424 199 AVI Bio 3.62 —0.02 : 09 Brightrirzs  38. .
+
+ey T N TN e Y b o TR R R RRT N ol e 4 ol
+r A Y1 o~ Mgl St ¥ ot
+
+
+Model: AdaptiveThreshold
+   
+
+52 wne.c
+
+Hlsh
+
+‘ 9.‘]9.-
+225
+31.33.
+274
+
+30,40
+
+16,45
+
+8,37
+
+"20 92
+27.38
+
+©. 19,82,
+33,62
+39,20
+
+424
+
+.y
+
+Low
+
+Slnck
+
+689
+
+12.40
+a3
+12,88
+1470
+.10}.4,7
+
+. 4,50
+12.75
+13,94
+16.39
+
+10.47
+20,53 -
+16.76
+
+199
+
+A
+- np'
+
+ABX Alr n
+ACMoora.
+ADA=ES
+ADC Tel rs
+
+‘ADECP, "
+“AFC Ent s
+"ASE Tst
+~ASM’ Inil
+ASML Hld 2
+'ASV Inc. 5
+-‘ATI Tech’
+
+ATMI Inc
+
+ATP Q&G.
+‘AV| Blo
+
+T AR
+
+‘ LnstiChq‘nge‘;
+
+:7.52 —0.10.
+S8 —1.57
+6 3, 16:
+214013
+073,
+A0 —0,14 -
+76 H0,40 |
+7.65. —0.03: |
+4 +0.48;
+4 +0 lh'
+B9 -FD.68"
+, -'j—l 29
+40.:—0.5¢
+'TQ 02
+
+52 week
+~High-
+
+L4571
+276
+2.07:
+
+168.88
+
+212 25 13] 03
+/8.5D:
+
+1B
+
+52.73
+
+44,35
+
+-26.45;
+
+;]5 94
+
+T2
+
+"11 80" -
+
+31.90 .
+
+18, 62 '
+
+'14 ‘68
+
+‘46 72
+
+“Tnces -
+
+  
+
+Low
+
+1.40
+10:73
+13.86
+
+;BobEv:z
+Badisen'n-
+~ ‘Bookham -
+- Borland”
+. BostPry -
+BHmiInT
+- BrlgExp
+: BrlghtHrzs
+
+[ o PN S T DY R
+
+Stack
+
+‘ 'Blomet
+)" Blomira..
+- BloScrip
+- Blosifa:
+BiotechT
+.BirchM? an -
+_;,Blckbnud
+i_BIuCoat
+24. ]5
+19 91
+“6i12.
+
+BlueNjle °
+
+s ] Trac[c your 1nvestmenls Wl(‘.]l our: contmuou.lsly
+updated stocks V151t u:, on the: weh at: ‘
+
+  
+
+Lost Ciange
+
+: 36 71
+
+146
+.8;05
+. 50.05:
+
+720486
+
+6,52
+
+17.90°
+{41,297
+
+_ -'"-10 30;
+299t
+'.i.!:! ‘15.‘.
+
+- 5.94
+
+6.68
+
+318
+
+11353
+120
+38,90
+
+. A A e
+
+—0,42
++0.03;
++4:0.34:
+—4.57
+~0.84:
+—0.45
+
++0.70 |
+“+1230- |-
+
+=1.10"
+" 045'
+
++0.06 |
+014
+=0,07 -
+0,20
+—0:23 |
+~=0.80
+
+VR T
+
+
+Model: Grayscale
+Lorem Ipsum
+
+Alice was beginning to get very tired of
+sitting by her sister in the café, and of having
+nothing to do: once or twice she had peeped
+into the book her sister was reading, but it
+had no pictures or conversations in it, “and
+what is the use of a book,” thought Alice,
+“without pictures or conversations?”
+
+So she was considering in her own mind, (as
+well as she could, for the hot day made her
+feel very sleepy and stupid,) whether the
+pleasure of making a daisy-chain would be
+worth the trouble of getting up and picking
+the daisies, when suddenly a white rabbit with
+pink eyes ran close by her.
+
+There was nothing so very remarkable in that;
+nor did Alice think it so very much out of the
+way to hear the Rabbit say to itself, “Oh
+dear! Oh dear! I shall be too late!” (when she
+thought it over afterwards, it occurred to her
+that she ought to have wondered at this, but
+at the time it all seemed quite natural;) but
+when the Rabbit actually zook a watch out of its
+waistcoat-pocket, and looked at it, and then
+hurried on, Alice started to her feet, for it
+flashed across her mind that she had never
+before seen a rabbit with either a
+waistcoat-pocket, or a watch to take out of it,
+and, burning with curiosity, she ran across the
+field after it, and was just in time to see it pop
+down a large rabbit-hole under the hedge.
+
+In another moment down went Alice after it,
+never once considering how in the world she
+was to get out again.
+
+The rabbit-hole went straight on like a
+tunnel for some way, and then dipped
+
+suddenly down, so suddenly that Alice had
+not a moment to think about stopping herself
+before she found herself falling down what
+seemed to be a very deep well.
+
+Either the well was very deep, or she fell very
+slowly, for she had plenty of time as she went
+down to look about her, and to wonder what
+was going to happen next. First, she tried to
+look down and make out what she was
+coming to, but it was too dark to see
+anything: then she looked at the sides of the
+well, and noticed that they were filled with
+cupboards and book-shelves: here and there
+she saw maps and pictures hung upon pegs.
+She took down a jar from one of the shelves
+as she passed; it was labelled “ORANGE
+MARMALADE,” but to her great
+disappointment it was empty: she did not like
+to drop the jar for fear of killing somebody
+underneath, so managed to put it into one of
+the cupboards as she fell past it.
+
+JPajoute que le fait d’avoir été, durant plus de
+deux ans, le directeur de ’hépital du camp et
+davoir, pendant toute la durée de mon
+internement, donné réguli¢rement des cours
+de frangais, d’histoire de la littérature
+frangaise et d’histoire de la philosophie, m’a
+permis d’avoir des relations suivies et intimes
+avec presque tous mes compagnons de
+Paventure. Ces relations et cette intimité
+m’ont permis de les connaitre, un par un, de
+voir non seulement leur corps nu, lorsqu’ils se
+présentaient 2 la visite médicale, mais aussi
+leur 4me A nu aux heures de confidences.
+
+THE END
+
+
+Model: GlobalThreshold_80
+Lorem Ipsum
+
+Alicc was beginning to get very tired of
+sitting by her sister in the café, and of having
+nothing to do: once or twice she had peeped
+into the book her sister was reading, but it
+had no pictures or conversations in it, “and
+what is the use of a book,” thought Alice,
+
+“without pictures or conversations?”
+
+So she was considering in her own mind, {as
+well as she could, for the hot day made her
+teel very sleepy and stupid,) whether the
+pleasure of making a daisy-chain would be
+worth the trouble of getting up and picking
+the daisics, when suddenly a white rabbit with
+pink eyes ran close by her.
+
+"There was nothing so very remarkable in that;
+nor did Alice think it so zery much out of the
+way to hear the Rabbit say to itself, “Oh
+dear! Oh dear! T shall be too late!?” (when she
+thought it over afterwards, it occurred to her
+that she ought to have wondered at this, but
+at the time it all seemed quite natural;) but
+when the Rabbit actually ook a watch out of its
+waistcoat-pocket, and looked at it, and then
+hurried on, Alice started to her feee, for it
+flashed across her mind that she had never
+before scen a rabbit with either a
+waistcoat-pocket, or a watch to take out of it,
+and, burning with curiosity, she ran across the
+field after it, and was just in time to sec it pop
+down a large rabbit-hole under the hedge.
+
+In another moment down went Alice after it,
+never once considering how in the world she
+Was o get out again.
+
+The rabbit-hole went straight on like a
+
+tunnel for some way, and then dipped
+
+suddenly down, so suddenly that Alice had
+not a moment to think about stopping herself
+before she found herself falling down what
+
+scemed to bea very deep well.
+
+Either the well was very deep, or she fell very
+slowly, for she had plenty of time as she went
+down to look about her, and to wonder what
+was going to happen next. First, she tried to
+ook down and make out what she was
+coming to, but it was too dark to see
+anything: then she looked at the sides ot the
+well, and noticed that they were filled with
+cupboards and book-shelves: here and there
+she saw maps and pictures hung upon pegs.
+She took down a jar from one of the shelves
+as she passed; it was labelled “ORANGE
+MARMALADE,” but to her great
+disappointment it was empty: she did not like
+to drop the jar for fear of killing somebody
+underncath, so managed to put it into one of
+
+the cupboards as she fell past it.
+
+JPajoute que le fait Pavoir ¢té, durant plus de
+
+deux ans, le directeur de Phopital du camp et
+d’avoir, pendant toute la durée de mon
+internement, donné régulierement des cours
+de frangais, d’histoire de la littérature
+frangaise et d’histoire de la philosophie, m’a
+permis d’avoir des relations suivies et intimes
+avec presque tous mes compagnons de
+Paventure. Ces relations et cette intimité
+m’ont permis de les connaitre, un par un, de
+voir non sculement leur corps nu, lorsqu’ils se
+présentaient A la visite médicale, mais aussi
+Ieur dme A nu aux heures de confidences.
+
+THE END
+
+
+Model: GlobalThreshold_100
+Lorem Ipsum
+
+Alicc was beginning to get very tired of
+sitting by her sister in the café, and of having
+nothing to do: once or twice she had peeped
+into the book her sister was reading, but it
+had no pictures or conversations in it, “and
+what is the use of a book,” thought Alice,
+
+“without picturcs or conversations?”
+
+So she was considering in her own mind, (as
+well as she could, for the hot day made her
+feel very sleepy and stupid,) whether the
+pleasurc of making a daisy-chain would be
+worth the trouble of getting up and picking
+the daisics, when suddenly a white rabbit with
+pink eyes ran close by her.
+
+There was nothing so very remarkable in that;
+nor did Alice think it so very much out of the
+way to hear the Rabbit say to icself, “Oh
+dear! Oh dear! I shall be too late!” (when she
+thought it over afterwards, it occurred to her
+that she ought to have wondered at this, but
+at the time it all seemed quite natural;) but
+when the Rabbit actually zeok a wazoh out of its
+waisttoat-pucket, and looked at it, and then
+hurried on, Alice started to her feet, for it
+flashed across her mind that she had never
+before seen a rabbit with either a
+waistcoat-pocket, or a watch to take out of it,
+and, burning with curiosity, she ran across the
+field after it, and was just in time to see it pop
+down a large rabbit-hole under the hedge.
+
+In another moment down went Alice after it,
+
+never once considering how in the world she
+
+was to get out agam.
+
+The rabbit-hole went straight on like a
+tunnel for some way, and then dipped
+
+suddenly down, so suddenly that Alice had
+not a moment to think about stopping herself
+before she found herself falling down what
+secmed to be a very deep well.
+
+Either the well was very deep, or she fell very
+slowly, for she had plenty of time as she went
+down to look about her, and to wonder what
+was going to happen next. First, she tried to
+look down and make out what she was
+coming to, but it was too dark to see
+anything: then she looked at the sides of the
+well, and noticed that they were filled with
+cupboards and book-shelves: here and there
+she saw maps and pictures hung upon pegs.
+She took down a jar from one of the shelves
+as she passed; it was labelled “ORANGE
+MARMALADE,” but to her great
+disappointment it was empty: she did not like
+to drop the jar for fear of killing somebody
+underneath, so managed to put it into one of
+the cupboards as she fell past it.
+
+JPajoute que le fait d’avoir été, durant plus de
+deux ans, le directenr de Phopital du camp et
+davoir, pendant toute la durée de mon
+internement, donné régulitrement des cours
+de frangais, d’histoire de la littérature
+frangaise et d’histoire de la philosophie, m’a
+permis d’avoir des relations suivies et intimes
+avec presque tous mes compagnons de
+Paventure. Ces relations et cette intimité
+m’ont permis de les connaitre, un par un, de
+voir non seulement leur corps nu, lorsqu’ils se
+présentaient 2 la visite médicale, mais aussi
+leur 4me A nu aux heures de confidences.
+
+THE END
+
+
+Model: GlobalThreshold_110
+Lorem Ipsum
+
+Alicc was beginning to get very tired of’
+sitting by her sister in the café, and of having
+nothing to do: once or twice she had peeped
+into the book her sister was reading, but it
+had no pictures or conversations in it, “and
+what is the use of a book,” thought Alice,
+“without picturcs or conversations?”
+
+So she was considering in her own mind, (as
+well as she could, for the hot day made her
+feel very sleepy and stupid,) whether the
+pleasure of making a daisy-chain would be
+worth the trouble of getting up and picking
+the daisics, when suddenly a white rabbit with
+pink eyes ran close by her.
+
+There was nothing so very remarkable in that;
+nor did Alice think it so very much out of the
+way to hear the Rabbit say to itself, “Oh
+dear! Oh dear! I shall be too late!” (when she
+thought it over afterwards, it occurred to her
+that she ought to have wondered at this, but
+at the time it all seemed quite natural;) but
+when the Rabbit actually ook 2 warch out of its
+waisteoat-pocket, and looked at it, and then
+hurried on, Alice started to her feet, for it
+flashed across her mind that she had never
+before seen a rabbit with either a
+waistcoat-pocket, or a watch to take out of it,
+and, burning with curiosity, she ran across the
+field after it, and was just in time to see it pop
+down a large rabbit-hole under the hedge.
+
+In another moment down went Alice after it,
+never once considering how in the world she
+
+was to get ont again.
+
+The rabbit-hole went straight on like 2
+tunnel for some way, and then dipped
+
+suddenly down, so suddenly that Alice had
+not a moment to think about stopping herself
+before she found herself falling down what
+seemed to be a very deep well.
+
+Either the well was very deep, or she fell very
+slowly, for she had plenty of time as she went
+down to look about her, and to wonder what
+was going to happen next. First, she tried to
+look down and make out what she was
+coming to, but it was too dark to see
+anything: then she looked at the sides of the
+well, and noticed that they were filled with
+cupboards and book-shelves: here and there
+she saw maps and pictures hung upon pegs.
+She took down a jar from one of the shelves
+as she passed; it was labelled “ORANGE
+MARMALADE,” but to her great
+disappointment it was empty: she did not like
+to drop the jar for fear of killing somebody
+underneath, so managed to put it into one of
+the cupboards as she fell past it.
+
+Jajoute que le fait d’avoir été, durant plus de
+deux ans, le directenr de Phopital du camp et
+davoir, pendant toute la durée de mon
+internement, donné régulierement des cours
+de frangais, d’histoire de la littérature
+frangaise et d’histoire de la philosophie, m’a
+permis d’avoir des relations suivies et intimes
+avec presque tous mes compagnons de
+’aventure. Ces relations et cette intimité
+m’ont permis de les connaitre, un par un, de
+voir non seulement leur corps nu, lorsqu’ils se
+présentaient 2 la visite médicale, mais aussi
+leur 4me & nu aux heures de confidences.
+
+THE END
+
+
+Model: GlobalThreshold_120
+Lorem Ipsum
+
+Alicc was beginning to get very tired of
+sitting by her sister in the café, and of having
+nothing to do: once or twice she had peeped
+into the book her sister was reading, but it
+had no pictures or conversations in it, “and
+what is the use of a book,” thought Alice,
+“without pictures or conversations>”
+
+So she was considering in her own mind, (as
+well as she could, for the hot day made her
+feel very sleepy and stupid,) whether the
+pleasure of making a daisy-chain would be
+worth the trouble of getting up and picking
+the daisies, when suddenly a white rabbit with
+pink eyes ran close by her.
+
+There was nothing so very remarkable in that;
+nor did Alice think it so very much out of the
+way to hear the Rabbit say to itself, “Oh
+dear! Oh dear! I shall be too late!” (when she
+thought it over afterwards, it occurred to her
+that she ought to have wondered at this, but
+at the time it all seemed quite natural;) but
+when the Rabbit actually took a watch out of its
+waistcoat-pocker, and looked at it, and then
+hurried on, Alice started to her feet, for it
+flashed across her mind that she had never
+before seen a rabbit with either a
+waistcoat-pocket, or a watch to take out of it,
+and, burning with curiosity, she ran across the
+field after it, and was just in time to see it pop
+down a large rabbit-hole under the hedge.
+
+In another moment down went Alice after it,
+never once considering how in the world she
+was to get out again.
+
+The rabbit-hole went straight on like 2
+tunnel for some way, and then dipped
+
+suddenly down, so suddenly that Alice had
+not 2 moment to think about stopping herself
+before she found herself falling down what
+seemed to be a very deep well.
+
+Either the well was very deep, or she fell very
+slowly, for she had plenty of time as she went
+down to look about her, and to wonder what
+was going to happen next. First, she tried to
+look down and make out what she was
+coming to, but it was too dark to see
+anything: then she looked at the sides of the
+well, and noticed that they were filled with
+cupboards and book-shelves: here and there
+she saw maps and pictures hung upon pegs.
+She took down a jar from one of the shelves
+as she passed; it was labelled “ORANGE
+MARMALADE,” but to her great
+disappointment it was empty: she did not like
+to drop the jar for fear of killing somebody
+underneath, so managed to put it into one of
+the cupboards as she fell past it.
+
+JPajoute que le fait d’avoir été, durant plus de
+deux ans, le directeur de Phopital du camp et
+Pavoir, pendant toute la durée de mon
+internement, donné régulierement des cours
+de frangais, d’histoire de la littérature
+frangaise et d’histoire de la philosophie, m’a
+permis d’avoir des relations suivies et intimes
+avec presque tous mes Compagnons de
+Paventure. Ces relations et cette intimité
+m’ont permis de les connaitre, un par un, de
+voir non seulement leur corps nu, lorsqu’ils se
+présentaient 2 la visite médicale, mais aussi
+leur 4me & nu aux heures de confidences.
+
+THE END
+
+
+Model: GlobalThreshold_140
+Lorem Ipsum
+
+Alice was beginning to get very tired of
+sitting by her sister in the café, and of having
+nothing to do: once or twice she had peeped
+into the book her sister was reading, but it
+had no pictures or conversations in it, “and
+what is the use of a book,” thought Alice,
+“without pictures or conversations?”
+
+So she was considering in her own mind, (as
+well as she could, for the hot day made her
+feel very sleepy and stupid,) whether the
+pleasure of making a daisy-chain would be
+worth the trouble of getting up and picking
+the daisies, when suddenly a white rabbit with
+pink eyes ran close by her.
+
+There was nothing so very remarkable in that;
+nor did Alice think it so very much out of the
+way to hear the Rabbit say to itself, “Oh
+dear! Oh dear! I shall be too late!” (when she
+thought it over afterwards, it occurred to her
+that she ought to have wondered at this, but
+at the time it all seemed quite natural;) but
+when the Rabbit actually took a watch out of its
+waistcoat-pocker, and looked at it, and then
+hurried on, Alice started to her feet, for it
+flashed across her mind that she had never
+before seen a rabbit with either a
+waistcoat-pocket, or a watch to take ot of it,
+and, burning with curiosity, she ran across the
+field after it, and was just in time to see it pop
+down a large rabbit-hole under the hedge.
+
+In another moment down went Alice after it,
+never once considering how in the world she
+was to get out again.
+
+The rabbit-hole went straight on like 2
+tunnel for some way, and then dipped
+
+suddenty down, so suddenly that Alice had
+not a moment to think about stopping herself
+before she found herself falling down what
+seemed to be a very deep well.
+
+Either the well was very deep, or she fell very
+slowly, for she had plenty of time as she went
+down to look about her, and to wonder what
+was going to happen next. First, she tried to
+look down and make out what she was
+coming to, but it was too dark to see
+anything: then she looked at the sides of the
+well, and noticed that they were filled with
+cupboards and book-shelves: here and there
+she saw maps and pictures hung upon pegs.
+She took down a jar from one of the shelves
+as she passed; it was labelled “ORANGE
+MARMALADE,” but to her great
+disappointment it was empty: she did not like
+to drop the jar for fear of killing somebody
+underneath, so managed to put it into one of
+the cupboards as she fell past it.
+
+JPajoute que le fait d’avoir été, durant plus de
+deux ans, le directeur de hopital du camp et
+dPavoir, pendant toute la durée de mon
+internement, donné réguli¢rement des cours
+de frangais, C’histoire de la littérature
+frangaise et Phistoire de la philosophie, m’a
+permis d’avoir des relations suivies et intimes
+avec presque tous mes compagnons de
+Paventure. Ces relations et cette intimité
+m’ont permis de les connaitre, un par un, de
+voir non seulement leur corps nu, lorsqu’ils se
+présentaient 2 la visite médicale, mais aussi
+leur 4me 3 nu aux heures de confidences.
+
+THE END
+
+
+Model: GlobalThreshold_150
+Lorem Ipsum
+
+Al.ice was beginning to get very tired of
+sitting by her sister in the café, and of having
+nothing to do: once or twice she had peeped
+into the book her sister was reading, but it
+had no pictures or conversations in it, “and
+what is the use of a book,” thought Alice,
+“without pictures or conversations?”
+
+So she was considering in her own mind, (as
+well as she could, for the hot day made her
+feel very sleepy and stupid,) whether the
+pleasure of making a daisy-chain would be
+worth the trouble of getting up and picking
+the daisies, when suddenly a white rabbit with
+pink eyes ran close by her.
+
+‘There was nothing so very remarkable in that;
+nor did Alice think it so very much out of the
+way to hear the Rabbit say to itself, “Oh
+dear! Oh dear! I shall be too late!” (when she
+thought it over afterwards, it occurred to her
+that she ought to have wondered at this, but
+at the time it all seemed quite natural;) but
+when the Rabbit actually zook a watch out of its
+waistcoat-pocket, and looked at it, and then
+hurried on, Alice started to her feet, for it
+flashed across her mind that she had never
+before seen a rabbit with either a
+waistcoat-pocket, or a watch to take out of it,
+and, burning with curiosity, she ran across the
+field after it, and was just in time to see it pop
+down a large rabbit-hole under the hedge.
+
+In another moment down went Alice after it,
+never once considering how in the world she
+was to get out again.
+
+"The rabbit-hole went straight on like a
+tunnel for some way, and then dipped
+
+suddenly down, so suddenly that Alice had
+not a moment to think about stopping herself
+before she found herself falling down what
+seemed to be a very deep well.
+
+Either the well was very deep, or she fell very
+slowly, for she had plenty of time as she went
+down to look about her, and to wonder what
+was going to happen next. First, she tried to
+look down and make out what she was
+coming to, but it was too dark to see
+anything: then she looked at the sides of the
+well, and noticed that they were filled with
+cupboards and book-shelves: here and there
+she saw maps and pictures hung upon pegs.
+She took down a jar from one of the shelves
+as she passed; it was labelled “ORANGE
+MARMALADE,” but to her great
+disappointment it was empty: she did not like
+to drop the jar for fear of killing somebody
+underneath, so managed to put it into one of
+the cupboards as she fell past it.
+
+JPajoute que le fait d’avoir été, durant plus de
+deux ans, le directeur de hépital du camp et
+d’avoir, pendant toute la durée de mon
+internement, donné réguli¢rement des cours
+de frangais, d’histoire de la littérature
+frangaise et d’histoire de la philosophie, m’a
+permis d’avoir des relations suivies et intimes
+avec presque tous mes compagnons de
+Paventure. Ces relations et cette intimité
+m’ont permis de les connaitre, un par un, de
+voir non seulement leur corps nu, lorsqu’ils se
+présentaient 2 la visite médicale, mais aussi
+leur 4me 3 nu aux heures de confidences.
+
+THE END
+
+
+Model: SaturationAdjusted_1.2
+Lorem Ipsum
+
+Alice was beginning to get very tired of
+sitting by her sister in the café, and of having
+nothing to do: once or twice she had peeped
+into the book her sister was reading, but it
+had no pictures or conversations in it, “and
+what is the use of a book,” thought Alice,
+“without pictures or conversations?”
+
+So she was considering in her own mind, (as
+well as she could, for the hot day made her
+feel very sleepy and stupid,) whether the
+pleasure of making a daisy-chain would be
+worth the trouble of getting up and picking
+the daisies, when suddenly a white rabbit with
+pink eyes ran close by her.
+
+There was nothing so very remarkable in that;
+nor did Alice think it so very much out of the
+way to hear the Rabbit say to itself, “Oh
+dear! Oh dear! I shall be too late!” (when she
+thought it over afterwards, it occurred to her
+that she ought to have wondered at this, but
+at the time it all seemed quite natural;) but
+when the Rabbit actually zook a watch out of its
+waistcoat-pocket, and looked at it, and then
+hurried on, Alice started to her feet, for it
+flashed across her mind that she had never
+before seen a rabbit with either a
+waistcoat-pocket, or a watch to take out of it,
+and, burning with curiosity, she ran across the
+field after it, and was just in time to see it pop
+down a large rabbit-hole under the hedge.
+
+In another moment down went Alice after it,
+never once considering how in the world she
+was to get out again.
+
+‘The rabbit-hole went straight on like a
+tunnel for some way, and then dipped
+
+suddenly down, so suddenly that Alice had
+not a moment to think about stopping herself
+before she found herself falling down what
+seemed to be a very deep well.
+
+Either the well was very deep, or she fell very
+slowly, for she had plenty of time as she went
+down to look about her, and to wonder what
+was going to happen next. First, she tried to
+look down and make out what she was
+coming to, but it was too dark to see
+anything: then she looked at the sides of the
+well, and noticed that they were filled with
+cupboards and book-shelves: here and there
+she saw maps and pictures hung upon pegs.
+She took down a jar from one of the shelves
+as she passed; it was labelled “ORANGE
+MARMALADE,” but to her great
+disappointment it was empty: she did not like
+to drop the jar for fear of killing somebody
+underneath, so managed to put it into one of
+the cupboards as she fell past it.
+
+JPajoute que le fait d’avoir été, durant plus de
+deux ans, le directeur de ’hépital du camp et
+davoir, pendant toute la durée de mon
+internement, donné régulierement des cours
+de frangais, d’histoire de la littérature
+frangaise et d’histoire de la philosophie, m’a
+permis d’avoir des relations suivies et intimes
+avec presque tous mes compagnons de
+Paventure. Ces relations et cette intimité
+m’ont permis de les connaitre, un par un, de
+voir non seulement leur corps nu, lorsqu’ils se
+présentaient 2 la visite médicale, mais aussi
+leur 4me 2 nu aux heures de confidences.
+
+THE END
+
+
+Model: SaturationAdjusted_0.6
+Lorem Ipsum
+
+Alice was beginning to get very tired of
+sitting by her sister in the café, and of having
+nothing to do: once or twice she had peeped
+into the book her sister was reading, but it
+had no pictures or conversations in it, “and
+what is the use of a book,” thought Alice,
+“without pictures or conversations?”
+
+So she was considering in her own mind, (as
+well as she could, for the hot day made her
+feel very sleepy and stupid,) whether the
+pleasure of making a daisy-chain would be
+worth the trouble of getting up and picking
+the daisies, when suddenly a white rabbit with
+pink eyes ran close by her.
+
+There was nothing so very remarkable in that;
+nor did Alice think it so very much out of the
+way to hear the Rabbit say to itself, “Oh
+dear! Oh dear! I shall be too late!” (when she
+thought it over afterwards, it occurred to her
+that she ought to have wondered at this, but
+at the time it all seemed quite natural;) but
+when the Rabbit actually zook a watch out of its
+waistcoat-pocket, and looked at it, and then
+hurried on, Alice started to her feet, for it
+flashed across her mind that she had never
+before seen a rabbit with either a
+waistcoat-pocket, or a watch to take out of it,
+and, burning with curiosity, she ran across the
+field after it, and was just in time to see it pop
+down a large rabbit-hole under the hedge.
+
+In another moment down went Alice after it,
+never once considering how in the world she
+was to get out again.
+
+‘The rabbit-hole went straight on like a
+tunnel for some way, and then dipped
+
+suddenly down, so suddenly that Alice had
+not a moment to think about stopping herself
+before she found herself falling down what
+seemed to be a very deep well.
+
+Either the well was very deep, or she fell very
+slowly, for she had plenty of time as she went
+down to look about her, and to wonder what
+was going to happen next. First, she tried to
+look down and make out what she was
+coming to, but it was too dark to see
+anything: then she looked at the sides of the
+well, and noticed that they were filled with
+cupboards and book-shelves: here and there
+she saw maps and pictures hung upon pegs.
+She took down a jar from one of the shelves
+as she passed; it was labelled “ORANGE
+MARMALADE,” but to her great
+disappointment it was empty: she did not like
+to drop the jar for fear of killing somebody
+underneath, so managed to put it into one of
+the cupboards as she fell past it.
+
+JPajoute que le fait d’avoir été, durant plus de
+deux ans, le directeur de ’hépital du camp et
+davoir, pendant toute la durée de mon
+internement, donné réguli¢rement des cours
+de frangais, d’histoire de la littérature
+frangaise et d’histoire de la philosophie, m’a
+permis d’avoir des relations suivies et intimes
+avec presque tous mes compagnons de
+Paventure. Ces relations et cette intimité
+m’ont permis de les connaitre, un par un, de
+voir non seulement leur corps nu, lorsqu’ils se
+présentaient 2 la visite médicale, mais aussi
+leur 4me 2 nu aux heures de confidences.
+
+THE END
+
+
+Model: SaturationAdjusted_0.9
+Lorem Ipsum
+
+Alice was beginning to get very tired of
+sitting by her sister in the café, and of having
+nothing to do: once or twice she had peeped
+into the book her sister was reading, but it
+had no pictures or conversations in it, “and
+what is the use of a book,” thought Alice,
+“without pictures or conversations?”
+
+So she was considering in her own mind, (as
+well as she could, for the hot day made her
+feel very sleepy and stupid,) whether the
+pleasure of making a daisy-chain would be
+worth the trouble of getting up and picking
+the daisies, when suddenly a white rabbit with
+pink eyes ran close by her.
+
+There was nothing so very remarkable in that;
+nor did Alice think it so very much out of the
+way to hear the Rabbit say to itself, “Oh
+dear! Oh dear! I shall be too late!” (when she
+thought it over afterwards, it occurred to her
+that she ought to have wondered at this, but
+at the time it all seemed quite natural;) but
+when the Rabbit actually zook a watch out of its
+waistcoat-pocket, and looked at it, and then
+hurried on, Alice started to her feet, for it
+flashed across her mind that she had never
+before seen a rabbit with either a
+waistcoat-pocket, or a watch to take out of it,
+and, burning with curiosity, she ran across the
+field after it, and was just in time to see it pop
+down a large rabbit-hole under the hedge.
+
+In another moment down went Alice after it,
+never once considering how in the world she
+was to get out again.
+
+‘The rabbit-hole went straight on like a
+tunnel for some way, and then dipped
+
+suddenly down, so suddenly that Alice had
+not a moment to think about stopping herself
+before she found herself falling down what
+seemed to be a very deep well.
+
+Either the well was very deep, or she fell very
+slowly, for she had plenty of time as she went
+down to look about her, and to wonder what
+was going to happen next. First, she tried to
+look down and make out what she was
+coming to, but it was too dark to see
+anything: then she looked at the sides of the
+well, and noticed that they were filled with
+cupboards and book-shelves: here and there
+she saw maps and pictures hung upon pegs.
+She took down a jar from one of the shelves
+as she passed; it was labelled “ORANGE
+MARMALADE,” but to her great
+disappointment it was empty: she did not like
+to drop the jar for fear of killing somebody
+underneath, so managed to put it into one of
+the cupboards as she fell past it.
+
+JPajoute que le fait d’avoir été, durant plus de
+deux ans, le directeur de ’hépital du camp et
+davoir, pendant toute la durée de mon
+internement, donné régulierement des cours
+de frangais, d’histoire de la littérature
+frangaise et d’histoire de la philosophie, m’a
+permis d’avoir des relations suivies et intimes
+avec presque tous mes compagnons de
+Paventure. Ces relations et cette intimité
+m’ont permis de les connaitre, un par un, de
+voir non seulement leur corps nu, lorsqu’ils se
+présentaient 2 la visite médicale, mais aussi
+leur 4me 2 nu aux heures de confidences.
+
+THE END
+
+
+Model: SaturationAdjusted_1.6
+Lorem Ipsum
+
+Al.ice was beginning to get very tired of’
+sitting by her sister in the café, and of having
+nothing to do: once or twice she had peeped
+into the book her sister was reading, but it
+had no pictures or conversations in it, “and
+what is the use of a book,” thought Alice,
+“without pictures or conversations?”
+
+So she was considering in her own mind, (as
+well as she could, for the hot day made her
+feel very sleepy and stupid,) whether the
+pleasure of making a daisy-chain would be
+worth the trouble of getting up and picking
+the daisies, when suddenly a white rabbit with
+pink eyes ran close by her.
+
+There was nothing so very remarkable in that;
+nor did Alice think it so very much out of the
+way to hear the Rabbit say to itself, “Oh
+dear! Oh dear! I shall be too late!” (when she
+thought it over afterwards, it occurred to her
+that she ought to have wondered at this, but
+at the time it all seemed quite natural;) but
+when the Rabbit actually zook a watch out of its
+waistcoat-pocket, and looked at it, and then
+hurried on, Alice started to her feet, for it
+flashed across her mind that she had never
+before seen a rabbit with either a
+waistcoat-pocket, or a watch to take out of it,
+and, burning with curiosity, she ran across the
+field after it, and was just in time to see it pop
+down a large rabbit-hole under the hedge.
+
+In another moment down went Alice after it,
+never once considering how in the world she
+was to get out again.
+
+‘The rabbit-hole went straight on like a
+tunnel for some way, and then dipped
+
+suddenly down, so suddenly that Alice had
+not a moment to think about stopping herself
+before she found herself falling down what
+seemed to be a very deep well.
+
+Either the well was very deep, or she fell very
+slowly, for she had plenty of time as she went
+down to look about her, and to wonder what
+was going to happen next. First, she tried to
+look down and make out what she was
+coming to, but it was too dark to see
+anything: then she looked at the sides of the
+well, and noticed that they were filled with
+cupboards and book-shelves: here and there
+she saw maps and pictures hung upon pegs.
+She took down a jar from one of the shelves
+as she passed; it was labelled “ORANGE
+MARMALADE,” but to her great
+disappointment it was empty: she did not like
+to drop the jar for fear of killing somebody
+underneath, so managed to put it into one of
+the cupboards as she fell past it.
+
+JPajoute que le fait d’avoir été, durant plus de
+deux ans, le directeur de ’hépital du camp et
+davoir, pendant toute la durée de mon
+internement, donné réguli¢rement des cours
+de frangais, ’histoire de la littérature
+frangaise et d’histoire de la philosophie, m’a
+permis d’avoir des relations suivies et intimes
+avec presque tous mes compagnons de
+Paventure. Ces relations et cette intimité
+m’ont permis de les connaitre, un par un, de
+voir non seulement leur corps nu, lorsqu’ils se
+présentaient 2 la visite médicale, mais aussi
+leur 4me 2 nu aux heures de confidences.
+
+THE END
+
+
+Model: SaturationAdjusted_2
+Lorem Ipsum
+
+Al.ice was beginning to get very tired of’
+sitting by her sister in the café, and of having
+nothing to do: once or twice she had peeped
+into the book her sister was reading, but it
+had no pictures or conversations in it, “and
+what is the use of a book,” thought Alice,
+“without pictures or conversations?”
+
+So she was considering in her own mind, (as
+well as she could, for the hot day made her
+feel very sleepy and stupid,) whether the
+pleasure of making a daisy-chain would be
+worth the trouble of getting up and picking
+the daisies, when suddenly a white rabbit with
+pink eyes ran close by her.
+
+There was nothing so very remarkable in that;
+nor did Alice think it so very much out of the
+way to hear the Rabbit say to itself, “Oh
+dear! Oh dear! I shall be too late!” (when she
+thought it over afterwards, it occurred to her
+that she ought to have wondered at this, but
+at the time it all seemed quite natural;) but
+when the Rabbit actually zook a watch out of its
+waistcoat-pocket, and looked at it, and then
+hurried on, Alice started to her feet, for it
+flashed across her mind that she had never
+before seen a rabbit with either a
+waistcoat-pocket, or a watch to take out of it,
+and, burning with curiosity, she ran across the
+field after it, and was just in time to see it pop
+down a large rabbit-hole under the hedge.
+
+In another moment down went Alice after it,
+never once considering how in the world she
+was to get out again.
+
+The rabbit-hole went straight on like a
+tunnel for some way, and then dipped
+
+suddenly down, so suddenly that Alice had
+not a moment to think about stopping herself
+before she found herself falling down what
+seemed to be a very deep well.
+
+Either the well was very deep, or she fell very
+slowly, for she had plenty of time as she went
+down to look about her, and to wonder what
+was going to happen next. First, she tried to
+look down and make out what she was
+coming to, but it was too dark to see
+anything: then she looked at the sides of the
+well, and noticed that they were filled with
+cupboards and book-shelves: here and there
+she saw maps and pictures hung upon pegs.
+She took down a jar from one of the shelves
+as she passed; it was labelled “ORANGE
+MARMALADE,” but to her great
+disappointment it was empty: she did not like
+to drop the jar for fear of killing somebody
+underneath, so managed to put it into one of
+the cupboards as she fell past it.
+
+JPajoute que le fait d’avoir été, durant plus de
+deux ans, le directeur de ’hépital du camp et
+davoir, pendant toute la durée de mon
+internement, donné régulierement des cours
+de frangais, ’histoire de la littérature
+frangaise et d’histoire de la philosophie, m’a
+permis d’avoir des relations suivies et intimes
+avec presque tous mes compagnons de
+Paventure. Ces relations et cette intimité
+m’ont permis de les connaitre, un par un, de
+voir non seulement leur corps nu, lorsqu’ils se
+présentaient 2 la visite médicale, mais aussi
+leur 4me 2 nu aux heures de confidences.
+
+THE END
+
+
+Model: SaturationAdjusted_2.5
+Lorem Ipsum
+
+Alice was beginning to get very tired of
+sitting by her sister in the café, and of having
+nothing to do: once or twice she had peeped
+into the book her sister was reading, but it
+had no pictures or conversations in it, “and
+what is the use of a book,” thought Alice,
+“without pictures or conversations?”
+
+So she was considering in her own mind, (as
+well as she could, for the hot day made her
+feel very sleepy and stupid,) whether the
+pleasure of making a daisy-chain would be
+worth the trouble of getting up and picking
+the daisies, when suddenly a white rabbit with
+pink eyes ran close by her.
+
+There was nothing so very remarkable in that;
+nor did Alice think it so very much out of the
+way to hear the Rabbit say to itself, “Oh
+dear! Oh dear! I shall be too late!” (when she
+thought it over afterwards, it occurred to her
+that she ought to have wondered at this, but
+at the time it all seemed quite natural;) but
+when the Rabbit actually zook a watch out of its
+waistcoat-pocket, and looked at it, and then
+hurried on, Alice started to her feet, for it
+flashed across her mind that she had never
+before seen a rabbit with either a
+waistcoat-pocket, or a watch to take out of it,
+and, burning with curiosity, she ran across the
+field after it, and was just in time to see it pop
+down a large rabbit-hole under the hedge.
+
+In another moment down went Alice after it,
+never once considering how in the world she
+was to get out again.
+
+The rabbit-hole went straight on like a
+tunnel for some way, and then dipped
+
+suddenly down, so suddenly that Alice had
+not a moment to think about stopping herself
+before she found herself falling down what
+seemed to be a very deep well.
+
+Either the well was very deep, or she fell very
+slowly, for she had plenty of time as she went
+down to look about her, and to wonder what
+was going to happen next. First, she tried to
+look down and make out what she was
+coming to, but it was too dark to see
+anything: then she looked at the sides of the
+well, and noticed that they were filled with
+cupboards and book-shelves: here and there
+she saw maps and pictures hung upon pegs.
+She took down a jar from one of the shelves
+as she passed; it was labelled “ORANGE
+MARMALADE,” but to her great
+disappointment it was empty: she did not like
+to drop the jar for fear of killing somebody
+underneath, so managed to put it into one of
+the cupboards as she fell past it.
+
+JPajoute que le fait d’avoir été, durant plus de
+deux ans, le directeur de ’hépital du camp et
+avoir, pendant toute la durée de mon
+internement, donné régulierement des cours
+de frangais, ’histoire de la littérature
+frangaise et d’histoire de la philosophie, m’a
+permis d’avoir des relations suivies et intimes
+avec presque tous mes compagnons de
+Paventure. Ces relations et cette intimité
+m’ont permis de les connaitre, un par un, de
+voir non seulement leur corps nu, lorsqu’ils se
+présentaient 2 la visite médicale, mais aussi
+leur 4me 2 nu aux heures de confidences.
+
+THE END
+
+
+Model: Deskewed
+Lorem Ipsum
+
+Alice was beginning to get very tired of
+sitting by her sister in the café, and of having
+nothing to do: once or twice she had peeped
+into the book her sister was reading, but it
+had no pictures or conversations in it, “and
+what is the use of a book,” thought Alice,
+“without pictures or conversations?”
+
+So she was considering in her own mind, (as
+well as she could, for the hot day made her
+feel very sleepy and stupid,) whether the
+pleasure of making a daisy-chain would be
+worth the trouble of getting up and picking
+the daisies, when suddenly a white rabbit with
+pink eyes ran close by her.
+
+There was nothing so very remarkable in that;
+nor did Alice think it so very much out of the
+way to hear the Rabbit say to itself, “Oh
+dear! Oh dear! I shall be too late!” (when she
+thought it over afterwards, it occurred to her
+that she ought to have wondered at this, but
+at the time it all seemed quite natural;) but
+when the Rabbit actually zook a watch out of its
+waistcoat-pocket, and looked at it, and then
+hurried on, Alice started to her feet, for it
+flashed across her mind that she had never
+before seen a rabbit with either a
+waistcoat-pocket, or a watch to take out of it,
+and, burning with curiosity, she ran across the
+field after it, and was just in time to see it pop
+down a large rabbit-hole under the hedge.
+
+In another moment down went Alice after it,
+never once considering how in the world she
+was to get out again.
+
+The rabbit-hole went straight on like a
+tunnel for some way, and then dipped
+
+suddenly down, so suddenly that Alice had
+not a moment to think about stopping herself
+before she found herself falling down what
+seemed to be a very deep well.
+
+Either the well was very deep, or she fell very
+slowly, for she had plenty of time as she went
+down to look about her, and to wonder what
+was going to happen next. First, she tried to
+look down and make out what she was
+coming to, but it was too dark to see
+anything: then she looked at the sides of the
+well, and noticed that they were filled with
+cupboards and book-shelves: here and there
+she saw maps and pictures hung upon pegs.
+She took down a jar from one of the shelves
+as she passed; it was labelled “ORANGE
+MARMALADE,” but to her great
+disappointment it was empty: she did not like
+to drop the jar for fear of killing somebody
+underneath, so managed to put it into one of
+the cupboards as she fell past it.
+
+JPajoute que le fait d’avoir été, durant plus de
+deux ans, le directeur de ’hépital du camp et
+davoir, pendant toute la durée de mon
+internement, donné régulierement des cours
+de frangais, ’histoire de la littérature
+frangaise et d’histoire de la philosophie, m’a
+permis d’avoir des relations suivies et intimes
+avec presque tous mes compagnons de
+Paventure. Ces relations et cette intimité
+m’ont permis de les connaitre, un par un, de
+voir non seulement leur corps nu, lorsqu’ils se
+présentaient 2 la visite médicale, mais aussi
+leur 4me 2 nu aux heures de confidences.
+
+THE END
+
+
+Model: AdaptiveThreshold
+Lorem Ipsum
+
+A]jce was beginning to get very tired of
+sitting by her sister in the café, and of having
+nothing to do: once or twice she had peeped
+into the book her sister was reading, but it
+had no pictures or conversations in it, “and
+what is the use of a book,” thought Alice,
+“without pictures or conversations?”
+
+So she was considering in her own mind, (as -
+well as she could, for the hot day made her
+feel very sleepy and stupid,) whether the
+pleasure of making a daisy-chain would be
+worth the trouble of getting up and picking
+the daisies, when suddenly a white rabbit with
+pink eyes ran close by her.
+
+‘There was nothing so very remarkable in that;
+nor did Alice think it so very much out of the
+way to hear the Rabbit say to itself, “Oh
+dear! Oh dear! I shall be too late!” (when she
+thought it over afterwards, it occurred to her
+that she ought to have wondered at this, but
+at the time it all seemed quite natural;) but
+when the Rabbit actually sook a watch out of its
+waistcoat-pocket, and looked at it, and then
+hurried on, Alice started to her feet, for it
+flashed across her mind that she had never
+before seen a rabbit with either a
+waistcoat-pocket, or a watch to take out of it,
+and, burning with curiosity, she ran across the
+field after it, and was just in time to see it pop
+down a large rabbit-hole under the hedge.
+
+In another moment down went Alice after it,
+never once considering how in the world she
+was to get out again.
+
+"The rabbit-hole went straight on like 2
+tunnel for some way, and then dipped
+
+suddenly down, so suddenly that Alice had
+not a moment to think about stopping herself
+before she found herself falling down what
+seemed to be a very deep well.
+
+Either the well was very deep, or she fell very
+slowly, for she had plenty of time as she went
+down to look about her, and to wonder what
+was going to happen next. First, she tried to
+look down and make out what she was
+coming to, but it was too dark to see
+anything: then she looked at the sides of the
+well, and noticed that they were filled with
+cupboards and book-shelves: here and there
+she saw maps and pictures hung upon pegs.
+She took down a jar from one of the shelves
+as she passed; it was labelled “ORANGE
+MARMALADE,” but to her great
+disappointment it was empty: she did not like
+to drop the jar for fear of killing somebody
+underneath, so managed to put it into one of
+the cupboards as she fell past it.
+
+TPajoute que le fait d’avoir été, durant plus de
+deux ans, le directeur de I’hépital du camp et
+d’avoir, pendant toute la durée de mon
+
+_ internement, donné régulitrement des cours
+de frangaié, d’histoire de la littérature
+frangaise et d’histoire de la philosophie, m’a
+permis d’avoir des relations suivies et intimes
+avec presque tous mes compagnons de
+Paventure. Ces relations et cette intimité
+m’ont permis de les connaitre, un par un, de
+voir non seulement leur corps nu, lorsqn’ils se
+présentaient 2 la visite médicale, mais aussi
+leur 4me 3 nu aux heures de confidences.
+
+THE END
+
+
+Model: Grayscale
+Vyhat €i® RS 7L i e et e U C G GHT BT Hoi (o How
+about creation, exploring a visceral and shared collective memory we've heep
+prainwashed into believing never existed?
+
+Conspiracy theory, my ass. Schools and teachers, the motor vehicle bureau,
+the IRS, the military, the line at the bank, the television set, the newspapers at
+the checkout stand, the news on your radio, the billboards along the highway,
+and now a hundred thousand cold-comfort Web sites. All are tuned to your
+brain at the deepest level and you have lined up for the coolest, latest-model
+implant. The carrier wave has been tuned at huge cost to deliver a single mes-
+sage: you are not free, you desire nothing but the products we produce, you
+have no world but the world we give you.
+
+If you’re OK with this, then eat it up. There’s a bulimic’s dream-feast of
+killer kontent on the way. But if it already makes you want to puke, get angry.
+Write it, code it, paint it, play it—rattle the cage however you can. Stay hungry.
+Stay free. And believe it: win, lose, or draw, we're here to stay. Armed only
+with imagination, we're gonna rip the fucking lid off.
+
+Th~  wour market.
+
+      
+
+
+Model: GlobalThreshold_80
+0X,
+not
+
+Lo U R R R A RS R AL YV LIdL 5 d TOCK concert “lb()Ut? H
+d ¢ How
+
+crearion, exploring a visceral and shared collective memory
+
+il we've been
+
+wooiomashed into believing never existed?
+
+Lonspiracy theory, my ass. Schools and teachers, the motor vehicle bureay,
+the IRS, the military, the line at the bank, the television set, the newspapers at
+the checkout stand, the news on your radio, the billboards along the highway,
+and now a hundred thousand cold-comfort Web sites. All are tuned to your
+hrain at the deepest level and you have lined up for the coolest, latest-model
+implant. The carrier wave has been tuned at huge cost to deliver a single mes-
+sage: vou are not free, you desire nothing but the products we produce, you
+
+ 
+
+have no world but the world we give you.
+
+If you're OK with this, then eat it up. There’s a bulimic’s dream-feast of
+killer kontent on the way. But if it already makes you want to puke, get angry.
+Write it, code it, paint it, play it- -rattle the cage however you can. Stay hungry.
+Stay free. And believe it: win, lose, or draw, we're here to stay. Armed only
+with imagination, we're gonna rip the fucking lid off.
+
+Th " ~9ur market.
+
+
+Model: GlobalThreshold_100
+ 
+
+Lonal dit LHB O RITE AR IR R e BAAMMLe VYL 5 d TOCK concert about? How
+Jpout creation, exploring a visceral and shared collectjve memory we've heep
+praimwashed into believing never existed?
+
+Conspiracy theory, my ass. Schools and teachers, the motor vehicle bureau,
+the IRS, the military, the line at the bank, the television set, the newspapers at
+the checkout stand, the news on your radio, the billboards along the highway,
+and now a hundred thousand cold-comfort Web sites. All are tuned to your
+brain at the deepest leve] and you have lined up for the coolest, latest-model
+implant. The carrier wave has been tuned at huge cost to deliver a single mes-
+sage: you are not free, you desire nothing but the products we produce, you
+
+have no world but the world we give you.
+
+If you're OK with this, then eat it up. There’s a bulimic’s dream-feast of
+killer kontent on the way. But if it already makes you want to puke, get angry.
+Write it, code it, paint it, play it-—rattle the cage however you can. Stay hungry.
+Stay free. And believe it: win, lose, or draw, we’re here to stay. Armed only
+with imagination, we’re gonna rip the fucking lid off.
+
+Th~ * wqur market.
+
+  
+
+
+Model: GlobalThreshold_110
+0%,
+hot
+
+ 
+
+Vyidl die Lo MR ALy Rt BMMML YV AL O d TOCK concert about? How
+Jpout creation, exploring a visceral and shared collective memory we've heep
+prainwashed into believing never existed?
+
+Conspiracy theory, my ass. Schools and teachers, the motor vehicle bureauy,
+the [RS, the military, the line at the bank, the television set, the newspapers at
+the checkout stand, the news on your radio, the billboards along the highway,
+and now a hundred thousand cold-comfort Web sites. All are tuned to your
+brain at the deepest level and you have lined up for the coolest, latest-model
+implant. The carrier wave has been tuned at huge cost to deliver a single mes-
+sage: you are not free, you desire nothing but the products we produce, you
+have no world but the world we give you.
+
+If you're OK with this, then eat it up. There’s a bulimic’s dream-feast of
+killer kontent on the way. But if it already makes you want to puke, get angry.
+Write it, code it, paint it, play it—rattle the cage however you can. Stay hungry.
+Stay free. And believe it: win, lose, or draw, we’re here to stay. Armed only
+with imagination, we're gonna rip the fucking lid off.
+
+Th- - ‘fiur market.
+
+ 
+
+
+Model: GlobalThreshold_120
+Vidl atc Lol AR EALY it GML YYlldL 5 d TOCK concert ahout? How
+sbout creation, exploring a visceral and shared collective memory we've beep
+prainwashed into believing never existed?
+
+Conspiracy theory, my ass. Schools and teachers, the motor vehicle bureau,
+the [RS, the military, the line at the bank, the television set, the newspapers at
+the checkout stand, the news on your radio, the billboards along the highway,
+and now a hundred thousand cold-comfort Web sites. All are tuned to your
+brain at the deepest level and you have lined up for the coolest, latest-model
+implant. The carrier wave has been tuned at huge cost to deliver a single mes-
+sage: you are not free, you desire nothing but the products we produce, you
+have no world but the world we give you.
+
+If you’re OK with this, then eat it up. There’s a bulimic’s dream-feast of
+killer kontent on the way. But if it already makes you want to puke, get angry.
+Write it, code it, paint it, play it—rattle the cage however you can. Stay hungry.
+Stay free. And believe it: win, lose, or draw, we're here to stay. Armed only
+With imagination, we're gonna rip the fucking lid off.
+
+Th~ * sgur market.
+«;j A ‘
+
+ 
+
+
+Model: GlobalThreshold_140
+e vyildbdie MRS Ry S TR TRAR 5 a TOCK concert aboyt? How
+' pout creation, exploring a visceral and shared collectjve Memory we've heen
+E prainwashed into believing never existed?
+
+Conspiracy theory, my ass. Schools and teachers, the motor vehicle bureauy,
+the IRS, the military, the line at the bank, the television set, the newspapers at
+the checkout stand, the news on your radio, the billboards along the highway,
+and now a hundred thousand cold-comfort Web sites. All are tuned to your
+brain at the deepest level and you have lined up for the coolest, latest-model
+implant. The carrier wave has been tuned at huge cost to deliver a single mes-
+' sage: you are not free, you desire nothing but the products we produce, you
+have no world but the world we give you.
+
+If you're OK with this, then eat it up. There’s a bulimic’s dream-feast of
+killer kontent on the way. But if it already makes you want to puke, get angry.
+Write it, code it, paint it, play it—rattle the cage however you can. Stay hungry.
+Stay free. And believe it: win, lose, or draw, we’re here to stay. Armed only
+Wwith imagination, we're gonna rip the fucking lid off.
+
+Th- = ir market.
+" e N
+
+ 
+
+
+Model: GlobalThreshold_150
+wihal dit Liieh B Sk SRR YYHAL S d TOCK concert about? How
+about creation, exploring a visceral and shared collective memory we've been
+prainwashed into believing never existed?
+
+Conspiracy theory, my ass. Schools and teachers, the motor vehicle bureau,
+the IRS, the military, the line at the bank, the television set, the newspapers at
+the checkout stand, the news on your radio, the billboards along the highway,
+and now a hundred thousand cold-comfort Web sites. All are tuned to your
+brain at the deepest level and you have lined up for the coolest, fatest-model
+implant. The carrier wave has been tuned at huge cost to. deliver a single mes-
+sage: you are not free, you desire nothing but the pr@ducts We produce, you
+have no world but the world we give you. IR AN 2
+
+   
+   
+  
+  
+ 
+ 
+  
+  
+   
+
+ 
+
+If you're OK with this, then eat it up. There s a b,_ ;
+killer kontent on the way. But if it already makes you Want tof'p e, get angry.
+Write it, code it, paint it, play it—rattle the cage however yo an. Stay hungry.
+Stay free. And believe it: win, lose, or draw we're here to stay. Armed only
+
+| With imagination, we’re gonna rip the fucking lid off.
+
+T}‘; QLY arket-
+
+
+Model: SaturationAdjusted_1.2
+VYAl dl T L e e e SR LD R AR TN () (SRS Concert about? HOW
+about creation, exploring a visceral and shared collective memory we've heep
+prainwashed into believing never existed?
+
+Conspiracy theory, my ass. Schools and teachers, the motor vehicle bureau,
+the IRS, the military, the line at the bank, the television set, the newspapers at
+the checkout stand, the news on your radio, the billboards along the highway,
+and now a hundred thousand cold-comfort Web sites. All are tuned to your
+brain at the deepest level and you have lined up for the coolest, latest-model
+implant. The carrier wave has been tuned at huge cost to deliver a single mes-
+sage: you are not free, you desire nothing but the products we produce, you
+have no world but the world we give you.
+
+  
+  
+ 
+ 
+  
+  
+   
+
+If you’re OK with this, then eat it up. There’s a bulimic’s dream-feast of
+killer kontent on the way. But if it already makes you want to puke, get angry.
+Write it, code it, paint it, play it—rattle the cage however you can. Stay hungry.
+Stay free. And believe it: win, lose, or draw, we're here to stay. Armed only
+With imagination, we’re gonna rip the fucking lid off.
+
+The " sgur market.
+
+
+Model: SaturationAdjusted_0.6
+VYAl dl T L e el e i SRR LR R BTN () (SRS Concert about? HQW
+about creation, exploring a visceral and shared collective memory we've heep
+prainwashed into believing never existed?
+
+Conspiracy theory, my ass. Schools and teachers, the motor vehicle bureau,
+the IRS, the military, the line at the bank, the television set, the newspapers at
+the checkout stand, the news on your radio, the billboards along the highway,
+and now a hundred thousand cold-comfort Web sites. All are tuned to your
+brain at the deepest level and you have lined up for the coolest, latest-model
+implant. The carrier wave has been tuned at huge cost to deliver a single mes-
+sage: you are not free, you desire nothing but the products we produce, you
+have no world but the world we give you.
+
+     
+  
+ 
+
+If you're OK with this, then eat it up. There’s a bulimic’s dream-feast of
+killer kontent on the way. But if it already makes you want to puke, get angry.
+Write it, code it, paint it, play it—rattle the cage however you can. Stay hungry.
+Stay free. And believe it: win, lose, or draw, we're here to stay. Armed only
+With imagination, we’re gonna rip the fucking lid off.
+
+Th ’i‘ i r market.
+
+
+Model: SaturationAdjusted_0.9
+V\/na[ (e § R 2 P A AR tab i o) AR AR A 2 SADA S B A G d D I‘OCK COI'lCert about? HOW
+about creation, exploring a visceral and shared collective memory we've heep
+prainwashed into believing never existed?
+
+Conspiracy theory, my ass. Schools and teachers, the motor vehicle bureau,
+the IRS, the military, the line at the bank, the television set, the newspapers at
+the checkout stand, the news on your radio, the billboards along the highway,
+and now a hundred thousand cold-comfort Web sites. All are tuned to your
+brain at the deepest level and you have lined up for the coolest, latest-model
+implant. The carrier wave has been tuned at huge cost to deliver a single mes-
+sage: you are not free, you desire nothing but the products we produce, you
+have no world but the world we give you.
+
+  
+  
+ 
+ 
+  
+  
+   
+
+If you’re OK with this, then eat it up. There’s a bulimic’s dream-feast of
+killer kontent on the way. But if it already makes you want to puke, get angry.
+Write it, code it, paint it, play it—rattle the cage however you can. Stay hungry.
+Stay free. And believe it: win, lose, or draw, we're here to stay. Armed only
+With imagination, we’re gonna rip the fucking lid off.
+
+T our market.
+
+
+Model: SaturationAdjusted_1.6
+Wﬂa[ e Q R 2 S ASIE AR teh ot e ) AR AR A 2 SAD A A A G d Dy I‘OCK COHCert about? HOW
+about creation, exploring a visceral and shared collective memory we've heep
+prainwashed into believing never existed?
+
+Conspiracy theory, my ass. Schools and teachers, the motor vehicle bureau,
+the IRS, the military, the line at the bank, the television set, the newspapers at
+the checkout stand, the news on your radio, the billboards along the highway,
+and now a hundred thousand cold-comfort Web sites. All are tuned to your
+brain at the deepest level and you have lined up for the coolest, latest-model
+implant. The carrier wave has been tuned at huge cost to deliver a single mes-
+sage: you are not free, you desire nothing but the products we produce, you
+have no world but the world we give you.
+
+  
+  
+  
+  
+ 
+ 
+  
+  
+   
+
+If you’re OK with this, then eat it up. There’s a bulimic’s dream-feast of
+killer kontent on the way. But if it already makes you want to puke, get angry.
+Write it, code it, paint it, play it—rattle the cage however you can. Stay hungry.
+Stay free. And believe it: win, lose, or draw, we're here to stay. Armed only
+With imagination, we’re gonna rip the fucking lid off.
+
+Tha r market.
+
+
+Model: SaturationAdjusted_2
+VYAl dlC L e e l e SRR LR R AR TN () (SRS Concert about? HOW
+about creation, exploring a visceral and shared collective memory we've heep
+prainwashed into believing never existed?
+
+Conspiracy theory, my ass. Schools and teachers, the motor vehicle bureau,
+the IRS, the military, the line at the bank, the television set, the newspapers at
+the checkout stand, the news on your radio, the billboards along the highway,
+and now a hundred thousand cold-comfort Web sites. All are tuned to your
+brain at the deepest level and you have lined up for the coolest, latest-model
+implant. The carrier wave has been tuned at huge cost to deliver a single mes-
+sage: you are not free, you desire nothing but the products we produce, you
+have no world but the world we give you.
+
+  
+  
+  
+  
+ 
+ 
+  
+  
+   
+
+If you're OK with this, then eat it up. There’s a bulimic’s dream-feast of
+killer kontent on the way. But if it already makes you want to puke, get angry.
+Write it, code it, paint it, play it—rattle the cage however you can. Stay hungry.
+Stay free. And believe it: win, lose, or draw, we're here to stay. Armed only
+With imagination, we’re gonna rip the fucking lid off.
+
+Tha r market.
+
+
+Model: SaturationAdjusted_2.5
+Wha[ dlT LIICOLU SHAAMS S St MLt L R L e el I‘OCK COHCert abOUt? HOW
+Jbout creation, exploring a visceral and shared collective memory we've heep
+prainwashed into believing never existed?
+
+Conspiracy theory, my ass. Schools and teachers, the motor vehicle bureau,
+the IRS, the military, the line at the bank, the television set, the newspapers at
+the checkout stand, the news on your radio, the billboards along the highway,
+and now a hundred thousand cold-comfort Web sites. All are tuned to your
+brain at the deepest level and you have lined up for the coolest, latest-model
+implant. The carrier wave has been tuned at huge cost to deliver a single mes-
+sage: you are not free, you desire nothing but the products we produce, you
+have no world but the world we give you.
+
+   
+   
+  
+  
+ 
+ 
+  
+  
+   
+
+If you’re OK with this, then eat it up. There’s a bulimic’s dream-feast of
+killer kontent on the way. But if it already makes you want to puke, get angry.
+Write it, code it, paint it, play it—rattle the cage however you can. Stay hungry.
+Stay free. And believe it: win, lose, or draw, we're here to stay. Armed only
+With imagination, we’re gonna rip the fucking lid off.
+
+Th- r market.
+
+
+Model: Deskewed
+VYAl dl T L e e s e SR LR R AR TN (SR concert about? How
+about creation, exploring a visceral and shared collective memory we've heep
+prainwashed into believing never existed?
+
+Conspiracy theory, my ass. Schools and teachers, the motor vehicle bureau,
+the IRS, the military, the line at the bank, the television set, the newspapers at
+the checkout stand, the news on your radio, the billboards along the highway,
+and now a hundred thousand cold-comfort Web sites. All are tuned to your
+brain at the deepest level and you have lined up for the coolest, latest-model
+implant. The carrier wave has been tuned at huge cost to deliver a single mes-
+sage: you are not free, you desire nothing but the products we produce, you
+have no world but the world we give you.
+
+If you’re OK with this, then eat it up. There’s a bulimic’s dream-feast of
+killer kontent on the way. But if it already makes you want to puke, get angry.
+Write it, code it, paint it, play it—rattle the cage however you can. Stay hungry.
+Stay free. And believe it: win, lose, or draw, we're here to stay. Armed only
+Wwith imagination, we're gonna rip the fucking lid off.
+
+Th’/,*‘i< r market.
+
+ 
+
+
+Model: AdaptiveThreshold
+ 
+
+

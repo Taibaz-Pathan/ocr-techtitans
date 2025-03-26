@@ -47,7 +47,7 @@ namespace OCRProject.Utils
             LogFolder = Path.GetFullPath(log);  // Set the LogFolder property
 
             // Path to application key details (Utils/app.json)
-            string appkey = Path.GetFullPath(Path.Combine(currentDirectory, relativePath, "Utils", "app.json"));
+            string appkey = Path.GetFullPath(Path.Combine(currentDirectory, relativePath, "Utils", "mycode.json"));
             appkeypath = Path.GetFullPath(appkey);  // Set the appkeypath property
 
             // Ensure all necessary directories exist (created if they don't exist)
