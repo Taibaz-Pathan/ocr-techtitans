@@ -39,7 +39,7 @@ Once the project is set up, follow these steps to run the OCR pipeline:
 1. Place Your Raw Images:Place the raw images that need to be processed in the Input/ folder. 
 2. Install Tessdata from https://github.com/tesseract-ocr/tessdata
 3. Add your Open AI API Key in Utils/mycode.json file. 
-4. Build the Project:Open a command prompt or terminal and navigate to the project directory. Run the following command to build the project- dotnet build
+4. Build the Project: Open a command prompt or terminal and navigate to the project directory. Run the following command to build the project- dotnet build.   
 5.Run the application: Navigate to the output directory:cd bin/Debug/net9.0/OCRProject.exe. This will process the input images, extract the text, and save the results in the Output folder.
 
 
@@ -122,6 +122,9 @@ using NPOI.SS.UserModel;
 using NPOI.XSSF.UserModel;
 using OCRProject.Interfaces;
 using System.Diagnostics;
+
+## Unit test Project
+https://github.com/Taibaz-Pathan/ocr-techtitans/tree/main/src/OCRTestProject
 
 Team Members
 * Mithila Prabhu
