@@ -11,7 +11,7 @@ namespace OCRProject.TesseractProcessor
 {
     public class TesseractProcessor
     {
-        public static string ExtractTextFromImage(Image<Rgba32> image, string createdFilePath, FileWriter fileWriter)
+        public static string ExtractTextFromImage(Image<Rgba32> image, string modelName, string createdFilePath, FileWriter fileWriter)
         {
             string extractedText = string.Empty;
 
@@ -30,8 +30,11 @@ namespace OCRProject.TesseractProcessor
                         {
                             using (var page = engine.Process(pixImage))
                             {
-                                extractedText = page.GetText();  // Extract text
-                                fileWriter.WriteToFile(createdFilePath, extractedText); // Save text
+                                extractedText = page.GetText();
+
+                                // Label the text with the model name
+                                string labeledText = $"Model: {modelName}\n{extractedText}\n";
+                                fileWriter.WriteToFile(createdFilePath, labeledText);
                             }
                         }
                     }
@@ -42,7 +45,7 @@ namespace OCRProject.TesseractProcessor
                 Console.WriteLine($"Error in ExtractTextFromImage: {ex.Message}");
             }
 
-            return extractedText; // Return extracted text
+            return extractedText;
         }
     }
 }

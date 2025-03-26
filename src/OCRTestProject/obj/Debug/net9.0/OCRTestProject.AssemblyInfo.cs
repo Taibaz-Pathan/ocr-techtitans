@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OCRTestProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e25e669c877427787bd2388aa8deb79f346f018a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e74f484bf985343a90bed9c58c7a754b2daa5f4b")]
 [assembly: System.Reflection.AssemblyProductAttribute("OCRTestProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OCRTestProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

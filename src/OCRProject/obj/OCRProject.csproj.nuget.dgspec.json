@@ -56,13 +56,25 @@
               "target": "Package",
               "version": "[3.2.0, )"
             },
+            "DotNetEnv": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
             "EPPlus": {
               "target": "Package",
               "version": "[8.0.0-beta, )"
             },
+            "Microsoft.ML": {
+              "target": "Package",
+              "version": "[4.0.2, )"
+            },
             "NPOI": {
               "target": "Package",
               "version": "[2.7.2, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             },
             "OpenAI": {
               "target": "Package",

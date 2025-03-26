@@ -1,66 +1,68 @@
-﻿using System;
+﻿using OCRProject.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.IO;
-using DocumentFormat.OpenXml.Spreadsheet;
-using NPOI.SS.UserModel;
-using NPOI.XSSF.UserModel;
-using OCRProject.Interfaces;
+using System.Linq;
 
-namespace OCRProject.ModelComparison
+namespace OCRProject.ModelComparision
 {
+    /// <summary>
+    /// Tracks the processing time for different models by recording elapsed times.
+    /// </summary>
     public class ProcessingTimeTracker : IProcessingTimeTracker
     {
-        private Stopwatch stopwatch;
-        private List<(string ImageName, string ProcessingStep, double TimeTaken)> processingTimes;
-        private string outputExcelPath;
+        private readonly Dictionary<string, List<double>> _timeRecords = new(); // Stores a list of times for each model
+        private readonly Dictionary<string, Stopwatch> _timers = new(); // Stores a stopwatch for each model to measure elapsed time
 
-        public ProcessingTimeTracker(string outputFolder)
+        /// <summary>
+        /// Starts a timer for a specific model.
+        /// </summary>
+        /// <param name="modelName">The name of the model for which the timer is started.</param>
+        public void StartTimer(string modelName)
         {
-            stopwatch = new Stopwatch();
-            processingTimes = new List<(string, string, double)>();
-            outputExcelPath = Path.Combine(outputFolder, "ProcessingResults.xlsx");
+            // If no stopwatch is found for the model, create a new one and start it.
+            if (!_timers.ContainsKey(modelName))
+                _timers[modelName] = new Stopwatch();
+
+            // Restart the stopwatch to measure from the beginning.
+            _timers[modelName].Restart();
         }
 
-        public void StartTimer()
+        /// <summary>
+        /// Stops the timer for a specific model and records the elapsed time in milliseconds.
+        /// </summary>
+        /// <param name="modelName">The name of the model for which the timer is stopped.</param>
+        /// <returns>The elapsed time in milliseconds.</returns>
+        public double StopAndRecord(string modelName)  // Now returns double
         {
-            stopwatch.Restart();
-        }
-
-        public void StopAndRecord(string imageName, string processingStep)
-        {
-            stopwatch.Stop();
-            processingTimes.Add((imageName, processingStep, stopwatch.Elapsed.TotalSeconds));
-        }
-
-        public void GenerateExcelReport()
-        {
-            IWorkbook workbook = new XSSFWorkbook();
-            ISheet sheet = workbook.CreateSheet("Processing Times");
-
-            // Create Header Row
-            IRow headerRow = sheet.CreateRow(0);
-            headerRow.CreateCell(0).SetCellValue("Image Name");
-            headerRow.CreateCell(1).SetCellValue("Processing Step");
-            headerRow.CreateCell(2).SetCellValue("Time Taken (s)");
-
-            // Add Data Rows
-            int rowIndex = 1;
-            foreach (var entry in processingTimes)
+            // If the timer exists for the model, stop it and record the elapsed time.
+            if (_timers.ContainsKey(modelName))
             {
-                IRow row = sheet.CreateRow(rowIndex++);
-                row.CreateCell(0).SetCellValue(entry.ImageName);
-                row.CreateCell(1).SetCellValue(entry.ProcessingStep);
-                row.CreateCell(2).SetCellValue(entry.TimeTaken);
+                _timers[modelName].Stop(); // Stop the stopwatch
+                double elapsedMs = _timers[modelName].Elapsed.TotalMilliseconds; // Get the elapsed time in milliseconds
+
+                // If no time records exist for this model, create a new list to hold the times.
+                if (!_timeRecords.ContainsKey(modelName))
+                    _timeRecords[modelName] = new List<double>();
+
+                // Add the recorded time to the list of times for the model.
+                _timeRecords[modelName].Add(elapsedMs);
+
+                return elapsedMs;  // Return the elapsed time in milliseconds
             }
 
-            // Save to file
-            using (FileStream fileStream = new FileStream(outputExcelPath, FileMode.Create, FileAccess.Write))
-            {
-                workbook.Write(fileStream);
-            }
+            // If the model doesn't have a timer, return 0 as default.
+            return 0;
+        }
 
-            workbook.Close();
+        /// <summary>
+        /// Gets the average processing time for each model.
+        /// </summary>
+        /// <returns>A dictionary with model names as keys and their average processing times in milliseconds as values.</returns>
+        public Dictionary<string, double> GetAverageTimes()
+        {
+            // For each model, calculate the average time from the recorded times and return the result.
+            return _timeRecords.ToDictionary(kvp => kvp.Key, kvp => kvp.Value.Average());
         }
     }
 }

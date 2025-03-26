@@ -1,107 +1,124 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
+using OCRProject.Interfaces;
 using NPOI.SS.UserModel;
 using NPOI.XSSF.UserModel;
-using OCRProject.Interfaces;
 
-namespace ModelComparison
+namespace OCRProject.ModelComparision
 {
+    /// <summary>
+    /// Computes cosine similarity between model embeddings and generates an Excel report.
+    /// </summary>
     public class CosineSimilarityCalculator : ICosineSimilarityCalculator
     {
         private readonly string _outputFolder;
 
+        // Constructor to initialize the output folder where the report will be saved
         public CosineSimilarityCalculator(string outputFolder)
         {
             _outputFolder = outputFolder;
         }
 
         /// <summary>
-        /// Computes cosine similarity between different model embeddings and generates an Excel report.
+        /// Calculates cosine similarity between models and saves the results in an Excel file.
         /// </summary>
-        /// <param name="embeddings">Dictionary with model names and their embeddings.</param>
+        /// <param name="embeddings">Dictionary containing model names and their embeddings.</param>
         public void ComputeAndSaveReport(Dictionary<string, float[]> embeddings)
         {
+            // If there are less than 2 models, we cannot compare them, so exit early
             if (embeddings.Count < 2)
             {
                 Console.WriteLine("Not enough models to compare.");
                 return;
             }
 
-            // Normalize embeddings and remove negatives (if needed)
-            var normalizedEmbeddings = embeddings.ToDictionary(
-                kvp => kvp.Key,
-                kvp => NormalizeVector(kvp.Value)
-            );
-
+            // Define the file path to save the Excel report
             string outputFile = Path.Combine(_outputFolder, "CosineSimilarity.xlsx");
 
+            // Create a new workbook and sheet for the report
             IWorkbook workbook = new XSSFWorkbook();
             ISheet sheet = workbook.CreateSheet("Similarity Report");
 
-            // Create header row
+            // Create the header row in the Excel sheet with model names as column headers
             int rowIdx = 0;
             IRow headerRow = sheet.CreateRow(rowIdx++);
             headerRow.CreateCell(0).SetCellValue("Model");
 
             int colIdx = 1;
-            foreach (var model in normalizedEmbeddings.Keys)
+            foreach (var model in embeddings.Keys)
             {
                 headerRow.CreateCell(colIdx++).SetCellValue(model);
             }
 
-            // Compute similarity for each model pair
-            foreach (var modelA in normalizedEmbeddings)
+            // Now compute cosine similarity for each pair of models and populate the sheet
+            foreach (var modelA in embeddings)
             {
                 IRow row = sheet.CreateRow(rowIdx++);
-                row.CreateCell(0).SetCellValue(modelA.Key);
+                row.CreateCell(0).SetCellValue(modelA.Key);  // Set modelA's name in the first column
                 colIdx = 1;
 
-                foreach (var modelB in normalizedEmbeddings)
+                // Compare modelA with every other model (including itself) and fill the similarity values
+                foreach (var modelB in embeddings)
                 {
-                    float similarity = ComputeCosineSimilarity(modelA.Value, modelB.Value);
-                    row.CreateCell(colIdx++).SetCellValue(similarity);
+                    row.CreateCell(colIdx++).SetCellValue(ComputeCosineSimilarity(modelA.Value, modelB.Value));
                 }
             }
 
-            // Save report to file
+            // Save the Excel report to the specified file
             using (FileStream fileStream = new FileStream(outputFile, FileMode.Create, FileAccess.Write))
             {
                 workbook.Write(fileStream);
             }
 
+            // Notify the user that the report has been saved
             Console.WriteLine($"Report saved to {outputFile}");
         }
 
         /// <summary>
-        /// Computes the cosine similarity between two normalized vectors.
+        /// Computes the cosine similarity between two embedding vectors.
         /// </summary>
-        /// <param name="vectorA">First vector.</param>
-        /// <param name="vectorB">Second vector.</param>
-        /// <returns>Cosine similarity value between 0 and 1, rounded to 6 decimal places.</returns>
         private float ComputeCosineSimilarity(float[] vectorA, float[] vectorB)
         {
-            float dotProduct = vectorA.Zip(vectorB, (a, b) => a * b).Sum();
+            float dotProduct = 0f;
+            float magnitudeA = 0f;
+            float magnitudeB = 0f;
 
-            // Ensure similarity is within 0 and 1
-            return (float)Math.Round(Math.Max(dotProduct, 0), 6);
+            // Calculate the dot product and magnitudes of both vectors
+            for (int i = 0; i < vectorA.Length; i++)
+            {
+                dotProduct += vectorA[i] * vectorB[i];
+                magnitudeA += vectorA[i] * vectorA[i];
+                magnitudeB += vectorB[i] * vectorB[i];
+            }
+
+            // Take square root of the sum of squares to get the magnitudes
+            magnitudeA = (float)Math.Sqrt(magnitudeA);
+            magnitudeB = (float)Math.Sqrt(magnitudeB);
+
+            // If either vector has zero magnitude, return 0 (no similarity)
+            return (magnitudeA == 0 || magnitudeB == 0) ? 0 : dotProduct / (magnitudeA * magnitudeB);
         }
 
         /// <summary>
-        /// Normalizes a vector and ensures non-negative values.
+        /// Formats model names for GlobalThresholding and SaturationAdjustment methods.
         /// </summary>
-        /// <param name="vector">The input vector.</param>
-        /// <returns>Normalized and non-negative vector.</returns>
-        private float[] NormalizeVector(float[] vector)
+        private string FormatModelName(string modelName)
         {
-            // Take absolute values to avoid negative similarities
-            vector = vector.Select(x => Math.Abs(x)).ToArray();
+            // If the model name is for GlobalThresholding, format it accordingly
+            if (modelName.StartsWith("GlobalThresholding("))
+            {
+                return modelName.Replace("GlobalThresholding(", "GlobalThresholding_").TrimEnd(')');
+            }
 
-            float magnitude = (float)Math.Sqrt(vector.Sum(x => x * x));
-            if (magnitude == 0) return new float[vector.Length];  // Avoid division by zero
+            // If the model name is for SaturationAdjustment, format it similarly
+            if (modelName.StartsWith("SaturationAdjustment("))
+            {
+                return modelName.Replace("SaturationAdjustment(", "SaturationAdjustment_").TrimEnd(')');
+            }
 
-            return vector.Select(x => x / magnitude).ToArray();
+            // Return the model name unchanged if it doesn't match any special format
+            return modelName;
         }
     }
 }

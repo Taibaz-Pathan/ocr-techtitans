@@ -1,82 +1,108 @@
-﻿using System;
+﻿using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.PixelFormats;
+using System;
 
 namespace OCRProject.ImageProcessing
 {
     public class AdaptiveThreshold
     {
-        // Stores the threshold value used for binarization.
-        private readonly int _thresholdValue;
+        private readonly int _blockSize;  // Size of the local neighborhood
+        private readonly double _c;  // Constant to subtract from the local average (helps fine-tune the threshold)
 
-        // Constructor: Initializes the AdaptiveThreshold object with the specified threshold value.
-        public AdaptiveThreshold(int thresholdValue)
+        // Constructor: Initializes the AdaptiveThreshold object with the block size and constant value.
+        public AdaptiveThreshold(int blockSize = 11, double c = 5.0)
         {
-            _thresholdValue = thresholdValue;
+            _blockSize = blockSize;
+            _c = c;
         }
 
-        // ApplyThreshold: Performs adaptive thresholding on the input image data.
+        // ApplyThreshold: Applies true adaptive thresholding to the input image.
         // Parameters:
-        //   originalData: A byte array containing the raw pixel data of the image.
-        //   width: The width of the image in pixels.
-        //   height: The height of the image in pixels.
-        //   bytesPerPixel: The number of bytes per pixel (1 for grayscale, 3 for RGB, 4 for RGBA).
+        //   image: The image to which the thresholding should be applied.
         // Returns:
-        //   A byte array containing the thresholded (black and white) grayscale image data.
-        public byte[] ApplyThreshold(byte[] originalData, int width, int height, int bytesPerPixel)
+        //   A new image with the threshold applied (black and white).
+        public Image<Rgba32> ApplyThreshold(Image<Rgba32> image)
         {
-            // Input validation: Check for null input data.
-            if (originalData == null)
-            {
-                throw new ArgumentNullException(nameof(originalData), "The input image data cannot be null.");
-            }
+            // Clone the image to keep the original intact
+            var thresholdedImage = image.Clone();
 
-            // Input validation: Check for invalid image dimensions or bytes per pixel.
-            if (width <= 0 || height <= 0 || bytesPerPixel <= 0)
-            {
-                throw new ArgumentException("Invalid image dimensions or bytes per pixel.");
-            }
+            // Generate integral image (summed area table)
+            var integralImage = GenerateIntegralImage(image);
 
-            // Input validation: Check if the image data length matches the provided dimensions and bytes per pixel.
-            if (originalData.Length != width * height * bytesPerPixel)
+            // Loop through every pixel in the image
+            for (int y = 0; y < image.Height; y++)
             {
-                throw new ArgumentException("Image data length does not match provided dimensions and bytes per pixel.");
-            }
-
-            // Create a new byte array to store the thresholded grayscale image data.
-            // Each pixel will be represented by a single byte (0 for black, 255 for white).
-            byte[] thresholdedData = new byte[width * height];
-
-            // Iterate through each pixel of the image.
-            for (int x = 0; x < width; x++)
-            {
-                for (int y = 0; y < height; y++)
+                for (int x = 0; x < image.Width; x++)
                 {
-                    // Calculate the index of the current pixel in the originalData byte array.
-                    int pixelIndex = (y * width + x) * bytesPerPixel;
+                    // Get the grayscale value for the current pixel
+                    byte grayscale = GetGrayscaleValue(image[x, y]);
 
-                    // Variable to store the grayscale value of the pixel.
-                    int grayscale;
+                    // Calculate the local threshold using the integral image
+                    byte localThreshold = CalculateLocalThreshold(integralImage, x, y, image.Width, image.Height);
 
-                    // Determine the grayscale value based on the number of bytes per pixel.
-                    switch (bytesPerPixel)
+                    // Apply the threshold: if the grayscale value is below the local threshold, set to black, else white.
+                    if (grayscale < localThreshold)
                     {
-                        case 1: // Grayscale image: The pixel value is already the grayscale value.
-                            grayscale = originalData[pixelIndex];
-                            break;                        
-                        case 2: // RGBA image: Calculate the average of the red, green, and blue components.
-                            grayscale = (originalData[pixelIndex] + originalData[pixelIndex + 1] + originalData[pixelIndex + 2]) / 3;
-                            break;
-                        default: // Unsupported number of bytes per pixel.
-                            throw new ArgumentException("Unsupported bytes per pixel.");
+                        thresholdedImage[x, y] = new Rgba32(0, 0, 0, 255); // Black
                     }
-
-                    // Apply the threshold: Set the pixel to black (0) if the grayscale value is below the threshold,
-                    // otherwise set it to white (255).
-                    thresholdedData[y * width + x] = grayscale < _thresholdValue ? (byte)0 : (byte)255;
+                    else
+                    {
+                        thresholdedImage[x, y] = new Rgba32(255, 255, 255, 255); // White
+                    }
                 }
             }
 
-            // Return the thresholded grayscale image data.
-            return thresholdedData;
+            return thresholdedImage;
+        }
+
+        // GetGrayscaleValue: Converts a pixel to its grayscale value (using luminance formula).
+        private byte GetGrayscaleValue(Rgba32 pixel)
+        {
+            return (byte)((0.3 * pixel.R) + (0.59 * pixel.G) + (0.11 * pixel.B));
+        }
+
+        // GenerateIntegralImage: Generates an integral image (summed area table) for fast block sum computation.
+        private int[,] GenerateIntegralImage(Image<Rgba32> image)
+        {
+            int width = image.Width;
+            int height = image.Height;
+
+            // Create an integral image (summed area table)
+            int[,] integralImage = new int[height + 1, width + 1];
+
+            // Fill the integral image with cumulative sum of grayscale values
+            for (int y = 1; y <= height; y++)
+            {
+                for (int x = 1; x <= width; x++)
+                {
+                    int pixelValue = GetGrayscaleValue(image[x - 1, y - 1]);
+                    integralImage[y, x] = pixelValue + integralImage[y - 1, x] + integralImage[y, x - 1] - integralImage[y - 1, x - 1];
+                }
+            }
+
+            return integralImage;
+        }
+
+        // CalculateLocalThreshold: Calculates the local threshold for a pixel based on its neighborhood using the integral image.
+        private byte CalculateLocalThreshold(int[,] integralImage, int x, int y, int width, int height)
+        {
+            int halfBlockSize = _blockSize / 2;
+
+            // Calculate the boundaries of the block centered at (x, y)
+            int x1 = Math.Max(x - halfBlockSize, 0);
+            int y1 = Math.Max(y - halfBlockSize, 0);
+            int x2 = Math.Min(x + halfBlockSize, width - 1);
+            int y2 = Math.Min(y + halfBlockSize, height - 1);
+
+            // Get the sum of the block using the integral image
+            int sum = integralImage[y2 + 1, x2 + 1] - integralImage[y1, x2 + 1] - integralImage[y2 + 1, x1] + integralImage[y1, x1];
+
+            // Calculate the number of pixels in the block
+            int blockArea = (x2 - x1 + 1) * (y2 - y1 + 1);
+
+            // Calculate the local threshold as the mean of the block minus a constant
+            byte localThreshold = (byte)((sum / blockArea) - _c);
+            return localThreshold;
         }
     }
 }
