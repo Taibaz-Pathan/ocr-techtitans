@@ -7,18 +7,26 @@ The OCR (Optical Character Recognition) Project is designed to process images, e
 - Reads image files
 - Uses OCR to extract text
 - Outputs recognized text to  file
+- Generates Embeddings for extracted Text
+- Calculates cosine similarity
+- Tracks time taken by each processing step
+- Tracks memory usage
+- Computes the best processing model based on cosine similarity, time taken by processing step and memory usage
+- Captures all the logging trace in Text file.
 
 ## Prerequisites
 - .NET SDK (latest version recommended)
 - Visual Studio or any C# IDE
-- Tesseract OCR library (if applicable)
+- Tesseract OCR library 
+- OpenAI library
+- Tessdata
 
 ## Installation
 1. Prerequisites
 Before using this project, ensure you have the following installed:
-* .NET 9: Required to build and run the project.
-* Tesseract OCR Engine: Ensure Tesseract is installed and accessible on your system. You can find installation instructions here.
-* NuGet Packages: The required NuGet packages will be automatically installed when you restore the project.
+- .NET 9: Required to build and run the project.
+- Tesseract OCR Engine: Ensure Tesseract is installed and accessible on your system. You can find installation instructions here.
+- NuGet Packages: The required NuGet packages will be automatically installed when you restore the project.
   
 2. Installation
 Clone or download the project:
@@ -29,20 +37,13 @@ dotnet restore
 ## Usage Instructions
 Once the project is set up, follow these steps to run the OCR pipeline:
 1. Place Your Raw Images:Place the raw images that need to be processed in the Input/ folder. 
-2. Build the Project:Open a command prompt or terminal and navigate to the project directory. Run the following command to build the project- dotnet build
-3. Add your Open AI API Key in Utils/app.json file. 
-4. Run the Application: Navigate to the output directory:cd bin/Debug/net9.0/
-5.Run the application: OCRProject.exe. This will process the input images, extract the text, and save the results in the Output/ folder.
+2. Install Tessdata from https://github.com/tesseract-ocr/tessdata
+3. Add your Open AI API Key in Utils/mycode.json file. 
+4. Build the Project:Open a command prompt or terminal and navigate to the project directory. Run the following command to build the project- dotnet build
+5.Run the application: Navigate to the output directory:cd bin/Debug/net9.0/OCRProject.exe. This will process the input images, extract the text, and save the results in the Output folder.
 
-## Usage
-1. Build and run the project using Visual Studio or `dotnet run` from the command line.
-2. Provide an image file as input.
-3. The extracted text will be displayed or saved as per the configuration.
 
 ## Project Structure
-- `OCRProject.csproj`: Project configuration file.
-- `Program.cs`: Main entry point of the application.
-
 ![Project Structure](./assets/ProjectFolderStructure.png)  
 - `OCRProject.csproj`: Project configuration file.
 - `Program.cs`: Main entry point of the application.
@@ -53,17 +54,16 @@ Once the project is set up, follow these steps to run the OCR pipeline:
 - `TesseractProcessor/`: Folder for handling text extraction via Tesseract.
 - `Utils/`: Folder for utility scripts.
 
-
 ## Project Workflow
 The OCR Project follows a pipeline for each input image through several steps:
 1. Image Preprocessing
 Input: Raw image (e.g png, jpg, jpeg etc). Raw images are to be store in Input Folder
 Process: Different pre-processing techniques are applied to the input image to remove noise, remove blurring or image and obtain a clean image. Preprocessing class     are store in ImageProcessing folder.Following are the preprocessing techniques used:
-1. ConvertToGrayscale- Converts a color image to grayscale by reducing it to shades of gray, simplifying the data for better OCR accuracy.
-2. Deskew.cs- Corrects any tilt or rotation in the image, aligning the text horizontally to improve OCR results.
-3. GlobalThresholding.cs- Converts the grayscale image into a binary image (black and white) by applying a global threshold, improving contrast for text detection.
-4. SaturationAdjustment.cs- Adjusts the saturation of the image to enhance color intensity, which can help with clarity in certain image types.
-5. AdaptiveThreshold.cs- SConverts the image based on local threshold and variation in brightness
+- ConvertToGrayscale- Converts a color image to grayscale by reducing it to shades of gray, simplifying the data for better OCR accuracy.
+- Deskew.cs- Corrects any tilt or rotation in the image, aligning the text horizontally to improve OCR results.
+- GlobalThresholding.cs- Converts the grayscale image into a binary image (black and white) by applying a global threshold, improving contrast for text detection.
+- SaturationAdjustment.cs- Adjusts the saturation of the image to enhance color intensity, which can help with clarity in certain image types.
+- AdaptiveThreshold.cs- SConverts the image based on local threshold and variation in brightness
 
 
 2. Text Extraction (OCR)
@@ -122,27 +122,6 @@ using NPOI.SS.UserModel;
 using NPOI.XSSF.UserModel;
 using OCRProject.Interfaces;
 using System.Diagnostics;
-
-## Setup Instructions
-1. Prerequisites
-Before using this project, ensure you have the following installed:
-* .NET 9: Required to build and run the project.
-* Tesseract OCR Engine: Ensure Tesseract is installed and accessible on your system. You can find installation instructions here.
-* NuGet Packages: The required NuGet packages will be automatically installed when you restore the project.
-2. Installation
-Clone or download the project:
-git clone https://github.com/Taibaz-Pathan/ocr-techtitans.git
-After cloning the repository, navigate to the project folder and restore the necessary NuGet packages:
-dotnet restore
-
-## Usage Instructions
-Once the project is set up, follow these steps to run the OCR pipeline:
-1. Place Your Raw Images:Place the raw images that need to be processed in the Input/ folder. 
-2. Go to Utils folder and add your api key in "OpenAI": "Your API KEY". Replace Your API KEY with actual key.
-2. Build the Project:Open a command prompt or terminal and navigate to the project directory.Run the following command to build the project- dotnet build
-3. Run the Application:Navigate to the output directory:cd bin/Debug/net9.0/
-4. Run the application: OCRProject.exe
-This will process the input images, extract the text, and save the results in the Output/ folder.
 
 Team Members
 * Mithila Prabhu
