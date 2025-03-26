@@ -40,7 +40,7 @@ namespace OCRProject.ModelComparision
                 .Build();
 
             // Retrieve the API key from the loaded configuration under "Mykey:ApiKey"
-            var apiKey = configuration["Mykey:ApiKey"];
+            var apiKey = configuration["ApiKeys:OpenAI"];
             if (string.IsNullOrEmpty(apiKey))
             {
                 // If the API key is missing or empty, throw an exception to notify the error
@@ -115,7 +115,7 @@ namespace OCRProject.ModelComparision
         }
     }
 
-    
+
     // Response class to represent the OpenAI API response structure
     public class OpenAIEmbeddingResponse
     {
