@@ -55,19 +55,19 @@ namespace OCRProject.ImageProcessing
             return thresholdedImage;
         }
 
-        // GetGrayscaleValue: Converts a pixel to its grayscale value (using luminance formula).
+        //Converts a pixel to its grayscale value (using luminance formula).
         private byte GetGrayscaleValue(Rgba32 pixel)
         {
             return (byte)((0.3 * pixel.R) + (0.59 * pixel.G) + (0.11 * pixel.B));
         }
 
-        // GenerateIntegralImage: Generates an integral image (summed area table) for fast block sum computation.
+        // Generates an integral image for fast block sum computation.
         private int[,] GenerateIntegralImage(Image<Rgba32> image)
         {
             int width = image.Width;
             int height = image.Height;
 
-            // Create an integral image (summed area table)
+            // Create an integral image 
             int[,] integralImage = new int[height + 1, width + 1];
 
             // Fill the integral image with cumulative sum of grayscale values
@@ -83,7 +83,7 @@ namespace OCRProject.ImageProcessing
             return integralImage;
         }
 
-        // CalculateLocalThreshold: Calculates the local threshold for a pixel based on its neighborhood using the integral image.
+        //Calculates the local threshold for a pixel based on its neighborhood using the integral image.
         private byte CalculateLocalThreshold(int[,] integralImage, int x, int y, int width, int height)
         {
             int halfBlockSize = _blockSize / 2;

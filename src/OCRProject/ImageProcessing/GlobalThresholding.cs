@@ -15,11 +15,7 @@ namespace OCRProject.ImageProcessing
             _threshold = threshold;
         }
 
-        // ApplyThreshold: Applies global thresholding to the input image.
-        // Parameters:
-        //   image: The Image<Rgba32> object to be thresholded.
-        // Returns:
-        //   The thresholded Image<Rgba32>.
+        
         public Image<Rgba32> ApplyThreshold(Image<Rgba32> image)
         {
             // Create a new image to store the thresholded data.
