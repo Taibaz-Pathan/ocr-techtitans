@@ -21,7 +21,7 @@ namespace OCRProject.ModelComparision
         {
             // Load the API key using ConfigLoader to fetch from app.json file
             var configLoader = new ConfigLoader();
-            ApiKey = LoadApiKeyFromConfig(configLoader.appkeypath);  // Load the API key from app.json
+            ApiKey = LoadApiKeyFromConfig(configLoader.appkeypath);  // Load the API key from mycode.json
 
             // Initialize the HttpClient and set the Authorization header with the API key
             _httpClient = new HttpClient();
@@ -29,14 +29,14 @@ namespace OCRProject.ModelComparision
         }
 
         /// <summary>
-        /// Loads the API key from the app.json file located at the specified path.
+        /// Loads the API key from the mycode.json file located at the specified path.
         /// Throws an exception if the key is missing.
         /// </summary>
         private static string LoadApiKeyFromConfig(string appKeyPath)
         {
-            // Use ConfigurationBuilder to load the API key from app.json directly using the provided appKeyPath
+            // load the API key from mycode.json directly using the provided appKeyPath
             var configuration = new ConfigurationBuilder()
-                .AddJsonFile(appKeyPath, optional: false, reloadOnChange: true)  // Load app.json file
+                .AddJsonFile(appKeyPath, optional: false, reloadOnChange: true)  // Load mycode.json file
                 .Build();
 
             // Retrieve the API key from the loaded configuration under "Mykey:ApiKey"
@@ -82,7 +82,7 @@ namespace OCRProject.ModelComparision
             // Create request data object for the OpenAI API
             var requestData = new
             {
-                model = "text-embedding-ada-002", // Use the appropriate model for embedding
+                model = "text-embedding-ada-002", 
                 input = text  // The text input to be embedded
             };
 
