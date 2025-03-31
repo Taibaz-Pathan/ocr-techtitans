@@ -44,7 +44,8 @@ Once the project is set up, follow these steps to run the OCR pipeline:
 
 
 ## Project Structure
-![Project Structure](./assets/ProjectFolderStructure.png)  
+![Project Structure](./assets/ProjectFolderStructure.png)
+Figure 1 Project File Structure
 - `OCRProject.csproj`: Project configuration file.
 - `Program.cs`: Main entry point of the application.
 - `Input/`: Folder containing input image files.
@@ -125,6 +126,8 @@ using System.Diagnostics;
 
 ## Unit test Project
 https://github.com/Taibaz-Pathan/ocr-techtitans/tree/main/src/OCRTestProject
+![Unit Test](./assets/UnitTest.png)
+Figure 2 Unit test results
 
 Team Members
 * Mithila Prabhu
