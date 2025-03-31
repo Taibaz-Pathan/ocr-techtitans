@@ -125,6 +125,7 @@ using System.Diagnostics;
 
 ## Unit test Project
 https://github.com/Taibaz-Pathan/ocr-techtitans/tree/main/src/OCRTestProject
+![Unit Test](./assets/UnitTest.png)
 
 Team Members
 * Mithila Prabhu
