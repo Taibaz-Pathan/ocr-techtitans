@@ -1,1 +1,0 @@
-This is a test text file. It should not be processed as an image.
