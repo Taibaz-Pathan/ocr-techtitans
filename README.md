@@ -22,15 +22,11 @@ The OCR (Optical Character Recognition) Project is designed to process images, e
 - Tessdata
 
 ## Installation and Usage Instructions
-Step 1- Clone the project from git using git clone command, Link clone Project-https://github.com/Taibaz-Pathan/ocr-techtitans.git \n
-![clone](./assets/step1.1.png) \n
-
-Figure1. Git Clone of Project
-
-
-![clone](./assets/step1.2.png)
-
-Figure2. Cmd image of Project getting cloned
+Step 1- Clone the project from git using git clone command, Link clone Project-https://github.com/Taibaz-Pathan/ocr-techtitans.git <br>    
+![clone](./assets/step1.1.png) <br>
+Figure1. Git Clone of Project<br>
+![clone](./assets/step1.2.png)<br>
+Figure2. Cmd image of Project getting cloned<br>
 
 Step 2- Go to project folder. Use command cd OCRProject
 ![Folder](./assets/step2.2.png)
