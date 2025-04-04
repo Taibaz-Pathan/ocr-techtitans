@@ -22,65 +22,65 @@ The OCR (Optical Character Recognition) Project is designed to process images, e
 - Tessdata
 
 ## Installation and Usage Instructions
-Step 1- Clone the project from git using git clone command, Link clone Project-https://github.com/Taibaz-Pathan/ocr-techtitans.git
-![clone](./assets/step1.1.png)
-Figure1. Git Clone of Project
-![clone](./assets/step1.2.png)
-Figure2. Cmd image of Project getting cloned
+Step 1- Clone the project from git using git clone command, Link clone Project-https://github.com/Taibaz-Pathan/ocr-techtitans.git <br>    
+![clone](./assets/step1.1.png) <br>
+Figure1. Git Clone of Project<br>
+
+![clone](./assets/step1.2.png)<br>
+Figure2. Cmd image of Project getting cloned<br>
 
 Step 2- Go to project folder. Use command cd OCRProject
-![Folder](./assets/step2.2.png)
+![Folder](./assets/step2.2.png)<br>
 Figure3. Navigate to project folder
 
-Step 3- Install dependencies. Use dotnet restore to install dependencies. OCRProject.csproj file already mentions the required dependencies to be installed
-![Install](./assets/step3.png)
-Figure4. Installation step
+Step 3- Install dependencies. Use dotnet restore to install dependencies. OCRProject.csproj file already mentions the required dependencies to be installed<br>
+![Install](./assets/step3.png)<br>
+Figure4. Installation step<br>
 
-Step 4-Build the project after the dependencies are installed. Use dotnet build command. 
-![build](./assets/step4.png)
-Figure5. Build Project 
+Step 4-Build the project after the dependencies are installed. Use dotnet build command. <br>
+![build](./assets/step4.png)<br>
+Figure5. Build Project <br>
 
-Step 5- Open Input folder to place your input-images. The project already has few images. \ocr-techtitans\OCRProject\Input
-![img](./assets/step5.png)
-Figure6. Input Image folder
+Step 5- Open Input folder to place your input-images. The project already has few images. \ocr-techtitans\OCRProject\Input<br>
+![img](./assets/step5.png)<br>
+Figure6. Input Image folder<br>
 
-Step 6- Go to Utils folder- \ocr-techtitans\OCRProject\Utils
-![util](./assets/step6.png)
-Figure7. Utils folder
+Step 6- Go to Utils folder- \ocr-techtitans\OCRProject\Utils<br>
+![util](./assets/step6.png)<br>
+Figure7. Utils folder<br>
 
-Step 7- Open mycode.json and place your open ai chatgpt key 
-Replace “YOUR-API-KEY” with actual api key
-![key](./assets/step7.png)
-Figure8. Replace with your key
+Step 7- Open mycode.json and place your open ai chatgpt key <br>
+Replace “YOUR-API-KEY” with actual api key<br>
+![key](./assets/step7.png)<br>
+Figure8. Replace with your key<br>
 
-Step 8- To open the project code, import the working directory in visual studio or click on OCRProject.sln
-![import](./assets/step8.png)
-Figure9. Replace with your key
+Step 8- To open the project code, import the working directory in visual studio or click on OCRProject.sln<br>
+![import](./assets/step8.png)<br>
+Figure9. Replace with your key<br>
 
-Step 9- To run the project click on Green arrow in Visual Studio
-![run](./assets/step9.1.png)
-Figure10. Visual Studio button
+Step 9- To run the project click on Green arrow in Visual Studio<br>
+![run](./assets/step9.1.png)<br>
+Figure10. Visual Studio button<br>
 
-or Go to \OCRProject\bin\Debug\net9.0 and execute/double click on OCRProject.exe 
-![run](./assets/step9.2.png)
-Figure11. OCRProject.exe file
+or Go to \OCRProject\bin\Debug\net9.0 and execute/double click on OCRProject.exe <br>
+![run](./assets/step9.2.png)<br>
+Figure11. OCRProject.exe file <br>
 
-You will see these message once you run
-![run](./assets/step9.3.png)
+You will see these message once you run<br>
+![run](./assets/step9.3.png)<br>
 Figure12. Code getting executed
 
-Once the code is executed, you will see below message
-![run](./assets/step9.4.png)
+Once the code is executed, you will see below message<br>
+![run](./assets/step9.4.png)<br>
 Figure13. Code execution completion message
 
-Step 10- Check the output folder for the results. 
-Folder OCRProject\Output\Comparision- Contains 3 excel files.
-BestModelRanking.xlsx – contains the models ranked from best to worstCosineSimilarity.xlsx- Contains the cosine matrix generated
-ProcessingResults.xlsx- Contains time taken by each preprocessing step and memory usage metrics
-
-Folder OCRProject\Output\ExtractedText- Contains one text file with all the extracted texts
-Folder OCRProject\Output\ Logs- Contains one text file which ia alog file that captures any warning/error message. File name is AppLog.txt
-Folder \OCRProject\Output\ProcessedImage- Contains all the images generated after applying preprocessing
+Step 10- Check the output folder for the results. <br>
+Folder OCRProject\Output\Comparision- Contains 3 excel files.<br>
+BestModelRanking.xlsx – contains the models ranked from best to worstCosineSimilarity.xlsx- Contains the cosine matrix generated<br>
+ProcessingResults.xlsx- Contains time taken by each preprocessing step and memory usage metrics<br>
+Folder OCRProject\Output\ExtractedText- Contains one text file with all the extracted texts<br>
+Folder OCRProject\Output\ Logs- Contains one text file which ia alog file that captures any warning/error message. File name is AppLog.txt <br>
+Folder \OCRProject\Output\ProcessedImage- Contains all the images generated after applying preprocessing <br>
 
 ## Project Structure
 ![Project Structure](./assets/ProjectFolderStructure.png)
@@ -95,86 +95,86 @@ Figure14. Project File Structure
 - `Utils/`: Folder for utility scripts.
 
 ## Project Workflow
-The OCR Project follows a pipeline for each input image through several steps:
-1. Image Preprocessing
-Input: Raw image (e.g png, jpg, jpeg etc). Raw images are to be store in Input Folder
-Process: Different pre-processing techniques are applied to the input image to remove noise, remove blurring or image and obtain a clean image. Preprocessing class     are store in ImageProcessing folder.Following are the preprocessing techniques used:
-- ConvertToGrayscale- Converts a color image to grayscale by reducing it to shades of gray, simplifying the data for better OCR accuracy.
-- Deskew.cs- Corrects any tilt or rotation in the image, aligning the text horizontally to improve OCR results.
-- GlobalThresholding.cs- Converts the grayscale image into a binary image (black and white) by applying a global threshold, improving contrast for text detection.
-- SaturationAdjustment.cs- Adjusts the saturation of the image to enhance color intensity, which can help with clarity in certain image types.
-- AdaptiveThreshold.cs- SConverts the image based on local threshold and variation in brightness
+The OCR Project follows a pipeline for each input image through several steps:<br>
+1. Image Preprocessing<br>
+Input: Raw image (e.g png, jpg, jpeg etc). Raw images are to be store in Input Folder<br>
+Process: Different pre-processing techniques are applied to the input image to remove noise, remove blurring or image and obtain a clean image. Preprocessing class     are store in ImageProcessing folder.Following are the preprocessing techniques used:<br>
+- ConvertToGrayscale- Converts a color image to grayscale by reducing it to shades of gray, simplifying the data for better OCR accuracy.<br>
+- Deskew.cs- Corrects any tilt or rotation in the image, aligning the text horizontally to improve OCR results.<br>
+- GlobalThresholding.cs- Converts the grayscale image into a binary image (black and white) by applying a global threshold, improving contrast for text detection.<br>
+- SaturationAdjustment.cs- Adjusts the saturation of the image to enhance color intensity, which can help with clarity in certain image types.<br>
+- AdaptiveThreshold.cs- SConverts the image based on local threshold and variation in brightness<br>
 
 
 2. Text Extraction (OCR)
-Input: Pre-processed image (obtained from the previous step-stored in folder Output/ProcessedImage).
-Process: 
-Utilize Tesseract OCR to extract text from the image.
-Tesseract processes the image and generates raw text based on detected characters.
+Input: Pre-processed image (obtained from the previous step-stored in folder Output/ProcessedImage).<br>
+Process: <br>
+Utilize Tesseract OCR to extract text from the image.<br>
+Tesseract processes the image and generates raw text based on detected characters.<br>
 Output: Extracted text is stored in the text file by Name- ProcessedFile_yyyyMMdd_HHmmss.txt (example-ProcessedFile_20250323_154732). File is stored in Output/ ExtractedText. The extracted text is also stored in a dictionary.
 
-3. Generate Embeddings
-Input: A dictionary of extracted Texts, where keys are model names and values are the extracted texts.
-Process: Random embeddings (vectors) for extracted texts is generated by EmbeddingGeneratorService.cs. The service is stored in ModelComparision folder.
-Output: Structured output in the desired format, typically as text files, CSV, or JSON.
+3. Generate Embeddings<br>
+Input: A dictionary of extracted Texts, where keys are model names and values are the extracted texts.<br>
+Process: Random embeddings (vectors) for extracted texts is generated by EmbeddingGeneratorService.cs. The service is stored in ModelComparision folder.<br>
+Output: Structured output in the desired format, typically as text files, CSV, or JSON.<br>
 
-4. Cosine Similarity Calculation: The generated embeddings are compared using the cosine similarity method to measure the similarity between different preprocessing approaches. The results of cosine similarity matrix are stored in Output/Comparison folder by name CosineSimilarity.xlsx.
+4. Cosine Similarity Calculation: The generated embeddings are compared using the cosine similarity method to measure the similarity between different preprocessing approaches. The results of cosine similarity matrix are stored in Output/Comparison folder by name CosineSimilarity.xlsx.<br>
 
-5. Time Tracking and memory usage- While we apply preprocessing technique and extract text using Tessearct we calculate the time taken by each processing step and the memory usage of that pre processing step. The results are the stored in Output/Comparison folder by name ProcessingResults.xlsx.
+5. Time Tracking and memory usage- While we apply preprocessing technique and extract text using Tessearct we calculate the time taken by each processing step and the memory usage of that pre processing step. The results are the stored in Output/Comparison folder by name ProcessingResults.xlsx.<br>
 
-6. Ranking the preprocessing- Based on results of cosine similarity, time taken by pre-processing method and memory usage-each pre processing step is ranked from high to low order and is store in Output/Comparison folder by name BestModelRanking.xlsx
+6. Ranking the preprocessing- Based on results of cosine similarity, time taken by pre-processing method and memory usage-each pre processing step is ranked from high to low order and is store in Output/Comparison folder by name BestModelRanking.xlsx<br>
 
 ## Dependencies
-Required Libraries
-The following libraries are required to run the OCR project. You can install these dependencies via NuGet.
+Required Libraries<br>
+The following libraries are required to run the OCR project. You can install these dependencies via NuGet.<br>
 
-For OCR Processing:
-using System;
-using System.IO;
-using SixLabors.ImageSharp;
-using SixLabors.ImageSharp.PixelFormats;
-using SixLabors.ImageSharp.Processing;
-using SixLabors.ImageSharp.Formats.Png;
-using Tesseract;
+For OCR Processing:<br>
+using System;<br>
+using System.IO;<br>
+using SixLabors.ImageSharp;<br>
+using SixLabors.ImageSharp.PixelFormats;<br>
+using SixLabors.ImageSharp.Processing;<br>
+using SixLabors.ImageSharp.Formats.Png;<br>
+using Tesseract;<br>
 
-For Image Preprocessing:
-using System;
-using SixLabors.ImageSharp;
-using SixLabors.ImageSharp.PixelFormats;
-using SixLabors.ImageSharp.Processing; 
-using System.Linq;
+For Image Preprocessing:<br>
+using System;<br>
+using SixLabors.ImageSharp;<br>
+using SixLabors.ImageSharp.PixelFormats;<br>
+using SixLabors.ImageSharp.Processing; <br>
+using System.Linq;<br>
 
-For Configuration & Utilities:
-using System;
-using System.IO;
-using System.Reflection;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+For Configuration & Utilities:<br>
+using System;<br>
+using System.IO;<br>
+using System.Reflection;<br>
+using System.Collections.Generic;<br>
+using System.Linq;<br>
+using System.Text;<br>
+using System.Threading.Tasks;<br>
 
-For Cosine similarity and Conversion to matrix:
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using NPOI.SS.UserModel;
-using NPOI.XSSF.UserModel;
-using OCRProject.Interfaces;
-using System.Diagnostics;
+For Cosine similarity and Conversion to matrix:<br>
+using System;<br>
+using System.Collections.Generic;<br>
+using System.IO;<br>
+using System.Linq;<br>
+using NPOI.SS.UserModel;<br>
+using NPOI.XSSF.UserModel;<br>
+using OCRProject.Interfaces;<br>
+using System.Diagnostics;<br>
 
 ## Unit test Project
-https://github.com/Taibaz-Pathan/ocr-techtitans/tree/main/src/OCRTestProject
+https://github.com/Taibaz-Pathan/ocr-techtitans/tree/main/src/OCRTestProject<br>
 
 ## Steps to run Unit test 
-Step 1- Import the UnitTest Project in Visual Studio. OCRProjectE2ETests.cs contains all the end to end unit tests
-![Unit Test](./assets/Unit1.png)
-Figure15. Unit test Folder
+Step 1- Import the UnitTest Project in Visual Studio. OCRProjectE2ETests.cs contains all the end to end unit tests<br>
+![Unit Test](./assets/Unit1.png)<br>
+Figure15. Unit test Folder<br>
 
-Step 2- To run the unit tests, go to Tests tab and click on Run All Tests
-![Unit Test](./assets/Unit2.png)
+Step 2- To run the unit tests, go to Tests tab and click on Run All Tests<br>
+![Unit Test](./assets/Unit2.png)<br>
 Figure16. Run tests
 
-Step 3- After running the test, you will see if the tests failed or passed
-![Unit Test](./assets/UnitTest.png)
-Figure17. Unit test results
+Step 3- After running the test, you will see if the tests failed or passed<br>
+![Unit Test](./assets/UnitTest.png)<br>
+Figure17. Unit test results<br>
