@@ -25,62 +25,53 @@ The OCR (Optical Character Recognition) Project is designed to process images, e
 Step 1- Clone the project from git using git clone command, Link clone Project-https://github.com/Taibaz-Pathan/ocr-techtitans.git <br>    
 ![clone](./assets/step1.1.png) <br>
 Figure1. Git Clone of Project<br>
+
 ![clone](./assets/step1.2.png)<br>
 Figure2. Cmd image of Project getting cloned<br>
 
 Step 2- Go to project folder. Use command cd OCRProject
-![Folder](./assets/step2.2.png)
-
+![Folder](./assets/step2.2.png)<br>
 Figure3. Navigate to project folder
 
-Step 3- Install dependencies. Use dotnet restore to install dependencies. OCRProject.csproj file already mentions the required dependencies to be installed
-![Install](./assets/step3.png)
+Step 3- Install dependencies. Use dotnet restore to install dependencies. OCRProject.csproj file already mentions the required dependencies to be installed<br>
+![Install](./assets/step3.png)<br>
+Figure4. Installation step<br>
 
-Figure4. Installation step
+Step 4-Build the project after the dependencies are installed. Use dotnet build command. <br>
+![build](./assets/step4.png)<br>
+Figure5. Build Project <br>
 
-Step 4-Build the project after the dependencies are installed. Use dotnet build command. 
-![build](./assets/step4.png)
-Figure5. Build Project 
+Step 5- Open Input folder to place your input-images. The project already has few images. \ocr-techtitans\OCRProject\Input<br>
+![img](./assets/step5.png)<br>
+Figure6. Input Image folder<br>
 
-Step 5- Open Input folder to place your input-images. The project already has few images. \ocr-techtitans\OCRProject\Input
+Step 6- Go to Utils folder- \ocr-techtitans\OCRProject\Utils<br>
+![util](./assets/step6.png)<br>
+Figure7. Utils folder<br>
 
-![img](./assets/step5.png)
-Figure6. Input Image folder
+Step 7- Open mycode.json and place your open ai chatgpt key <br>
+Replace “YOUR-API-KEY” with actual api key<br>
+![key](./assets/step7.png)<br>
+Figure8. Replace with your key<br>
 
-Step 6- Go to Utils folder- \ocr-techtitans\OCRProject\Utils
-![util](./assets/step6.png)
+Step 8- To open the project code, import the working directory in visual studio or click on OCRProject.sln<br>
+![import](./assets/step8.png)<br>
+Figure9. Replace with your key<br>
 
-Figure7. Utils folder
+Step 9- To run the project click on Green arrow in Visual Studio<br>
+![run](./assets/step9.1.png)<br>
+Figure10. Visual Studio button<br>
 
-Step 7- Open mycode.json and place your open ai chatgpt key 
-Replace “YOUR-API-KEY” with actual api key
-![key](./assets/step7.png)
+or Go to \OCRProject\bin\Debug\net9.0 and execute/double click on OCRProject.exe <br>
+![run](./assets/step9.2.png)<br>
+Figure11. OCRProject.exe file <br>
 
-Figure8. Replace with your key
-
-Step 8- To open the project code, import the working directory in visual studio or click on OCRProject.sln
-![import](./assets/step8.png)
-
-Figure9. Replace with your key
-
-Step 9- To run the project click on Green arrow in Visual Studio
-![run](./assets/step9.1.png)
-
-Figure10. Visual Studio button
-
-or Go to \OCRProject\bin\Debug\net9.0 and execute/double click on OCRProject.exe 
-![run](./assets/step9.2.png)
-
-Figure11. OCRProject.exe file
-
-You will see these message once you run
-![run](./assets/step9.3.png)
-
+You will see these message once you run<br>
+![run](./assets/step9.3.png)<br>
 Figure12. Code getting executed
 
-Once the code is executed, you will see below message
-![run](./assets/step9.4.png)
-
+Once the code is executed, you will see below message<br>
+![run](./assets/step9.4.png)<br>
 Figure13. Code execution completion message
 
 Step 10- Check the output folder for the results. 
@@ -182,15 +173,14 @@ using System.Diagnostics;
 https://github.com/Taibaz-Pathan/ocr-techtitans/tree/main/src/OCRTestProject
 
 ## Steps to run Unit test 
-Step 1- Import the UnitTest Project in Visual Studio. OCRProjectE2ETests.cs contains all the end to end unit tests
-![Unit Test](./assets/Unit1.png)
-Figure15. Unit test Folder
+Step 1- Import the UnitTest Project in Visual Studio. OCRProjectE2ETests.cs contains all the end to end unit tests<br>
+![Unit Test](./assets/Unit1.png)<br>
+Figure15. Unit test Folder<br>
 
-Step 2- To run the unit tests, go to Tests tab and click on Run All Tests
-![Unit Test](./assets/Unit2.png)
-
+Step 2- To run the unit tests, go to Tests tab and click on Run All Tests<br>
+![Unit Test](./assets/Unit2.png)<br>
 Figure16. Run tests
 
-Step 3- After running the test, you will see if the tests failed or passed
-![Unit Test](./assets/UnitTest.png)
-Figure17. Unit test results
+Step 3- After running the test, you will see if the tests failed or passed<br>
+![Unit Test](./assets/UnitTest.png)<br>
+Figure17. Unit test results<br>
