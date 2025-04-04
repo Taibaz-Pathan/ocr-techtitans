@@ -21,31 +21,70 @@ The OCR (Optical Character Recognition) Project is designed to process images, e
 - OpenAI library
 - Tessdata
 
-## Installation
-1. Prerequisites
-Before using this project, ensure you have the following installed:
-- .NET 9: Required to build and run the project.
-- Tesseract OCR Engine: Ensure Tesseract is installed and accessible on your system. You can find installation instructions here.
-- NuGet Packages: The required NuGet packages will be automatically installed when you restore the project.
-  
-2. Installation
-Clone or download the project:
-git clone https://github.com/Taibaz-Pathan/ocr-techtitans.git
-After cloning the repository, navigate to the project folder and restore the necessary NuGet packages:
-dotnet restore
+## Installation and Usage Instructions
+Step 1- Clone the project from git using git clone command, Link clone Project-https://github.com/Taibaz-Pathan/ocr-techtitans.git
+![clone](./assets/step1.1.png)
+Figure1. Git Clone of Project
+![clone](./assets/step1.2.png)
+Figure2. Cmd image of Project getting cloned
 
-## Usage Instructions
-Once the project is set up, follow these steps to run the OCR pipeline:
-1. Place Your Raw Images:Place the raw images that need to be processed in the Input/ folder. 
-2. Install Tessdata from https://github.com/tesseract-ocr/tessdata
-3. Add your Open AI API Key in Utils/mycode.json file. 
-4. Build the Project: Open a command prompt or terminal and navigate to the project directory. Run the following command to build the project- dotnet build.   
-5.Run the application: Navigate to the output directory:cd bin/Debug/net9.0/OCRProject.exe. This will process the input images, extract the text, and save the results in the Output folder.
+Step 2- Go to project folder. Use command cd OCRProject
+![Folder](./assets/step2.2.png)
+Figure3. Navigate to project folder
 
+Step 3- Install dependencies. Use dotnet restore to install dependencies. OCRProject.csproj file already mentions the required dependencies to be installed
+![Install](./assets/step3.png)
+Figure4. Installation step
+
+Step 4-Build the project after the dependencies are installed. Use dotnet build command. 
+![build](./assets/step4.png)
+Figure5. Build Project 
+
+Step 5- Open Input folder to place your input-images. The project already has few images. \ocr-techtitans\OCRProject\Input
+![img](./assets/step5.png)
+Figure6. Input Image folder
+
+Step 6- Go to Utils folder- \ocr-techtitans\OCRProject\Utils
+![util](./assets/step6.png)
+Figure7. Utils folder
+
+Step 7- Open mycode.json and place your open ai chatgpt key 
+Replace “YOUR-API-KEY” with actual api key
+![key](./assets/step7.png)
+Figure8. Replace with your key
+
+Step 8- To open the project code, import the working directory in visual studio or click on OCRProject.sln
+![import](./assets/step8.png)
+Figure9. Replace with your key
+
+Step 9- To run the project click on Green arrow in Visual Studio
+![run](./assets/step9.1.png)
+Figure10. Visual Studio button
+
+or Go to \OCRProject\bin\Debug\net9.0 and execute/double click on OCRProject.exe 
+![run](./assets/step9.2.png)
+Figure11. OCRProject.exe file
+
+You will see these message once you run
+![run](./assets/step9.3.png)
+Figure12. Code getting executed
+
+Once the code is executed, you will see below message
+![run](./assets/step9.4.png)
+Figure13. Code execution completion message
+
+Step 10- Check the output folder for the results. 
+Folder OCRProject\Output\Comparision- Contains 3 excel files.
+BestModelRanking.xlsx – contains the models ranked from best to worstCosineSimilarity.xlsx- Contains the cosine matrix generated
+ProcessingResults.xlsx- Contains time taken by each preprocessing step and memory usage metrics
+
+Folder OCRProject\Output\ExtractedText- Contains one text file with all the extracted texts
+Folder OCRProject\Output\ Logs- Contains one text file which ia alog file that captures any warning/error message. File name is AppLog.txt
+Folder \OCRProject\Output\ProcessedImage- Contains all the images generated after applying preprocessing
 
 ## Project Structure
 ![Project Structure](./assets/ProjectFolderStructure.png)
-Figure 1 Project File Structure
+Figure14. Project File Structure
 - `OCRProject.csproj`: Project configuration file.
 - `Program.cs`: Main entry point of the application.
 - `Input/`: Folder containing input image files.
@@ -126,10 +165,16 @@ using System.Diagnostics;
 
 ## Unit test Project
 https://github.com/Taibaz-Pathan/ocr-techtitans/tree/main/src/OCRTestProject
-![Unit Test](./assets/UnitTest.png)
-Figure 2 Unit test results
 
-Team Members
-* Mithila Prabhu
-* Taibaz Pathan
-* Khushal Singh
+## Steps to run Unit test 
+Step 1- Import the UnitTest Project in Visual Studio. OCRProjectE2ETests.cs contains all the end to end unit tests
+![Unit Test](./assets/Unit1.png)
+Figure15. Unit test Folder
+
+Step 2- To run the unit tests, go to Tests tab and click on Run All Tests
+![Unit Test](./assets/Unit2.png)
+Figure16. Run tests
+
+Step 3- After running the test, you will see if the tests failed or passed
+![Unit Test](./assets/UnitTest.png)
+Figure17. Unit test results
