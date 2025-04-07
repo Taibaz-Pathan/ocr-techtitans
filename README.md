@@ -164,7 +164,7 @@ using OCRProject.Interfaces;<br>
 using System.Diagnostics;<br>
 
 ## Unit test Project
-https://github.com/Taibaz-Pathan/ocr-techtitans/tree/main/src/OCRTestProject<br>
+https://github.com/Taibaz-Pathan/ocr-techtitans/tree/main/OCRTestProject<br>
 
 ## Steps to run Unit test 
 Step 1- Import the UnitTest Project in Visual Studio. OCRProjectE2ETests.cs contains all the end to end unit tests<br>
