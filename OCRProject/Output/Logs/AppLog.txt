@@ -6061,3 +6061,826 @@
 [INFO] 04-04-2025 12:15:27: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_AdaptiveThreshold.png
 [INFO] 04-04-2025 12:15:28: Extracted Text for Each Transformation:
 
+[INFO] 07-04-2025 10:45:31: Starting Image Processing...
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_AdaptiveThreshold.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_Deskewed.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_100.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_110.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_120.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_140.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_150.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_80.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_Grayscale.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_2.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_AdaptiveThreshold.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_Deskewed.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_100.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_110.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_120.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_140.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_150.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_80.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_Grayscale.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_2.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_AdaptiveThreshold.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_Deskewed.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_100.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_110.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_120.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_140.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_150.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_80.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_Grayscale.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_SaturationAdjusted_2.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_AdaptiveThreshold.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_Deskewed.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_GlobalThreshold_100.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_GlobalThreshold_110.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_GlobalThreshold_120.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_GlobalThreshold_140.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_GlobalThreshold_150.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_GlobalThreshold_80.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_Grayscale.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_SaturationAdjusted_2.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_AdaptiveThreshold.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_Deskewed.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_GlobalThreshold_100.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_GlobalThreshold_110.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_GlobalThreshold_120.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_GlobalThreshold_140.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_GlobalThreshold_150.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_GlobalThreshold_80.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_Grayscale.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_SaturationAdjusted_2.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_AdaptiveThreshold.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_Deskewed.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold_100.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold_110.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold_120.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold_140.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold_150.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold_80.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted_2.png
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ExtractedText\ProcessedFile_20250404_121108.txt
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\Comparision\BestModelRanking.xlsx
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\Comparision\CosineSimilarity.xlsx
+[INFO] 07-04-2025 10:45:31: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 07-04-2025 10:45:31: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ExtractedText\ProcessedFile_20250407_104531.txt
+[INFO] 07-04-2025 10:45:31: Processing 8 images...
+[INFO] 07-04-2025 10:45:35: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_Grayscale.png
+[INFO] 07-04-2025 10:45:43: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_80.png
+[INFO] 07-04-2025 10:45:46: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_100.png
+[INFO] 07-04-2025 10:45:49: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_110.png
+[INFO] 07-04-2025 10:45:53: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_120.png
+[INFO] 07-04-2025 10:45:56: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_140.png
+[INFO] 07-04-2025 10:45:59: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_150.png
+[INFO] 07-04-2025 10:46:05: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 10:46:13: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 10:46:21: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 10:46:29: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 10:46:37: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_2.png
+[INFO] 07-04-2025 10:46:45: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 10:46:52: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_Deskewed.png
+[INFO] 07-04-2025 10:46:58: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_AdaptiveThreshold.png
+[INFO] 07-04-2025 10:47:02: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_Grayscale.png
+[INFO] 07-04-2025 10:47:04: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_80.png
+[INFO] 07-04-2025 10:47:06: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_100.png
+[INFO] 07-04-2025 10:47:07: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_110.png
+[INFO] 07-04-2025 10:47:10: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_120.png
+[INFO] 07-04-2025 10:47:12: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_140.png
+[INFO] 07-04-2025 10:47:14: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_150.png
+[INFO] 07-04-2025 10:47:16: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 10:47:19: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 10:47:22: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 10:47:24: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 10:47:27: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_2.png
+[INFO] 07-04-2025 10:47:30: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 10:47:32: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_Deskewed.png
+[INFO] 07-04-2025 10:47:35: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_AdaptiveThreshold.png
+[INFO] 07-04-2025 10:47:38: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_Grayscale.png
+[INFO] 07-04-2025 10:47:40: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_80.png
+[INFO] 07-04-2025 10:47:41: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_100.png
+[INFO] 07-04-2025 10:47:42: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_110.png
+[INFO] 07-04-2025 10:47:44: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_120.png
+[INFO] 07-04-2025 10:47:45: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_140.png
+[INFO] 07-04-2025 10:47:47: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_150.png
+[INFO] 07-04-2025 10:47:48: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 10:47:50: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 10:47:52: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 10:47:53: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 10:47:55: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_2.png
+[INFO] 07-04-2025 10:47:57: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 10:47:58: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_Deskewed.png
+[INFO] 07-04-2025 10:48:00: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_AdaptiveThreshold.png
+[INFO] 07-04-2025 10:48:04: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_Grayscale.png
+[INFO] 07-04-2025 10:48:11: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_80.png
+[INFO] 07-04-2025 10:48:13: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_100.png
+[INFO] 07-04-2025 10:48:22: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_110.png
+[INFO] 07-04-2025 10:48:29: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_120.png
+[INFO] 07-04-2025 10:48:35: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_140.png
+[INFO] 07-04-2025 10:48:41: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_150.png
+[INFO] 07-04-2025 10:48:46: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 10:48:55: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 10:49:06: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 10:49:18: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 10:49:28: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_SaturationAdjusted_2.png
+[INFO] 07-04-2025 10:49:37: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 10:49:45: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_Deskewed.png
+[INFO] 07-04-2025 10:49:53: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_AdaptiveThreshold.png
+[INFO] 07-04-2025 10:50:02: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_Grayscale.png
+[INFO] 07-04-2025 10:50:06: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_GlobalThreshold_80.png
+[INFO] 07-04-2025 10:50:08: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_GlobalThreshold_100.png
+[INFO] 07-04-2025 10:50:13: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_GlobalThreshold_110.png
+[INFO] 07-04-2025 10:50:16: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_GlobalThreshold_120.png
+[INFO] 07-04-2025 10:50:18: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_GlobalThreshold_140.png
+[INFO] 07-04-2025 10:50:21: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_GlobalThreshold_150.png
+[INFO] 07-04-2025 10:50:25: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 10:50:30: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 10:50:35: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 10:50:41: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 10:50:46: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_SaturationAdjusted_2.png
+[INFO] 07-04-2025 10:50:52: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 10:50:57: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_Deskewed.png
+[INFO] 07-04-2025 10:51:02: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_AdaptiveThreshold.png
+[INFO] 07-04-2025 10:51:06: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_Grayscale.png
+[INFO] 07-04-2025 10:51:14: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_GlobalThreshold_80.png
+[INFO] 07-04-2025 10:51:16: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_GlobalThreshold_100.png
+[INFO] 07-04-2025 10:51:19: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_GlobalThreshold_110.png
+[INFO] 07-04-2025 10:51:23: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_GlobalThreshold_120.png
+[INFO] 07-04-2025 10:51:28: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_GlobalThreshold_140.png
+[INFO] 07-04-2025 10:51:33: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_GlobalThreshold_150.png
+[INFO] 07-04-2025 10:51:41: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 10:51:54: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 10:52:06: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 10:52:20: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 10:52:35: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_SaturationAdjusted_2.png
+[INFO] 07-04-2025 10:52:48: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 10:53:00: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_Deskewed.png
+[INFO] 07-04-2025 10:53:10: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_AdaptiveThreshold.png
+[INFO] 07-04-2025 10:53:18: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.png
+[INFO] 07-04-2025 10:53:26: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold_80.png
+[INFO] 07-04-2025 10:53:33: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold_100.png
+[INFO] 07-04-2025 10:53:40: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold_110.png
+[INFO] 07-04-2025 10:53:47: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold_120.png
+[INFO] 07-04-2025 10:53:55: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold_140.png
+[INFO] 07-04-2025 10:54:02: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold_150.png
+[INFO] 07-04-2025 10:54:10: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 10:54:19: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 10:54:28: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 10:54:37: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 10:54:47: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted_2.png
+[INFO] 07-04-2025 10:54:56: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 10:55:05: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_Deskewed.png
+[INFO] 07-04-2025 10:55:14: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_AdaptiveThreshold.png
+[INFO] 07-04-2025 10:55:23: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_Grayscale.png
+[INFO] 07-04-2025 10:55:29: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_GlobalThreshold_80.png
+[INFO] 07-04-2025 10:55:34: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_GlobalThreshold_100.png
+[INFO] 07-04-2025 10:55:38: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_GlobalThreshold_110.png
+[INFO] 07-04-2025 10:55:42: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_GlobalThreshold_120.png
+[INFO] 07-04-2025 10:55:46: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_GlobalThreshold_140.png
+[INFO] 07-04-2025 10:55:50: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_GlobalThreshold_150.png
+[INFO] 07-04-2025 10:56:00: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 10:56:14: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 10:56:27: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 10:56:42: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 10:56:57: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_SaturationAdjusted_2.png
+[INFO] 07-04-2025 10:57:12: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 10:57:24: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_Deskewed.png
+[INFO] 07-04-2025 10:57:31: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_AdaptiveThreshold.png
+[INFO] 07-04-2025 10:57:33: Extracted Text for Each Transformation:
+
+[INFO] 07-04-2025 10:58:51: Starting Image Processing...
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_AdaptiveThreshold.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_Deskewed.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_100.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_110.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_120.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_140.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_150.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_80.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_Grayscale.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_2.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_AdaptiveThreshold.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_Deskewed.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_100.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_110.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_120.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_140.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_150.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_80.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_Grayscale.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_2.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_AdaptiveThreshold.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_Deskewed.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_100.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_110.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_120.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_140.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_150.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_80.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_Grayscale.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_2.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_AdaptiveThreshold.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_Deskewed.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_100.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_110.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_120.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_140.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_150.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_80.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_Grayscale.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_SaturationAdjusted_2.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_AdaptiveThreshold.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_Deskewed.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_GlobalThreshold_100.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_GlobalThreshold_110.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_GlobalThreshold_120.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_GlobalThreshold_140.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_GlobalThreshold_150.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_GlobalThreshold_80.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_Grayscale.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_SaturationAdjusted_2.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_AdaptiveThreshold.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_Deskewed.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_GlobalThreshold_100.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_GlobalThreshold_110.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_GlobalThreshold_120.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_GlobalThreshold_140.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_GlobalThreshold_150.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_GlobalThreshold_80.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_Grayscale.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_SaturationAdjusted_2.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_AdaptiveThreshold.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_Deskewed.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_GlobalThreshold_100.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_GlobalThreshold_110.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_GlobalThreshold_120.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_GlobalThreshold_140.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_GlobalThreshold_150.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_GlobalThreshold_80.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_Grayscale.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_SaturationAdjusted_2.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_AdaptiveThreshold.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_Deskewed.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold_100.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold_110.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold_120.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold_140.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold_150.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold_80.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 10:58:51: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 10:58:52: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 10:58:52: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 10:58:52: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 10:58:52: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted_2.png
+[INFO] 07-04-2025 10:58:52: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ExtractedText\ProcessedFile_20250407_104531.txt
+[INFO] 07-04-2025 10:58:52: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ExtractedText\ProcessedFile_20250407_105852.txt
+[INFO] 07-04-2025 10:58:52: Processing 8 images...
+[INFO] 07-04-2025 10:58:55: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_Grayscale.png
+[INFO] 07-04-2025 10:59:02: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_80.png
+[INFO] 07-04-2025 10:59:05: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_100.png
+[INFO] 07-04-2025 10:59:09: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_110.png
+[INFO] 07-04-2025 10:59:12: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_120.png
+[INFO] 07-04-2025 10:59:15: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_140.png
+[INFO] 07-04-2025 10:59:18: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_150.png
+[INFO] 07-04-2025 10:59:24: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 10:59:32: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 10:59:40: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 10:59:48: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 10:59:57: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_2.png
+[INFO] 07-04-2025 11:00:05: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 11:00:12: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_Deskewed.png
+[INFO] 07-04-2025 11:00:18: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_AdaptiveThreshold.png
+[INFO] 07-04-2025 11:00:22: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_Grayscale.png
+[INFO] 07-04-2025 11:00:24: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_80.png
+[INFO] 07-04-2025 11:00:26: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_100.png
+[INFO] 07-04-2025 11:00:28: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_110.png
+[INFO] 07-04-2025 11:00:30: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_120.png
+[INFO] 07-04-2025 11:00:32: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_140.png
+[INFO] 07-04-2025 11:00:34: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_150.png
+[INFO] 07-04-2025 11:00:37: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 11:00:40: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 11:00:43: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 11:00:46: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 11:00:49: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_2.png
+[INFO] 07-04-2025 11:00:51: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 11:00:54: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_Deskewed.png
+[INFO] 07-04-2025 11:00:57: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_AdaptiveThreshold.png
+[INFO] 07-04-2025 11:01:00: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_Grayscale.png
+[INFO] 07-04-2025 11:01:02: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_80.png
+[INFO] 07-04-2025 11:01:03: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_100.png
+[INFO] 07-04-2025 11:01:05: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_110.png
+[INFO] 07-04-2025 11:01:06: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_120.png
+[INFO] 07-04-2025 11:01:08: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_140.png
+[INFO] 07-04-2025 11:01:09: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_150.png
+[INFO] 07-04-2025 11:01:11: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 11:01:13: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 11:01:14: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 11:01:16: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 11:01:18: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_2.png
+[INFO] 07-04-2025 11:01:19: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 11:01:22: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_Deskewed.png
+[INFO] 07-04-2025 11:01:23: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_AdaptiveThreshold.png
+[INFO] 07-04-2025 11:01:27: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_Grayscale.png
+[INFO] 07-04-2025 11:01:34: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_80.png
+[INFO] 07-04-2025 11:01:36: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_100.png
+[INFO] 07-04-2025 11:18:16: Starting Image Processing...
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_AdaptiveThreshold.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_Deskewed.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_100.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_110.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_120.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_140.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_150.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_80.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_Grayscale.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_2.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_AdaptiveThreshold.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_Deskewed.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_100.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_110.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_120.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_140.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_150.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_80.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_Grayscale.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_2.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_AdaptiveThreshold.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_Deskewed.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_100.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_110.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_120.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_140.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_150.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_80.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_Grayscale.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_2.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_100.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_80.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_Grayscale.png
+[INFO] 07-04-2025 11:18:16: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ExtractedText\ProcessedFile_20250407_105852.txt
+[INFO] 07-04-2025 11:18:16: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ExtractedText\ProcessedFile_20250407_111816.txt
+[INFO] 07-04-2025 11:18:16: Processing 8 images...
+[INFO] 07-04-2025 11:18:20: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_Grayscale.png
+[INFO] 07-04-2025 11:18:27: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_80.png
+[INFO] 07-04-2025 11:18:30: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_100.png
+[INFO] 07-04-2025 11:18:33: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_110.png
+[INFO] 07-04-2025 11:18:37: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_120.png
+[INFO] 07-04-2025 11:18:40: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_140.png
+[INFO] 07-04-2025 11:18:43: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_150.png
+[INFO] 07-04-2025 11:18:49: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 11:18:57: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 11:19:06: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 11:19:14: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 11:19:23: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_2.png
+[INFO] 07-04-2025 11:19:31: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 11:19:38: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_Deskewed.png
+[INFO] 07-04-2025 11:19:43: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_AdaptiveThreshold.png
+[INFO] 07-04-2025 11:19:47: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_Grayscale.png
+[INFO] 07-04-2025 11:19:50: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_80.png
+[INFO] 07-04-2025 11:19:51: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_100.png
+[INFO] 07-04-2025 11:19:53: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_110.png
+[INFO] 07-04-2025 11:19:55: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_120.png
+[INFO] 07-04-2025 11:19:58: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_140.png
+[INFO] 07-04-2025 11:20:00: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_150.png
+[INFO] 07-04-2025 11:20:02: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 11:20:05: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 11:20:08: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 11:20:11: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 11:20:13: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_2.png
+[INFO] 07-04-2025 11:20:16: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 11:20:19: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_Deskewed.png
+[INFO] 07-04-2025 11:20:22: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_AdaptiveThreshold.png
+[INFO] 07-04-2025 11:20:25: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_Grayscale.png
+[INFO] 07-04-2025 11:20:27: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_80.png
+[INFO] 07-04-2025 11:20:28: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_100.png
+[INFO] 07-04-2025 11:20:30: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_110.png
+[INFO] 07-04-2025 11:20:31: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_120.png
+[INFO] 07-04-2025 11:20:33: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_140.png
+[INFO] 07-04-2025 11:20:34: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_150.png
+[INFO] 07-04-2025 11:20:36: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 11:20:38: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 11:20:39: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 11:20:41: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 11:20:43: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_2.png
+[INFO] 07-04-2025 11:20:44: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 11:20:46: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_Deskewed.png
+[INFO] 07-04-2025 11:20:48: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_AdaptiveThreshold.png
+[INFO] 07-04-2025 11:20:52: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_Grayscale.png
+[INFO] 07-04-2025 11:20:59: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_80.png
+[INFO] 07-04-2025 11:21:01: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_100.png
+[INFO] 07-04-2025 11:21:11: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_110.png
+[INFO] 07-04-2025 11:21:17: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_120.png
+[INFO] 07-04-2025 11:21:23: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_140.png
+[INFO] 07-04-2025 11:21:29: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_150.png
+[INFO] 07-04-2025 11:21:34: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 11:21:42: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 11:21:52: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 11:22:04: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 11:22:14: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_SaturationAdjusted_2.png
+[INFO] 07-04-2025 11:22:22: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 11:22:30: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_Deskewed.png
+[INFO] 07-04-2025 11:22:38: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_AdaptiveThreshold.png
+[INFO] 07-04-2025 11:22:46: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_Grayscale.png
+[INFO] 07-04-2025 11:22:50: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_GlobalThreshold_80.png
+[INFO] 07-04-2025 11:22:53: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_GlobalThreshold_100.png
+[INFO] 07-04-2025 11:22:57: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_GlobalThreshold_110.png
+[INFO] 07-04-2025 11:23:00: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_GlobalThreshold_120.png
+[INFO] 07-04-2025 11:23:02: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_GlobalThreshold_140.png
+[INFO] 07-04-2025 11:23:05: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_GlobalThreshold_150.png
+[INFO] 07-04-2025 11:23:09: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 11:23:14: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 11:23:19: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 11:23:25: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 11:23:31: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_SaturationAdjusted_2.png
+[INFO] 07-04-2025 11:23:37: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 11:23:41: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_Deskewed.png
+[INFO] 07-04-2025 11:23:46: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_AdaptiveThreshold.png
+[INFO] 07-04-2025 11:23:51: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_Grayscale.png
+[INFO] 07-04-2025 11:23:59: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_GlobalThreshold_80.png
+[INFO] 07-04-2025 11:24:01: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_GlobalThreshold_100.png
+[INFO] 07-04-2025 11:24:03: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_GlobalThreshold_110.png
+[INFO] 07-04-2025 11:24:07: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_GlobalThreshold_120.png
+[INFO] 07-04-2025 11:24:13: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_GlobalThreshold_140.png
+[INFO] 07-04-2025 11:24:18: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_GlobalThreshold_150.png
+[INFO] 07-04-2025 11:24:27: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 11:24:40: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 11:24:52: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 11:25:06: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 11:25:20: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_SaturationAdjusted_2.png
+[INFO] 07-04-2025 11:25:33: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 11:25:44: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_Deskewed.png
+[INFO] 07-04-2025 11:25:54: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_AdaptiveThreshold.png
+[INFO] 07-04-2025 11:26:03: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.png
+[INFO] 07-04-2025 11:26:11: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold_80.png
+[INFO] 07-04-2025 11:26:18: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold_100.png
+[INFO] 07-04-2025 11:26:25: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold_110.png
+[INFO] 07-04-2025 11:26:32: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold_120.png
+[INFO] 07-04-2025 11:26:39: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold_140.png
+[INFO] 07-04-2025 11:26:46: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold_150.png
+[INFO] 07-04-2025 11:26:54: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 11:27:03: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 11:27:12: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 11:27:22: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 11:27:31: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted_2.png
+[INFO] 07-04-2025 11:27:40: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 11:27:49: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_Deskewed.png
+[INFO] 07-04-2025 11:27:58: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_AdaptiveThreshold.png
+[INFO] 07-04-2025 11:28:07: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_Grayscale.png
+[INFO] 07-04-2025 11:28:14: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_GlobalThreshold_80.png
+[INFO] 07-04-2025 11:28:19: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_GlobalThreshold_100.png
+[INFO] 07-04-2025 11:28:23: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_GlobalThreshold_110.png
+[INFO] 07-04-2025 11:28:28: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_GlobalThreshold_120.png
+[INFO] 07-04-2025 11:28:32: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_GlobalThreshold_140.png
+[INFO] 07-04-2025 11:28:36: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_GlobalThreshold_150.png
+[INFO] 07-04-2025 11:28:45: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 11:29:00: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 11:29:15: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 11:29:30: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 11:29:45: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_SaturationAdjusted_2.png
+[INFO] 07-04-2025 11:30:00: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 11:30:13: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_Deskewed.png
+[INFO] 07-04-2025 11:30:20: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_AdaptiveThreshold.png
+[INFO] 07-04-2025 11:30:22: Extracted Text for Each Transformation:
+
+[INFO] 07-04-2025 11:35:58: Starting Image Processing...
+[INFO] 07-04-2025 11:35:58: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_AdaptiveThreshold.png
+[INFO] 07-04-2025 11:35:58: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_Deskewed.png
+[INFO] 07-04-2025 11:35:58: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_100.png
+[INFO] 07-04-2025 11:35:58: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_110.png
+[INFO] 07-04-2025 11:35:58: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_120.png
+[INFO] 07-04-2025 11:35:58: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_140.png
+[INFO] 07-04-2025 11:35:58: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_150.png
+[INFO] 07-04-2025 11:35:58: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_80.png
+[INFO] 07-04-2025 11:35:58: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_Grayscale.png
+[INFO] 07-04-2025 11:35:58: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 11:35:58: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 11:35:58: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 11:35:58: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 11:35:58: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 11:35:58: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_2.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_AdaptiveThreshold.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_Deskewed.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_100.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_110.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_120.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_140.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_150.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_80.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_Grayscale.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_2.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_AdaptiveThreshold.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_Deskewed.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_100.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_110.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_120.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_140.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_150.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_80.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_Grayscale.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_2.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_AdaptiveThreshold.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_Deskewed.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_100.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_110.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_120.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_140.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_150.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_80.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_Grayscale.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_SaturationAdjusted_2.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_AdaptiveThreshold.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_Deskewed.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_GlobalThreshold_100.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_GlobalThreshold_110.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_GlobalThreshold_120.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_GlobalThreshold_140.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_GlobalThreshold_150.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_GlobalThreshold_80.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_Grayscale.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_SaturationAdjusted_2.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_AdaptiveThreshold.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_Deskewed.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_GlobalThreshold_100.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_GlobalThreshold_110.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_GlobalThreshold_120.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_GlobalThreshold_140.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_GlobalThreshold_150.png
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_GlobalThreshold_80.png
+[ERROR] 07-04-2025 11:35:59: Error cleaning directory C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage: The process cannot access the file 'C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_Grayscale.png' because it is being used by another process.
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ExtractedText\ProcessedFile_20250407_111816.txt
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\Comparision\BestModelRanking.xlsx
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\Comparision\CosineSimilarity.xlsx
+[INFO] 07-04-2025 11:35:59: Deleted file: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\Comparision\ProcessingResults.xlsx
+[INFO] 07-04-2025 11:35:59: Text file created successfully: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ExtractedText\ProcessedFile_20250407_113559.txt
+[INFO] 07-04-2025 11:35:59: Processing 11 images...
+[INFO] 07-04-2025 11:36:03: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_Grayscale.png
+[INFO] 07-04-2025 11:36:09: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_80.png
+[INFO] 07-04-2025 11:36:13: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_100.png
+[INFO] 07-04-2025 11:36:16: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_110.png
+[INFO] 07-04-2025 11:36:20: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_120.png
+[INFO] 07-04-2025 11:36:23: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_140.png
+[INFO] 07-04-2025 11:36:27: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_GlobalThreshold_150.png
+[INFO] 07-04-2025 11:36:32: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 11:36:41: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 11:36:49: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 11:36:57: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 11:37:05: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_2.png
+[INFO] 07-04-2025 11:37:13: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 11:37:21: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_Deskewed.png
+[INFO] 07-04-2025 11:37:26: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\book_pag_AdaptiveThreshold.png
+[INFO] 07-04-2025 11:37:31: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\IDCard_Grayscale.png
+[INFO] 07-04-2025 11:37:34: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\IDCard_GlobalThreshold_80.png
+[INFO] 07-04-2025 11:37:36: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\IDCard_GlobalThreshold_100.png
+[INFO] 07-04-2025 11:37:38: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\IDCard_GlobalThreshold_110.png
+[INFO] 07-04-2025 11:37:41: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\IDCard_GlobalThreshold_120.png
+[INFO] 07-04-2025 11:37:43: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\IDCard_GlobalThreshold_140.png
+[INFO] 07-04-2025 11:37:45: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\IDCard_GlobalThreshold_150.png
+[INFO] 07-04-2025 11:37:49: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\IDCard_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 11:37:53: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\IDCard_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 11:37:55: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\IDCard_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 11:38:01: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\IDCard_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 11:38:04: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\IDCard_SaturationAdjusted_2.png
+[INFO] 07-04-2025 11:38:06: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\IDCard_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 11:38:08: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\IDCard_Deskewed.png
+[INFO] 07-04-2025 11:38:10: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\IDCard_AdaptiveThreshold.png
+[INFO] 07-04-2025 11:38:12: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_Grayscale.png
+[INFO] 07-04-2025 11:38:13: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_80.png
+[INFO] 07-04-2025 11:38:14: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_100.png
+[INFO] 07-04-2025 11:38:14: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_110.png
+[INFO] 07-04-2025 11:38:15: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_120.png
+[INFO] 07-04-2025 11:38:16: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_140.png
+[INFO] 07-04-2025 11:38:17: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_GlobalThreshold_150.png
+[INFO] 07-04-2025 11:38:18: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 11:38:19: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 11:38:20: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 11:38:22: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 11:38:23: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_2.png
+[INFO] 07-04-2025 11:38:24: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 11:38:26: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_Deskewed.png
+[INFO] 07-04-2025 11:38:27: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\images_AdaptiveThreshold.png
+[INFO] 07-04-2025 11:38:28: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_Grayscale.png
+[INFO] 07-04-2025 11:38:29: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_80.png
+[INFO] 07-04-2025 11:38:29: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_100.png
+[INFO] 07-04-2025 11:38:30: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_110.png
+[INFO] 07-04-2025 11:38:30: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_120.png
+[INFO] 07-04-2025 11:38:31: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_140.png
+[INFO] 07-04-2025 11:38:32: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_GlobalThreshold_150.png
+[INFO] 07-04-2025 11:38:32: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 11:38:33: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 11:38:34: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 11:38:34: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 11:38:35: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_2.png
+[INFO] 07-04-2025 11:38:36: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 11:38:36: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_Deskewed.png
+[INFO] 07-04-2025 11:38:37: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\rotated_AdaptiveThreshold.png
+[INFO] 07-04-2025 11:38:39: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_Grayscale.png
+[INFO] 07-04-2025 11:38:42: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_80.png
+[INFO] 07-04-2025 11:38:42: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_100.png
+[INFO] 07-04-2025 11:38:46: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_110.png
+[INFO] 07-04-2025 11:38:49: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_120.png
+[INFO] 07-04-2025 11:38:52: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_140.png
+[INFO] 07-04-2025 11:38:59: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_GlobalThreshold_150.png
+[INFO] 07-04-2025 11:39:01: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 11:39:04: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 11:39:09: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 11:39:13: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 11:39:17: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_SaturationAdjusted_2.png
+[INFO] 07-04-2025 11:39:21: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 11:39:24: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_Deskewed.png
+[INFO] 07-04-2025 11:39:27: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\RQIGI_AdaptiveThreshold.png
+[INFO] 07-04-2025 11:39:30: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_Grayscale.png
+[INFO] 07-04-2025 11:39:32: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_GlobalThreshold_80.png
+[INFO] 07-04-2025 11:39:33: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_GlobalThreshold_100.png
+[INFO] 07-04-2025 11:39:35: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_GlobalThreshold_110.png
+[INFO] 07-04-2025 11:39:36: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_GlobalThreshold_120.png
+[INFO] 07-04-2025 11:39:37: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_GlobalThreshold_140.png
+[INFO] 07-04-2025 11:39:38: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_GlobalThreshold_150.png
+[INFO] 07-04-2025 11:39:40: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 11:39:42: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 11:39:44: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 11:39:46: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 11:39:48: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_SaturationAdjusted_2.png
+[INFO] 07-04-2025 11:39:51: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 11:39:53: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_Deskewed.png
+[INFO] 07-04-2025 11:39:58: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\skewimage_AdaptiveThreshold.png
+[INFO] 07-04-2025 11:40:00: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_Grayscale.png
+[INFO] 07-04-2025 11:40:02: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_GlobalThreshold_80.png
+[INFO] 07-04-2025 11:40:03: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_GlobalThreshold_100.png
+[INFO] 07-04-2025 11:40:04: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_GlobalThreshold_110.png
+[INFO] 07-04-2025 11:40:05: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_GlobalThreshold_120.png
+[INFO] 07-04-2025 11:40:07: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_GlobalThreshold_140.png
+[INFO] 07-04-2025 11:40:08: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_GlobalThreshold_150.png
+[INFO] 07-04-2025 11:40:11: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 11:40:15: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 11:40:19: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 11:40:23: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 11:40:28: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_SaturationAdjusted_2.png
+[INFO] 07-04-2025 11:40:32: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 11:40:36: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_Deskewed.png
+[INFO] 07-04-2025 11:40:39: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\stock_gs200_AdaptiveThreshold.png
+[INFO] 07-04-2025 11:40:42: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_Grayscale.png
+[INFO] 07-04-2025 11:40:44: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold_80.png
+[INFO] 07-04-2025 11:40:47: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold_100.png
+[INFO] 07-04-2025 11:40:49: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold_110.png
+[INFO] 07-04-2025 11:40:51: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold_120.png
+[INFO] 07-04-2025 11:40:54: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold_140.png
+[INFO] 07-04-2025 11:40:56: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_GlobalThreshold_150.png
+[INFO] 07-04-2025 11:40:59: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 11:41:02: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 11:41:04: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 11:41:07: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 11:41:10: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted_2.png
+[INFO] 07-04-2025 11:41:13: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 11:41:16: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_Deskewed.png
+[INFO] 07-04-2025 11:41:19: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document_AdaptiveThreshold.png
+[INFO] 07-04-2025 11:41:22: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_Grayscale.png
+[INFO] 07-04-2025 11:41:24: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_GlobalThreshold_80.png
+[INFO] 07-04-2025 11:41:25: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_GlobalThreshold_100.png
+[INFO] 07-04-2025 11:41:27: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_GlobalThreshold_110.png
+[INFO] 07-04-2025 11:41:28: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_GlobalThreshold_120.png
+[INFO] 07-04-2025 11:41:29: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_GlobalThreshold_140.png
+[INFO] 07-04-2025 11:41:31: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_GlobalThreshold_150.png
+[INFO] 07-04-2025 11:41:34: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 11:41:38: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 11:41:42: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 11:41:47: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 11:41:52: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_SaturationAdjusted_2.png
+[INFO] 07-04-2025 11:41:56: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 11:42:00: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_Deskewed.png
+[INFO] 07-04-2025 11:42:03: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Test_OCR_document1_AdaptiveThreshold.png
+[INFO] 07-04-2025 11:42:04: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Ticket_Grayscale.png
+[INFO] 07-04-2025 11:42:05: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Ticket_GlobalThreshold_80.png
+[INFO] 07-04-2025 11:42:05: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Ticket_GlobalThreshold_100.png
+[INFO] 07-04-2025 11:42:06: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Ticket_GlobalThreshold_110.png
+[INFO] 07-04-2025 11:42:07: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Ticket_GlobalThreshold_120.png
+[INFO] 07-04-2025 11:42:07: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Ticket_GlobalThreshold_140.png
+[INFO] 07-04-2025 11:42:08: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Ticket_GlobalThreshold_150.png
+[INFO] 07-04-2025 11:42:09: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Ticket_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 11:42:11: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Ticket_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 11:42:12: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Ticket_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 11:42:14: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Ticket_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 11:42:15: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Ticket_SaturationAdjusted_2.png
+[INFO] 07-04-2025 11:42:17: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Ticket_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 11:42:18: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Ticket_Deskewed.png
+[INFO] 07-04-2025 11:42:19: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\Ticket_AdaptiveThreshold.png
+[INFO] 07-04-2025 11:42:20: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\tilted_Grayscale.png
+[INFO] 07-04-2025 11:42:21: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\tilted_GlobalThreshold_80.png
+[INFO] 07-04-2025 11:42:21: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\tilted_GlobalThreshold_100.png
+[INFO] 07-04-2025 11:42:22: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\tilted_GlobalThreshold_110.png
+[INFO] 07-04-2025 11:42:23: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\tilted_GlobalThreshold_120.png
+[INFO] 07-04-2025 11:42:23: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\tilted_GlobalThreshold_140.png
+[INFO] 07-04-2025 11:42:24: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\tilted_GlobalThreshold_150.png
+[INFO] 07-04-2025 11:42:25: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\tilted_SaturationAdjusted_1.2.png
+[INFO] 07-04-2025 11:42:25: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\tilted_SaturationAdjusted_0.6.png
+[INFO] 07-04-2025 11:42:26: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\tilted_SaturationAdjusted_0.9.png
+[INFO] 07-04-2025 11:42:27: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\tilted_SaturationAdjusted_1.6.png
+[INFO] 07-04-2025 11:42:28: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\tilted_SaturationAdjusted_2.png
+[INFO] 07-04-2025 11:42:29: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\tilted_SaturationAdjusted_2.5.png
+[INFO] 07-04-2025 11:42:30: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\tilted_Deskewed.png
+[INFO] 07-04-2025 11:42:31: Saved processed image: C:\Users\mithi\OneDrive\Desktop\ocr\ocr-techtitans\OCRProject\Output\ProcessedImage\tilted_AdaptiveThreshold.png
+[INFO] 07-04-2025 11:42:31: Extracted Text for Each Transformation:
+

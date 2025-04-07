@@ -485,6 +485,385 @@ pen51ve to.:correct later, requmng, massive rework and
 
 
 Model: Grayscale
+UNITED KINGDOM ccviininon 2016 s
+
+FIRST NANE|5)
+ANNA
+
+SURNANE
+NOWAK
+
+DATE OF BIRTH
+2205-1959
+
+PLACE OF BIRTH
+UNITED KINGDOM
+
+NUNBER
+F100000-01234567 ,
+
+mt‘o m 23T e
+
+01-01-2106  Ases Nm&
+
+ 
+
+ 
+
+
+Model: GlobalThreshold_80
+UNITED KINGDOM . 2016 ==
+
+;'.P\ N,':l
+
+MO
+
+22 48 1955 o
+
+t_;r\'ll -_' L.l‘ ;'.-.‘J(_;LT AN ;
+’ k I‘Z"JUII St 123357
+
+/
+
+qe 00 PerA Asarwe Mawads
+
+
+Model: GlobalThreshold_100
+UNITED KINGDOM
+
+ 
+
+SaNMA
+NOVIAL -
+Lo e [
+
+22 05 193% o
+UNITS O KiNGLON 7 ‘J
+
+[T aRd
+l’.
+
+F1200Co.C 1234557 ;
+0 04204 Ares Mawaid
+
+— .
+Ll
+
+
+Model: GlobalThreshold_110
+UNITED KINGDOM ..
+
+TRITR et n
+ANNA
+NOVIAK
+ettty
+22 05 1959
+RO S I SRR WY
+UMILD KINGCOW
+'\-. AL A
+F1200C2.C12342457
+SRS SO S
+A°.01.2¢CH
+
+S~ e
+
+ 
+
+e
+L)
+!
+
+A'«M
+
+Mo s
+
+
+Model: GlobalThreshold_120
+UNITED KINGDOM ......
+
+TROT AN
+ANNA
+LR S RN
+NOVIAK
+IOT-Da SN0l B P AL
+22 05-1959
+LA N U A SR TP
+UNITED KINGCOW
+S.ware
+F1300C2.-C1234557
+RS W R
+
+0°-01.240&
+
+/\':W.“ -
+
+ 
+
+-
+
+Asrs Nowad
+
+
+Model: GlobalThreshold_140
+UNITED KINGDOM ....:...~:2=. 2016
+
+TIRST MANEIS,
+ANNA
+PR R A
+NOV/IAK
+oL 0 Sl BN H L AR
+22-05-1959
+AR BIH T
+UNITED KINGOOM
+NLWATR
+F1000C0.01234367
+LD USN
+
+01-01-21C6é
+
+lllll
+
+~
+/
+-
+
+Ares Nowak
+
+g ]
+raanm?
+
+
+Model: GlobalThreshold_150
+PN T LA
+UNITED KINGDOM ciuninannrn 20416 .—}- <
+
+TIRGT MANE %)
+ANNA
+SJRNANE
+NOWAK
+JATE CFr IR
+2205-1959
+e ACECFRIRTH
+UNITED KINGDOM
+NLWAFR
+F100000-01234%67
+;:_‘;Ltu U“ ))\UIIN
+
+01-01-2106 Anrs Nowak
+
+~p
+
+ 
+
+ 
+
+
+Model: SaturationAdjusted_1.2
+UNITED KINGDOM cc.ovvinncs 2016 Sp
+
+FIRST NANE|S) PHCIICCIN Y
+
+OATE CF BIRTH
+2205-1959
+
+PACE OF BIRTH
+UNITED KINGDOM
+
+NUNVRER
+F100000-01234567
+
+EELCD ON
+01.01.2106
+
+ 
+
+
+Model: SaturationAdjusted_0.6
+UNITED KINGDOM ccuivvin 2016 s
+
+FIRST NANE|S)
+
+ANNA
+SURNANE
+
+NOWAK
+OATE CF BIRT™
+
+2205-1959
+PACE CF BIRTH
+
+UNITED KINGDOM >
+NUNBER
+
+F100000-01234557 _
+ERLED ON BN LIS
+
+01-01.2106 Am Nowak
+
+o
+
+ 
+
+
+Model: SaturationAdjusted_0.9
+UNITED KINGDOM cciviecns 2016 Sp
+
+TIRST NANE|S)
+ANNA
+
+SURNANE
+NOWAK
+
+OATE CF BIRTH
+2205-1959
+
+PACE CF BIRTH
+UNITED KINGDOM
+
+NUNBER
+F100000.01234567
+
+EALED ON
+01-01.2106
+
+ 
+
+
+Model: SaturationAdjusted_1.6
+UNITED KINGDOM cuivinnnon 2016 a:-é
+
+FIRST NANE|S) NI
+ANNA
+
+SURNANE
+NOWAK
+
+OATE CF IR™
+2205-1959
+
+PLACE OF BIRTH
+UNITED KINGDOM
+
+NUNBER
+F100000-01234567
+
+EALED ON
+
+01-01-2106 | Ases Nowak
+
+ 
+
+ 
+
+
+Model: SaturationAdjusted_2
+FIRST NANE|S)
+
+DATE OF BIRTH
+2205-1959
+
+PACE OF BIRTH
+UNITED KINGDOM
+
+NUNDER
+F100000.01234567
+
+ERLED ON
+01012106
+
+ 
+
+
+Model: SaturationAdjusted_2.5
+  
+
+UNITED KINGDOM :cvvnnncs= 2016
+
+g
+PPN
+
+TIRST NANE|S)
+
+DATE OF BIRTH
+2205-1959
+
+PACE OF BIRTH
+UNITED KINGDOM
+
+NUNBER
+F100000.01234567
+
+ERLED ON
+01012106
+
+ 
+
+
+Model: Deskewed
+=y
+UNITED KINGDOM coivnnncn- 2016 Sfs
+
+FIRST NANE|5)
+ANNA
+
+SURNANE
+NOWAK
+
+DATE OF BIRTH
+2205-1959
+
+PACE OF BIRTH
+UNITED KINGDOM
+
+NUNBER
+F100000.01234567
+
+EELED ON
+01012106
+
+o
+
+  
+
+-
+20NAT LI
+
+Ases Nowak
+
+
+Model: AdaptiveThreshold
+- - -—— e s —— o o -y :
+
+UNITED KINGDQI‘.’I rf-mm.w.,\.ﬁzorm il
+
+;nr 'rr.-.u'rl -|  PsEANA T
+
+L ARHAL LTI
+
+';.,um.'u N
+
+HOWRK.
+
+AR CE IRTH, I
+22:05-195%" Sy 9 |
+
+PUACECFRIRTH - e B A )
+UNITED: muaco.a. 2y b
+
+SR S
+I‘IBDUUﬁOIAJli : ” ‘ -’;’A-:..-_.i‘.'"_«_, 3
+
+152 L':D 0.. ' S Lasaanegy.
+0%5:01-2406. ' . Jflawq .'Jaff,&u
+
+O 1y
+® e
+- B '-r"' TUREY o - +
+- .- " - . i D ot W B L - - -
+L ek Tl = e e il e L -l ana
+
+
+Model: Grayscale
 OCR Testing Environment
 
 R e e LS N Feeiy Lo ww dn ond D remas L v eed
@@ -768,6 +1147,127 @@ Qd:badl Priewms Penetd Cuonsn Qochis
 one Reaan Snwst Scdbm Teudio Toosin
 Urels Leder Wu'een Vozal Winak Weean
 Xmras Yonan Yuntan Young Slote Zedbo
+
+
+Model: Grayscale
+The idea is to be able to plug-in any state-of-the-art model into EasyOCR. There are a lot of geniuses trying to make
+better detection/recognition model. We are not trying to be a genius here, just make genius's works quickly accessible
+to the public ... for free. (well | believe most geniuses want their work to create positive impact as fast/big as possible)
+The pipeline should be something like below diagram. Grey slots are placeholders for changeable light blue modules.
+
+
+Model: GlobalThreshold_80
+g T
+> 2o =
+T o+ ot
+R
+=T T
+‘\{ -~ i) \‘
+R
+T ’,? Iy
+-~ I et
+
+ 
+
+ 
+
+
+Model: GlobalThreshold_100
+The dea is 1o be able to nlug-in any state-of-the-art model into EasyOCR. There are a lot of geniuses trying to make
+
+ 
+
+better detection/recognition model. We are not wry'ng 1o be a genius here, just make genius's works quickly accessible
+
+to tne public ... for free. {well | believe most geniuses want their work to create positive impact as fast/big as possinle}
+
+ 
+
+The vipeline should be sometning like below diagram. Grey slots are placeholders for changeab.e [ight blue modules.
+
+
+Model: GlobalThreshold_110
+The idea is to be able to plug-in any state-of-the-art model into EasyOCR. There are a lot of geniuses trying to make
+better detection/recognition model. We are not trying to be a genius here, just make genius's works quickly accessible
+to the public ... for free. (well | believe most geniuses want their work to create positive impact as fast/big as possible)
+The pipeline should be something like below diagram. Grey slots are placeholders for changeable light blue modules.
+
+
+Model: GlobalThreshold_120
+The idea is to be able to plug-in any state-of-the-art model into EasyOCR. There are a lot of geniuses trying to make
+better detection/recognition model. We are not trying to be a genius here, just make genius's works quickly accessible
+to the public ... for free. (well | believe most geniuses want their work to create positive impact as fast/big as possible)
+The pipeline should be something like below diagram. Grey slots are placeholders for changeable light blue modules.
+
+
+Model: GlobalThreshold_140
+The idea is to be able to plug-in any state-of-the-art model into EasyOCR. There are a lot of geniuses trying to make
+better detection/recognition model. We are not trying to be a genius here, just make genius's works quickly accessible
+to the public ... for free. (well | believe most geniuses want their work to create positive impact as fast/big as possible)
+The pipeline should be something like below diagram. Grey slots are placeholders for changeable light blue modules.
+
+
+Model: GlobalThreshold_150
+The idea is to be able to plug-in any state-of-the-art model into EasyOCR. There are a lot of geniuses trying to make
+better detection/recognition model. We are not trying to be a genius here, just make genius's works quickly accessible
+to the public ... for free. (well | believe most geniuses want their work to create positive impact as fast/big as possible)
+The pipeline should be something like below diagram. Grey slots are placeholders for changeable light blue modules.
+
+
+Model: SaturationAdjusted_1.2
+The idea is to be able to plug-in any state-of-the-art model into EasyOCR. There are a lot of geniuses trying to make
+better detection/recognition model. We are not trying to be a genius here, just make genius's works quickly accessible
+to the public ... for free. (well | believe most geniuses want their work to create positive impact as fast/big as possible)
+The pipeline should be something like below diagram. Grey slots are placeholders for changeable light blue modules.
+
+
+Model: SaturationAdjusted_0.6
+The idea is to be able to plug-in any state-of-the-art model into EasyOCR. There are a lot of geniuses trying to make
+better detection/recognition model. We are not trying to be a genius here, just make genius's works quickly accessible
+to the public ... for free. (well | believe most geniuses want their work to create positive impact as fast/big as possible)
+The pipeline should be something like below diagram. Grey slots are placeholders for changeable light blue modules.
+
+
+Model: SaturationAdjusted_0.9
+The idea is to be able to plug-in any state-of-the-art model into EasyOCR. There are a lot of geniuses trying to make
+better detection/recognition model. We are not trying to be a genius here, just make genius's works quickly accessible
+to the public ... for free. (well | believe most geniuses want their work to create positive impact as fast/big as possible)
+The pipeline should be something like below diagram. Grey slots are placeholders for changeable light blue modules.
+
+
+Model: SaturationAdjusted_1.6
+The idea is to be able to plug-in any state-of-the-art model into EasyOCR. There are a lot of geniuses trying to make
+better detection/recognition model. We are not trying to be a genius here, just make genius's works quickly accessible
+to the public ... for free. (well | believe most geniuses want their work to create positive impact as fast/big as possible)
+The pipeline should be something like below diagram. Grey slots are placeholders for changeable light blue modules.
+
+
+Model: SaturationAdjusted_2
+The idea is to be able to plug-in any state-of-the-art model into EasyOCR. There are a lot of geniuses trying to make
+better detection/recognition model. We are not trying to be a genius here, just make genius's works quickly accessible
+to the public ... for free. (well | believe most geniuses want their work to create positive impact as fast/big as possible)
+The pipeline should be something like below diagram. Grey slots are placeholders for changeable light blue modules.
+
+
+Model: SaturationAdjusted_2.5
+The idea is to be able to plug-in any state-of-the-art model into EasyOCR. There are a lot of geniuses trying to make
+better detection/recognition model. We are not trying to be a genius here, just make genius's works quickly accessible
+to the public ... for free. (well | believe most geniuses want their work to create positive impact as fast/big as possible)
+The pipeline should be something like below diagram. Grey slots are placeholders for changeable light blue modules.
+
+
+Model: Deskewed
+The idea is to be able to plug-in any state-of-the-art model into EasyOCR. There are a lot of geniuses trying to make
+better detection/recognition model. We are not trying to be a genius here, just make genius's works quickly accessible
+to the public ... for free. (well | believe most geniuses want their work to create positive impact as fast/big as possible)
+The pipeline should be something like below diagram. Grey slots are placeholders for changeable light blue modules.
+
+
+Model: AdaptiveThreshold
+The idea is to be able to plug-in any state-of-the-art model into EasyOCR. There are a lot of geniuses trying to make
+better detection/recognition model. We are not trying to be a genius here, just make genius's works quickly accessible
+to the public ... for free. (well | believe most geniuses want their work to create positive impact as fast/big as possible)
+The pipeline should be something like below diagram. Grey slots are placeholders for changeable light blue modules.
 
 
 Model: Grayscale
@@ -1240,6 +1740,154 @@ Once data have been collected on the actual finish times of complctcd.
 A 3 the efl ject changes, an updated project schedule
 
 wdvidges and the eticems of any projc
+
+
+Model: Grayscale
+
+
+Model: GlobalThreshold_80
+
+
+Model: GlobalThreshold_100
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+-l - -
+. o
+* .
+.. -
+.
+.- .
+.. . R
+.- e ~
+. . 14
+.
+, A . -- N L
+RN L . s
+. . rl‘
+L. . L.
+- . .l- . *
+S ) S
+.... b "
+- . M :
+o . .. .lv.- - "
+. r . .. -* . .l. e
+,’- ’ - ’ *
+.\ -- 4 .. g -
+. e ! ) - *
+. ‘ ’
+. . * e )
+. . b * -7 . M
+. A . .
+¢ . « 7 .t * a T :
+. . * " /l ’
+‘ [ S, . ‘ ’
+R . - L]
+< S ) . t ' ’ ’
+. - . o .
+- . A e
+. . - [ - : - *
+. .. N o - U '
+,l- . . . l- : .
+- . . . *. )
+ﬁ- . -. l.n- - - * .
+. -l- . - .t - A
+. N ‘ )
+. . - ’I. .-
+. * 4- .l ’ ‘
+'I * N ' - )
+- : ) ’ ’
+. - ’ )
+. .. PN
+. . . .
+. s e SO - v :
+: S . .
+. -7 )
+- * :
+\-. ., ) -'.
+- * - i ’ ' ’
+b .. . - ‘ o
+: . . - .
+- o - o .
+.- * . . : -
+. . -
+" t
+. [ . ‘ ’
+- 9 . ‘e’ *
+. e e
+. i . . o
+- LI ‘e L
+) -t - s\.-
+. T . '
+. .
+~ - -
+- A .
+. .
+.
+“
+¢
+. * -
+L -
+o
+.
+
+
+Model: GlobalThreshold_110
+ 
+
+
+Model: GlobalThreshold_120
+ 
+
+
+Model: GlobalThreshold_140
+
+
+Model: GlobalThreshold_150
+
+
+Model: SaturationAdjusted_1.2
+
+
+Model: SaturationAdjusted_0.6
+
+
+Model: SaturationAdjusted_0.9
+
+
+Model: SaturationAdjusted_1.6
+
+
+Model: SaturationAdjusted_2
+
+
+Model: SaturationAdjusted_2.5
+
+
+Model: Deskewed
+
+
+Model: AdaptiveThreshold
+ 
 
 
 Model: Grayscale
@@ -3761,5 +4409,114 @@ Th’/,*‘i< r market.
 
 Model: AdaptiveThreshold
  
+
+
+Model: Grayscale
+ 
+
+
+Model: GlobalThreshold_80
+
+
+Model: GlobalThreshold_100
+ 
+
+0p .0
+//
+
+iy, \\\\\\
+
+
+Model: GlobalThreshold_110
+ 
+
+
+Model: GlobalThreshold_120
+ 
+
+
+Model: GlobalThreshold_140
+ 
+
+
+Model: GlobalThreshold_150
+ 
+
+
+Model: SaturationAdjusted_1.2
+ 
+
+
+Model: SaturationAdjusted_0.6
+ 
+
+
+Model: SaturationAdjusted_0.9
+ 
+
+
+Model: SaturationAdjusted_1.6
+ 
+
+
+Model: SaturationAdjusted_2
+ 
+
+
+Model: SaturationAdjusted_2.5
+ 
+
+
+Model: Deskewed
+ 
+
+
+Model: AdaptiveThreshold
+ 
+
+
+Model: Grayscale
+
+
+Model: GlobalThreshold_80
+
+
+Model: GlobalThreshold_100
+
+
+Model: GlobalThreshold_110
+
+
+Model: GlobalThreshold_120
+
+
+Model: GlobalThreshold_140
+
+
+Model: GlobalThreshold_150
+
+
+Model: SaturationAdjusted_1.2
+
+
+Model: SaturationAdjusted_0.6
+
+
+Model: SaturationAdjusted_0.9
+
+
+Model: SaturationAdjusted_1.6
+
+
+Model: SaturationAdjusted_2
+
+
+Model: SaturationAdjusted_2.5
+
+
+Model: Deskewed
+
+
+Model: AdaptiveThreshold
 
 
